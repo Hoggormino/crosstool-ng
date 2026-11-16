@@ -1,0 +1,141 @@
+diff -urP old/configure new/configure
+--- old/configure	2020-09-11 15:13:58.472123906 +0200
++++ new/configure	2020-09-11 15:33:28.580859492 +0200
+@@ -4270,27 +4270,6 @@
+   test -n "$MAKE" && break
+ done
+ 
+-if test -z "$MAKE"; then
+-  ac_verc_fail=yes
+-else
+-  # Found it, now check the version.
+-  echo "$as_me:$LINENO: checking version of $MAKE" >&5
+-echo $ECHO_N "checking version of $MAKE... $ECHO_C" >&6
+-  ac_prog_version=`$MAKE --version 2>&1 | sed -n 's/^.*GNU Make[^0-9]*\([0-9][0-9.]*\).*$/\1/p'`
+-  case $ac_prog_version in
+-    '') ac_prog_version="v. ?.??, bad"; ac_verc_fail=yes;;
+-    3.79* | 3.[89]*)
+-       ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
+-    *) ac_prog_version="$ac_prog_version, bad"; ac_verc_fail=yes;;
+-
+-  esac
+-  echo "$as_me:$LINENO: result: $ac_prog_version" >&5
+-echo "${ECHO_T}$ac_prog_version" >&6
+-fi
+-if test $ac_verc_fail = yes; then
+-  critic_missing="$critic_missing make"
+-fi
+-
+ 
+ for ac_prog in gnumsgfmt gmsgfmt msgfmt
+ do
+@@ -4332,27 +4311,6 @@
+   test -n "$MSGFMT" && break
+ done
+ 
+-if test -z "$MSGFMT"; then
+-  ac_verc_fail=yes
+-else
+-  # Found it, now check the version.
+-  echo "$as_me:$LINENO: checking version of $MSGFMT" >&5
+-echo $ECHO_N "checking version of $MSGFMT... $ECHO_C" >&6
+-  ac_prog_version=`$MSGFMT --version 2>&1 | sed -n 's/^.*GNU gettext.* \([0-9]*\.[0-9.]*\).*$/\1/p'`
+-  case $ac_prog_version in
+-    '') ac_prog_version="v. ?.??, bad"; ac_verc_fail=yes;;
+-    0.10.3[6-9]* | 0.10.[4-9][0-9]* | 0.1[1-9]* | 0.[2-9][0-9]* | [1-9].*)
+-       ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
+-    *) ac_prog_version="$ac_prog_version, bad"; ac_verc_fail=yes;;
+-
+-  esac
+-  echo "$as_me:$LINENO: result: $ac_prog_version" >&5
+-echo "${ECHO_T}$ac_prog_version" >&6
+-fi
+-if test $ac_verc_fail = yes; then
+-  MSGFMT=: aux_missing="$aux_missing msgfmt"
+-fi
+-
+ for ac_prog in makeinfo
+ do
+   # Extract the first word of "$ac_prog", so it can be a program name with args.
+@@ -4393,27 +4351,6 @@
+   test -n "$MAKEINFO" && break
+ done
+ 
+-if test -z "$MAKEINFO"; then
+-  ac_verc_fail=yes
+-else
+-  # Found it, now check the version.
+-  echo "$as_me:$LINENO: checking version of $MAKEINFO" >&5
+-echo $ECHO_N "checking version of $MAKEINFO... $ECHO_C" >&6
+-  ac_prog_version=`$MAKEINFO --version 2>&1 | sed -n 's/^.*GNU texinfo.* \([0-9][0-9.]*\).*$/\1/p'`
+-  case $ac_prog_version in
+-    '') ac_prog_version="v. ?.??, bad"; ac_verc_fail=yes;;
+-    4.*)
+-       ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
+-    *) ac_prog_version="$ac_prog_version, bad"; ac_verc_fail=yes;;
+-
+-  esac
+-  echo "$as_me:$LINENO: result: $ac_prog_version" >&5
+-echo "${ECHO_T}$ac_prog_version" >&6
+-fi
+-if test $ac_verc_fail = yes; then
+-  MAKEINFO=: aux_missing="$aux_missing makeinfo"
+-fi
+-
+ for ac_prog in sed
+ do
+   # Extract the first word of "$ac_prog", so it can be a program name with args.
+@@ -4454,27 +4391,6 @@
+   test -n "$SED" && break
+ done
+ 
+-if test -z "$SED"; then
+-  ac_verc_fail=yes
+-else
+-  # Found it, now check the version.
+-  echo "$as_me:$LINENO: checking version of $SED" >&5
+-echo $ECHO_N "checking version of $SED... $ECHO_C" >&6
+-  ac_prog_version=`$SED --version 2>&1 | sed -n 's/^.*GNU sed version \([0-9]*\.[0-9.]*\).*$/\1/p'`
+-  case $ac_prog_version in
+-    '') ac_prog_version="v. ?.??, bad"; ac_verc_fail=yes;;
+-    3.0[2-9]*|3.[1-9]*|[4-9]*)
+-       ac_prog_version="$ac_prog_version, ok"; ac_verc_fail=no;;
+-    *) ac_prog_version="$ac_prog_version, bad"; ac_verc_fail=yes;;
+-
+-  esac
+-  echo "$as_me:$LINENO: result: $ac_prog_version" >&5
+-echo "${ECHO_T}$ac_prog_version" >&6
+-fi
+-if test $ac_verc_fail = yes; then
+-  SED=: aux_missing="$aux_missing sed"
+-fi
+-
+ 
+ for ac_prog in autoconf
+ do
+diff -urP old/configure.in new/configure.in
+--- old/configure.in	2020-09-11 14:31:43.780989742 +0200
++++ new/configure.in	2020-09-11 15:10:22.514502586 +0200
+@@ -862,22 +862,11 @@
+ AC_CHECK_PROG_VER(CC, ${ac_tool_prefix}gcc ${ac_tool_prefix}cc, -v,
+   [version \([egcygnustpi-]*[0-9.]*\)], [3.4* | 4.[0-9]* ],
+   critic_missing="$critic_missing gcc")
+-AC_CHECK_PROG_VER(MAKE, gnumake gmake make, --version,
+-  [GNU Make[^0-9]*\([0-9][0-9.]*\)],
+-  [3.79* | 3.[89]*], critic_missing="$critic_missing make")
+ 
+ AC_CHECK_PROG_VER(MSGFMT, gnumsgfmt gmsgfmt msgfmt, --version,
+   [GNU gettext.* \([0-9]*\.[0-9.]*\)],
+   [0.10.3[6-9]* | 0.10.[4-9][0-9]* | 0.1[1-9]* | 0.[2-9][0-9]* | [1-9].*],
+   MSGFMT=: aux_missing="$aux_missing msgfmt")
+-AC_CHECK_PROG_VER(MAKEINFO, makeinfo, --version,
+-  [GNU texinfo.* \([0-9][0-9.]*\)],
+-  [4.*],
+-  MAKEINFO=: aux_missing="$aux_missing makeinfo")
+-AC_CHECK_PROG_VER(SED, sed, --version,
+-  [GNU sed version \([0-9]*\.[0-9.]*\)],
+-  [3.0[2-9]*|3.[1-9]*|[4-9]*],
+-  SED=: aux_missing="$aux_missing sed")
+ 
+ AC_CHECK_PROGS(AUTOCONF, autoconf, no)
+ case "x$AUTOCONF" in

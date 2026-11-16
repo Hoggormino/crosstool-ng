@@ -1,0 +1,269 @@
+{
+  "oe_commit": "e9fcef71f94fb4e76c6e8d992b7936f8d5fa8632",
+  "inputs": [
+    {
+      "package": "binutils",
+      "order": 0,
+      "path": "oe/oe/recipes/binutils/binutils-2.17.50/better_file_error.patch",
+      "sha256": "56fdf50e5f6031b35c0cadbad21d015f581f66899667c32a1b58d444acd69f80",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "binutils",
+      "order": 1,
+      "path": "oe/oe/recipes/binutils/binutils-2.17.50/ld_makefile.patch",
+      "sha256": "0ff17bc8b37b36dc1fc23057ac6d53a84ca615ca5797c03eb135bd3c7a571f6d",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "binutils",
+      "order": 2,
+      "path": "oe/oe/recipes/binutils/binutils-2.17.50/detect-makeinfo.patch",
+      "sha256": "6bfa16754e74ceb39061a2786bfb02a592d49486ee68b6c7a2783a21d8e940c4",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "binutils",
+      "order": 3,
+      "path": "oe/oe/recipes/binutils/binutils-2.17.50/texi_fixes.patch",
+      "sha256": "0f455fda0f21d518f8c8a7526dd69a01bfa25e2d9c724b810ef5e8851e61429e",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "binutils",
+      "order": 4,
+      "path": "oe/oe/recipes/binutils/binutils-2.17.50/fix-undef-behavior.patch",
+      "sha256": "8c32089bd010ddcf3f4cc1a472f2f932f77f1a723fafb04f96dbf362e9957c4f",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "binutils",
+      "order": 5,
+      "path": "oe/oe/recipes/binutils/binutils-2.17.50/m4.patch",
+      "sha256": "bcbd76a7b449f008cb6bb2f6e285c2fc6e3034a88dea95d972aff6ab0645a606",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 0,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/arm-memcpy.patch",
+      "sha256": "0a9b7c0cfbe313a444a375fbf0b3f84155edd79b6ae028589139843c8ce916b0",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 1,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/arm-longlong.patch",
+      "sha256": "3a2e117ea0e2b80805c25c239de9b8c16dd5bb2c2e0f62a0cdce993abb3ccaa9",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 2,
+      "path": "oe/oe/recipes/glibc/files/fhs-linux-paths.patch",
+      "sha256": "93022d9f8794c56567318affbda9b5b62365bcb9637c104b2b5f3b7774b1b75f",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 3,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/dl-cache-libcmp.patch",
+      "sha256": "87dcf07a1d533ac61de1388e464761baa3cf845200347cc278a8d551cb4db660",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 4,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/nptl-crosscompile.patch",
+      "sha256": "43ec2fe77345b54da3b38b7bd5ddbe9754de76f91c9bbc82687d907529511d44",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 5,
+      "path": "oe/oe/recipes/glibc/files/glibc-2.5-local-dynamic-resolvconf.patch",
+      "sha256": "2b027cfc68e991216594f81fa5fe1661b13e9bd891f8901d616bd54dc0758941",
+      "strip": 0,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 6,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/glibc-check_pf.patch",
+      "sha256": "e7190d8d08ca7a486644490805413bac2237b8f738db4d14ee0c0df5fa167b9a",
+      "strip": 0,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 7,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/zecke-sane-readelf.patch",
+      "sha256": "771dd71550081a15a7d6b40aa4f385a81aa13fe782e0bc94956b43522f771495",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 8,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/ldd-unbash.patch",
+      "sha256": "9e9f6de925cd9c4fb20d7e38c445b381930ac9b3e581266a2ffa6e9c579a8f1b",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 9,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/generic-bits_select.h",
+      "sha256": "5fcb5a1dd05a5bf54f60ee33663a6bc8f61176c88496f0c65b1f376d70d3c9b8",
+      "strip": 1,
+      "patch": false
+    },
+    {
+      "package": "glibc",
+      "order": 10,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/generic-bits_types.h",
+      "sha256": "ff129f881c57d23424eb145b30b4ef8f800a47fe8903e3c5134412fc32c05cb1",
+      "strip": 1,
+      "patch": false
+    },
+    {
+      "package": "glibc",
+      "order": 11,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/generic-bits_typesizes.h",
+      "sha256": "5e4ca47ca068a358b476280fdb23e28ad9c65503b2efdb340bffff423f6dbff0",
+      "strip": 1,
+      "patch": false
+    },
+    {
+      "package": "glibc",
+      "order": 12,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/generic-bits_time.h",
+      "sha256": "6c20d95c6d075e0f4b43b877d8d4fd5ecbf9d7f51817f9c8d4010e280302c663",
+      "strip": 1,
+      "patch": false
+    },
+    {
+      "package": "glibc",
+      "order": 13,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/etc/ld.so.conf",
+      "sha256": "7577e8182e7c0aebc57ac9f5675ea57491a7c97bb0132fdf8f66c8addd7e877c",
+      "strip": 1,
+      "patch": false
+    },
+    {
+      "package": "glibc",
+      "order": 14,
+      "path": "oe/oe/recipes/glibc/files/generate-supported.mk",
+      "sha256": "1c701b6ca01f71301fa30550a4bc2d89471cc9f966d996af4d1dab5ce4089489",
+      "strip": 1,
+      "patch": false
+    },
+    {
+      "package": "glibc",
+      "order": 15,
+      "path": "oe/oe/recipes/glibc/files/glibc-2.6.1-RTLD_SINGLE_THREAD_P-1.patch",
+      "sha256": "af94b925dfe5ff3e2af43380e75fe8ecfe6221ba02f9fe64c6720b1aa0d9dd1d",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 16,
+      "path": "oe/oe/recipes/glibc/files/glibc-2.6.1-use-short-for-fnstsw.patch",
+      "sha256": "c143cbdba480ab20130bb55b22ed118c228ed276ec39d0bf896252071dd81f49",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 17,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/glibc-use-isystem-include-fixed.patch",
+      "sha256": "99d21025c22a9c329824bea42fec9102de8777c21507a6fb31b558da1f1574cf",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 18,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/glibc-arm-no-asm-page.patch",
+      "sha256": "5161ed3f95f513dc6d8c36837906ce4846aa564cf08271a68034a33fcb778823",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 19,
+      "path": "oe/oe/recipes/glibc/files/march-i686.patch",
+      "sha256": "505d3ed345c946e38542a87d42b9ef759c4ae0f0642229d2892e65d39aafef0f",
+      "strip": 0,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 20,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/fix-compile-fs-noncase.patch",
+      "sha256": "35eae04f83fa76088501fea7d49c5b74bfba7e9be2b1644170f5f877b275d47e",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 21,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/fixed-detection.patch",
+      "sha256": "21d2c75ad0104eba40d3b229a284877a7d43c18a6ded16799930a35f0680ce18",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 22,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/fixed-manual.patch",
+      "sha256": "c9975a7e3ba8d5e2cb21c88c0f1766449b2518053faa1f01daada7956342d317",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 23,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/stack_size.patch",
+      "sha256": "0b9d004f67350433849b8ecda04480eeeb3a88a64d0c4836afec2ec93990552c",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "glibc",
+      "order": 24,
+      "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/selp-priority.patch",
+      "sha256": "b2761776bc149196a901c3bf2828dec7d52bba08d89b99b93d36058de8e0fa86",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "linux",
+      "order": 0,
+      "path": "oe/oe/recipes/linux-libc-headers/files/arm-syscall-define.patch",
+      "sha256": "91e10c4a27c76883eda6ec72ec7e617632d7c5f3ba316cd74cafd5b00d80cfb3",
+      "strip": 1,
+      "patch": true
+    },
+    {
+      "package": "linux",
+      "order": 1,
+      "path": "oe/oe/recipes/linux-libc-headers/files/fixed_makefile.patch",
+      "sha256": "7908c438eb70a22ab83ab2c0762252d10e4418bddf7677945b8754a034ac4a2c",
+      "strip": 1,
+      "patch": true
+    }
+  ]
+}

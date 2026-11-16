@@ -1,0 +1,2 @@
+# Exact Samsung OE snapshot; use prepared custom sources (see contrib/samsung-b-series).
+experimental='yes'
