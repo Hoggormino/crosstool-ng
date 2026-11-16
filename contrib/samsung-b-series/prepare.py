@@ -73,11 +73,37 @@ def main():
     for entry in inputs:
         if entry['patch']:
             run('patch','--batch','--fuzz=2','-p'+str(entry['strip']),'-i',HERE/entry['path'],cwd=args.output/entry['package'])
+    # OE do_configure invokes gnu-configize. Its traced auxiliary destinations
+    # are the binutils top directory and glibc/scripts; use the pinned OE files.
+    for entry in receipt['oe']['gnu_config']['files']:
+        source = HERE/entry['path']
+        if sha(source) != entry['sha256']:
+            raise RuntimeError('GNU config input changed: '+str(source))
+        for destination in entry['destinations']:
+            target = args.output/destination
+            shutil.copyfile(source, target)
+            target.chmod(0o755)
     # Host/compiler compatibility patches are kept separate from the OE changes.
     for package in ('binutils','glibc','linux'):
         for patch in sorted((HERE/'patches'/package).glob('*.patch')):
-            run('patch','--batch','--fuzz=2','-p1','-i',patch,cwd=args.output/package)
+            run('patch','--batch','--fuzz=0','-p1','-i',patch,cwd=args.output/package)
             receipt.setdefault('compatibility_patches', []).append(dict(package=package,path=str(patch.relative_to(HERE)),sha256=sha(patch)))
+    # Hash the effective prepared source contents, including executable bits
+    # and link destinations, independently of archive metadata and timestamps.
+    receipt['prepared_trees'] = {}
+    for package in ('binutils', 'glibc', 'linux'):
+        digest = hashlib.sha256()
+        root = args.output/package
+        for path in sorted(root.rglob('*')):
+            rel = str(path.relative_to(root))
+            if path.is_symlink():
+                value = ['symlink', rel, os.readlink(path)]
+            elif path.is_file():
+                value = ['file', rel, bool(path.stat().st_mode & 0o111), sha(path)]
+            else:
+                continue
+            digest.update((json.dumps(value, separators=(',', ':'))+'\n').encode())
+        receipt['prepared_trees'][package] = digest.hexdigest()
     (args.output/'source-preparation.json').write_text(json.dumps(receipt,indent=2)+'\n')
 
 if __name__ == '__main__':

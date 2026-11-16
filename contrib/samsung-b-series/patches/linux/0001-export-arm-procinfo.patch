@@ -1,0 +1,8 @@
+# Export the header OE copies manually, so headers_check can verify asm/elf.h.
+--- a/include/asm-arm/Kbuild
++++ b/include/asm-arm/Kbuild
+@@ -1 +1,4 @@
+ include include/asm-generic/Kbuild.asm
++
++# Required by asm/elf.h; OE explicitly copies this into the installed headers.
++header-y += procinfo.h

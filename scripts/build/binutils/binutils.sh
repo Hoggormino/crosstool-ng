@@ -162,8 +162,12 @@ do_binutils_backend() {
     if [ "${CT_BINUTILS_DETERMINISTIC_ARCHIVES}" = "y" ]; then
         extra_config+=( --enable-deterministic-archives )
     fi
-    [ -n "${CT_PKGVERSION}" ] && extra_config+=("--with-pkgversion=${CT_PKGVERSION}")
-    [ -n "${CT_TOOLCHAIN_BUGURL}" ] && extra_config+=("--with-bugurl=${CT_TOOLCHAIN_BUGURL}")
+    # The 2007 Samsung snapshot has neither option. Its old argument filter
+    # also truncates quoted unknown option values containing spaces.
+    if [ "${CT_BINUTILS_VERSION}" != "2.17.50" ]; then
+        [ -n "${CT_PKGVERSION}" ] && extra_config+=("--with-pkgversion=${CT_PKGVERSION}")
+        [ -n "${CT_TOOLCHAIN_BUGURL}" ] && extra_config+=("--with-bugurl=${CT_TOOLCHAIN_BUGURL}")
+    fi
     if [ "${CT_MULTILIB}" = "y" ]; then
         extra_config+=("--enable-multilib")
     else

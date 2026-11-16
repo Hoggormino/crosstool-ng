@@ -265,5 +265,169 @@
       "strip": 1,
       "patch": true
     }
-  ]
+  ],
+  "reference_inputs": [
+    {
+      "path": "reference/oe/conf/bitbake.conf",
+      "sha256": "97e6b1c52e297c5fcc294fe8a19028000514dd3a0bdc38737dcced476cbe6ee6"
+    },
+    {
+      "path": "reference/oe/conf/distro/include/glibc.inc",
+      "sha256": "b598adad98082963263c765d4bebb59bd621d5fa5e0407dd1b74427f310fa807"
+    },
+    {
+      "path": "reference/oe/conf/distro/include/sane-toolchain-glibc.inc",
+      "sha256": "9044ada47240694e039d258ffce92205df5c41e2be6837553985a301c6619042"
+    },
+    {
+      "path": "reference/oe/conf/distro/include/toolchain-samsung.inc",
+      "sha256": "cc877bebc2edc5f541b69f62b14eac0c0193052055832ccaf33dabf95b7bffbb"
+    },
+    {
+      "path": "reference/oe/conf/machine/include/tune-arm1136jf-s.inc",
+      "sha256": "23ba64b951c20ca8fdf8d6dc671e59562f4b4a24fe85d21d5e818e324c570cca"
+    },
+    {
+      "path": "reference/oe/conf/machine/ssdtv.conf",
+      "sha256": "2f48b1615ba8f34e4c1a1f6a7c0f8db9aaeb294a2aacfd48cc8a948e6e2e1042"
+    },
+    {
+      "path": "reference/oe/recipes/binutils/binutils-cross.inc",
+      "sha256": "20661922ef059fb9107a2662cd22974f7da945e9fb9bf13d4b4c0d58106f8732"
+    },
+    {
+      "path": "reference/oe/recipes/binutils/binutils-cross_2.17.50.bb",
+      "sha256": "152c0124f5596d8900244acb9a3aa1b458d84e1a3ff1ce09e65e8be20410995f"
+    },
+    {
+      "path": "reference/oe/recipes/binutils/binutils.inc",
+      "sha256": "7a5acd337e2e416a8894aa8f3f1a5bd21d5490c10435d375359de93324ba3660"
+    },
+    {
+      "path": "reference/oe/recipes/binutils/binutils_2.17.50.bb",
+      "sha256": "90f1046b0808e0c8eccae88147899a8847bcded9fad426a95b4db9dc80e51283"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-4.2.0-4.0.9.inc",
+      "sha256": "bac87280ad67d84ea5a5de9bd1b62f03f648ed877152a6a46f1e099065679fea"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-common.inc",
+      "sha256": "a1dc1e9ac92b7f3fae2ff323575a3252f983d0de391ddf537445b11971bba8a9"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-configure-common.inc",
+      "sha256": "f277bb20929195f22ced2712f504c9b50504003a8adf45080861aa24e5041cce"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-configure-cross.inc",
+      "sha256": "5b47586118c4cd83855abfeceae44756d2f69bd67ecaa7c681ab3187c9411fa8"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-configure-target.inc",
+      "sha256": "2812938bdaad82cec466870e93e0f9bbe9f652eea0b7bbf248819a90085940f7"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-cross-initial.inc",
+      "sha256": "09644993de1ce7d2b9e4a2d8bda749c1b186060cbdc91c190588607f7f9eba92"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-cross-initial_4.2.0-4.0.9.bb",
+      "sha256": "7b4fd2da3cfe746408a3804e6dd589ed3f8db311851e19186a20bc712853ed7f"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-cross-intermediate.inc",
+      "sha256": "9c85ba43be5520a1a043fa81e9ae966d494a7b9a73678f9e0b3617395d867edf"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-cross-intermediate_4.2.0-4.0.9.bb",
+      "sha256": "0d39c4621e5e4487ddad8c53f9f12aa0f49105897ee8fb53c34b8b5e8fc33366"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-cross.inc",
+      "sha256": "fe9a38b74c24fd74e35bebeb76d75d7781999ad5c30c6025219605b87c51a345"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-cross4.inc",
+      "sha256": "18eb2b8fcf1d897e1618aa49cffdf3233d71408032ba737576ab446f66131bda"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-cross_4.2.0-4.0.9.bb",
+      "sha256": "b7ecd029544171dd7301cbf8b72c3941c69876fe6bb68fea32f1e884b1e2ebec"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-package-cross.inc",
+      "sha256": "f0badb7eae6f3d2cac3c542444ff7a95c2a611dce90360aa350c9930370ccc65"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc-package-target.inc",
+      "sha256": "590f07c727346137f0cfaead81cea731af91be026054e0cefa7f71ec97343340"
+    },
+    {
+      "path": "reference/oe/recipes/gcc/gcc_4.2.0-4.0.9.bb",
+      "sha256": "54ab279e38636196093319b653d94ae952496197c747d0ee65dd39b8fee944ba"
+    },
+    {
+      "path": "reference/oe/recipes/glibc/glibc-initial.inc",
+      "sha256": "9eaea43b806efafa5b69ce3f61090b54e5337f8127b0ab04680cee030cc6af23"
+    },
+    {
+      "path": "reference/oe/recipes/glibc/glibc-initial_2.5.90-9.0.9.bb",
+      "sha256": "1652ba91ec4dba343a3a5db2116aa9a10f84aacb3efcebd29d2636b828379178"
+    },
+    {
+      "path": "reference/oe/recipes/glibc/glibc-options.inc",
+      "sha256": "457f6a569d7c2ea48affccb2e3e3acbf5bfc3ec3dc513d54dedf688af33892eb"
+    },
+    {
+      "path": "reference/oe/recipes/glibc/glibc-package.inc",
+      "sha256": "35d8c10c55e5996e183b34c7ecacc56525a2f85bff89a3befc96de247f3f4688"
+    },
+    {
+      "path": "reference/oe/recipes/glibc/glibc.inc",
+      "sha256": "1d491076579d131591bd1f3854762255999cb360fd880843ce78ac66c6c1493e"
+    },
+    {
+      "path": "reference/oe/recipes/glibc/glibc_2.5.90-9.0.9.bb",
+      "sha256": "fd395bac285497d95c17f5b079dafcbd0abfd4fecd8807e5d9cf2feb917099f2"
+    },
+    {
+      "path": "reference/oe/recipes/linux-libc-headers/linux-libc-headers.inc",
+      "sha256": "0d1049d1f74cc1847063eb6fb8941430778d51b009917b673a142fccf02a064b"
+    },
+    {
+      "path": "reference/oe/recipes/linux-libc-headers/linux-libc-headers_2.6.18.bb",
+      "sha256": "959a5b4078eea3fd05a6dbbf7aa9241e1a55ad38fc12182b5e76668f188d38a1"
+    },
+    {
+      "path": "reference/oe/recipes/gnu-config/gnu-config_git.bb",
+      "sha256": "d6b39e62212ea9ce0b0125897319c222f58cf7e33ade200851071accbb72767a"
+    },
+    {
+      "path": "reference/oe/recipes/gnu-config/files/gnu-configize.in",
+      "sha256": "b48543f72d717a8c07cf3b995175b3293c24dac9c9efad01b312321c0c809f07"
+    }
+  ],
+  "gnu_config": {
+    "commit": "b576fa87c140b824466ef1638e945e87dc5c0343",
+    "origin": "OE gnu-config_git.bb, copied source bytes from the verified reference native helper package",
+    "files": [
+      {
+        "path": "reference/gnu-config-b576fa87/config.guess",
+        "sha256": "4bdec63f60b9ad86ac82c24df9b9b0537ac5c056a0effeed33923c807ea2983e",
+        "destinations": [
+          "binutils/config.guess",
+          "glibc/scripts/config.guess"
+        ]
+      },
+      {
+        "path": "reference/gnu-config-b576fa87/config.sub",
+        "sha256": "271f04d8318c0b96295862d04a1be40d4def13b2509608a80ce29c0ad852abb1",
+        "destinations": [
+          "binutils/config.sub",
+          "glibc/scripts/config.sub"
+        ]
+      }
+    ]
+  }
 }

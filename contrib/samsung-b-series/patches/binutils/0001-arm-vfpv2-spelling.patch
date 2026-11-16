@@ -1,0 +1,11 @@
+# Accept GCC 8's VFPv2 spelling as an alias for the existing VFPv2 ISA.
+--- a/gas/config/tc-arm.c
++++ b/gas/config/tc-arm.c
+@@ -19876,6 +19876,7 @@
+   {"softvfp",		FPU_ARCH_VFP},
+   {"softvfp+vfp",	FPU_ARCH_VFP_V2},
+   {"vfp",		FPU_ARCH_VFP_V2},
++  {"vfpv2",		FPU_ARCH_VFP_V2},
+   {"vfp9",		FPU_ARCH_VFP_V2},
+   {"vfp3",              FPU_ARCH_VFP_V3},
+   {"vfp10",		FPU_ARCH_VFP_V2},

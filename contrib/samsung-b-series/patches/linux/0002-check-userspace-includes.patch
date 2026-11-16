@@ -1,0 +1,11 @@
+# Check userspace includes, excluding guarded kernel-only syscall declarations.
+--- a/scripts/hdrcheck.sh
++++ b/scripts/hdrcheck.sh
+@@ -1,6 +1,6 @@
+ #!/bin/sh
+ 
+-for FILE in `grep '^[ \t]*#[ \t]*include[ \t]*<' $2 | cut -f2 -d\< | cut -f1 -d\> | egrep ^linux\|^asm` ; do
++for FILE in `unifdef -U__KERNEL__ -U__KERNEL_SYSCALLS__ "$2" | grep '^[ \t]*#[ \t]*include[ \t]*<' | cut -f2 -d\< | cut -f1 -d\> | egrep ^linux\|^asm` ; do
+     if [ ! -r $1/$FILE ]; then
+ 	echo $2 requires $FILE, which does not exist in exported headers
+ 	exit 1

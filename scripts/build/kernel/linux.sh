@@ -60,6 +60,14 @@ do_kernel_headers()
         arm:64) kernel_arch="arm64";;
     esac
 
+    # Linux 2.6.18 predates headers_install's automatic configuration setup.
+    # The Samsung OE recipe uses allnoconfig and retains procinfo.h explicitly.
+    if [ "${CT_LINUX_VERSION}" = "2.6.18" ]; then
+        CT_DoExecLog ALL make -C "${kernel_path}" \
+            O="${CT_BUILD_DIR}/build-kernel-headers" \
+            HOSTCC="${CT_BUILD}-gcc" ARCH=${kernel_arch} allnoconfig
+    fi
+
     CT_DoLog EXTRA "Installing kernel headers"
     CT_DoExecLog ALL                                         \
     make -C "${kernel_path}"                                 \
@@ -71,6 +79,12 @@ do_kernel_headers()
          INSTALL_HDR_PATH="${CT_SYSROOT_DIR}/usr"            \
          ${V_OPT}                                            \
          headers_install
+
+    if [ "${CT_LINUX_VERSION}" = "2.6.18" -a "${kernel_arch}" = "arm" ]; then
+        # asm/elf.h includes this header, omitted from 2.6.18's export list.
+        CT_DoExecLog ALL cp "${kernel_path}/include/asm-arm/procinfo.h" \
+            "${CT_HEADERS_DIR}/asm/"
+    fi
 
     if [ "${CT_KERNEL_LINUX_INSTALL_CHECK}" = "y" ]; then
         CT_DoLog EXTRA "Checking installed headers"
@@ -84,6 +98,11 @@ do_kernel_headers()
              INSTALL_HDR_PATH="${CT_SYSROOT_DIR}/usr"            \
              ${V_OPT}                                            \
              headers_check
+    fi
+
+    if [ "${CT_LINUX_VERSION}" = "2.6.18" ]; then
+        # Match OE's libc/header conflict cleanup, without modifying the source.
+        CT_DoExecLog ALL rm -rf "${CT_HEADERS_DIR}/scsi"
     fi
 
     # Cleanup
