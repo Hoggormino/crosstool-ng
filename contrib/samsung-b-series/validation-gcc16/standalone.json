@@ -1,0 +1,26 @@
+{
+  "exit": 0,
+  "scope": "Owned probes under ARM1136 QEMU; no kernel emulation",
+  "tests": [
+    {
+      "test": "c-probe",
+      "sha256": "5613c16cfc991d6ed0e6baee6af3819ca256a908acf3b1adcb6cb064c6898b21",
+      "stdout": "C allocation/files/softfp/libm passed; pointer=4 long=4 time_t=4 off_t=4\n"
+    },
+    {
+      "test": "cxx17-probe",
+      "sha256": "8e1f3c3a02946aa77cd5ce624b59cf7abf5d193e06f3ef6ce63a362d2e7b099e",
+      "stdout": "C++17/STL/EH/RTTI/pthread/static/TLS-dtor/atomic32 passed; lock_free32=1 string_size=24 mutex_size=24\n"
+    },
+    {
+      "test": "atomic64-probe",
+      "sha256": "72d9c7d446f7fc5b211f2561037d67b9c5a5d26639f5d5c67ea7462595fc2898",
+      "stdout": "atomic64 operations passed in QEMU; is_lock_free=0\n"
+    },
+    {
+      "test": "cxx23-probe",
+      "sha256": "83cb5f0e59de9ab3b6fa35a1d1b679509ea02622fc7462e452ac1e42b6cab088",
+      "stdout": "C++20/23 concepts/span/ranges/expected/atomic-wait/timed-semaphore passed\n"
+    }
+  ]
+}

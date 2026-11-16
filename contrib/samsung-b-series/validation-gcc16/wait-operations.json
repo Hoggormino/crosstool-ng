@@ -1,0 +1,28 @@
+{
+  "scope": "Observed C++20/23 atomic/semaphore tests only; not whole-kernel emulation.",
+  "runs": [
+    {
+      "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/recent-rebuilt.json",
+      "trace": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/cxx23-probe.recent-rebuilt.bindings",
+      "trace_sha256": "06a36e1da10904b6929ed388d6ef2ce2ccb7a8bda9833ff8710cbbf6d03a7ff5",
+      "futex_operations": {
+        "FUTEX_WAKE": 4,
+        "FUTEX_WAIT": 5
+      },
+      "relative_timed_waits": 2,
+      "errors": []
+    },
+    {
+      "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/recent-reference.json",
+      "trace": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/cxx23-probe.recent-reference.bindings",
+      "trace_sha256": "e48766441313eb5d20222210189fd4b95b2cb33b41bef9b119bb69b2a4fe83c4",
+      "futex_operations": {
+        "FUTEX_WAKE": 4,
+        "FUTEX_WAIT": 4
+      },
+      "relative_timed_waits": 2,
+      "errors": []
+    }
+  ],
+  "errors": []
+}

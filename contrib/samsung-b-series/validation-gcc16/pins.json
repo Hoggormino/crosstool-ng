@@ -1,0 +1,13 @@
+{
+  "framework_base": {
+    "branch": "master",
+    "commit": "a4895d7fc49d5b423abc5f166895c80175019570"
+  },
+  "functional_commit": "ee43ab1e1cf3ecf48979ebc26b7b201506bd3c93",
+  "compiler": "16.2.0",
+  "config_sha256": "8056d46ec16a8a0c0677418bba02fab4f72b903d237bc50994c8bba344428a55",
+  "source_manifest_sha256": "4e544645faf96536082e44418ec5c9f989b174914ed4630869d98e1ae8b8e914",
+  "image_id": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+  "target_build_has_external_oe_sysroot_mount": false,
+  "tv_access": false
+}

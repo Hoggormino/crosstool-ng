@@ -39,8 +39,10 @@ timeout/release checks. Use the supplied container with networking disabled.
 Guest syscall traces remain in the results. These tests use the host kernel;
 QEMU's uname override does not emulate the TV kernel.
 
-The early rebuilt-libc run passes the C/C++17/atomic probes and the additional
-C++20/23 checks. The guest trace uses shared WAIT/WAKE for the tested waits.
+The clean four-job build completed in 32 minutes 54 seconds without restarts or
+an externally supplied target sysroot. C/C++17/atomic probes, additional C++20/23
+checks and the RmlUi Core consumer pass with both rebuilt and OE reference libc.
+The guest trace uses shared WAIT/WAKE for the tested waits.
 32-bit atomics are lock-free; 64-bit std::atomic uses private libatomic mutexes,
 with 64-bit instruction primitives and IFUNC variants disabled. Timed futures
 retain GCC's existing ENOSYS-to-relative-wait fallback; native kernel behavior
@@ -50,6 +52,21 @@ The standard-library module build reports math exports missing from the old
 target cmath and uses GCC's existing empty-module fallback. `import std` and
 `import std.compat` are unsupported here. This variant tests header-based C++;
 it does not claim all C++23/26 library facilities.
+
+Header-based C++17 math has gaps too: std::round, std::copysign, std::trunc,
+std::acoshl and std::sinl fail the owned availability checks with this libc
+configuration. sqrt, the long-double sin overload and isfinite compile.
+Complete C++17 library conformance is not claimed; the tested RmlUi Core
+consumer does not require the unavailable names. The Samsung report retains
+the source snippets and compiler diagnostics.
+The preserved GCC 8.3 checkpoint produces the same results for those checks.
+
+`validation-gcc16/` contains the clean build report, pinned source preparation,
+13-artifact ELF closure summary, owned execution receipts, math availability
+checks and assembler/demangler regressions. Full logs remain at the workspace
+paths in the log index. Private runtime imports require GLIBC_2.4; actual ELF
+output is EABI5 (`0x05000002`), with no flags rewritten. Native SELP admission
+remains separate from QEMU execution.
 
 The Samsung project's `docs/sdk-gcc16.md` records the build, RmlUi consumer,
 ELF/provider closure audits and remaining admission limits. Keep this as a

@@ -1,0 +1,657 @@
+{
+  "scope": "Exercised external private-runtime bindings; full logs retain all bindings.",
+  "variants": [
+    {
+      "libc_variant": "rebuilt",
+      "runs": [
+        {
+          "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/qemu-rebuilt.json",
+          "external_private_bindings": {
+            "/probes/private/libatomic.so.1": {
+              "__cxa_finalize@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "pthread_mutex_lock@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "pthread_mutex_unlock@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ]
+            },
+            "/probes/private/libgcc_s.so.1": {
+              "__cxa_call_unexpected": [
+                "/probes/private/libstdc++.so.6"
+              ],
+              "__cxa_finalize@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__gnu_Unwind_Find_exidx@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ]
+            },
+            "/probes/private/libstdc++.so.6": {
+              "_Unwind_Complete@GCC_3.5": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_DeleteException@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_GetLanguageSpecificData@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_GetRegionStart@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_RaiseException@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_Resume@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_VRS_Get@GCC_3.5": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_VRS_Set@GCC_3.5": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_ZNSt13runtime_errorD1Ev@GLIBCXX_3.4": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZNSt6thread4joinEv@GLIBCXX_3.4.11": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZSt9terminatev@GLIBCXX_3.4": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZTINSt6thread6_StateE@GLIBCXX_3.4.22": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZTISt13runtime_error@GLIBCXX_3.4": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZTISt9exception@GLIBCXX_3.4": [
+                "/probes/rmlui-probe"
+              ],
+              "_ZTVN10__cxxabiv117__class_type_infoE@CXXABI_1.3": [
+                "/probes/cxx17-probe",
+                "/probes/rmlui-probe"
+              ],
+              "_ZTVN10__cxxabiv120__si_class_type_infoE@CXXABI_1.3": [
+                "/probes/cxx17-probe",
+                "/probes/rmlui-probe"
+              ],
+              "_ZTVN10__cxxabiv121__vmi_class_type_infoE@CXXABI_1.3": [
+                "/probes/rmlui-probe"
+              ],
+              "_ZdaPv@GLIBCXX_3.4": [
+                "/probes/rmlui-probe"
+              ],
+              "_Znaj@GLIBCXX_3.4": [
+                "/probes/rmlui-probe"
+              ],
+              "__cxa_atexit@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__cxa_finalize@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__gnu_unwind_frame@GCC_3.5": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "__newlocale@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "__tls_get_addr@GLIBC_2.4": [
+                "/lib/ld-linux.so.3"
+              ],
+              "__uselocale@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__wctype_l@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "btowc@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "fflush@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "floor@GLIBC_2.4": [
+                "/target/lib/libm.so.6"
+              ],
+              "free@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "getenv@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "malloc@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "memchr@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "memcmp@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "memcpy@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "memset@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "pthread_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_getspecific": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_join": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_key_delete": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_once": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_setspecific": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "stderr@GLIBC_2.4": [
+                "/probes/rmlui-probe",
+                "/target/lib/libc.so.6"
+              ],
+              "stdin@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "stdout@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "strcmp@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "strlen@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "syscall@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "wctob@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ]
+            }
+          },
+          "other_binding_counts": {
+            "/target/lib/libc.so.6": 373,
+            "/target/lib/libm.so.6": 24,
+            "/lib/ld-linux.so.3": 40,
+            "/probes/c-probe": 11,
+            "/target/lib/libpthread.so.0": 45,
+            "/probes/private/libgcc_s.so.1": 12,
+            "/probes/private/libstdc++.so.6": 5196,
+            "/probes/cxx17-probe": 33,
+            "/probes/atomic64-probe": 6,
+            "/probes/kernel-helper-observation": 2,
+            "/probes/rmlui-probe": 32
+          }
+        },
+        {
+          "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/recent-rebuilt.json",
+          "external_private_bindings": {
+            "/probes/private/libgcc_s.so.1": {
+              "__cxa_call_unexpected": [
+                "/probes/private/libstdc++.so.6"
+              ],
+              "__cxa_finalize": [
+                "/target/lib/libc.so.6"
+              ],
+              "__gnu_Unwind_Find_exidx": [
+                "/target/lib/libc.so.6"
+              ],
+              "__pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ]
+            },
+            "/probes/private/libstdc++.so.6": {
+              "_ZNSt6thread4joinEv": [
+                "/probes/cxx23-probe"
+              ],
+              "_ZSt9terminatev": [
+                "/probes/cxx23-probe"
+              ],
+              "_ZTINSt6thread6_StateE": [
+                "/probes/cxx23-probe"
+              ],
+              "_ZTVN10__cxxabiv120__si_class_type_infoE": [
+                "/probes/cxx23-probe"
+              ],
+              "__aeabi_ldivmod": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "__cxa_atexit": [
+                "/target/lib/libc.so.6"
+              ],
+              "__cxa_finalize": [
+                "/target/lib/libc.so.6"
+              ],
+              "__errno_location": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "__newlocale": [
+                "/target/lib/libc.so.6"
+              ],
+              "__pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "__tls_get_addr": [
+                "/lib/ld-linux.so.3"
+              ],
+              "__uselocale": [
+                "/target/lib/libc.so.6"
+              ],
+              "__wctype_l": [
+                "/target/lib/libc.so.6"
+              ],
+              "btowc": [
+                "/target/lib/libc.so.6"
+              ],
+              "fflush": [
+                "/target/lib/libc.so.6"
+              ],
+              "free": [
+                "/target/lib/libc.so.6"
+              ],
+              "getenv": [
+                "/target/lib/libc.so.6"
+              ],
+              "malloc": [
+                "/target/lib/libc.so.6"
+              ],
+              "memcmp": [
+                "/target/lib/libc.so.6"
+              ],
+              "memcpy": [
+                "/target/lib/libc.so.6"
+              ],
+              "memset": [
+                "/target/lib/libc.so.6"
+              ],
+              "pthread_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_join": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_once": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "sched_yield": [
+                "/target/lib/libc.so.6"
+              ],
+              "stderr": [
+                "/target/lib/libc.so.6"
+              ],
+              "stdin": [
+                "/target/lib/libc.so.6"
+              ],
+              "stdout": [
+                "/target/lib/libc.so.6"
+              ],
+              "syscall": [
+                "/target/lib/libc.so.6"
+              ],
+              "wctob": [
+                "/target/lib/libc.so.6"
+              ]
+            }
+          },
+          "other_binding_counts": {
+            "/target/lib/libc.so.6": 75,
+            "/target/lib/libpthread.so.0": 26,
+            "/probes/private/libgcc_s.so.1": 4,
+            "/target/lib/libm.so.6": 6,
+            "/probes/private/libstdc++.so.6": 1722,
+            "/probes/cxx23-probe": 14,
+            "/lib/ld-linux.so.3": 8
+          }
+        }
+      ]
+    },
+    {
+      "libc_variant": "reference",
+      "runs": [
+        {
+          "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/qemu-reference.json",
+          "external_private_bindings": {
+            "/probes/private/libatomic.so.1": {
+              "__cxa_finalize@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "pthread_mutex_lock@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "pthread_mutex_unlock@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ]
+            },
+            "/probes/private/libgcc_s.so.1": {
+              "__cxa_call_unexpected": [
+                "/probes/private/libstdc++.so.6"
+              ],
+              "__cxa_finalize@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__gnu_Unwind_Find_exidx@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ]
+            },
+            "/probes/private/libstdc++.so.6": {
+              "_Unwind_Complete@GCC_3.5": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_DeleteException@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_GetLanguageSpecificData@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_GetRegionStart@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_RaiseException@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_Resume@GCC_3.0": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_VRS_Get@GCC_3.5": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_Unwind_VRS_Set@GCC_3.5": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "_ZNSt13runtime_errorD1Ev@GLIBCXX_3.4": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZNSt6thread4joinEv@GLIBCXX_3.4.11": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZSt9terminatev@GLIBCXX_3.4": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZTINSt6thread6_StateE@GLIBCXX_3.4.22": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZTISt13runtime_error@GLIBCXX_3.4": [
+                "/probes/cxx17-probe"
+              ],
+              "_ZTISt9exception@GLIBCXX_3.4": [
+                "/probes/rmlui-probe"
+              ],
+              "_ZTVN10__cxxabiv117__class_type_infoE@CXXABI_1.3": [
+                "/probes/cxx17-probe",
+                "/probes/rmlui-probe"
+              ],
+              "_ZTVN10__cxxabiv120__si_class_type_infoE@CXXABI_1.3": [
+                "/probes/cxx17-probe",
+                "/probes/rmlui-probe"
+              ],
+              "_ZTVN10__cxxabiv121__vmi_class_type_infoE@CXXABI_1.3": [
+                "/probes/rmlui-probe"
+              ],
+              "_ZdaPv@GLIBCXX_3.4": [
+                "/probes/rmlui-probe"
+              ],
+              "_Znaj@GLIBCXX_3.4": [
+                "/probes/rmlui-probe"
+              ],
+              "__cxa_atexit@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__cxa_finalize@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__gnu_unwind_frame@GCC_3.5": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "__newlocale@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "__tls_get_addr@GLIBC_2.4": [
+                "/lib/ld-linux.so.3"
+              ],
+              "__uselocale@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "__wctype_l@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "btowc@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "fflush@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "floor@GLIBC_2.4": [
+                "/target/lib/libm.so.6"
+              ],
+              "free@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "getenv@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "malloc@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "memchr@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "memcmp@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "memcpy@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "memset@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "pthread_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_getspecific": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_join": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_key_delete": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_once": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_setspecific": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "stderr@GLIBC_2.4": [
+                "/probes/rmlui-probe",
+                "/target/lib/libc.so.6"
+              ],
+              "stdin@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "stdout@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "strcmp@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "strlen@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "syscall@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ],
+              "wctob@GLIBC_2.4": [
+                "/target/lib/libc.so.6"
+              ]
+            }
+          },
+          "other_binding_counts": {
+            "/target/lib/libc.so.6": 377,
+            "/target/lib/libm.so.6": 20,
+            "/lib/ld-linux.so.3": 45,
+            "/probes/c-probe": 11,
+            "/target/lib/libpthread.so.0": 42,
+            "/probes/private/libgcc_s.so.1": 12,
+            "/probes/private/libstdc++.so.6": 5196,
+            "/probes/cxx17-probe": 33,
+            "/probes/atomic64-probe": 6,
+            "/probes/kernel-helper-observation": 2,
+            "/probes/rmlui-probe": 32
+          }
+        },
+        {
+          "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/recent-reference.json",
+          "external_private_bindings": {
+            "/probes/private/libgcc_s.so.1": {
+              "__cxa_call_unexpected": [
+                "/probes/private/libstdc++.so.6"
+              ],
+              "__cxa_finalize": [
+                "/target/lib/libc.so.6"
+              ],
+              "__gnu_Unwind_Find_exidx": [
+                "/target/lib/libc.so.6"
+              ],
+              "__pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ]
+            },
+            "/probes/private/libstdc++.so.6": {
+              "_ZNSt6thread4joinEv": [
+                "/probes/cxx23-probe"
+              ],
+              "_ZSt9terminatev": [
+                "/probes/cxx23-probe"
+              ],
+              "_ZTINSt6thread6_StateE": [
+                "/probes/cxx23-probe"
+              ],
+              "_ZTVN10__cxxabiv120__si_class_type_infoE": [
+                "/probes/cxx23-probe"
+              ],
+              "__aeabi_ldivmod": [
+                "/probes/private/libgcc_s.so.1"
+              ],
+              "__cxa_atexit": [
+                "/target/lib/libc.so.6"
+              ],
+              "__cxa_finalize": [
+                "/target/lib/libc.so.6"
+              ],
+              "__errno_location": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "__newlocale": [
+                "/target/lib/libc.so.6"
+              ],
+              "__pthread_key_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "__tls_get_addr": [
+                "/lib/ld-linux.so.3"
+              ],
+              "__uselocale": [
+                "/target/lib/libc.so.6"
+              ],
+              "__wctype_l": [
+                "/target/lib/libc.so.6"
+              ],
+              "btowc": [
+                "/target/lib/libc.so.6"
+              ],
+              "fflush": [
+                "/target/lib/libc.so.6"
+              ],
+              "free": [
+                "/target/lib/libc.so.6"
+              ],
+              "getenv": [
+                "/target/lib/libc.so.6"
+              ],
+              "malloc": [
+                "/target/lib/libc.so.6"
+              ],
+              "memcmp": [
+                "/target/lib/libc.so.6"
+              ],
+              "memcpy": [
+                "/target/lib/libc.so.6"
+              ],
+              "memset": [
+                "/target/lib/libc.so.6"
+              ],
+              "pthread_create": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_join": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "pthread_once": [
+                "/target/lib/libpthread.so.0"
+              ],
+              "sched_yield": [
+                "/target/lib/libc.so.6"
+              ],
+              "stderr": [
+                "/target/lib/libc.so.6"
+              ],
+              "stdin": [
+                "/target/lib/libc.so.6"
+              ],
+              "stdout": [
+                "/target/lib/libc.so.6"
+              ],
+              "syscall": [
+                "/target/lib/libc.so.6"
+              ],
+              "wctob": [
+                "/target/lib/libc.so.6"
+              ]
+            }
+          },
+          "other_binding_counts": {
+            "/target/lib/libc.so.6": 76,
+            "/target/lib/libpthread.so.0": 25,
+            "/probes/private/libgcc_s.so.1": 4,
+            "/target/lib/libm.so.6": 5,
+            "/probes/private/libstdc++.so.6": 1722,
+            "/probes/cxx23-probe": 14,
+            "/lib/ld-linux.so.3": 9
+          }
+        }
+      ]
+    }
+  ]
+}

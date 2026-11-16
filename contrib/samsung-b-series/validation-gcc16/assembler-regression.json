@@ -1,0 +1,155 @@
+{
+  "scope": "assembler source/byte checks; no native or QEMU execution",
+  "tests": [
+    {
+      "name": "vfp-modern",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vfp-modern.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vfp-modern.o"
+      ],
+      "exit": 0,
+      "expected_accept": true,
+      "diagnostic": "",
+      "passed": true,
+      "text_hex": "10faf1ee100af1ee100ae1ee1eff2fe1",
+      "expected_text_hex": "10faf1ee100af1ee100ae1ee1eff2fe1",
+      "symbols": "\nSymbol table '.symtab' contains 6 entries:\n   Num:    Value  Size Type    Bind   Vis      Ndx Name\n     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND \n     1: 00000000     0 SECTION LOCAL  DEFAULT    1 .text\n     2: 00000000     0 SECTION LOCAL  DEFAULT    2 .data\n     3: 00000000     0 SECTION LOCAL  DEFAULT    3 .bss\n     4: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $a\n     5: 00000000     0 SECTION LOCAL  DEFAULT    4 .ARM.attributes\n",
+      "undefined_symbols": ""
+    },
+    {
+      "name": "vfp-legacy",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vfp-legacy.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vfp-legacy.o"
+      ],
+      "exit": 0,
+      "expected_accept": true,
+      "diagnostic": "",
+      "passed": true,
+      "text_hex": "10faf1ee100af1ee100ae1ee1eff2fe1",
+      "expected_text_hex": "10faf1ee100af1ee100ae1ee1eff2fe1",
+      "symbols": "\nSymbol table '.symtab' contains 6 entries:\n   Num:    Value  Size Type    Bind   Vis      Ndx Name\n     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND \n     1: 00000000     0 SECTION LOCAL  DEFAULT    1 .text\n     2: 00000000     0 SECTION LOCAL  DEFAULT    2 .data\n     3: 00000000     0 SECTION LOCAL  DEFAULT    3 .bss\n     4: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $a\n     5: 00000000     0 SECTION LOCAL  DEFAULT    4 .ARM.attributes\n",
+      "undefined_symbols": ""
+    },
+    {
+      "name": "fp-register-copy",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/fp-register-copy.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/fp-register-copy.o"
+      ],
+      "exit": 0,
+      "expected_accept": true,
+      "diagnostic": "",
+      "passed": true,
+      "text_hex": "467bb0ee667af0ee",
+      "expected_text_hex": "467bb0ee667af0ee",
+      "symbols": "\nSymbol table '.symtab' contains 6 entries:\n   Num:    Value  Size Type    Bind   Vis      Ndx Name\n     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND \n     1: 00000000     0 SECTION LOCAL  DEFAULT    1 .text\n     2: 00000000     0 SECTION LOCAL  DEFAULT    2 .data\n     3: 00000000     0 SECTION LOCAL  DEFAULT    3 .bss\n     4: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $a\n     5: 00000000     0 SECTION LOCAL  DEFAULT    4 .ARM.attributes\n",
+      "undefined_symbols": ""
+    },
+    {
+      "name": "vfp-ual-semantics",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vfp-ual-semantics.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vfp-ual-semantics.o"
+      ],
+      "exit": 0,
+      "expected_accept": true,
+      "diagnostic": "",
+      "passed": true,
+      "text_hex": "020b01ee420b01ee420b11ee020b11ee410bb4eec10bb4ee10faf1eec10bb1ee410bb1eec10bb0eec00bb8eec00bbdee020b81ee",
+      "expected_text_hex": "020b01ee420b01ee420b11ee020b11ee410bb4eec10bb4ee10faf1eec10bb1ee410bb1eec10bb0eec00bb8eec00bbdee020b81ee",
+      "symbols": "\nSymbol table '.symtab' contains 6 entries:\n   Num:    Value  Size Type    Bind   Vis      Ndx Name\n     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND \n     1: 00000000     0 SECTION LOCAL  DEFAULT    1 .text\n     2: 00000000     0 SECTION LOCAL  DEFAULT    2 .data\n     3: 00000000     0 SECTION LOCAL  DEFAULT    3 .bss\n     4: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $a\n     5: 00000000     0 SECTION LOCAL  DEFAULT    4 .ARM.attributes\n",
+      "undefined_symbols": ""
+    },
+    {
+      "name": "inst-mapping",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-mapping.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-mapping.o"
+      ],
+      "exit": 0,
+      "expected_accept": true,
+      "diagnostic": "",
+      "passed": true,
+      "text_hex": "00000000f000f0e71eff2fe1ffde7047",
+      "expected_text_hex": "00000000f000f0e71eff2fe1ffde7047",
+      "symbols": "\nSymbol table '.symtab' contains 9 entries:\n   Num:    Value  Size Type    Bind   Vis      Ndx Name\n     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND \n     1: 00000000     0 SECTION LOCAL  DEFAULT    1 .text\n     2: 00000000     0 SECTION LOCAL  DEFAULT    2 .data\n     3: 00000000     0 SECTION LOCAL  DEFAULT    3 .bss\n     4: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $a\n     5: 00000000     0 NOTYPE  LOCAL  DEFAULT    1 $d\n     6: 00000004     0 NOTYPE  LOCAL  DEFAULT    1 $a\n     7: 0000000c     0 NOTYPE  LOCAL  DEFAULT    1 $t\n     8: 00000000     0 SECTION LOCAL  DEFAULT    4 .ARM.attributes\n",
+      "undefined_symbols": ""
+    },
+    {
+      "name": "inst-nonconstant",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-nonconstant.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-nonconstant.o"
+      ],
+      "exit": 1,
+      "expected_accept": false,
+      "diagnostic": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-nonconstant.s: Assembler messages:\n/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-nonconstant.s:7: Error: constant expression required\n",
+      "passed": true
+    },
+    {
+      "name": "inst-arm-width",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-arm-width.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-arm-width.o"
+      ],
+      "exit": 1,
+      "expected_accept": false,
+      "diagnostic": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-arm-width.s: Assembler messages:\n/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/inst-arm-width.s:6: Error: width suffixes are invalid in ARM mode\n",
+      "passed": true
+    },
+    {
+      "name": "vmrs-invalid-control",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vmrs-invalid-control.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vmrs-invalid-control.o"
+      ],
+      "exit": 1,
+      "expected_accept": false,
+      "diagnostic": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vmrs-invalid-control.s: Assembler messages:\n/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/vmrs-invalid-control.s:6: Error: VFP system register expected -- `vmrs r0,cpsr'\n",
+      "passed": true
+    },
+    {
+      "name": "neon-outside-profile",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/neon-outside-profile.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/neon-outside-profile.o"
+      ],
+      "exit": 1,
+      "expected_accept": false,
+      "diagnostic": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/neon-outside-profile.s: Assembler messages:\n/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/neon-outside-profile.s:6: Error: selected FPU does not support instruction -- `vadd.i32 q0,q0,q1'\n",
+      "passed": true
+    },
+    {
+      "name": "thumb2-outside-profile",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-as",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/thumb2-outside-profile.s",
+        "-o",
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/thumb2-outside-profile.o"
+      ],
+      "exit": 1,
+      "expected_accept": false,
+      "diagnostic": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/thumb2-outside-profile.s: Assembler messages:\n/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/assembler-results/thumb2-outside-profile.s:7: Error: selected processor does not support `movw r0,#1'\n",
+      "passed": true
+    }
+  ]
+}

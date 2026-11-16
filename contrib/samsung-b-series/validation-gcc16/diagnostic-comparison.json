@@ -1,0 +1,30 @@
+{
+  "scope": "Exported/undefined dynamic symbol identity and target C++ configuration macros; binary byte identity across build paths is not claimed.",
+  "runtimes": [
+    {
+      "runtime": "libstdc++.so.6",
+      "dynamic_symbols_match": true,
+      "diagnostic_count": 6356,
+      "clean_count": 6356,
+      "added": [],
+      "removed": []
+    },
+    {
+      "runtime": "libgcc_s.so.1",
+      "dynamic_symbols_match": true,
+      "diagnostic_count": 1209,
+      "clean_count": 1209,
+      "added": [],
+      "removed": []
+    },
+    {
+      "runtime": "libatomic.so.1",
+      "dynamic_symbols_match": true,
+      "diagnostic_count": 92,
+      "clean_count": 92,
+      "added": [],
+      "removed": []
+    }
+  ],
+  "cxx_predefines_match": true
+}

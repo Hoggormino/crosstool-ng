@@ -1,0 +1,67 @@
+{
+  "reference_headers": "Linux 2.6.18",
+  "configured_glibc_minimum_kernel": "2.6.16",
+  "actual_kernel": "Linux 2.6.18_SELP; no execution performed",
+  "target_libstdcxx_features": {
+    "_GLIBCXX_HAVE_ARC4RANDOM": false,
+    "_GLIBCXX_HAVE_GETENTROPY": false,
+    "_GLIBCXX_HAVE_TIMESPEC_GET": false,
+    "_GLIBCXX_USE_PTHREAD_COND_CLOCKWAIT": false,
+    "_GLIBCXX_HAVE_LINUX_FUTEX": true,
+    "_GLIBCXX_USE_CLOCK_GETTIME_SYSCALL": true,
+    "_GLIBCXX_USE_CLOCK_MONOTONIC": true,
+    "_GLIBCXX_USE_NANOSLEEP": true
+  },
+  "direct_syscalls": [
+    {
+      "name": "futex",
+      "arm_eabi_number": 240,
+      "paths": [
+        "libsupc++/guard.cc",
+        "src/c++11/futex.cc",
+        "src/c++20/atomic.cc"
+      ],
+      "notes": "Guard uses shared WAIT/WAKE. Patched C++20 backend selects header-supported operations and relative waits. Timed futures try bitset operations and fall back on ENOSYS."
+    },
+    {
+      "name": "clock_gettime",
+      "arm_eabi_number": 263,
+      "paths": [
+        "src/c++11/chrono.cc",
+        "src/c++11/futex.cc"
+      ],
+      "notes": "CLOCK_REALTIME and CLOCK_MONOTONIC are present in reference 2.6.18. Source audit does not establish SELP behavior."
+    }
+  ],
+  "reference_futex_fallback_evidence": {
+    "file": "linux/kernel/futex.c",
+    "function": "do_futex",
+    "unsupported_operations": "default returns -ENOSYS; matches the timed-future legacy fallback"
+  },
+  "atomic32": "ARMv6 aligned LDREX/STREX; kernel memory-barrier helper where selected. Owned operations pass on ARM1136 QEMU.",
+  "atomic64": "std::atomic<uint64_t> is not lock-free; private libatomic uses mutex fallback. HAVE_IFUNC=0, HAVE_ATOMIC_CAS_8=0, HAVE_ATOMIC_LDST_8=0. Legacy __sync 64-bit helpers require kuser v5 and are unsupported.",
+  "kuser": {
+    "reference_version": 3,
+    "qemu_observed_version": 5,
+    "native_version": "Not observed; no TV operations"
+  },
+  "time_types": "32-bit time_t/off_t; no time64 claim",
+  "native_admission_pending": [
+    "SELP syscall and futex fallback behavior",
+    "kuser helper availability and atomic behavior",
+    "unaligned-access policy",
+    "old loader/private runtime closure",
+    "resource limits and worker lifecycle"
+  ],
+  "limitations": [
+    "QEMU uses host kernel; uname override is not kernel emulation.",
+    "Optional filesystem, module imports and complete C++23/26 conformance are not certified."
+  ],
+  "reference_elf_admission": {
+    "kernel_file": "linux/include/asm-arm/elf.h",
+    "kernel_predicate": "EM_ARM, valid entry instruction mode/alignment, and acceptable 26-bit flag; no EABI4-only comparison in elf_check_arch/ELF_PROC_OK.",
+    "loader_file": "glibc/ports/sysdeps/arm/dl-machine.h",
+    "loader_predicate": "elf_machine_matches_host checks EM_ARM.",
+    "limitation": "This source review is not proof of the actual SELP kernel configuration or native admission."
+  }
+}

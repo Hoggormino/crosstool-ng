@@ -1,0 +1,117 @@
+{
+  "scope": "Compile-only availability checks; no target execution or conformance claim.",
+  "tests": [
+    {
+      "expression": "std::sqrt(1.5)",
+      "source": "#include <cmath>\nint main() { volatile auto value = std::sqrt(1.5); (void)value; }\n",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-g++",
+        "-std=c++17",
+        "-x",
+        "c++",
+        "-fsyntax-only",
+        "-"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "expression": "std::sin(1.5L)",
+      "source": "#include <cmath>\nint main() { volatile auto value = std::sin(1.5L); (void)value; }\n",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-g++",
+        "-std=c++17",
+        "-x",
+        "c++",
+        "-fsyntax-only",
+        "-"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "expression": "std::round(1.5)",
+      "source": "#include <cmath>\nint main() { volatile auto value = std::round(1.5); (void)value; }\n",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-g++",
+        "-std=c++17",
+        "-x",
+        "c++",
+        "-fsyntax-only",
+        "-"
+      ],
+      "exit": 1,
+      "stderr": "<stdin>: In function 'int main()':\n<stdin>:2:41: error: 'round' is not a member of 'std'; did you mean 'round'?\nIn file included from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/lib/gcc/arm-samsung-linux-gnueabi/16.2.0/include-fixed/features.h:332,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/arm-samsung-linux-gnueabi/bits/os_defines.h:39,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/arm-samsung-linux-gnueabi/bits/c++config.h:733,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/bits/requires_hosted.h:31,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/cmath:46,\n                 from <stdin>:1:\n/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/sysroot/usr/include/bits/mathcalls.h:310:1: note: 'round' declared here\n  310 | __MATHCALLX (round,, (_Mdouble_ __x), (__const__));\n      | ^~~~~~~~~~~\n"
+    },
+    {
+      "expression": "std::copysign(1.0,-1.0)",
+      "source": "#include <cmath>\nint main() { volatile auto value = std::copysign(1.0,-1.0); (void)value; }\n",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-g++",
+        "-std=c++17",
+        "-x",
+        "c++",
+        "-fsyntax-only",
+        "-"
+      ],
+      "exit": 1,
+      "stderr": "<stdin>: In function 'int main()':\n<stdin>:2:41: error: 'copysign' is not a member of 'std'; did you mean 'copysign'?\nIn file included from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/lib/gcc/arm-samsung-linux-gnueabi/16.2.0/include-fixed/features.h:332,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/arm-samsung-linux-gnueabi/bits/os_defines.h:39,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/arm-samsung-linux-gnueabi/bits/c++config.h:733,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/bits/requires_hosted.h:31,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/cmath:46,\n                 from <stdin>:1:\n/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/sysroot/usr/include/bits/mathcalls.h:218:1: note: 'copysign' declared here\n  218 | __MATHCALLX (copysign,, (_Mdouble_ __x, _Mdouble_ __y), (__const__));\n      | ^~~~~~~~~~~\n"
+    },
+    {
+      "expression": "std::isfinite(1.5)",
+      "source": "#include <cmath>\nint main() { volatile auto value = std::isfinite(1.5); (void)value; }\n",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-g++",
+        "-std=c++17",
+        "-x",
+        "c++",
+        "-fsyntax-only",
+        "-"
+      ],
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "expression": "std::trunc(1.5)",
+      "source": "#include <cmath>\nint main() { volatile auto value = std::trunc(1.5); (void)value; }\n",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-g++",
+        "-std=c++17",
+        "-x",
+        "c++",
+        "-fsyntax-only",
+        "-"
+      ],
+      "exit": 1,
+      "stderr": "<stdin>: In function 'int main()':\n<stdin>:2:41: error: 'trunc' is not a member of 'std'; did you mean 'trunc'?\nIn file included from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/lib/gcc/arm-samsung-linux-gnueabi/16.2.0/include-fixed/features.h:332,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/arm-samsung-linux-gnueabi/bits/os_defines.h:39,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/arm-samsung-linux-gnueabi/bits/c++config.h:733,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/bits/requires_hosted.h:31,\n                 from /mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/include/c++/16.2.0/cmath:46,\n                 from <stdin>:1:\n/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/sysroot/usr/include/bits/mathcalls.h:314:1: note: 'trunc' declared here\n  314 | __MATHCALLX (trunc,, (_Mdouble_ __x), (__const__));\n      | ^~~~~~~~~~~\n"
+    },
+    {
+      "expression": "std::acoshl(1.5L)",
+      "source": "#include <cmath>\nint main() { volatile auto value = std::acoshl(1.5L); (void)value; }\n",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-g++",
+        "-std=c++17",
+        "-x",
+        "c++",
+        "-fsyntax-only",
+        "-"
+      ],
+      "exit": 1,
+      "stderr": "<stdin>: In function 'int main()':\n<stdin>:2:41: error: 'acoshl' is not a member of 'std'; did you mean 'coshf'?\n"
+    },
+    {
+      "expression": "std::sinl(1.5L)",
+      "source": "#include <cmath>\nint main() { volatile auto value = std::sinl(1.5L); (void)value; }\n",
+      "command": [
+        "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/bin/arm-samsung-linux-gnueabi-g++",
+        "-std=c++17",
+        "-x",
+        "c++",
+        "-fsyntax-only",
+        "-"
+      ],
+      "exit": 1,
+      "stderr": "<stdin>: In function 'int main()':\n<stdin>:2:41: error: 'sinl' is not a member of 'std'; did you mean 'sinh'?\n"
+    }
+  ]
+}

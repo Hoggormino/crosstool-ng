@@ -1,0 +1,188 @@
+{
+  "framework_base": {
+    "branch": "master",
+    "commit": "a4895d7fc49d5b423abc5f166895c80175019570"
+  },
+  "functional_commit": "ee43ab1e1cf3ecf48979ebc26b7b201506bd3c93",
+  "compiler": "arm-samsung-linux-gnueabi-gcc (Samsung-B-series-HEAD-a4895d7f-GCC-16.2.0) 16.2.0",
+  "compiler_version": "16.2.0",
+  "target": "arm-samsung-linux-gnueabi",
+  "binutils": "2.17.50 exact snapshot plus seven compatibility patches",
+  "glibc": {
+    "source": "371f84a4dca19f1416c3f28db9980539d2f62905",
+    "ports": "908afa831ca4403a689304a86e2014b4baa66366",
+    "recipe_label": "2.5.90-9.0.9",
+    "minimum_kernel": "2.6.16"
+  },
+  "kernel_headers": "2.6.18",
+  "prefix": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install",
+  "clean_source_build": true,
+  "clean_build_elapsed": "32:53.67",
+  "clean_build_log": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/build-v1.log",
+  "clean_build_log_sha256": "60561354fb6811769787f609868b18af47d3d43a4f8f7e55e36db1a6dc7acb50",
+  "full_config_sha256": "8056d46ec16a8a0c0677418bba02fab4f72b903d237bc50994c8bba344428a55",
+  "defconfig_sha256": "8be7c21412c42f9295a34acfb07cb432289e76ec2af26ff8bf8676f4879fe9c5",
+  "source_preparation_sha256": "19e39914071e6c7c14edf98c67b6f8aac1320f244d6756ee9621815c87557fb8",
+  "source_manifest_sha256": "4e544645faf96536082e44418ec5c9f989b174914ed4630869d98e1ae8b8e914",
+  "target_abi": {
+    "cpu": "ARM1136JF-S / ARMv6J",
+    "mode": "ARM",
+    "endian": "little",
+    "fpu": "VFPv2",
+    "calling_convention": "softfp / base PCS",
+    "compiler_eabi": 5,
+    "assembler_default_eabi": 4,
+    "interpreter": "/lib/ld-linux.so.3"
+  },
+  "private_runtimes": [
+    {
+      "file": "libstdc++.so.6",
+      "sha256": "6db40684d1f844e4cdc743289fd771354346c80080cc8755ea4007683ec75ed9",
+      "bytes": 16763084,
+      "provided_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.1",
+        "CXXABI_1.3.10",
+        "CXXABI_1.3.11",
+        "CXXABI_1.3.12",
+        "CXXABI_1.3.13",
+        "CXXABI_1.3.14",
+        "CXXABI_1.3.15",
+        "CXXABI_1.3.17",
+        "CXXABI_1.3.2",
+        "CXXABI_1.3.3",
+        "CXXABI_1.3.4",
+        "CXXABI_1.3.5",
+        "CXXABI_1.3.6",
+        "CXXABI_1.3.7",
+        "CXXABI_1.3.8",
+        "CXXABI_1.3.9",
+        "CXXABI_ARM_1.3.3",
+        "CXXABI_TM_1",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.1",
+        "GLIBCXX_3.4.10",
+        "GLIBCXX_3.4.11",
+        "GLIBCXX_3.4.12",
+        "GLIBCXX_3.4.13",
+        "GLIBCXX_3.4.14",
+        "GLIBCXX_3.4.15",
+        "GLIBCXX_3.4.16",
+        "GLIBCXX_3.4.17",
+        "GLIBCXX_3.4.18",
+        "GLIBCXX_3.4.19",
+        "GLIBCXX_3.4.2",
+        "GLIBCXX_3.4.20",
+        "GLIBCXX_3.4.21",
+        "GLIBCXX_3.4.22",
+        "GLIBCXX_3.4.23",
+        "GLIBCXX_3.4.24",
+        "GLIBCXX_3.4.25",
+        "GLIBCXX_3.4.26",
+        "GLIBCXX_3.4.27",
+        "GLIBCXX_3.4.28",
+        "GLIBCXX_3.4.29",
+        "GLIBCXX_3.4.3",
+        "GLIBCXX_3.4.30",
+        "GLIBCXX_3.4.31",
+        "GLIBCXX_3.4.32",
+        "GLIBCXX_3.4.33",
+        "GLIBCXX_3.4.34",
+        "GLIBCXX_3.4.35",
+        "GLIBCXX_3.4.36",
+        "GLIBCXX_3.4.4",
+        "GLIBCXX_3.4.5",
+        "GLIBCXX_3.4.6",
+        "GLIBCXX_3.4.7",
+        "GLIBCXX_3.4.8",
+        "GLIBCXX_3.4.9",
+        "libstdc++.so.6"
+      ],
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ],
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux.so.3",
+        "libgcc_s.so.1"
+      ],
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "ifunc_symbols": 0
+    },
+    {
+      "file": "libgcc_s.so.1",
+      "sha256": "b467f84c46724192b8bde206c4f46431200566216d9ce5968957bf732726bf9a",
+      "bytes": 3308236,
+      "provided_versions": [
+        "GCC_14.0.0",
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.3.1",
+        "GCC_3.3.4",
+        "GCC_3.4",
+        "GCC_3.4.2",
+        "GCC_3.5",
+        "GCC_4.0.0",
+        "GCC_4.2.0",
+        "GCC_4.3.0",
+        "GCC_4.7.0",
+        "GCC_7.0.0",
+        "GGC_14.0.0",
+        "GLIBC_2.0",
+        "libgcc_s.so.1"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "needed": [
+        "libc.so.6"
+      ],
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "ifunc_symbols": 0
+    },
+    {
+      "file": "libatomic.so.1",
+      "sha256": "60009b2f02cc27b3952bb5610a026f7d77b7de86e4910958df37c3550f299ed1",
+      "bytes": 192269,
+      "provided_versions": [
+        "LIBATOMIC_1.0",
+        "LIBATOMIC_1.1",
+        "LIBATOMIC_1.2",
+        "libatomic.so.1"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "needed": [
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "ifunc_symbols": 0
+    }
+  ],
+  "atomic64_configuration": {
+    "HAVE_IFUNC": "0",
+    "HAVE_ATOMIC_CAS_8": "0",
+    "HAVE_ATOMIC_LDST_8": "0"
+  },
+  "static_closure_artifacts": 13,
+  "runtime_audit_errors": [],
+  "target_build_has_external_oe_sysroot_mount": false,
+  "hardware_access": false,
+  "kernel_limitation": "QEMU userspace execution and uname override do not emulate Linux 2.6.18_SELP. Native admission is separate.",
+  "library_limitations": [
+    "Selected C++17 and C++20/23 facilities pass; complete standard-library conformance is not claimed.",
+    "std::round/copysign/trunc/acoshl/sinl availability checks fail with both GCC 8.3 and GCC 16.2 on this old-libc configuration.",
+    "import std/std.compat use upstream empty-module fallback and are unsupported.",
+    "Dormant generic libgcc VFPv3 unwind and kuser-v5 legacy 64-bit sync paths are outside the validated worker contract."
+  ],
+  "image_id": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+  "runtime_symbol_comparison": "diagnostic-comparison.json",
+  "byte_identity_across_build_paths_claimed": false
+}

@@ -1,0 +1,776 @@
+{
+  "artifacts": [
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/c-probe",
+      "sha256": "0da0158679d9aead1da0234d8bbcb4d66bb79e38b97ed0400e815b0647e26196",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/cxx17-probe",
+      "sha256": "2fd437387c9dc22aefd4c267cafcd9d3d34225d70f5791d7f6cbe31dc1498ac1",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.7",
+        "CXXABI_1.3.9",
+        "GCC_3.5",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.11",
+        "GLIBCXX_3.4.21",
+        "GLIBCXX_3.4.22",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/atomic64-probe",
+      "sha256": "769859d9a664581980bc285b561c21f6862af3893f25f0bca2e297135cb70523",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libatomic.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GCC_3.5",
+        "GLIBC_2.4",
+        "LIBATOMIC_1.0"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/cxx23-probe",
+      "sha256": "11ced1566388679d56ce70024bfbd05384b02cb10d94c1c011f54cfe986e0bba",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.9",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.11",
+        "GLIBCXX_3.4.19",
+        "GLIBCXX_3.4.22",
+        "GLIBCXX_3.4.35",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/kernel-helper-observation",
+      "sha256": "20bce5c9ef0278f1ec525a22f29bfc27b712629c5f3ce8fb6cda1b74f56efff0",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/rmlui-probe",
+      "sha256": "4be8b3aee5bb515b9f72d2a685582ec395be848f1fc79ea46760809c2376fca0",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.15",
+        "CXXABI_1.3.5",
+        "CXXABI_1.3.8",
+        "CXXABI_1.3.9",
+        "CXXABI_ARM_1.3.3",
+        "GCC_3.5",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.14",
+        "GLIBCXX_3.4.18",
+        "GLIBCXX_3.4.19",
+        "GLIBCXX_3.4.20",
+        "GLIBCXX_3.4.21",
+        "GLIBCXX_3.4.29",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libm-2.5.90.so",
+      "sha256": "897ba4b78b342878de59e1a658c9b4085ef5b11951fce070fb2801ee04dbd38e",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "ld-linux.so.3",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4",
+        "GLIBC_PRIVATE"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libc-2.5.90.so",
+      "sha256": "12324ebffb3f92521a4e563b438a761b272fb776b4468b192fec88d6d7d23905",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "ld-linux.so.3"
+      ],
+      "required_versions": [
+        "GLIBC_2.4",
+        "GLIBC_PRIVATE"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_dl_starting_up",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/sysroot/lib/ld-2.5.90.so",
+      "sha256": "2acd05311b009aeef38244ef0aff69845a13354fcf4276cd9f68b1df9338c47d",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [],
+      "required_versions": [],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": []
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/private/libstdc++.so.6",
+      "sha256": "6db40684d1f844e4cdc743289fd771354346c80080cc8755ea4007683ec75ed9",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux.so.3",
+        "libgcc_s.so.1"
+      ],
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_addUserCommitAction",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_memcpyRtWn",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ZGTtnaj",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ZN9__gnu_cxx21zoneinfo_dir_overrideEv",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_RU1",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__cxa_thread_atexit_impl",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ZGTtdlPv",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_RU4",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_memcpyRnWt",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/private/libgcc_s.so.1",
+      "sha256": "b467f84c46724192b8bde206c4f46431200566216d9ce5968957bf732726bf9a",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libpthread-2.5.90.so",
+      "sha256": "b0bad89a1151d33f976351888f1b78526e06d7d4e1a405352c7f6afc64ec6c94",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libc.so.6",
+        "ld-linux.so.3"
+      ],
+      "required_versions": [
+        "GLIBC_2.4",
+        "GLIBC_PRIVATE"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/private/libatomic.so.1",
+      "sha256": "60009b2f02cc27b3952bb5610a026f7d77b7de86e4910958df37c3550f299ed1",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    }
+  ],
+  "static_audit_errors": [],
+  "execution": [
+    {
+      "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/qemu-rebuilt.json",
+      "sha256": "bc4a45bf2d1526d535b619f808b4541b6d75147610307b20835856fcc52b95bd",
+      "image": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+      "startup": "ELF interpreter",
+      "tests": [
+        {
+          "name": "c-probe",
+          "exit": 0,
+          "stdout": "C allocation/files/softfp/libm passed; pointer=4 long=4 time_t=4 off_t=4\n"
+        },
+        {
+          "name": "cxx17-probe",
+          "exit": 0,
+          "stdout": "C++17/STL/EH/RTTI/pthread/static/TLS-dtor/atomic32 passed; lock_free32=1 string_size=24 mutex_size=24\n"
+        },
+        {
+          "name": "atomic64-probe",
+          "exit": 0,
+          "stdout": "atomic64 operations passed in QEMU; is_lock_free=0\n"
+        },
+        {
+          "name": "kernel-helper-observation",
+          "exit": 0,
+          "stdout": "QEMU kuser_helper_version=5\n"
+        },
+        {
+          "name": "rmlui-probe",
+          "exit": 0,
+          "stdout": "RmlUi Core initialize/Variant/shutdown passed\n"
+        }
+      ],
+      "runtime_bytes_unchanged": true,
+      "binding_provider_counts": {
+        "/target/lib/libc.so.6": 118,
+        "/lib/ld-linux.so.3": 13,
+        "/target/lib/libm.so.6": 5,
+        "/target/lib/libpthread.so.0": 12,
+        "/probes/private/libgcc_s.so.1": 14,
+        "/probes/private/libstdc++.so.6": 1776,
+        "/probes/cxx17-probe": 7,
+        "/probes/private/libatomic.so.1": 4,
+        "/probes/rmlui-probe": 9
+      }
+    },
+    {
+      "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/qemu-reference.json",
+      "sha256": "ed2857a3914966af866e6ce29f126ea6076a9796604631195d405047baa03bb9",
+      "image": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+      "startup": "ELF interpreter",
+      "tests": [
+        {
+          "name": "c-probe",
+          "exit": 0,
+          "stdout": "C allocation/files/softfp/libm passed; pointer=4 long=4 time_t=4 off_t=4\n"
+        },
+        {
+          "name": "cxx17-probe",
+          "exit": 0,
+          "stdout": "C++17/STL/EH/RTTI/pthread/static/TLS-dtor/atomic32 passed; lock_free32=1 string_size=24 mutex_size=24\n"
+        },
+        {
+          "name": "atomic64-probe",
+          "exit": 0,
+          "stdout": "atomic64 operations passed in QEMU; is_lock_free=0\n"
+        },
+        {
+          "name": "kernel-helper-observation",
+          "exit": 0,
+          "stdout": "QEMU kuser_helper_version=5\n"
+        },
+        {
+          "name": "rmlui-probe",
+          "exit": 0,
+          "stdout": "RmlUi Core initialize/Variant/shutdown passed\n"
+        }
+      ],
+      "runtime_bytes_unchanged": true,
+      "binding_provider_counts": {
+        "/target/lib/libc.so.6": 119,
+        "/lib/ld-linux.so.3": 13,
+        "/target/lib/libm.so.6": 5,
+        "/target/lib/libpthread.so.0": 12,
+        "/probes/private/libgcc_s.so.1": 14,
+        "/probes/private/libstdc++.so.6": 1776,
+        "/probes/cxx17-probe": 7,
+        "/probes/private/libatomic.so.1": 4,
+        "/probes/rmlui-probe": 9
+      }
+    },
+    {
+      "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/recent-rebuilt.json",
+      "sha256": "c94ecbaa14e8304d73c867e3208ba4e7f203fbf6cee05f5c6c125978e357f286",
+      "image": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+      "startup": "ELF interpreter",
+      "tests": [
+        {
+          "name": "cxx23-probe",
+          "exit": 0,
+          "stdout": "C++20/23 concepts/span/ranges/expected/atomic-wait/timed-semaphore passed\n"
+        }
+      ],
+      "runtime_bytes_unchanged": true,
+      "binding_provider_counts": {
+        "/target/lib/libc.so.6": 98,
+        "/target/lib/libpthread.so.0": 8,
+        "/lib/ld-linux.so.3": 12,
+        "/probes/private/libgcc_s.so.1": 5,
+        "/probes/private/libstdc++.so.6": 1733,
+        "/target/lib/libm.so.6": 2,
+        "/probes/cxx23-probe": 4
+      }
+    },
+    {
+      "receipt": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/recent-reference.json",
+      "sha256": "1d76be3c5f931c70fab8806499b31c666a6631d332d050ab4a31d127f18b1414",
+      "image": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+      "startup": "ELF interpreter",
+      "tests": [
+        {
+          "name": "cxx23-probe",
+          "exit": 0,
+          "stdout": "C++20/23 concepts/span/ranges/expected/atomic-wait/timed-semaphore passed\n"
+        }
+      ],
+      "runtime_bytes_unchanged": true,
+      "binding_provider_counts": {
+        "/target/lib/libc.so.6": 99,
+        "/target/lib/libpthread.so.0": 8,
+        "/lib/ld-linux.so.3": 12,
+        "/probes/private/libgcc_s.so.1": 5,
+        "/probes/private/libstdc++.so.6": 1733,
+        "/target/lib/libm.so.6": 2,
+        "/probes/cxx23-probe": 4
+      }
+    }
+  ],
+  "kernel_limitation": "ARM1136 userspace emulation and uname override do not emulate Linux 2.6.18_SELP. Native admission remains separate."
+}

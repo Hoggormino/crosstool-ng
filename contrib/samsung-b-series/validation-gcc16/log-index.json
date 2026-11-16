@@ -1,0 +1,189 @@
+{
+  "logs": [
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/build.log",
+      "bytes": 106760715,
+      "sha256": "e3ab880dabcba521b91b1d34a31b2bf6630f3d8e84e4fe5d6f2793b668215b52"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/assembler-regression.log",
+      "bytes": 600,
+      "sha256": "481186e1a9a14ab9230291f1ead73ada62942f9032044978b821afc6586cc7c7"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/build-v1.log",
+      "bytes": 17254,
+      "sha256": "60561354fb6811769787f609868b18af47d3d43a4f8f7e55e36db1a6dc7acb50"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/config-before-sample",
+      "bytes": 29833,
+      "sha256": "8056d46ec16a8a0c0677418bba02fab4f72b903d237bc50994c8bba344428a55"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/configure.log",
+      "bytes": 60,
+      "sha256": "3571033e614092c92fc4f52bab1fb15a0988d7ea4bc36b2b9dc6061453cc6c58"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/defconfig.log",
+      "bytes": 22,
+      "sha256": "07e7a5e64bed0d044696a40588094b08001f5e9115e45c8950e612aa121e63e7"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/demangler-regression.log",
+      "bytes": 241,
+      "sha256": "18c66555f2c33701815ef98dcfe6293f8e99c7b2846ee4d441aa712cd203ae14"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/host-packages.txt",
+      "bytes": 691,
+      "sha256": "6e6b9e9fc446ee541afa84cd78889658a6a3f2f2c54988975f20af4cc1adddaa"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/math-capabilities.json",
+      "bytes": 7504,
+      "sha256": "6aeed7c6596c96b2ecde367d706cd06e755d380e3486cb8307621ebf92c8f3de"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/math-capabilities.log",
+      "bytes": 229,
+      "sha256": "e5f276a2e935d6277a85c8d81da568ead4264cccf4a6316f72371e5e1223d9f5"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/preparation-complete.log",
+      "bytes": 4268,
+      "sha256": "317a792c26b2356f34a4f5bd76314165640180d6983049fafa24b6617871f315"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/preparation.log",
+      "bytes": 4230,
+      "sha256": "8a5e6c67a8720b459650029d30689c9df18b70f1b3fe3abf42a812f5da41704e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/record-build-report.py",
+      "bytes": 4283,
+      "sha256": "ffd64d02267edc9f32f894868f1c588af9649be0b6190e1adfe548baaaeee030"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/sample-configure.log",
+      "bytes": 60,
+      "sha256": "3571033e614092c92fc4f52bab1fb15a0988d7ea4bc36b2b9dc6061453cc6c58"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/source.log",
+      "bytes": 951,
+      "sha256": "5572b94be6d33d74f9ebffa7b888bdfe0775feb6261c8a54f441f67522ca5056"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/standalone.log",
+      "bytes": 17066,
+      "sha256": "ed095bd093c1d4a658257540583057fd259391694c9e2211009aa740bd39b655"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/logs/validation.log",
+      "bytes": 2115,
+      "sha256": "feab04b1da0da76b2a3ed80fe67d358f3a4036da0738115fdd3276f8143498ae"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/audit-rebuilt.log",
+      "bytes": 38,
+      "sha256": "c85e72661dfb49826b8a353fe13adb56ee8f654f55ea6b08a0222d24ea066e97"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/audit-reference.log",
+      "bytes": 38,
+      "sha256": "c85e72661dfb49826b8a353fe13adb56ee8f654f55ea6b08a0222d24ea066e97"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/compile.log",
+      "bytes": 20007,
+      "sha256": "2ba8f0ff9988248243d3ed15a5911f63b76808e04a12df8073cf26e37d20059e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/atomic64-probe.qemu-rebuilt.bindings",
+      "bytes": 325139,
+      "sha256": "de61a718c618eb57ebe7ae29c9fcd306962ab5f216741835b858c1621d4ca665"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/atomic64-probe.qemu-reference.bindings",
+      "bytes": 325126,
+      "sha256": "beab1f25a393538284bf917af51f14f0e4ff5777fa95f361e5912926287a2009"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/c-probe.qemu-rebuilt.bindings",
+      "bytes": 13414,
+      "sha256": "69fd4acb63745b4caeca0d1bf5735afc662a4f5da5daafdc891cefd271c196fa"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/c-probe.qemu-reference.bindings",
+      "bytes": 13531,
+      "sha256": "33cb7667ce31c7ea9ecf788286fe655df11b7bfef165ee124fd740bf664bcbc3"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/cxx17-probe.qemu-rebuilt.bindings",
+      "bytes": 338263,
+      "sha256": "fd65bc4cb34b4c1600b8a192642b769ea640dcab06bb41c14a4053da4709eda6"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/cxx17-probe.qemu-reference.bindings",
+      "bytes": 337977,
+      "sha256": "3200f9df4beb270c49051300c9333040b6eb35e771e9c9118428e5735a582d09"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/cxx23-probe.recent-rebuilt.bindings",
+      "bytes": 495014,
+      "sha256": "06a36e1da10904b6929ed388d6ef2ce2ccb7a8bda9833ff8710cbbf6d03a7ff5"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/cxx23-probe.recent-reference.bindings",
+      "bytes": 495040,
+      "sha256": "e48766441313eb5d20222210189fd4b95b2cb33b41bef9b119bb69b2a4fe83c4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/kernel-helper-observation.qemu-rebuilt.bindings",
+      "bytes": 11052,
+      "sha256": "701d7dd465825ca771406a800ffa4977f5759981902a58470567ddaac807f891"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/kernel-helper-observation.qemu-reference.bindings",
+      "bytes": 11293,
+      "sha256": "faf75f94b3ac2407581fee58e95ce1a4b674cd2caf9284667aa59f5dd3cacd0b"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/rmlui-probe.qemu-rebuilt.bindings",
+      "bytes": 328574,
+      "sha256": "e1b264947ed9af88e92ae87a77ea0e2f6d6b80a74dbe0725b383b490a4297e58"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/probes/rmlui-probe.qemu-reference.bindings",
+      "bytes": 328689,
+      "sha256": "bf714142244fcc464061ab8c7c292277a7374cbfc3b60e6f0834fd7f0c683ed0"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/qemu-rebuilt.log",
+      "bytes": 383,
+      "sha256": "27f9d31fb73d5a50a38d749ed9ffa6e98d0e0a7dccdb14dbadc47b3e9975647d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/qemu-reference.log",
+      "bytes": 383,
+      "sha256": "27f9d31fb73d5a50a38d749ed9ffa6e98d0e0a7dccdb14dbadc47b3e9975647d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/recent-rebuilt.log",
+      "bytes": 88,
+      "sha256": "c793e5d5a55486457ce22d7c55bccf8d74c3b31f102cc16c26fa16a3008ad68f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/recent-reference.log",
+      "bytes": 88,
+      "sha256": "c793e5d5a55486457ce22d7c55bccf8d74c3b31f102cc16c26fa16a3008ad68f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/validation/rmlui-build.log",
+      "bytes": 75147,
+      "sha256": "8ba7dc7435e2327770b36e298097d0687203bb860f454bd870ad2df5e8a88f61"
+    }
+  ]
+}
