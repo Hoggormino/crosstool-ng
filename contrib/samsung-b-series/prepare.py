@@ -88,6 +88,14 @@ def main():
         for patch in sorted((HERE/'patches'/package).glob('*.patch')):
             run('patch','--batch','--fuzz=0','-p1','-i',patch,cwd=args.output/package)
             receipt.setdefault('compatibility_patches', []).append(dict(package=package,path=str(patch.relative_to(HERE)),sha256=sha(patch)))
+    # Custom-source copies bypass CT_DoExtractPatch's generated-file timestamp
+    # repair. Keep the audited generated scripts newer than their patched inputs;
+    # modern host Autoconf must not regenerate this 2007 build system.
+    for package in ('binutils', 'glibc', 'linux'):
+        for name in ('aclocal.m4', 'config.h.in', 'Makefile.in', 'configure', 'preconfigure'):
+            for path in sorted((args.output/package).rglob(name)):
+                if path.is_file():
+                    os.utime(path, None)
     # Hash the effective prepared source contents, including executable bits
     # and link destinations, independently of archive metadata and timestamps.
     receipt['prepared_trees'] = {}

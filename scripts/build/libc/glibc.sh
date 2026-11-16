@@ -213,6 +213,7 @@ glibc_backend_once()
     CT_DoExecLog CFG                                                \
     BUILD_CC=${CT_BUILD}-gcc                                        \
     CC="${CT_TARGET}-${CT_CC} ${glibc_cflags}"                      \
+    CXX=""                                                        \
     CFLAGS=""                                                       \
     AR=${CT_TARGET}-ar                                              \
     RANLIB=${CT_TARGET}-ranlib                                      \
