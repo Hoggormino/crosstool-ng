@@ -1,0 +1,4 @@
+# Verbatim upstream reference bytes and patch context must retain whitespace.
+reference/** -whitespace
+oe/** -whitespace
+patches/** -whitespace
