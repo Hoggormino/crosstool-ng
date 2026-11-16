@@ -1,0 +1,14 @@
+# Unsupported member-function type encodings must fail demangling safely.
+# GCC 16 libstdc++ contains const noexcept member-pointer types (KDoF...).
+# ld's C++ version matching already falls back to the mangled spelling on NULL.
+--- a/libiberty/cp-demangle.c
++++ b/libiberty/cp-demangle.c
+@@ -2135,6 +2135,8 @@
+   if (pmem == NULL)
+     return NULL;
+   *pmem = cplus_demangle_type (di);
++  if (*pmem == NULL)
++    return NULL;
+ 
+   if (pmem != &mem && (*pmem)->type != DEMANGLE_COMPONENT_FUNCTION_TYPE)
+     {
