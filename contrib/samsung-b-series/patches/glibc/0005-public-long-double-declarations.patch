@@ -1,0 +1,27 @@
+# Backport glibc BZ 10103 public declarations (Andreas Schwab, 2011-11-04).
+# Internal _LIBC builds still suppress incompatible alias prototypes.
+# ARM binary64 long-double symbols already exist; no implementation is added.
+--- a/math/math.h
++++ b/math/math.h
+@@ -98,7 +98,8 @@
+ # undef	__MATH_PRECNAME
+ 
+ # if (__STDC__ - 0 || __GNUC__ - 0) \
+-     && (!defined __NO_LONG_DOUBLE_MATH || defined __LDBL_COMPAT)
++     && (!(defined __NO_LONG_DOUBLE_MATH && defined _LIBC) \
++         || defined __LDBL_COMPAT)
+ #  ifdef __LDBL_COMPAT
+ 
+ #   ifdef __USE_ISOC99 
+--- a/math/complex.h
++++ b/math/complex.h
+@@ -85,7 +85,8 @@
+ /* And the long double versions.  It is non-critical to define them
+    here unconditionally since `long double' is required in ISO C99.  */
+ #if (__STDC__ - 0 || __GNUC__ - 0) \
+-    && (!defined __NO_LONG_DOUBLE_MATH || defined __LDBL_COMPAT)
++    && (!(defined __NO_LONG_DOUBLE_MATH && defined _LIBC) \
++         || defined __LDBL_COMPAT)
+ # ifdef __LDBL_COMPAT
+ #  undef __MATHDECL_1
+ #  define __MATHDECL_1(type, function, args) \

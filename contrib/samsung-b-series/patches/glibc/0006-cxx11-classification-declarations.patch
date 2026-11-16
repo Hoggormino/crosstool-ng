@@ -1,0 +1,55 @@
+# Adapt glibc 2.23 C++11 classification guards to this exact snapshot.
+# C and C++98 keep the old int functions; C++11+ uses libstdc++ bool overloads.
+# Float/long-double extension names and internal __isinf/__isnan are retained.
+# Existing libstdc++ declaration probes select the builtin path naturally.
+--- a/math/math.h
++++ b/math/math.h
+@@ -68,6 +68,7 @@
+ #define __MATH_PRECNAME(name,r)	__CONCAT(name,r)
+ # define _Mdouble_BEGIN_NAMESPACE __BEGIN_NAMESPACE_STD
+ # define _Mdouble_END_NAMESPACE   __END_NAMESPACE_STD
++#define __MATH_DECLARING_DOUBLE 1
+ #include <bits/mathcalls.h>
+ #undef	_Mdouble_
+ #undef _Mdouble_BEGIN_NAMESPACE
+@@ -91,6 +92,8 @@
+ # endif
+ # define _Mdouble_BEGIN_NAMESPACE __BEGIN_NAMESPACE_C99
+ # define _Mdouble_END_NAMESPACE   __END_NAMESPACE_C99
++# undef __MATH_DECLARING_DOUBLE
++# define __MATH_DECLARING_DOUBLE 0
+ # include <bits/mathcalls.h>
+ # undef	_Mdouble_
+ # undef _Mdouble_BEGIN_NAMESPACE
+@@ -148,6 +151,7 @@
+ # endif /* __STDC__ || __GNUC__ */
+ 
+ #endif	/* Use misc or ISO C99.  */
++#undef __MATH_DECLARING_DOUBLE
+ #undef	__MATHDECL_1
+ #undef	__MATHDECL
+ #undef	__MATHCALL
+--- a/math/bits/mathcalls.h
++++ b/math/bits/mathcalls.h
+@@ -199,7 +199,10 @@
+ #ifdef __USE_MISC
+ /* Return 0 if VALUE is finite or NaN, +1 if it
+    is +Infinity, -1 if it is -Infinity.  */
++# if !defined __cplusplus || __cplusplus < 201103L \
++     || __MATH_DECLARING_DOUBLE == 0
+ __MATHDECL_1 (int,isinf,, (_Mdouble_ __value)) __attribute__ ((__const__));
++# endif
+ 
+ /* Return nonzero if VALUE is finite and not NaN.  */
+ __MATHDECL_1 (int,finite,, (_Mdouble_ __value)) __attribute__ ((__const__));
+@@ -232,7 +235,10 @@
+ 
+ #if defined __USE_MISC || defined __USE_XOPEN
+ /* Return nonzero if VALUE is not a number.  */
++# if !defined __cplusplus || __cplusplus < 201103L \
++     || __MATH_DECLARING_DOUBLE == 0
+ __MATHDECL_1 (int,isnan,, (_Mdouble_ __value)) __attribute__ ((__const__));
++# endif
+ 
+ /* Bessel functions.  */
+ __MATHCALL (j0,, (_Mdouble_));
