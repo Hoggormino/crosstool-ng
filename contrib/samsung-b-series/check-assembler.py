@@ -11,6 +11,7 @@ cases={
     'vfp-modern':(modern,True,struct.pack('<IIII',0xeef1fa10,0xeef10a10,0xeee10a10,0xe12fff1e)),
     'vfp-legacy':(legacy,True,struct.pack('<IIII',0xeef1fa10,0xeef10a10,0xeee10a10,0xe12fff1e)),
     'fp-register-copy':(head+'vmov.f64 d7,d6\nvmov.f32 s15,s13\n',True,struct.pack('<II',0xeeb07b46,0xeef07a66)),
+    'vfp-ual-semantics':(head+'vmla.f64 d0,d1,d2\nvmls.f64 d0,d1,d2\nvnmla.f64 d0,d1,d2\nvnmls.f64 d0,d1,d2\nvcmp.f64 d0,d1\nvcmpe.f64 d0,d1\nvmrs APSR_nzcv,FPSCR\nvsqrt.f64 d0,d1\nvneg.f64 d0,d1\nvabs.f64 d0,d1\nvcvt.f64.s32 d0,s0\nvcvt.s32.f64 s0,d0\nvdiv.f64 d0,d1,d2\n',True,struct.pack('<13I',0xee010b02,0xee010b42,0xee110b42,0xee110b02,0xeeb40b41,0xeeb40bc1,0xeef1fa10,0xeeb10bc1,0xeeb10b41,0xeeb00bc1,0xeeb80bc0,0xeebd0bc0,0xee810b02)),
     'inst-mapping':(head+'.word 0\n.inst 0xe7f000f0\nbx lr\n.thumb\n.inst 0xdeff\nbx lr\n',True,struct.pack('<IIIHH',0,0xe7f000f0,0xe12fff1e,0xdeff,0x4770)),
     'inst-nonconstant':(head+'.extern owned_external\n.inst owned_external\n',False,None),
     'inst-arm-width':(head+'.inst.n 0\n',False,None),

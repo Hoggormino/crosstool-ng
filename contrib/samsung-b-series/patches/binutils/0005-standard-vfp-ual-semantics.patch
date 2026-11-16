@@ -1,0 +1,79 @@
+# Update the 2007 draft VFP UAL spellings to standardized VFPv2 semantics.
+# Compared with Sourceware binutils 2.26 and independently verified instruction bytes.
+# Legacy F-prefixed encodings are unchanged; no VFPv3/NEON support is introduced.
+--- a/gas/config/tc-arm.c
++++ b/gas/config/tc-arm.c
+@@ -10409,8 +10409,8 @@
+   X(vqmovn,	0x1b20200, N_INV,     N_INV),		\
+   X(vqmovun,	0x1b20240, N_INV,     N_INV),		\
+   X(vnmul,      0xe200a40, 0xe200b40, N_INV),		\
+-  X(vnmla,      0xe000a40, 0xe000b40, N_INV),		\
+-  X(vnmls,      0xe100a40, 0xe100b40, N_INV),		\
++  X(vnmla,      0xe100a40, 0xe100b40, N_INV),		\
++  X(vnmls,      0xe100a00, 0xe100b00, N_INV),		\
+   X(vcmp,	0xeb40a40, 0xeb40b40, N_INV),		\
+   X(vcmpz,	0xeb50a40, 0xeb50b40, N_INV),		\
+   X(vcmpe,	0xeb40ac0, 0xeb40bc0, N_INV),		\
+@@ -11216,14 +11216,14 @@
+       if (is_mla)
+         do_vfp_nsyn_opcode ("fmacs");
+       else
+-        do_vfp_nsyn_opcode ("fmscs");
++        do_vfp_nsyn_opcode ("fnmacs");
+     }
+   else
+     {
+       if (is_mla)
+         do_vfp_nsyn_opcode ("fmacd");
+       else
+-        do_vfp_nsyn_opcode ("fmscd");
++        do_vfp_nsyn_opcode ("fnmacd");
+     }
+ }
+ 
+@@ -12571,14 +12571,14 @@
+       /* Conversions without bitshift.  */
+       const char *enc[] =
+         {
+-          "ftosis",
+-          "ftouis",
++          "ftosizs",
++          "ftouizs",
+           "fsitos",
+           "fuitos",
+           "fcvtsd",
+           "fcvtds",
+-          "ftosid",
+-          "ftouid",
++          "ftosizd",
++          "ftouizd",
+           "fsitod",
+           "fuitod"
+         };
+@@ -12610,6 +12610,18 @@
+ 
+   if (flavour >= 0 && flavour < (int) ARRAY_SIZE (enc) && enc[flavour])
+     do_vfp_nsyn_opcode (enc[flavour]);
++}
++
++static void
++do_vfp_nsyn_cvtr (void)
++{
++  enum neon_shape rs = neon_select_shape (NS_FF, NS_FD, NS_NULL);
++  int flavour = neon_cvt_flavour (rs);
++  const char *enc[] = { "ftosis", "ftouis", NULL, NULL, NULL, NULL,
++                       "ftosid", "ftouid" };
++  constraint (flavour < 0 || flavour >= (int) ARRAY_SIZE (enc)
++              || !enc[flavour], _("invalid VCVTR conversion"));
++  do_vfp_nsyn_opcode (enc[flavour]);
+ }
+ 
+ static void
+@@ -15794,6 +15806,7 @@
+  NCE(vpush,     0,       1, (VRSDLST),          vfp_nsyn_push),
+  NCE(vpop,      0,       1, (VRSDLST),          vfp_nsyn_pop),
+  NCE(vcvtz,     0,       2, (RVSD, RVSD),       vfp_nsyn_cvtz),
++ NCE(vcvtr,     0,       2, (RVSD, RVSD),       vfp_nsyn_cvtr),
+ 
+   /* Mnemonics shared by Neon and VFP.  */
+  nCEF(vmul,     vmul,    3, (RNSDQ, oRNSDQ, RNSDQ_RNSC), neon_mul),
