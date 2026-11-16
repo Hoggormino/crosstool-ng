@@ -406,6 +406,10 @@
     {
       "path": "reference/oe/recipes/gnu-config/files/gnu-configize.in",
       "sha256": "b48543f72d717a8c07cf3b995175b3293c24dac9c9efad01b312321c0c809f07"
+    },
+    {
+      "path": "reference/oe/classes/libc-package.bbclass",
+      "sha256": "dc8d90fb4ef7d238cb1ef2a2a96cbe0655188c511aa11d11c8746b341399fb70"
     }
   ],
   "gnu_config": {
@@ -428,6 +432,31 @@
           "glibc/scripts/config.sub"
         ]
       }
+    ]
+  },
+  "post_build": {
+    "reference": "reference/oe/classes/libc-package.bbclass",
+    "rpc_headers": [
+      "bootparam_prot",
+      "nlm_prot",
+      "rstat",
+      "yppasswd",
+      "klm_prot",
+      "rex",
+      "sm_inter",
+      "mount",
+      "rusers",
+      "spray",
+      "nfs_prot",
+      "rquota",
+      "key_prot"
+    ],
+    "installed_configuration": "etc/ld.so.conf",
+    "locale_metadata": "generate-supported.mk plus original broken-locale exclusions",
+    "cleanup": [
+      "etc/rpc",
+      "usr/share/zoneinfo",
+      "usr/libexec/getconf"
     ]
   }
 }

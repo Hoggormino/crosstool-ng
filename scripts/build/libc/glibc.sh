@@ -135,6 +135,26 @@ glibc_backend_once()
     # Pre-seed the configparms file with values from the config option
     printf "%s\n" "${CT_GLIBC_CONFIGPARMS}" > configparms
 
+    # Old glibc expects a separate EH archive. HEAD's static GCC bootstrap
+    # includes the real unwinder in libgcc.a instead. Verify that layout rather
+    # than supplying an empty archive or requiring a prebuilt target sysroot.
+    if [ "${CT_GLIBC_VERSION}" = "2.5.90" ]; then
+        local core_eh core_gcc sym
+        core_eh=$(${CT_TARGET}-${CT_CC} -print-file-name=libgcc_eh.a)
+        if [ ! -f "${core_eh}" ]; then
+            core_gcc=$(${CT_TARGET}-${CT_CC} -print-libgcc-file-name)
+            CT_DoLog EXTRA "Checking static bootstrap unwind providers in ${core_gcc}"
+            ${CT_TARGET}-nm --defined-only "${core_gcc}" > bootstrap-libgcc-symbols.txt 2>/dev/null
+            for sym in _Unwind_Resume _Unwind_RaiseException _Unwind_ForcedUnwind; do
+                if ! ${grep} -q " T ${sym}$" bootstrap-libgcc-symbols.txt; then
+                    CT_Abort "Bootstrap libgcc lacks ${sym}"
+                fi
+            done
+            printf '%s\n' 'gnulib = -lgcc' 'static-gnulib = -lgcc' \
+                'libc.so-gnulib = -lgcc' >> configparms
+        fi
+    fi
+
    if [ "${CT_GLIBC_ENABLE_DEBUG}" = "y" ]; then
         glibc_cflags+=" -g"
    fi
@@ -436,3 +456,17 @@ glibc_locales()
                           localedata/install-locales
 }
 
+
+# The reference recipe generates RPC headers with the host rpcgen after the
+# target build, then installs them and applies its staged filesystem cleanup.
+glibc_post_cc()
+{
+    if [ "${CT_GLIBC_VERSION}" = "2.5.90" -a "${CT_ARCH}" = "arm" ]; then
+        CT_DoStep INFO "Completing Samsung OE source installation"
+        CT_DoExecLog ALL python3 \
+            "${CT_LIB_DIR}/contrib/samsung-b-series/complete-oe-install.py" \
+            --source "${CT_SRC_DIR}/glibc" --sysroot "${CT_SYSROOT_DIR}" \
+            --receipt "${CT_PREFIX_DIR}/share/samsung-b-series/oe-install.json"
+        CT_EndStep
+    fi
+}
