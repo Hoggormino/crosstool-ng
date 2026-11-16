@@ -10,6 +10,7 @@ legacy=head+'fmstat\nfmrx r0, FPSCR\nfmxr FPSCR, r0\nbx lr\n'
 cases={
     'vfp-modern':(modern,True,struct.pack('<IIII',0xeef1fa10,0xeef10a10,0xeee10a10,0xe12fff1e)),
     'vfp-legacy':(legacy,True,struct.pack('<IIII',0xeef1fa10,0xeef10a10,0xeee10a10,0xe12fff1e)),
+    'fp-register-copy':(head+'vmov.f64 d7,d6\nvmov.f32 s15,s13\n',True,struct.pack('<II',0xeeb07b46,0xeef07a66)),
     'inst-mapping':(head+'.word 0\n.inst 0xe7f000f0\nbx lr\n.thumb\n.inst 0xdeff\nbx lr\n',True,struct.pack('<IIIHH',0,0xe7f000f0,0xe12fff1e,0xdeff,0x4770)),
     'inst-nonconstant':(head+'.extern owned_external\n.inst owned_external\n',False,None),
     'inst-arm-width':(head+'.inst.n 0\n',False,None),
@@ -27,6 +28,8 @@ for name,(source,accept,expected) in cases.items():
         binary=a.output/(name+'.bin');subprocess.run([str(objcopy),'-O','binary','-j','.text',str(obj),str(binary)],check=True)
         row['text_hex']=binary.read_bytes().hex();row['expected_text_hex']=expected.hex();row['passed'] &= binary.read_bytes()==expected
         row['symbols']=subprocess.check_output(['readelf','-Ws',str(obj)],text=True)
+        row['undefined_symbols']=subprocess.check_output([str(a.prefix/'bin/arm-samsung-linux-gnueabi-nm'),'-u',str(obj)],text=True)
+        row['passed'] &= not row['undefined_symbols'].strip()
         if name=='inst-mapping':
             row['passed'] &= all(s in row['symbols'] for s in ('$a','$d','$t'))
     rows.append(row)
