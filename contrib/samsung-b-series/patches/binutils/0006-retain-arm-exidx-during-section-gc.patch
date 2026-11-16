@@ -1,0 +1,125 @@
+# Backport the ARM EHABI garbage-collection mark pass from binutils 2.20
+# (Sourceware commit 7ae51527883b523f6d6ab399cf9af687dc8ca9e9) and its
+# backend hook. Live text must retain its associated exception-index entry.
+--- a/bfd/elf-bfd.h
++++ b/bfd/elf-bfd.h
+@@ -540,6 +540,10 @@
+     PRETEND = 2
+   };
+ 
++typedef asection * (*elf_gc_mark_hook_fn)
++  (asection *, struct bfd_link_info *, Elf_Internal_Rela *,
++   struct elf_link_hash_entry *, Elf_Internal_Sym *);
++
+ struct elf_backend_data
+ {
+   /* The architecture for this backend.  */
+@@ -852,6 +856,10 @@
+   /* This function, if defined, is called during the sweep phase of gc
+      in order that a backend might update any data structures it might
+      be maintaining.  */
++  /* Mark target-specific sections associated with live code.  */
++  bfd_boolean (*gc_mark_extra_sections)
++    (struct bfd_link_info *, elf_gc_mark_hook_fn);
++
+   bfd_boolean (*gc_sweep_hook)
+     (bfd *abfd, struct bfd_link_info *info, asection *o,
+      const Elf_Internal_Rela *relocs);
+--- a/bfd/elfxx-target.h
++++ b/bfd/elfxx-target.h
+@@ -132,6 +132,9 @@
+ #endif
+ #ifndef elf_backend_gc_mark_hook
+ #define elf_backend_gc_mark_hook	_bfd_elf_gc_mark_hook
++#endif
++#ifndef elf_backend_gc_mark_extra_sections
++#define elf_backend_gc_mark_extra_sections NULL
+ #endif
+ #ifndef elf_backend_gc_sweep_hook
+ #define elf_backend_gc_sweep_hook	NULL
+@@ -621,6 +624,7 @@
+   elf_backend_modify_program_headers,
+   elf_backend_gc_mark_dynamic_ref,
+   elf_backend_gc_mark_hook,
++  elf_backend_gc_mark_extra_sections,
+   elf_backend_gc_sweep_hook,
+   elf_backend_post_process_headers,
+   elf_backend_print_symbol_all,
+--- a/bfd/elflink.c
++++ b/bfd/elflink.c
+@@ -9829,6 +9829,11 @@
+ 	    return FALSE;
+     }
+ 
++  /* Retain target unwind data for code reached by the ordinary mark pass.  */
++  if (bed->gc_mark_extra_sections != NULL
++      && !bed->gc_mark_extra_sections (info, gc_mark_hook))
++    return FALSE;
++
+   /* ... again for sections marked from eh_frame.  */
+   for (sub = info->input_bfds; sub != NULL; sub = sub->link_next)
+     {
+--- a/bfd/elf32-arm.c
++++ b/bfd/elf32-arm.c
+@@ -10425,6 +10425,53 @@
+   bfd_elf32_swap_symbol_out (abfd, src, cdst, shndx);
+ }
+ 
++/* Unwinding tables are not referenced directly.  This pass marks them as
++   required if the corresponding code section is marked.  */
++
++static bfd_boolean
++elf32_arm_gc_mark_extra_sections (struct bfd_link_info *info,
++				  elf_gc_mark_hook_fn gc_mark_hook)
++{
++  bfd *sub;
++  Elf_Internal_Shdr **elf_shdrp;
++  bfd_boolean again;
++
++  /* Marking EH data may cause additional code sections to be marked,
++     requiring multiple passes.  */
++  again = TRUE;
++  while (again)
++    {
++      again = FALSE;
++      for (sub = info->input_bfds; sub != NULL; sub = sub->link_next)
++	{
++	  asection *o;
++
++	  if (bfd_get_flavour (sub) != bfd_target_elf_flavour || bfd_get_arch (sub) != bfd_arch_arm)
++	    continue;
++
++	  elf_shdrp = elf_elfsections (sub);
++	  for (o = sub->sections; o != NULL; o = o->next)
++	    {
++	      Elf_Internal_Shdr *hdr;
++
++	      hdr = &elf_section_data (o)->this_hdr;
++	      if (hdr->sh_type == SHT_ARM_EXIDX
++		  && hdr->sh_link
++		  && hdr->sh_link < elf_numsections (sub)
++		  && !o->gc_mark
++		  && elf_shdrp[hdr->sh_link]->bfd_section->gc_mark)
++		{
++		  again = TRUE;
++		  if (!_bfd_elf_gc_mark (info, o, gc_mark_hook))
++		    return FALSE;
++		}
++	    }
++	}
++    }
++
++  return TRUE;
++}
++
+ /* Add the PT_ARM_EXIDX program header.  */
+ 
+ static bfd_boolean
+@@ -10532,6 +10579,7 @@
+ 
+ #define elf_backend_get_symbol_type             elf32_arm_get_symbol_type
+ #define elf_backend_gc_mark_hook                elf32_arm_gc_mark_hook
++#define elf_backend_gc_mark_extra_sections      elf32_arm_gc_mark_extra_sections
+ #define elf_backend_gc_sweep_hook               elf32_arm_gc_sweep_hook
+ #define elf_backend_check_relocs                elf32_arm_check_relocs
+ #define elf_backend_relocate_section		elf32_arm_relocate_section
