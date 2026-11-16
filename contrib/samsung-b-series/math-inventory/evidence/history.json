@@ -1,0 +1,14 @@
+{
+  "upstream": "https://sourceware.org/git/glibc.git",
+  "reference_tag": "glibc-2.16.0",
+  "reference_commit": "75f0d3040a2c2de8842bfa7a09e11da1a73e17d0",
+  "fix_date": "2011-11-04",
+  "bug": 10103,
+  "files": [
+    "math/math.h",
+    "math/complex.h"
+  ],
+  "finding": "Public long-double declarations enabled when __NO_LONG_DOUBLE_MATH is set and _LIBC is not set. Internal glibc build suppression remains.",
+  "excerpt": " allocated buffer.\n\n2011-11-04  Andreas Schwab  <schwab@redhat.com>\n\n\t[BZ #10103]\n\t* math/math.h [__NO_LONG_DOUBLE_MATH && !_LIBC]: Provide\n\tdeclarations for long double functions.\n\t* math/complex.h [__NO_LONG_DOUBLE_MATH && !_LIBC]: Likewise.\n\n\t* elf/sprof.c (load_shobj): Fix off-by-one when reading link nam",
+  "applied": false
+}

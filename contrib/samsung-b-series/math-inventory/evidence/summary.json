@@ -1,0 +1,371 @@
+{
+  "scope": "Finite C++17/C99 declaration, type, emitted-symbol and link inventory; no numerical or ARM execution tests.",
+  "compiler_cases": {
+    "gcc16": {
+      "case_count": 1267,
+      "counts": {
+        "linked": 898,
+        "declaration_failed": 367,
+        "wrong_return_type": 2
+      }
+    },
+    "gcc8": {
+      "case_count": 1267,
+      "counts": {
+        "linked": 876,
+        "declaration_failed": 389,
+        "wrong_return_type": 2
+      }
+    }
+  },
+  "abi_symbol_count": 237,
+  "oe_link_count_per_compiler": 237,
+  "hidden_c_declarations": [
+    "acosl",
+    "asinl",
+    "atanl",
+    "cosl",
+    "sinl",
+    "tanl",
+    "coshl",
+    "sinhl",
+    "tanhl",
+    "expl",
+    "logl",
+    "log10l",
+    "sqrtl",
+    "ceill",
+    "floorl",
+    "fabsl",
+    "atan2l",
+    "powl",
+    "fmodl",
+    "frexpl",
+    "ldexpl",
+    "modfl",
+    "acoshl",
+    "asinhl",
+    "atanhl",
+    "exp2l",
+    "expm1l",
+    "log1pl",
+    "log2l",
+    "logbl",
+    "cbrtl",
+    "erfl",
+    "erfcl",
+    "tgammal",
+    "lgammal",
+    "nearbyintl",
+    "rintl",
+    "roundl",
+    "truncl",
+    "hypotl",
+    "remainderl",
+    "copysignl",
+    "nextafterl",
+    "fdiml",
+    "fmaxl",
+    "fminl",
+    "ilogbl",
+    "scalbnl",
+    "scalblnl",
+    "lrintl",
+    "lroundl",
+    "llrintl",
+    "llroundl",
+    "remquol",
+    "nexttowardl",
+    "fmal",
+    "nanl",
+    "cacosl",
+    "casinl",
+    "catanl",
+    "cacoshl",
+    "casinhl",
+    "catanhl",
+    "ccosl",
+    "csinl",
+    "ctanl",
+    "ccoshl",
+    "csinhl",
+    "ctanhl",
+    "cexpl",
+    "clogl",
+    "cpowl",
+    "csqrtl",
+    "cabsl",
+    "cargl",
+    "conjl",
+    "cprojl",
+    "creall",
+    "cimagl"
+  ],
+  "ld_aliases": 79,
+  "cpp_type_mismatches": [
+    {
+      "id": "case-0519",
+      "family": "isinf",
+      "precision": "double",
+      "expected": "bool",
+      "actual_return_type": "int"
+    },
+    {
+      "id": "case-0521",
+      "family": "isnan",
+      "precision": "double",
+      "expected": "bool",
+      "actual_return_type": "int"
+    }
+  ],
+  "gcc_differences": [
+    {
+      "id": "case-0001",
+      "section": "cmath",
+      "family": "acos",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0005",
+      "section": "cmath",
+      "family": "asin",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0009",
+      "section": "cmath",
+      "family": "atan",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0013",
+      "section": "cmath",
+      "family": "cos",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0017",
+      "section": "cmath",
+      "family": "sin",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0021",
+      "section": "cmath",
+      "family": "tan",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0025",
+      "section": "cmath",
+      "family": "cosh",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0029",
+      "section": "cmath",
+      "family": "sinh",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0033",
+      "section": "cmath",
+      "family": "tanh",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0037",
+      "section": "cmath",
+      "family": "exp",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0041",
+      "section": "cmath",
+      "family": "log",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0045",
+      "section": "cmath",
+      "family": "log10",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0049",
+      "section": "cmath",
+      "family": "sqrt",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0053",
+      "section": "cmath",
+      "family": "ceil",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0057",
+      "section": "cmath",
+      "family": "floor",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0061",
+      "section": "cmath",
+      "family": "fabs",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0065",
+      "section": "cmath",
+      "family": "atan2",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0069",
+      "section": "cmath",
+      "family": "pow",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0073",
+      "section": "cmath",
+      "family": "fmod",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0077",
+      "section": "cmath",
+      "family": "frexp",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0081",
+      "section": "cmath",
+      "family": "ldexp",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    },
+    {
+      "id": "case-0085",
+      "section": "cmath",
+      "family": "modf",
+      "form": "std_named",
+      "precision": "float",
+      "gcc16": "linked",
+      "gcc8": "declaration_failed"
+    }
+  ],
+  "per_section": {
+    "gcc16": {
+      "cfenv": {
+        "linked": 11
+      },
+      "cmath": {
+        "linked": 368,
+        "declaration_failed": 288,
+        "wrong_return_type": 2
+      },
+      "complex_c": {
+        "linked": 110,
+        "declaration_failed": 22
+      },
+      "complex_cpp": {
+        "linked": 75
+      },
+      "fenv_c": {
+        "linked": 11
+      },
+      "math_c": {
+        "linked": 323,
+        "declaration_failed": 57
+      }
+    },
+    "gcc8": {
+      "cfenv": {
+        "linked": 11
+      },
+      "cmath": {
+        "linked": 346,
+        "declaration_failed": 310,
+        "wrong_return_type": 2
+      },
+      "complex_c": {
+        "linked": 110,
+        "declaration_failed": 22
+      },
+      "complex_cpp": {
+        "linked": 75
+      },
+      "fenv_c": {
+        "linked": 11
+      },
+      "math_c": {
+        "linked": 323,
+        "declaration_failed": 57
+      }
+    }
+  }
+}

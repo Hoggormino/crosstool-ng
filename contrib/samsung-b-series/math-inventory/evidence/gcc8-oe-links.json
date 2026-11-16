@@ -1,0 +1,1700 @@
+{
+  "label": "gcc8",
+  "scope": "Owned C ABI link checks only; explicit diagnostic prototypes; no ARM execution.",
+  "reference_sysroot": "/oe-reference",
+  "counts": {
+    "0": 237
+  },
+  "tests": [
+    {
+      "id": "case-1030",
+      "symbol": "acosf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1031",
+      "symbol": "asinf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1032",
+      "symbol": "atanf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1033",
+      "symbol": "cosf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1034",
+      "symbol": "sinf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1035",
+      "symbol": "tanf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1036",
+      "symbol": "coshf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1037",
+      "symbol": "sinhf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1038",
+      "symbol": "tanhf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1039",
+      "symbol": "expf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1040",
+      "symbol": "logf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1041",
+      "symbol": "log10f",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1042",
+      "symbol": "sqrtf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1043",
+      "symbol": "ceilf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1044",
+      "symbol": "floorf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1045",
+      "symbol": "fabsf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1046",
+      "symbol": "atan2f",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1047",
+      "symbol": "powf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1048",
+      "symbol": "fmodf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1049",
+      "symbol": "frexpf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1050",
+      "symbol": "ldexpf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1051",
+      "symbol": "modff",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1052",
+      "symbol": "acoshf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1053",
+      "symbol": "asinhf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1054",
+      "symbol": "atanhf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1055",
+      "symbol": "exp2f",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1056",
+      "symbol": "expm1f",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1057",
+      "symbol": "log1pf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1058",
+      "symbol": "log2f",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1059",
+      "symbol": "logbf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1060",
+      "symbol": "cbrtf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1061",
+      "symbol": "erff",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1062",
+      "symbol": "erfcf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1063",
+      "symbol": "tgammaf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1064",
+      "symbol": "lgammaf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1065",
+      "symbol": "nearbyintf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1066",
+      "symbol": "rintf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1067",
+      "symbol": "roundf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1068",
+      "symbol": "truncf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1069",
+      "symbol": "hypotf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1070",
+      "symbol": "remainderf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1071",
+      "symbol": "copysignf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1072",
+      "symbol": "nextafterf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1073",
+      "symbol": "fdimf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1074",
+      "symbol": "fmaxf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1075",
+      "symbol": "fminf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1076",
+      "symbol": "ilogbf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1077",
+      "symbol": "scalbnf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1078",
+      "symbol": "scalblnf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1079",
+      "symbol": "lrintf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1080",
+      "symbol": "lroundf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1081",
+      "symbol": "llrintf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1082",
+      "symbol": "llroundf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1083",
+      "symbol": "remquof",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1084",
+      "symbol": "nexttowardf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1085",
+      "symbol": "fmaf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1086",
+      "symbol": "nanf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1087",
+      "symbol": "cacosf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1088",
+      "symbol": "casinf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1089",
+      "symbol": "catanf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1090",
+      "symbol": "cacoshf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1091",
+      "symbol": "casinhf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1092",
+      "symbol": "catanhf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1093",
+      "symbol": "ccosf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1094",
+      "symbol": "csinf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1095",
+      "symbol": "ctanf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1096",
+      "symbol": "ccoshf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1097",
+      "symbol": "csinhf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1098",
+      "symbol": "ctanhf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1099",
+      "symbol": "cexpf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1100",
+      "symbol": "clogf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1101",
+      "symbol": "cpowf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1102",
+      "symbol": "csqrtf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1103",
+      "symbol": "cabsf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1104",
+      "symbol": "cargf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1105",
+      "symbol": "conjf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1106",
+      "symbol": "cprojf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1107",
+      "symbol": "crealf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1108",
+      "symbol": "cimagf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1109",
+      "symbol": "acos",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1110",
+      "symbol": "asin",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1111",
+      "symbol": "atan",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1112",
+      "symbol": "cos",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1113",
+      "symbol": "sin",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1114",
+      "symbol": "tan",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1115",
+      "symbol": "cosh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1116",
+      "symbol": "sinh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1117",
+      "symbol": "tanh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1118",
+      "symbol": "exp",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1119",
+      "symbol": "log",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1120",
+      "symbol": "log10",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1121",
+      "symbol": "sqrt",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1122",
+      "symbol": "ceil",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1123",
+      "symbol": "floor",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1124",
+      "symbol": "fabs",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1125",
+      "symbol": "atan2",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1126",
+      "symbol": "pow",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1127",
+      "symbol": "fmod",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1128",
+      "symbol": "frexp",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1129",
+      "symbol": "ldexp",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1130",
+      "symbol": "modf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1131",
+      "symbol": "acosh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1132",
+      "symbol": "asinh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1133",
+      "symbol": "atanh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1134",
+      "symbol": "exp2",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1135",
+      "symbol": "expm1",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1136",
+      "symbol": "log1p",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1137",
+      "symbol": "log2",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1138",
+      "symbol": "logb",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1139",
+      "symbol": "cbrt",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1140",
+      "symbol": "erf",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1141",
+      "symbol": "erfc",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1142",
+      "symbol": "tgamma",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1143",
+      "symbol": "lgamma",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1144",
+      "symbol": "nearbyint",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1145",
+      "symbol": "rint",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1146",
+      "symbol": "round",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1147",
+      "symbol": "trunc",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1148",
+      "symbol": "hypot",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1149",
+      "symbol": "remainder",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1150",
+      "symbol": "copysign",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1151",
+      "symbol": "nextafter",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1152",
+      "symbol": "fdim",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1153",
+      "symbol": "fmax",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1154",
+      "symbol": "fmin",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1155",
+      "symbol": "ilogb",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1156",
+      "symbol": "scalbn",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1157",
+      "symbol": "scalbln",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1158",
+      "symbol": "lrint",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1159",
+      "symbol": "lround",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1160",
+      "symbol": "llrint",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1161",
+      "symbol": "llround",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1162",
+      "symbol": "remquo",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1163",
+      "symbol": "nexttoward",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1164",
+      "symbol": "fma",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1165",
+      "symbol": "nan",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1166",
+      "symbol": "cacos",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1167",
+      "symbol": "casin",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1168",
+      "symbol": "catan",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1169",
+      "symbol": "cacosh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1170",
+      "symbol": "casinh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1171",
+      "symbol": "catanh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1172",
+      "symbol": "ccos",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1173",
+      "symbol": "csin",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1174",
+      "symbol": "ctan",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1175",
+      "symbol": "ccosh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1176",
+      "symbol": "csinh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1177",
+      "symbol": "ctanh",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1178",
+      "symbol": "cexp",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1179",
+      "symbol": "clog",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1180",
+      "symbol": "cpow",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1181",
+      "symbol": "csqrt",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1182",
+      "symbol": "cabs",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1183",
+      "symbol": "carg",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1184",
+      "symbol": "conj",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1185",
+      "symbol": "cproj",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1186",
+      "symbol": "creal",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1187",
+      "symbol": "cimag",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1188",
+      "symbol": "acosl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1189",
+      "symbol": "asinl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1190",
+      "symbol": "atanl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1191",
+      "symbol": "cosl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1192",
+      "symbol": "sinl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1193",
+      "symbol": "tanl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1194",
+      "symbol": "coshl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1195",
+      "symbol": "sinhl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1196",
+      "symbol": "tanhl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1197",
+      "symbol": "expl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1198",
+      "symbol": "logl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1199",
+      "symbol": "log10l",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1200",
+      "symbol": "sqrtl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1201",
+      "symbol": "ceill",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1202",
+      "symbol": "floorl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1203",
+      "symbol": "fabsl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1204",
+      "symbol": "atan2l",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1205",
+      "symbol": "powl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1206",
+      "symbol": "fmodl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1207",
+      "symbol": "frexpl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1208",
+      "symbol": "ldexpl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1209",
+      "symbol": "modfl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1210",
+      "symbol": "acoshl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1211",
+      "symbol": "asinhl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1212",
+      "symbol": "atanhl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1213",
+      "symbol": "exp2l",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1214",
+      "symbol": "expm1l",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1215",
+      "symbol": "log1pl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1216",
+      "symbol": "log2l",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1217",
+      "symbol": "logbl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1218",
+      "symbol": "cbrtl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1219",
+      "symbol": "erfl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1220",
+      "symbol": "erfcl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1221",
+      "symbol": "tgammal",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1222",
+      "symbol": "lgammal",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1223",
+      "symbol": "nearbyintl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1224",
+      "symbol": "rintl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1225",
+      "symbol": "roundl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1226",
+      "symbol": "truncl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1227",
+      "symbol": "hypotl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1228",
+      "symbol": "remainderl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1229",
+      "symbol": "copysignl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1230",
+      "symbol": "nextafterl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1231",
+      "symbol": "fdiml",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1232",
+      "symbol": "fmaxl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1233",
+      "symbol": "fminl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1234",
+      "symbol": "ilogbl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1235",
+      "symbol": "scalbnl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1236",
+      "symbol": "scalblnl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1237",
+      "symbol": "lrintl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1238",
+      "symbol": "lroundl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1239",
+      "symbol": "llrintl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1240",
+      "symbol": "llroundl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1241",
+      "symbol": "remquol",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1242",
+      "symbol": "nexttowardl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1243",
+      "symbol": "fmal",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1244",
+      "symbol": "nanl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1245",
+      "symbol": "cacosl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1246",
+      "symbol": "casinl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1247",
+      "symbol": "catanl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1248",
+      "symbol": "cacoshl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1249",
+      "symbol": "casinhl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1250",
+      "symbol": "catanhl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1251",
+      "symbol": "ccosl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1252",
+      "symbol": "csinl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1253",
+      "symbol": "ctanl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1254",
+      "symbol": "ccoshl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1255",
+      "symbol": "csinhl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1256",
+      "symbol": "ctanhl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1257",
+      "symbol": "cexpl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1258",
+      "symbol": "clogl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1259",
+      "symbol": "cpowl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1260",
+      "symbol": "csqrtl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1261",
+      "symbol": "cabsl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1262",
+      "symbol": "cargl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1263",
+      "symbol": "conjl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1264",
+      "symbol": "cprojl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1265",
+      "symbol": "creall",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    },
+    {
+      "id": "case-1266",
+      "symbol": "cimagl",
+      "exit": 0,
+      "reference_libm": true,
+      "reference_libc": true
+    }
+  ],
+  "full_receipt": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/oe-links-gcc8/oe-links.json",
+  "full_receipt_sha256": "396aa82993c48b48b35b13d45950055b70d08b632881161feaf098a590d4fcb8",
+  "command_example": [
+    "/toolchain/bin/arm-samsung-linux-gnueabi-gcc",
+    "--sysroot=/oe-reference",
+    "/results/gcc8-v2/case-1030/probe.o",
+    "-L/oe-reference/lib",
+    "-L/oe-reference/usr/lib",
+    "-Wl,--hash-style=sysv",
+    "-Wl,-Map,/results/oe-links-gcc8/case-1030.map",
+    "-lm",
+    "-o",
+    "/results/oe-links-gcc8/case-1030"
+  ],
+  "load_example": [
+    "LOAD /oe-reference/usr/lib/crt1.o",
+    "LOAD /oe-reference/usr/lib/crti.o",
+    "LOAD /toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/crtbegin.o",
+    "LOAD /results/gcc8-v2/case-1030/probe.o",
+    "LOAD /oe-reference/usr/lib/libm.so",
+    "LOAD /toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/libgcc.a",
+    "LOAD /oe-reference/lib/libgcc_s.so",
+    "LOAD /oe-reference/usr/lib/libc.so",
+    "LOAD /oe-reference/lib/libc.so.6",
+    "LOAD /oe-reference/usr/lib/libc_nonshared.a",
+    "LOAD /oe-reference/lib/ld-linux.so.3",
+    "LOAD /toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/libgcc.a",
+    "LOAD /oe-reference/lib/libgcc_s.so",
+    "LOAD /toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/crtend.o",
+    "LOAD /oe-reference/usr/lib/crtn.o"
+  ]
+}

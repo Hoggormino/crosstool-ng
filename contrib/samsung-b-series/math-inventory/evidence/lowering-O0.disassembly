@@ -1,0 +1,110 @@
+
+lowering-O0.o:     file format elf32-littlearm
+
+Disassembly of section .text:
+
+00000000 <_Z7cpp_sine>:
+   0:	e92d4800 	stmdb	sp!, {fp, lr}
+   4:	e28db004 	add	fp, sp, #4	; 0x4
+   8:	e24dd008 	sub	sp, sp, #8	; 0x8
+   c:	e14b00fc 	strd	r0, [fp, #-12]
+  10:	e14b00dc 	ldrd	r0, [fp, #-12]
+  14:	ebfffffe 	bl	0 <_Z7cpp_sine>
+			14: R_ARM_CALL	_ZSt3sine
+  18:	e1a02000 	mov	r2, r0
+  1c:	e1a03001 	mov	r3, r1
+  20:	e1a00002 	mov	r0, r2
+  24:	e1a01003 	mov	r1, r3
+  28:	e24bd004 	sub	sp, fp, #4	; 0x4
+  2c:	e8bd8800 	ldmia	sp!, {fp, pc}
+
+00000030 <_Z11builtin_sine>:
+  30:	e92d4800 	stmdb	sp!, {fp, lr}
+  34:	e28db004 	add	fp, sp, #4	; 0x4
+  38:	e24dd008 	sub	sp, sp, #8	; 0x8
+  3c:	e14b00fc 	strd	r0, [fp, #-12]
+  40:	e14b00dc 	ldrd	r0, [fp, #-12]
+  44:	ebfffffe 	bl	0 <sinl>
+			44: R_ARM_CALL	sinl
+  48:	e1a02000 	mov	r2, r0
+  4c:	e1a03001 	mov	r3, r1
+  50:	e1a00002 	mov	r0, r2
+  54:	e1a01003 	mov	r1, r3
+  58:	e24bd004 	sub	sp, fp, #4	; 0x4
+  5c:	e8bd8800 	ldmia	sp!, {fp, pc}
+
+00000060 <_Z12declared_sine>:
+  60:	e92d4800 	stmdb	sp!, {fp, lr}
+  64:	e28db004 	add	fp, sp, #4	; 0x4
+  68:	e24dd008 	sub	sp, sp, #8	; 0x8
+  6c:	e14b00fc 	strd	r0, [fp, #-12]
+  70:	e14b00dc 	ldrd	r0, [fp, #-12]
+  74:	ebfffffe 	bl	0 <sinl>
+			74: R_ARM_CALL	sinl
+  78:	e1a02000 	mov	r2, r0
+  7c:	e1a03001 	mov	r3, r1
+  80:	e1a00002 	mov	r0, r2
+  84:	e1a01003 	mov	r1, r3
+  88:	e24bd004 	sub	sp, fp, #4	; 0x4
+  8c:	e8bd8800 	ldmia	sp!, {fp, pc}
+
+00000090 <_Z12builtin_sqrte>:
+  90:	e92d4800 	stmdb	sp!, {fp, lr}
+  94:	e28db004 	add	fp, sp, #4	; 0x4
+  98:	e24dd008 	sub	sp, sp, #8	; 0x8
+  9c:	e14b00fc 	strd	r0, [fp, #-12]
+  a0:	e14b00dc 	ldrd	r0, [fp, #-12]
+  a4:	ebfffffe 	bl	0 <sqrtl>
+			a4: R_ARM_CALL	sqrtl
+  a8:	e1a02000 	mov	r2, r0
+  ac:	e1a03001 	mov	r3, r1
+  b0:	e1a00002 	mov	r0, r2
+  b4:	e1a01003 	mov	r1, r3
+  b8:	e24bd004 	sub	sp, fp, #4	; 0x4
+  bc:	e8bd8800 	ldmia	sp!, {fp, pc}
+
+000000c0 <_Z13builtin_rounde>:
+  c0:	e92d4800 	stmdb	sp!, {fp, lr}
+  c4:	e28db004 	add	fp, sp, #4	; 0x4
+  c8:	e24dd008 	sub	sp, sp, #8	; 0x8
+  cc:	e14b00fc 	strd	r0, [fp, #-12]
+  d0:	e14b00dc 	ldrd	r0, [fp, #-12]
+  d4:	ebfffffe 	bl	0 <roundl>
+			d4: R_ARM_CALL	roundl
+  d8:	e1a02000 	mov	r2, r0
+  dc:	e1a03001 	mov	r3, r1
+  e0:	e1a00002 	mov	r0, r2
+  e4:	e1a01003 	mov	r1, r3
+  e8:	e24bd004 	sub	sp, fp, #4	; 0x4
+  ec:	e8bd8800 	ldmia	sp!, {fp, pc}
+
+000000f0 <_Z14declared_rounde>:
+  f0:	e92d4800 	stmdb	sp!, {fp, lr}
+  f4:	e28db004 	add	fp, sp, #4	; 0x4
+  f8:	e24dd008 	sub	sp, sp, #8	; 0x8
+  fc:	e14b00fc 	strd	r0, [fp, #-12]
+ 100:	e14b00dc 	ldrd	r0, [fp, #-12]
+ 104:	ebfffffe 	bl	0 <roundl>
+			104: R_ARM_CALL	roundl
+ 108:	e1a02000 	mov	r2, r0
+ 10c:	e1a03001 	mov	r3, r1
+ 110:	e1a00002 	mov	r0, r2
+ 114:	e1a01003 	mov	r1, r3
+ 118:	e24bd004 	sub	sp, fp, #4	; 0x4
+ 11c:	e8bd8800 	ldmia	sp!, {fp, pc}
+Disassembly of section .text._ZSt3sine:
+
+00000000 <_ZSt3sine>:
+   0:	e92d4800 	stmdb	sp!, {fp, lr}
+   4:	e28db004 	add	fp, sp, #4	; 0x4
+   8:	e24dd008 	sub	sp, sp, #8	; 0x8
+   c:	e14b00fc 	strd	r0, [fp, #-12]
+  10:	e14b00dc 	ldrd	r0, [fp, #-12]
+  14:	ebfffffe 	bl	0 <sinl>
+			14: R_ARM_CALL	sinl
+  18:	e1a02000 	mov	r2, r0
+  1c:	e1a03001 	mov	r3, r1
+  20:	e1a00002 	mov	r0, r2
+  24:	e1a01003 	mov	r1, r3
+  28:	e24bd004 	sub	sp, fp, #4	; 0x4
+  2c:	e8bd8800 	ldmia	sp!, {fp, pc}

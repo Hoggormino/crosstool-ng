@@ -1,0 +1,5219 @@
+{
+  "files": [
+    {
+      "label": "rebuilt-libm",
+      "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+      "sha256": "a6a3c641d6d3ec0981e09de4ff2e44be7b898c0ae6327fdf566aa014ab74df47",
+      "defined_dynamic_symbols": 313
+    },
+    {
+      "label": "rebuilt-libc",
+      "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+      "sha256": "bdc91e7aba6a6042f3bd2bcc70007610119a73859bf859f496a0d5c0d2a8b419",
+      "defined_dynamic_symbols": 2041
+    },
+    {
+      "label": "private-libstdc++",
+      "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+      "sha256": "361095d4000d73b4425cc0073e2f1e0c7289b3b4b6c64ca19d80a0e289caa47a",
+      "defined_dynamic_symbols": 5398
+    },
+    {
+      "label": "oe-libm",
+      "file": "/oe-reference/lib/libm.so.6",
+      "sha256": "6aa55294f3bc6462f146fd21a2f08746aa35b05fce2b2e74635d945af551990e",
+      "defined_dynamic_symbols": 313
+    },
+    {
+      "label": "oe-libc",
+      "file": "/oe-reference/lib/libc.so.6",
+      "sha256": "d4e7427e9d1c8ce1ced20a0853f44fc36ffa2d4d660ec90cd65fee6c59ce906f",
+      "defined_dynamic_symbols": 2041
+    }
+  ],
+  "symbols": {
+    "llroundf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c260",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c668",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atan2l": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dc00",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "00083824",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001de18",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "crealf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a72c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a888",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tan": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00019778",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000198e8",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "cimagf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a724",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a880",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "llroundl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021b20",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002224c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "catan": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000201f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000206b0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "creall": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fb08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe3c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "truncf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029e60",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a018",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cpowf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002bdec",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c1c8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cimagl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fafc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe30",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "round": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f778",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fac8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "truncl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f068",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f3e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "lgammaf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029524",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029688",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cpowl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021500",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021bb0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ilogbf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027d38",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028030",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "coshf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028b20",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028d1c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "lgammal": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e748",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e980",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csqrt": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021298",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021910",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ilogbl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015be0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015268",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "coshl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dd68",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "00083830",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001df90",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tgamma": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e12c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e33c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fdim": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ef70",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f2d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ceil": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014a10",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014098",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tanhf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000286a8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000288fc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tanhl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001d8e0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "000838e4",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001db18",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "rint": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016200",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001587c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "feholdexcept": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006560",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000061a0",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "ctan": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020800",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020dd0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "__signbit": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000220e4",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028e50",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022934",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029174",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "lrint": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000217c8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021eb0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ceilf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00026f20",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027230",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "frexp": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021fc0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028d20",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022820",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029050",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ceill": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014a10",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "00083828",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014098",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fegetexceptflag": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006280",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00005eac",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "nearbyint": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f8c0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fbf0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "clogf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002ac60",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002aebc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "feupdateenv": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006638",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0000627c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "fdimf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029d70",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029efc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ldexp": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022050",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028db0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000228c0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000290f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cabsf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a730",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a88c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "casinhf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b6d4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002ba24",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "llround": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021b20",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002224c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "clogl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000200e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020558",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fetestexcept": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000063f8",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006030",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "fdiml": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ef70",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f2d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cabsl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fb0c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe40",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "casinhl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020cb0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000212a8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "exp2f": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ca4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028e90",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "expm1f": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027908",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027c34",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "modff": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c434",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028eb0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c858",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000291d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "exp2l": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001def0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e110",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "expm1l": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000156a8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014d28",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "logbf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028050",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028324",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "modfl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021d6c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ac8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "000838b4",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022518",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028d44",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "logbl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015ff8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015670",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "__fpclassify": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eea0",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f1fc",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "fmod": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e06c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e284",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cosf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00026fe8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000272e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cosh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dd68",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001df90",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cosl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00018808",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "0008382c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016a0c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cacoshf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b880",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002bbec",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ldexpf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c658",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000290d4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002ca8c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029404",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "expm1": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000156a8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014d28",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cacoshl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020ea8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000214d8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cbrt": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000148d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00013f50",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ldexpl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022050",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028db0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "000838a8",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000228c0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000290f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log1pf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027da8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002808c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "remquof": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029ea4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a06c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log1pl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015c88",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015300",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "remquol": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f0f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f4b0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "asin": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001db58",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dd78",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cacosf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b684",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b9e4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cacosh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020ea8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000214d8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sinf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028534",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000287a8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "catanhf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002ba48",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002bdd0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "remquo": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f0f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f4b0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sinh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ed60",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f0d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cacosl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020c48",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021238",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "conjf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a714",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a870",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "catanhl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000210d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021728",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sinl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00017130",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "000838d8",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00017c18",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "conjl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001facc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe0c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "__finite": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021d4c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028aa8",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000224dc",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028d08",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "erfc": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000150f4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014210",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "erff": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000270c8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000277fc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "erfl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014b78",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000147a0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "frexpf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c5d4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029050",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002ca08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029380",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fesetround": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006488",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000060c4",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "casinf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002aeec",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b18c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "feraiseexcept": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006288",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00005eb4",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "frexpl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021fc0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028d20",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "00083840",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022820",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029050",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "casinh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020cb0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000212a8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "casinl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000203d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000208b8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "lround": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021a64",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002219c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "exp2": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001def0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e110",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fabs": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015a58",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000150c8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "acos": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001da08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dc38",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "scalbln": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016380",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000159f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fabsf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027c54",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027f6c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nan": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eff8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f360",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fabsl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015a58",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000150c8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "erf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014b78",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000147a0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tanf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002861c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028880",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "feclearexcept": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006220",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00005e48",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "nextafterf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000280cc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028384",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tanh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001d8e0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001db18",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "remainderf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000299bc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029b7c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fminf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029d38",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029ec0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tanl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00019778",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "000838e0",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000198e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "remainderl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ebc0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ef3c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nextafterl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016090",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000156f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csqrtf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002bbe0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002bf7c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fminl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ef34",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f290",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tgammaf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ee4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029098",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csqrtl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021298",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021910",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "expf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028bdc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028dd4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "tgammal": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e12c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e33c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "acosf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000287b0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000289f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "acosh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dab0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dcd8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "expl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001de30",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "00083834",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e048",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "scalblnf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000283f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002865c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fegetround": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006444",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0000607c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "acosl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001da08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "00083818",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dc38",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "scalblnl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016380",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000159f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "scalbnf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c4b8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028f34",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c8e4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002925c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "catanf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002ad4c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002afc0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "carg": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fb10",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe44",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "catanh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000210d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021728",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fmaf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c040",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c428",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "scalbnl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021e78",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028bd8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022688",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028eb8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "catanl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000201f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000206b0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fmodf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028e18",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028fec",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "llrint": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000218d8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021fd4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fmal": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000217b0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021e98",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fmodl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e06c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "0008383c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e284",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log10": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e98c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ebf4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fmax": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eef8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f250",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "rintf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028310",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028564",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "asinf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002890c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028b28",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "asinh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00012d48",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00012438",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "rintl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016200",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001587c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "asinl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001db58",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "0008381c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dd78",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nexttoward": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016090",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000156f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "floorf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027c5c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027f74",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atan2": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dc00",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001de18",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nexttowardf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002817c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028434",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "floorl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015a68",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "00083838",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000150e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nexttowardl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016090",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000156f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cimag": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fafc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe30",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log1p": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015c88",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015300",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nearbyintf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a490",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a5f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sqrtf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029c0c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029dac",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fesetexceptflag": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0000638c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00005fbc",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "ccosf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002afc4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b284",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e8ec",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eb48",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nearbyintl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f8c0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fbf0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ccosh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ff08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020318",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sqrtl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ee08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "00083844",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f168",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "lroundf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c1e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c5e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ccosl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000204e0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000209e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ilogb": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015be0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015268",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cprojf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002be6c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c238",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atan": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00012fc4",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00012714",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "lroundl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021a64",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002219c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "powf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000297f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029980",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cprojl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000215a0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021c50",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nextafter": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016090",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000156f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log2f": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c340",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c760",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fegetenv": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006514",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00006150",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "cabs": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fb0c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe40",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atanf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00026c28",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00026ef8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "powl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ea2c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "000838d4",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eca0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atanh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dcc0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dee0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log2l": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021c58",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000223d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atanl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00012fc4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4.3",
+        "address": "00083820",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00012714",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sqrt": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ee08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f168",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sin": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00017130",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00017c18",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "casin": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000203d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000208b8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "remainder": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ebc0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ef3c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csinf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b0c4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b3b8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csinh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fd10",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000200b8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "creal": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fb08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe3c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csinl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020618",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020b38",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "llrintf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c114",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c4f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "llrintl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000218d8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021fd4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "erfcf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000274d8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000273b8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "pow": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ea2c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eca0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fesetenv": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000065b8",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000061fc",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "erfcl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000150f4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00014210",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cbrtf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00026e18",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00027118",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log2": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021c58",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000223d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "copysignf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c424",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ea0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c848",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000291c0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "__fpclassifyf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029cb0",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029e40",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "cbrtl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000148d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00013f50",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "copysignl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021d5c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ab8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000224f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028d1c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "clog": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000200e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020558",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "__signbitf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c6ec",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029174",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002cb00",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029488",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "cos": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00018808",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00016a0c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cacos": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020c48",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021238",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "asinhf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00026b20",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00026de4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "exp": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001de30",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e048",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "asinhl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00012d48",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00012438",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cargf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a734",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a890",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csin": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020618",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020b38",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csinhf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a8f8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002aaa4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cargl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fb10",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe44",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "csinhl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fd10",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000200b8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "logb": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015ff8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015670",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ctanf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b290",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b604",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ctanh": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020a60",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021038",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "logf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000296c0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029838",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "roundf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a3d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a55c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ctanl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020800",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020dd0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "logl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e8ec",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "000838ac",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eb48",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "roundl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f778",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fac8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cpow": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021500",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021bb0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "hypotf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028fc0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029188",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "acoshf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028860",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028a8c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cexpf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a744",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002a8a0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "hypotl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e208",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "00083848",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e430",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cexpl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fb38",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe68",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "acoshl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dab0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dcd8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fmaxf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029d00",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029e84",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log10f": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002975c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000298dc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "floor": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00015a68",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000150e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ccoshf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002aabc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002accc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fmaxl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eef8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f250",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "log10l": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e98c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "000838b0",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ebf4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ccoshl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ff08",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020318",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "lrintf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c058",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c440",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ccos": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000204e0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000209e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atanhf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028a80",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028c7c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cexp": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fb38",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe68",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "lrintl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000217c8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021eb0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atanhl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dcc0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001dee0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "cproj": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000215a0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021c50",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "scalbn": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021e78",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028bd8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022688",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028eb8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "modf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021d6c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ac8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00022518",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028d44",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "trunc": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f068",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f3e8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ctanhf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b4e0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002b830",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fma": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000217b0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021e98",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "ctanhl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00020a60",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021038",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "copysign": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00021d5c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ab8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000224f0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028d1c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "fmin": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ef34",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f290",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "lgamma": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e748",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e980",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sinhf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029b70",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029d1c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "hypot": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e208",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001e430",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nanf": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029df4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029f94",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "sinhl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001ed60",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "000838dc",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f0d0",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "nanl": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001eff8",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001f360",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "__finitef": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c414",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028e90",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002c834",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000291ac",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "conj": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001facc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0001fe0c",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "atan2f": [
+      {
+        "provider": "rebuilt-libm",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "000289bc",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libm",
+        "file": "/oe-reference/lib/libm.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028bc4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "isnan": [
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028a84",
+        "type": "FUNC",
+        "binding": "WEAK"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ce4",
+        "type": "FUNC",
+        "binding": "WEAK"
+      }
+    ],
+    "__isnan": [
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028a84",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ce4",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "__isinf": [
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028a54",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028ca8",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "__isnanf": [
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028e7c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00029198",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "__isinff": [
+      {
+        "provider": "rebuilt-libc",
+        "file": "/toolchain/bin/../arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "00028e58",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      },
+      {
+        "provider": "oe-libc",
+        "file": "/oe-reference/lib/libc.so.6",
+        "version": "GLIBC_2.4",
+        "address": "0002917c",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "__gxx_personality_v0": [
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "CXXABI_1.3",
+        "address": "00073608",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "_ZSt21__throw_runtime_errorPKc": [
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "00093a28",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "__cxa_end_cleanup": [
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "CXXABI_1.3",
+        "address": "00072a88",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ],
+    "_ZSt20__throw_domain_errorPKc": [
+      {
+        "provider": "private-libstdc++",
+        "file": "/toolchain/bin/../lib/gcc/arm-samsung-linux-gnueabi/8.3.0/../../../../arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "version": "GLIBCXX_3.4",
+        "address": "000937fc",
+        "type": "FUNC",
+        "binding": "GLOBAL"
+      }
+    ]
+  },
+  "scope": "Symbols relevant to the inventory; full symbol dumps remain in the build results."
+}

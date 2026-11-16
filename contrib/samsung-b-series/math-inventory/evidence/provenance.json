@@ -1,0 +1,46 @@
+{
+  "image_id": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+  "prefixes": {
+    "gcc16": "/mnt/data/Projects/samsung-gcc16-toolchain/build-gcc16-final/install",
+    "gcc8": "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install"
+  },
+  "results_root": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory",
+  "container_results_mount": "/results",
+  "reference_sysroot": "/mnt/data/Projects/samsung/oe-b-series/build-samygo-cl/tmp/sysroots/armv6-linux-gnueabi",
+  "target_header_sha256": {
+    "gcc16": {
+      "math.h": "8417fb60c0d54844dfacaa3844dfcf26ab2c83a3bc91e810b71b2e3844caf31c",
+      "complex.h": "df5935cd34899aaef9b4696dbfb984020c5b1fd5ef31101987d0808861fe3745",
+      "bits/mathdef.h": "b04635ad7b1533b5304aa1fdc89f95783b1ce6b80567db91a4374fb8c1a35f98",
+      "sys/cdefs.h": "17482000c28030bddb0d7d4d38ee26a7dfb266c3d4e0ec1a3ea53b39d2b3b212"
+    },
+    "gcc8": {
+      "math.h": "8417fb60c0d54844dfacaa3844dfcf26ab2c83a3bc91e810b71b2e3844caf31c",
+      "complex.h": "df5935cd34899aaef9b4696dbfb984020c5b1fd5ef31101987d0808861fe3745",
+      "bits/mathdef.h": "b04635ad7b1533b5304aa1fdc89f95783b1ce6b80567db91a4374fb8c1a35f98",
+      "sys/cdefs.h": "17482000c28030bddb0d7d4d38ee26a7dfb266c3d4e0ec1a3ea53b39d2b3b212"
+    }
+  },
+  "compiler_runs": [
+    "gcc16-v2",
+    "gcc8-v2"
+  ],
+  "initial_runner_iterations_preserved": [
+    "runner-check",
+    "gcc16",
+    "gcc8"
+  ],
+  "tv_access": false,
+  "arm_execution": false,
+  "header_or_library_modifications": false,
+  "inventory_runner_commit": "314e22cf9cb7b303729f016847d892b9993379cb",
+  "inventory_runner_repository": "Samsung project, local sdk-math-inventory-20261116 branch",
+  "tool_sha256": {
+    "math_inventory_catalog.py": "1d73e8c194bd3e3f209764ac9fc17cda615f1d08f2b5ba0f778d4ddc6bb6bd8e",
+    "inventory_math.py": "707d4f4e04ec3e932594e90d3ed8a48e24ed69fd5e4e27200ff3e5d488eafebb",
+    "link_math_inventory_oe.py": "4cea05c3563bb6c5e85a2815c030f4455ab860ce38fb31065961ed5581a3ace1",
+    "summarize_math_inventory.py": "4a45a813c3606d9fcdfa309ccc4d8cf980c9ccf5c462d084b00d1caa97bddc9c",
+    "math_type_properties.cpp": "10ced6e6668adc5fd5e9691bc465db8c62dc9dc40d49a208b4fa8607edec8021",
+    "math_lowering.cpp": "f4d174cc62a8eb66d463b15b3f1aabc6cfbecdcdcfa1d271c6706e84a53a79ab"
+  }
+}

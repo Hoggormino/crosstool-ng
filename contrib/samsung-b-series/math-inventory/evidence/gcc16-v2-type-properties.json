@@ -1,0 +1,14 @@
+{
+  "__SIZEOF_DOUBLE__": "8",
+  "__SIZEOF_LONG_DOUBLE__": "8",
+  "__DBL_MANT_DIG__": "53",
+  "__LDBL_MANT_DIG__": "53",
+  "__DBL_MAX_EXP__": "1024",
+  "__LDBL_MAX_EXP__": "1024",
+  "__DBL_MIN_EXP__": "(-1021)",
+  "__LDBL_MIN_EXP__": "(-1021)",
+  "__FLT_RADIX__": "2",
+  "__NO_LONG_DOUBLE_MATH": "1",
+  "__ARM_PCS": "1",
+  "__ARM_PCS_VFP": null
+}

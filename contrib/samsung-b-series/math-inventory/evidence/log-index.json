@@ -1,0 +1,77 @@
+{
+  "full_index": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/summary/full-log-index.json",
+  "sha256": "71d3fd67787e8cc41668cceac0c69f22221ca96d0d3f38ed0e9442d3a2440968",
+  "indexed_files": 4340,
+  "driver_logs": [
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/gcc16-v2.log",
+      "sha256": "3b22d312dc4accbf04902592e2b6b8298a9ff97bc76697917ff999d272ddbf08",
+      "bytes": 1909
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/gcc16.log",
+      "sha256": "f8a8c4247ec80f25bec4c454b1dcf62c2e6860a5e1486c99aa5e6835b12a21e7",
+      "bytes": 1863
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/gcc8-v2.log",
+      "sha256": "50f1472dfdab8f249f28c13861e3e952caebbc9af65f7ffc772a81e5c61553dc",
+      "bytes": 1910
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/gcc8.log",
+      "sha256": "dcf683336f8b1394fac890de54111e9dfe85c8502f7db2b4011c7355b23f0db7",
+      "bytes": 1864
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/history-fetch-216.log",
+      "sha256": "3b9d9bed3fe5285cd228c525edc7aef9996b68c2c5891e813eaa093e65b0e4b0",
+      "bytes": 90
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/history-fetch.log",
+      "sha256": "70de4a587054a3181b62c784c6eaa45279e3a93a51be7a7c97e2f6ce434a4a78",
+      "bytes": 84
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/history-init.log",
+      "sha256": "507bbdb09e766f2579aa14723020546e1f77ca9f7901dcdf32426bbe078c41db",
+      "bytes": 707
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/oe-links-gcc16.log",
+      "sha256": "c1bf85530a8935687e4e53d67ed996f0bb77a2620b2ac59ac14c29a3af8430cf",
+      "bytes": 28
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/oe-links-gcc8.log",
+      "sha256": "273910ad775d25afd67a9a598bdf7a234ea7b034a6537417097458fd77013fa5",
+      "bytes": 27
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/runner-check.log",
+      "sha256": "da900563e61ae69a9805fc760b1bb505fba7d2593c571614f2f79fd5e8d98bba",
+      "bytes": 35
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/summary.log",
+      "sha256": "9105fbb4628f81956ad0b5fba732fd5070cf4c6629946ccf9eaed3cf0f58d304",
+      "bytes": 7440
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/logs/type-properties.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "raw_inventory_receipts": [
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/gcc16-v2/inventory.json",
+      "sha256": "2877fa9979c5a9c9572a109dd9d28e664cbb12d64e43ea299146b2d0d87d1855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-math-inventory/build-math-inventory/gcc8-v2/inventory.json",
+      "sha256": "a6b44ee1ffae0b7d322d557a9cac7c985fea51cbf2861d87c52fc0db5ba9a3c1"
+    }
+  ]
+}

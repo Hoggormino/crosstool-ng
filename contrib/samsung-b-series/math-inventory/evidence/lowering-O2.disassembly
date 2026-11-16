@@ -1,0 +1,35 @@
+
+lowering-O2.o:     file format elf32-littlearm
+
+Disassembly of section .text:
+
+00000000 <_Z7cpp_sine>:
+   0:	eafffffe 	b	0 <sinl>
+			0: R_ARM_JUMP24	sinl
+
+00000004 <_Z11builtin_sine>:
+   4:	eafffffe 	b	0 <sinl>
+			4: R_ARM_JUMP24	sinl
+
+00000008 <_Z12declared_sine>:
+   8:	eafffffe 	b	0 <sinl>
+			8: R_ARM_JUMP24	sinl
+
+0000000c <_Z12builtin_sqrte>:
+   c:	ec410b17 	vmov	d7, r0, r1
+  10:	eeb57b40 	fcmpzd	d7
+  14:	eef1fa10 	fmstat
+  18:	4a000002 	bmi	28 <_Z12builtin_sqrte+0x1c>
+  1c:	eeb16bc7 	fsqrtd	d6, d7
+  20:	ec510b16 	vmov	r0, r1, d6
+  24:	e12fff1e 	bx	lr
+  28:	eafffffe 	b	0 <sqrtl>
+			28: R_ARM_JUMP24	sqrtl
+
+0000002c <_Z13builtin_rounde>:
+  2c:	eafffffe 	b	0 <roundl>
+			2c: R_ARM_JUMP24	roundl
+
+00000030 <_Z14declared_rounde>:
+  30:	eafffffe 	b	0 <roundl>
+			30: R_ARM_JUMP24	roundl
