@@ -1,0 +1,37 @@
+# ARM libgcc must honor its existing HAVE_AS_CFI_SECTIONS configure test.
+# Older assemblers retain their default CFI section; ARM EHABI unwinding remains enabled.
+--- a/libgcc/config/arm/lib1funcs.S
++++ b/libgcc/config/arm/lib1funcs.S
+@@ -21,6 +21,8 @@
+ a copy of the GCC Runtime Library Exception along with this program;
+ see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+ <http://www.gnu.org/licenses/>.  */
++
++#include "auto-target.h"
+ 
+ /* An executable stack is *not* required for these functions.  */
+ #if defined(__ELF__) && defined(__linux__)
+--- a/libgcc/config/arm/bpabi.S
++++ b/libgcc/config/arm/bpabi.S
+@@ -22,7 +22,9 @@
+    see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+    <http://www.gnu.org/licenses/>.  */
+ 
++#ifdef HAVE_AS_CFI_SECTIONS
+ 	.cfi_sections .debug_frame
++#endif
+ 
+ #ifdef __ARM_EABI__
+ /* Some attributes that are common to all routines in this file.  */
+--- a/libgcc/config/arm/ieee754-df.S
++++ b/libgcc/config/arm/ieee754-df.S
+@@ -38,7 +38,9 @@
+  * from sp used to compute the CFA.
+  */
+ 
++#ifdef HAVE_AS_CFI_SECTIONS
+ 	.cfi_sections .debug_frame
++#endif
+ 
+ #ifndef __ARMEB__
+ #define xl r0

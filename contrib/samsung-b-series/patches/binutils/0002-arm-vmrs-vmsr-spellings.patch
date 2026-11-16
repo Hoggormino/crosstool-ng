@@ -1,0 +1,36 @@
+# Support modern spellings using the existing VFP status-transfer encoders.
+# No new instruction encodings or ISA levels are introduced.
+--- a/gas/config/tc-arm.c
++++ b/gas/config/tc-arm.c
+@@ -7127,6 +7127,22 @@
+     return FAIL;
+ 
+   return SUCCESS;
++}
++
++/* Unified VMRS/VMSR are spellings of the existing VFP status transfers.
++   Keep their operands restricted to VFP system registers.  */
++static void
++do_vfp_vmrs (void)
++{
++  if (do_vfp_nsyn_mrs () == FAIL)
++    first_error (_("VFP system register expected"));
++}
++
++static void
++do_vfp_vmsr (void)
++{
++  if (do_vfp_nsyn_msr () == FAIL)
++    first_error (_("VFP system register expected"));
+ }
+ 
+ static void
+@@ -15539,6 +15555,8 @@
+  cCE(ftouizs,	ebc0ac0, 2, (RVS, RVS),	      vfp_sp_monadic),
+  cCE(fmrx,	ef00a10, 2, (RR, RVC),	      rd_rn),
+  cCE(fmxr,	ee00a10, 2, (RVC, RR),	      rn_rd),
++ cCE(vmrs,	ef00a10, 2, (APSR_RR, RVC_PSR), vfp_vmrs),
++ cCE(vmsr,	ee00a10, 2, (RVC_PSR, RR),       vfp_vmsr),
+ 
+   /* Memory operations.	 */
+  cCE(flds,	d100a00, 2, (RVS, ADDRGLDC),  vfp_sp_ldst),

@@ -1,0 +1,144 @@
+{
+  "gcc": "8.3.0",
+  "framework_baseline": "a4895d7fc49d5b423abc5f166895c80175019570",
+  "patches": [
+    {
+      "path": "packages/gcc/8.3.0/0000-libtool-leave-framework-alone.patch",
+      "sha256": "69e06ac996af6c6bc8b1ff12ce61484850ed62cebbb763265de26bfe64ac4511",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0001-uclibc-conf.patch",
+      "sha256": "b91a83712f5fad93bc4c19d629d8912c80c8b36693580272f045078a82bcc458",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0002-gcc-plugin-Win-Dont-need-undefined-extern-var-refs-nor-fpic.patch",
+      "sha256": "002d9ec6483f71598affc31880994c1ba59e64291b153833704c5b291fec1c1c",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0003-gcc-plugin-POSIX-include-sys-select-h.patch",
+      "sha256": "b963dad123611c6d320c18ae49c160011e61331950ebe11b1a3926029d2bdfd8",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0004-arm-softfloat-libgcc.patch",
+      "sha256": "e5f5e25aa41d807edc54b52fa712e5d1bf842d9c1048c91cb1d76ee313aa02f7",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0005-fix-m68k-uclinux.patch",
+      "sha256": "f53e3faac1c635f1d0465bd6af4d01b08668d2f0e2cb5ec147041bdd1fcecf25",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0006-libgfortran-missing-include.patch",
+      "sha256": "b7c63cfdd80fe9b738e28a84175491d4cfb12487bd4c0d547f30afaeb5cf6217",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0007-nios2-bad-multilib-default.patch",
+      "sha256": "2a91242f7d8f1eb9613ada13094b21de2bd529615a46156805504a182b58bae6",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0008-libgcc-disable-split-stack-nothreads.patch",
+      "sha256": "bdf04fdaeed235fa18dd90a43fccaaf2d6dd5f9a952f31b4455e002d207a7ad9",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0009-bionic-ndk.patch",
+      "sha256": "b8b3f5a632161acc40a442939373a6b008d15c43283d12866f0ef10439124755",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0010-crystax.patch",
+      "sha256": "0847942170f661e38fed32c3e35008273ed6a0ed4356a2769977723b9cf081af",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0011-crystax.patch",
+      "sha256": "54c61ab80302b815c60bcc6f53f861b8dd878792f660202b47623da6e016e278",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0012-crystax.patch",
+      "sha256": "07e0975fc18b85e632b1c7e9b56e436c49fffda9473e1d88790f766968a79e04",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0013-crystax.patch",
+      "sha256": "a89f113d58d8b86217cba9fb85e047df9caacfd481d07a4b9e9ff4805c4edc53",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0014-crystax.patch",
+      "sha256": "03150bce03a8d27ec748f3e29d09ee8df8f72bdc5b97556a7b946365266502fd",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0015-crystax.patch",
+      "sha256": "ea3c1001f90cf84314ffc3e2a21bc35dccfc71b9178b7efae23f42ce54ee284e",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0016-crystax.patch",
+      "sha256": "eacb686637d68464622fdc2c68147724e4490d54b1da7047c5136f7bdd21ea82",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0017-crystax.patch",
+      "sha256": "a0ff5e6574ce17ab8a9e48a067a262c71e9f26eb871cfb98e2326b7ebcfd8684",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0018-ARC-Add-multilib-support-for-linux-targets.patch",
+      "sha256": "0204d7724a164d6226a79c1f09f579e616837578c466a827c671659ad19cd992",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0019-isl-0.20.patch",
+      "sha256": "28c2482b60b69b87301c3c3f71432a9ed905d5ad27375cb0b79804d3aaf466e0",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0020-ARM-fix-cmse.patch",
+      "sha256": "1435b5f923e2cf2f7c6a03396340abfb40473a06efb20de059b79a2e2d9160ab",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0021-arm-Make-arm_cmse.h-C99-compatible.patch",
+      "sha256": "76d3b09278723cd26ea10d9847db96b9a53298df250ddefaa0538b9f342bee46",
+      "origin": "crosstool-ng-1.24.0 at b2151f1dba2b20c310adfe7198e461ec4469172b",
+      "purpose": "Restore the historical GCC 8.3.0 package integration; platform-specific changes remain conditional in upstream sources"
+    },
+    {
+      "path": "packages/gcc/8.3.0/0022-arm-respect-cfi-sections-capability.patch",
+      "sha256": "20f120af6ecc753399bd555a8997032485851d939d97899d322d1508aab47457",
+      "origin": "Samsung HEAD integration",
+      "purpose": "Honor the detected assembler CFI-section capability in ARM libgcc"
+    }
+  ]
+}
