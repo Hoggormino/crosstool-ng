@@ -1,0 +1,54 @@
+# Use only futex interfaces present in the selected kernel UAPI headers.
+# For Linux 2.6.18 this means shared WAIT/WAKE and relative timeout waits.
+--- a/libstdc++-v3/src/c++20/atomic.cc
++++ b/libstdc++-v3/src/c++20/atomic.cc
+@@ -37,6 +37,7 @@
+ 
+ #ifdef _GLIBCXX_HAVE_LINUX_FUTEX
+ # include <sys/syscall.h> // SYS_futex
++# include <linux/futex.h>
+ # include <unistd.h>
+ # include <sys/time.h> // timespec
+ # define _GLIBCXX_HAVE_PLATFORM_WAIT 1
+@@ -115,7 +116,12 @@
+ 
+ #elif defined _GLIBCXX_HAVE_LINUX_FUTEX
+ 
+-  const int futex_private_flag = 128;
++#ifdef FUTEX_PRIVATE_FLAG
++  const int futex_private_flag = FUTEX_PRIVATE_FLAG;
++#else
++  // Shared futex operations are also valid within one process.
++  const int futex_private_flag = 0;
++#endif
+ 
+   void
+   __platform_wait(const int* addr, int val, int /* obj_size */) noexcept
+@@ -145,15 +151,21 @@
+   {
+     // FUTEX_WAIT expects a relative timeout, so must use FUTEX_WAIT_BITSET
+     // for an absolute timeout.
+-    const int futex_op_wait_bitset = 9;
++#ifdef FUTEX_WAIT_BITSET
++    const int futex_op_wait_bitset = FUTEX_WAIT_BITSET;
+     const int futex_op_wait_bitset_private
+       = futex_op_wait_bitset | futex_private_flag;
+-    const int futex_bitset_match_any = 0xffffffff;
+-
+     struct timespec timeout = chrono::__to_timeout_timespec(abs_time);
+-
+-    if (syscall(SYS_futex, addr, futex_op_wait_bitset_private, val,
+-		&timeout, nullptr, futex_bitset_match_any))
++    const int op = futex_op_wait_bitset_private;
++#else
++    // Linux 2.6.18 has relative FUTEX_WAIT but not absolute/bitset wait.
++    const auto remaining = abs_time - __wait_clock_t::now();
++    if (remaining <= remaining.zero())
++      return false;
++    struct timespec timeout = chrono::__to_timeout_timespec(remaining);
++    const int op = futex_private_flag;
++#endif
++    if (syscall(SYS_futex, addr, op, val, &timeout, nullptr, 0xffffffff))
+       {
+ 	if (errno == ETIMEDOUT)
+ 	  return false;

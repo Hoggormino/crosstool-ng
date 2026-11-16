@@ -1,0 +1,3 @@
+reporter_name="Samsung B-series source integration"
+reporter_url="https://github.com/Hoggormino/crosstool-ng"
+reporter_comment="GCC 16.2.0 separate worker; exact OE-prepared snapshots, ARMv6J/VFPv2/base PCS, EABI5. Native kernel admission remains separate. See contrib/samsung-b-series/gcc16.md."

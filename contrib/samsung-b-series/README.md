@@ -20,6 +20,9 @@ GCC 8.3.0 package patches/checksums are restored from the 1.24.0 tag, while the
 framework remains pinned to HEAD a4895d7fc49d5b423abc5f166895c80175019570.
 The special 8.3 selector coexists with HEAD's normal major-version 8 selector.
 
+The separate [GCC 16.2 worker variant](gcc16.md) uses HEAD's newest compiler
+package and its own sample; the GCC 8.3 checkpoint below remains preserved.
+
 See the Samsung project's `docs/sdk-modern-ctng.md` for commands, build evidence,
 ABI boundaries and remaining limitations.
 
