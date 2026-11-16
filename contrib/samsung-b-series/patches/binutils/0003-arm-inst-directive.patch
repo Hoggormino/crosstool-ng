@@ -1,0 +1,138 @@
+# Backport .inst constant emission and ARM/Thumb mapping from binutils 2.20.
+# Sourceware tag commit 7ae51527883b523f6d6ab399cf9af687dc8ca9e9.
+# Adaptation: omit the later automatic-IT-block bookkeeping absent in this snapshot.
+--- a/gas/config/tc-arm.c
++++ b/gas/config/tc-arm.c
+@@ -2968,6 +2968,122 @@
+ }
+ 
+ 
++/* Emit an expression containing a 32-bit thumb instruction.
++   Implementation based on put_thumb32_insn.  */
++
++static void
++emit_thumb32_expr (expressionS * exp)
++{
++  expressionS exp_high = *exp;
++
++  exp_high.X_add_number = (unsigned long)exp_high.X_add_number >> 16;
++  emit_expr (& exp_high, (unsigned int) THUMB_SIZE);
++  exp->X_add_number &= 0xffff;
++  emit_expr (exp, (unsigned int) THUMB_SIZE);
++}
++
++/*  Guess the instruction size based on the opcode.  */
++
++static int
++thumb_insn_size (int opcode)
++{
++  if ((unsigned int) opcode < 0xe800u)
++    return 2;
++  else if ((unsigned int) opcode >= 0xe8000000u)
++    return 4;
++  else
++    return 0;
++}
++
++static bfd_boolean
++emit_insn (expressionS *exp, int nbytes)
++{
++  int size = 0;
++
++  if (exp->X_op == O_constant)
++    {
++      size = nbytes;
++
++      if (size == 0)
++	size = thumb_insn_size (exp->X_add_number);
++
++      if (size != 0)
++	{
++	  if (size == 2 && (unsigned int)exp->X_add_number > 0xffffu)
++	    {
++	      as_bad (_(".inst.n operand too big. "\
++			"Use .inst.w instead"));
++	      size = 0;
++	    }
++	  else
++	    {
++	      if (thumb_mode && (size > THUMB_SIZE) && !target_big_endian)
++		emit_thumb32_expr (exp);
++	      else
++		emit_expr (exp, (unsigned int) size);
++
++	    }
++	}
++      else
++	as_bad (_("cannot determine Thumb instruction size. "	\
++		  "Use .inst.n/.inst.w instead"));
++    }
++  else
++    as_bad (_("constant expression required"));
++
++  return (size != 0);
++}
++
++/* Like s_arm_elf_cons but do not use md_cons_align and
++   set the mapping state to MAP_ARM/MAP_THUMB.  */
++
++static void
++s_arm_elf_inst (int nbytes)
++{
++  if (is_it_end_of_statement ())
++    {
++      demand_empty_rest_of_line ();
++      return;
++    }
++
++  /* Calling mapping_state () here will not change ARM/THUMB,
++     but will ensure not to be in DATA state.  */
++
++  if (thumb_mode)
++    mapping_state (MAP_THUMB);
++  else
++    {
++      if (nbytes != 0)
++	{
++	  as_bad (_("width suffixes are invalid in ARM mode"));
++	  ignore_rest_of_line ();
++	  return;
++	}
++
++      nbytes = 4;
++
++      mapping_state (MAP_ARM);
++    }
++
++  do
++    {
++      expressionS exp;
++
++      expression (& exp);
++
++      if (! emit_insn (& exp, nbytes))
++	{
++	  ignore_rest_of_line ();
++	  return;
++	}
++    }
++  while (*input_line_pointer++ == ',');
++
++  /* Put terminator back into stream.  */
++  input_line_pointer --;
++  demand_empty_rest_of_line ();
++}
++
+ /* Parse a .rel31 directive.  */
+ 
+ static void
+@@ -3959,6 +4075,9 @@
+ #ifdef OBJ_ELF
+   { "word",	   s_arm_elf_cons, 4 },
+   { "long",	   s_arm_elf_cons, 4 },
++  { "inst.n",      s_arm_elf_inst, 2 },
++  { "inst.w",      s_arm_elf_inst, 4 },
++  { "inst",        s_arm_elf_inst, 0 },
+   { "rel31",	   s_arm_rel31,	  0 },
+   { "fnstart",		s_arm_unwind_fnstart,	0 },
+   { "fnend",		s_arm_unwind_fnend,	0 },
