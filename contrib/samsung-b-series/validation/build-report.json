@@ -1,0 +1,121 @@
+{
+  "framework_base": {
+    "branch": "master",
+    "commit": "a4895d7fc49d5b423abc5f166895c80175019570",
+    "describe": "crosstool-ng-1.29.0-38-ga4895d7f"
+  },
+  "compiler": "GCC 8.3.0",
+  "binutils": "2.17.50 20070201, exact snapshot plus six compatibility backports",
+  "glibc": {
+    "recipe_label": "2.5.90-9.0.9",
+    "source": "371f84a4dca19f1416c3f28db9980539d2f62905",
+    "ports": "908afa831ca4403a689304a86e2014b4baa66366",
+    "minimum_kernel": "2.6.16"
+  },
+  "kernel_headers": "2.6.18",
+  "target": {
+    "family": "arm-linux-gnueabi",
+    "tuple": "arm-samsung-linux-gnueabi",
+    "cpu": "ARM1136JF-S / ARMv6J",
+    "mode": "ARM",
+    "endian": "little",
+    "fpu": "VFPv2",
+    "calling_convention": "softfp / base PCS",
+    "compiler_elf": "EABI5",
+    "assembler_default_elf": "EABI4",
+    "interpreter": "/lib/ld-linux.so.3"
+  },
+  "prefix": "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install",
+  "clean_build_elapsed": "20:39.14",
+  "clean_build_log": "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/logs/build-v1.log",
+  "full_config_sha256": "1149ed6febe64f51bc9ac74de338381efe19341918c2d81a11b81bf95f2b5da6",
+  "defconfig_sha256": "4d91539b7fd61d7c28e7a1a35215bccea94b752c99fbc948b7120b70381774a1",
+  "private_runtimes": [
+    {
+      "file": "libstdc++.so.6",
+      "sha256": "361095d4000d73b4425cc0073e2f1e0c7289b3b4b6c64ca19d80a0e289caa47a",
+      "bytes": 7837666,
+      "provided_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.1",
+        "CXXABI_1.3.10",
+        "CXXABI_1.3.11",
+        "CXXABI_1.3.2",
+        "CXXABI_1.3.3",
+        "CXXABI_1.3.4",
+        "CXXABI_1.3.5",
+        "CXXABI_1.3.6",
+        "CXXABI_1.3.7",
+        "CXXABI_1.3.8",
+        "CXXABI_1.3.9",
+        "CXXABI_ARM_1.3.3",
+        "CXXABI_TM_1",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.1",
+        "GLIBCXX_3.4.10",
+        "GLIBCXX_3.4.11",
+        "GLIBCXX_3.4.12",
+        "GLIBCXX_3.4.13",
+        "GLIBCXX_3.4.14",
+        "GLIBCXX_3.4.15",
+        "GLIBCXX_3.4.16",
+        "GLIBCXX_3.4.17",
+        "GLIBCXX_3.4.18",
+        "GLIBCXX_3.4.19",
+        "GLIBCXX_3.4.2",
+        "GLIBCXX_3.4.20",
+        "GLIBCXX_3.4.21",
+        "GLIBCXX_3.4.22",
+        "GLIBCXX_3.4.23",
+        "GLIBCXX_3.4.24",
+        "GLIBCXX_3.4.25",
+        "GLIBCXX_3.4.3",
+        "GLIBCXX_3.4.4",
+        "GLIBCXX_3.4.5",
+        "GLIBCXX_3.4.6",
+        "GLIBCXX_3.4.7",
+        "GLIBCXX_3.4.8",
+        "GLIBCXX_3.4.9",
+        "libstdc++.so.6"
+      ],
+      "ifunc_symbols": 0
+    },
+    {
+      "file": "libgcc_s.so.1",
+      "sha256": "3ca4299e2886ad2797598a02e6591acdce0b5c0e54fc7ea3033f8c0c3d1fe87b",
+      "bytes": 9252692,
+      "provided_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.3.1",
+        "GCC_3.3.4",
+        "GCC_3.4",
+        "GCC_3.4.2",
+        "GCC_3.5",
+        "GCC_4.0.0",
+        "GCC_4.2.0",
+        "GCC_4.3.0",
+        "GCC_4.7.0",
+        "GCC_7.0.0",
+        "GLIBC_2.0",
+        "libgcc_s.so.1"
+      ],
+      "ifunc_symbols": 0
+    },
+    {
+      "file": "libatomic.so.1",
+      "sha256": "8e8395babea3bce7c370a4bf46002045ffb45a436cf82b844faae80c562cf49d",
+      "bytes": 146689,
+      "provided_versions": [
+        "LIBATOMIC_1.0",
+        "LIBATOMIC_1.1",
+        "LIBATOMIC_1.2",
+        "libatomic.so.1"
+      ],
+      "ifunc_symbols": 0
+    }
+  ],
+  "runtime_atomic64": "non-lock-free mutex fallback; HAVE_IFUNC=0, HAVE_ATOMIC_CAS_8=0, HAVE_ATOMIC_LDST_8=0",
+  "hardware_access": "None",
+  "newer_gcc": "Not built or claimed by this GCC 8.3 checkpoint"
+}

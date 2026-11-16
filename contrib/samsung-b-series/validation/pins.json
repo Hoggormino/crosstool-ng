@@ -1,0 +1,10 @@
+{
+  "framework_base": "a4895d7fc49d5b423abc5f166895c80175019570",
+  "validated_functional_commit": "7476bbfe4d63150da7d94c678daf112368e3fc49",
+  "compiler_package": "8.3.0",
+  "config_sha256": "1149ed6febe64f51bc9ac74de338381efe19341918c2d81a11b81bf95f2b5da6",
+  "image_id": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+  "standalone_image_id": "sha256:61053394f00b3ea9ed30f61ba28a6f654ac215d53d3f6db1d139aff56a47aba6",
+  "target_build_has_external_oe_sysroot_mount": false,
+  "tv_access": false
+}

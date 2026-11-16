@@ -1,0 +1,3 @@
+reporter_name="Samsung B-series source integration"
+reporter_url="https://github.com/Hoggormino/crosstool-ng"
+reporter_comment="GCC 8.3.0 standalone worker; prepare exact OE snapshots with contrib/samsung-b-series first. EABI5, ARMv6J, VFPv2/base PCS. Hardware admission is separate."

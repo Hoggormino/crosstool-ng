@@ -1,0 +1,166 @@
+{
+  "oe_commit": "e9fcef71f94fb4e76c6e8d992b7936f8d5fa8632",
+  "rpcgen": "rpcgen (rpcsvc-proto) 1.4.2",
+  "headers": [
+    {
+      "name": "bootparam_prot.h",
+      "sha256": "f4e64a3daf8b99a989094560ec74229957fece0e8cd69f9de263e78704d5af87",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "bootparam_prot.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/bootparam_prot.h"
+      ]
+    },
+    {
+      "name": "nlm_prot.h",
+      "sha256": "31f6b8ea726b7051c2df257765559bf76588ce813952e6abab49df433a66df68",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "nlm_prot.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/nlm_prot.h"
+      ]
+    },
+    {
+      "name": "rstat.h",
+      "sha256": "edbc39688877adcf93e6229655245df1098042175cbd6a89fe129a170648948b",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "rstat.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/rstat.h"
+      ]
+    },
+    {
+      "name": "yppasswd.h",
+      "sha256": "0e2909aa702b054bd2d635525d279f178ddabc235313e048727a9404d5468bf1",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "yppasswd.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/yppasswd.h"
+      ]
+    },
+    {
+      "name": "klm_prot.h",
+      "sha256": "3db0636a1bde841769ec416c8f05197d16350ed04318d9e13c51e7acc51c9021",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "klm_prot.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/klm_prot.h"
+      ]
+    },
+    {
+      "name": "rex.h",
+      "sha256": "f7b0aa0e3bb4fcaced5abe2c61187b9c12a7142a0a5907e0a476b1cf5ab3a440",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "rex.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/rex.h"
+      ]
+    },
+    {
+      "name": "sm_inter.h",
+      "sha256": "9d10eec774cbfcbda9bcf932b139302df801a7bd1c9b5aba91d296968c42424d",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "sm_inter.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/sm_inter.h"
+      ]
+    },
+    {
+      "name": "mount.h",
+      "sha256": "bdda49b8fc0c7fb0b8a72031e102da7088b43ae5371595fc88367b10a8348860",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "mount.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/mount.h"
+      ]
+    },
+    {
+      "name": "rusers.h",
+      "sha256": "d4dacf841a8210d6703ace58c3ef5c7142965c2062f4015d3e05bba835839184",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "rusers.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/rusers.h"
+      ]
+    },
+    {
+      "name": "spray.h",
+      "sha256": "382cd0f29a642231ec87db0a8123b3bf94478c860d8231f0a3b7184b3ccc1e1d",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "spray.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/spray.h"
+      ]
+    },
+    {
+      "name": "nfs_prot.h",
+      "sha256": "02d0a3f6a5a31b1da26e8935f749ec435cf420a7cf7cd046a38719278101a5c1",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "nfs_prot.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/nfs_prot.h"
+      ]
+    },
+    {
+      "name": "rquota.h",
+      "sha256": "1e1633aac2ef2021f50e5470fab1e3bd66fa245c937aa06f391fcc0b0ad2741c",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "rquota.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/rquota.h"
+      ]
+    },
+    {
+      "name": "key_prot.h",
+      "sha256": "7897e0ad6f8132393b78e182e4f83393462d13d4f77490ae4a0860de59d4d8a8",
+      "generation_command": [
+        "/usr/bin/rpcgen",
+        "-h",
+        "key_prot.x",
+        "-o",
+        "/mnt/data/Projects/samsung-modern-toolchain/build-modern-ctng-final/install/share/samsung-b-series/oe-rpc-headers-7iwi7n0n/key_prot.h"
+      ]
+    }
+  ],
+  "ld_so_conf_sha256": "7577e8182e7c0aebc57ac9f5675ea57491a7c97bb0132fdf8f66c8addd7e877c",
+  "supported_sha256": "46864fd2fe5eb9840e04116f0fb7969f3d8fc8a8e99d41649f82ea41dcf170d0",
+  "excluded_broken_locales": [
+    "sid_ET",
+    "tr_TR",
+    "mn_MN",
+    "gez_ET",
+    "gez_ER",
+    "bn_BD",
+    "te_IN"
+  ],
+  "removed": [
+    "etc/rpc",
+    "usr/share/zoneinfo",
+    "usr/libexec/getconf"
+  ],
+  "scope": "Isolated target sysroot only; no firmware or system-library changes"
+}

@@ -46,6 +46,7 @@ def main():
         receipt['sources'].append(dict(name=name, url=url, commit=commit, tree=tree, archive=archive.name, sha256=sha(archive)))
     if sha(args.linux_archive) != 'c95280ff6c5d2a17788f7cc582d23ae8a9a7ba3f202ec6e4238eaadfce7c163d':
         raise RuntimeError('Linux 2.6.18 archive checksum mismatch')
+    receipt['linux'] = dict(version='2.6.18', url='https://cdn.kernel.org/pub/linux/kernel/v2.6/linux-2.6.18.tar.bz2', archive=args.linux_archive.name, sha256=sha(args.linux_archive), glibc_minimum_kernel='2.6.16')
     with tarfile.open(args.linux_archive) as tf:
         tf.extractall(args.output)
     (args.output/'linux-2.6.18').rename(args.output/'linux')

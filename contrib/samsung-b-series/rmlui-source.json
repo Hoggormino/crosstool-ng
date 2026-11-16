@@ -1,0 +1,6 @@
+{
+  "url": "https://github.com/mikke89/RmlUi.git",
+  "commit": "c29f20d73ec9c563af6752c87283b468237201be",
+  "checked_current_head_on": "2026-11-16",
+  "scope": "Core, no backend, no included font engine, no Lua/SVG/Lottie/sample/test projects, standard containers"
+}

@@ -1,0 +1,107 @@
+{
+  "framework_base": "a4895d7fc49d5b423abc5f166895c80175019570",
+  "oe_commit": "e9fcef71f94fb4e76c6e8d992b7936f8d5fa8632",
+  "snapshots": [
+    {
+      "name": "binutils",
+      "url": "https://sourceware.org/git/binutils.git",
+      "commit": "138bc74f170158c175024317a9ccee37aa7cf617",
+      "tree": "5a90a09425544931548cc8de6b0d2391badb67bb",
+      "archive": "binutils-138bc74f170158c175024317a9ccee37aa7cf617.tar",
+      "sha256": "5ff133dd78f4dbce84dec370bacd86802b1631f2d9a2c10583301c5076fd84e4",
+      "original_oe_archive_sha256": "6b6c1f02c9f1e33cfbaf755d418a146b06c1ce6a84d6c655e530ba70f061812e",
+      "archive_content_entries_verified": 7722,
+      "archive_contents_match_original_oe": true
+    },
+    {
+      "name": "glibc",
+      "url": "https://sourceware.org/git/glibc.git",
+      "commit": "371f84a4dca19f1416c3f28db9980539d2f62905",
+      "tree": "54dbb78b9b99c131340f95eab844f4f83fb5d3aa",
+      "archive": "glibc-371f84a4dca19f1416c3f28db9980539d2f62905.tar",
+      "sha256": "ec513e3ce3d028bb4c23e2f1e96de55e579939c5d07ddced268a0c4f56079d45",
+      "original_oe_archive_sha256": "acbf2a176718412fb2f12f37ef676e7e7713ef91bac754e76ebbeba108e04190",
+      "archive_content_entries_verified": 10542,
+      "archive_contents_match_original_oe": true
+    },
+    {
+      "name": "glibc-ports",
+      "url": "https://sourceware.org/git/glibc-ports.git",
+      "commit": "908afa831ca4403a689304a86e2014b4baa66366",
+      "tree": "b4820db599b0f60aea688472de218ab5454d5e07",
+      "archive": "glibc-ports-908afa831ca4403a689304a86e2014b4baa66366.tar",
+      "sha256": "4fba23cccc498ad4de9c047b96a24cba012415cf9e733500d557dd2766afc8a4",
+      "original_oe_archive_sha256": "bd8a852e2a841bbbd5b67297aded357e3e17822fcdc92888eb0c3af479381dc4",
+      "archive_content_entries_verified": 1989,
+      "archive_contents_match_original_oe": true
+    }
+  ],
+  "kernel": {
+    "version": "2.6.18",
+    "url": "https://cdn.kernel.org/pub/linux/kernel/v2.6/linux-2.6.18.tar.bz2",
+    "sha256": "c95280ff6c5d2a17788f7cc582d23ae8a9a7ba3f202ec6e4238eaadfce7c163d",
+    "glibc_minimum_kernel": "2.6.16"
+  },
+  "gcc": {
+    "version": "8.3.0",
+    "url": "https://ftp.gnu.org/gnu/gcc/gcc-8.3.0/gcc-8.3.0.tar.xz",
+    "sha256": "64baadfe6cc0f4947a84cb12d7f0dfaf45bb58b7e92461639596c21e02d97d2c"
+  },
+  "prepared_trees": {
+    "binutils": "17a4d7b1c01ad042d92d9b8d925f901fd06b9ca066ea18465488ee7cff5d3dc0",
+    "glibc": "8b195cd31b82dcb546007baafb71addd2a4fabb09b70b6f4d0760e4c5f037d4c",
+    "linux": "1477092d0f5bd0a57be81ada014096387aa79d95f7ab3d02c89a1c6a2fe64f21"
+  },
+  "compatibility_patches": [
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0001-arm-vfpv2-spelling.patch",
+      "sha256": "55b92603790373dfa32a8deeb44ca70160f59449b71fb6017f34232a1f8c6bc8"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0002-arm-vmrs-vmsr-spellings.patch",
+      "sha256": "f9e5e10c3232e6c090e99b67b2b8d9274ebebb3ea4bd13785a9a27c4f23aebdb"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0003-arm-inst-directive.patch",
+      "sha256": "203b48df56f9cd9b01b4b8a8591147522cc0f31a22a150162fbc9876eee2d482"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0004-arm-vmov-parse-registers-first.patch",
+      "sha256": "92e04f302cc7b494e8879ca3f1cd55d1bb0e59a39c2c6ccccdad85fd15adbafa"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0005-standard-vfp-ual-semantics.patch",
+      "sha256": "4ac1e781ed1965c92e4fe36af105fae9771b0ede4fd5f6d0f45019724e23d015"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0006-retain-arm-exidx-during-section-gc.patch",
+      "sha256": "58f87fd3980540253a192b177b3d9aa1640e8f7db2428e481cb4a5aa49070eb3"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0001-accept-modern-gcc-version.patch",
+      "sha256": "3faa2390eea6a877a4855529df180ed7f5b7e2a4fd6b700b16aa6530fa882649"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0002-keep-asm-unwind-resume-pointer.patch",
+      "sha256": "d8a5e61674938dd06a59c0ec7881a7763f06c538476b5022198b7f78fe4ad6ac"
+    },
+    {
+      "package": "linux",
+      "path": "patches/linux/0001-export-arm-procinfo.patch",
+      "sha256": "3d9ba07d15727b72afee09e3e792982ead45c8d41d806ba2cf960b319a054403"
+    },
+    {
+      "package": "linux",
+      "path": "patches/linux/0002-check-userspace-includes.patch",
+      "sha256": "237ff2153736f507b0b08deb1d9e9a9e13cac9d454c46382d221112542099599"
+    }
+  ]
+}
