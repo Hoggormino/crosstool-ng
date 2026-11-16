@@ -1,0 +1,54 @@
+# Keep the no-whole-archive and exception probes valid with modern C defaults.
+# Test the linker/compiler capabilities rather than implicit-int acceptance.
+--- a/configure
++++ b/configure
+@@ -6319,9 +6319,9 @@
+   echo $ECHO_N "(cached) $ECHO_C" >&6
+ else
+   cat > conftest.c <<\EOF
+-_start () {}
++void _start (void) {}
+ int __eh_pc;
+-__throw () {}
++void __throw (void) {}
+ EOF
+ if { ac_try='${CC-cc} $CFLAGS $CPPFLAGS $LDFLAGS
+ 			    -nostdlib -nostartfiles -Wl,--no-whole-archive
+@@ -6349,9 +6349,9 @@
+   echo $ECHO_N "(cached) $ECHO_C" >&6
+ else
+   cat > conftest.c <<\EOF
+-_start () {}
++void _start (void) {}
+ int __eh_pc;
+-__throw () {}
++void __throw (void) {}
+ EOF
+ if { ac_try='${CC-cc} $CFLAGS $CPPFLAGS $LDFLAGS
+ 			    -nostdlib -nostartfiles -fexceptions
+--- a/configure.in
++++ b/configure.in
+@@ -1810,9 +1810,9 @@
+ 
+ AC_CACHE_CHECK(for ld --no-whole-archive, libc_cv_ld_no_whole_archive, [dnl
+ cat > conftest.c <<\EOF
+-_start () {}
++void _start (void) {}
+ int __eh_pc;
+-__throw () {}
++void __throw (void) {}
+ EOF
+ dnl No \ in command here because it ends up inside ''.
+ if AC_TRY_COMMAND([${CC-cc} $CFLAGS $CPPFLAGS $LDFLAGS
+@@ -1830,9 +1830,9 @@
+ 
+ AC_CACHE_CHECK(for gcc -fexceptions, libc_cv_gcc_exceptions, [dnl
+ cat > conftest.c <<\EOF
+-_start () {}
++void _start (void) {}
+ int __eh_pc;
+-__throw () {}
++void __throw (void) {}
+ EOF
+ dnl No \ in command here because it ends up inside ''.
+ if AC_TRY_COMMAND([${CC-cc} $CFLAGS $CPPFLAGS $LDFLAGS

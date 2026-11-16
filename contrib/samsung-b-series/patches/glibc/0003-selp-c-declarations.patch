@@ -1,0 +1,21 @@
+# The SELP scheduling patch calls perror and returns early from a void initializer.
+# Declare the existing call and use the function's actual return type.
+--- a/nptl/init.c
++++ b/nptl/init.c
+@@ -21,6 +21,7 @@
+ #include <limits.h>
+ #include <signal.h>
+ #include <stdlib.h>
++#include <stdio.h>
+ #include <unistd.h>
+ #include <sys/param.h>
+ #include <sys/resource.h>
+@@ -369,7 +370,7 @@
+ 
+   if (setpriority(PRIO_PROCESS, pd->tid, 5)) {
+     perror ("setpriority() is ERROR. System failed 0 priority by default each thread using setpriority()\n");
+-    return -1;
++    return;
+   }
+ #ifdef SHARED
+   /* Transfer the old value from the dynamic linker's internal location.  */
