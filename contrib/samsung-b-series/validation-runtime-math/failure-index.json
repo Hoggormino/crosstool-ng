@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math/logs/provider-negative.log",
+      "bytes": 94,
+      "sha256": "4dbef123afbab20afd9397d7727018fd9f18f46ace5f03f0091b03eeef1a5ca5"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math/integrated/rebuilt-analysis.json",
+      "bytes": 7510128,
+      "sha256": "fa57f84d0cf9af3296659f2d8bc7671f6efe2a50c8e5510b237f302eed0ea385"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math/legacy-control/analysis.json",
+      "bytes": 7510132,
+      "sha256": "4f458e74c5543ccbb1bfe8b27627df600392387b6b344a0bc83cb55636c1089e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math/legacy-control/flags.json",
+      "bytes": 275212,
+      "sha256": "641fb87326c6cef68e41e1c3bb36f3257efe44379d8f8574d494caa1a2f1c82d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math/diagnostic-scope.txt",
+      "bytes": 474,
+      "sha256": "0fd450c3f2eddea64a4102700171941e81b57406e7966f2df88bb26f01ca585d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-attempt1/logs/build-timing-run1.json",
+      "bytes": 95,
+      "sha256": "fc37e5bee90220964cda528c3f36f6723ae3c26344a5ccf3f1b385bffd1344d9"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-attempt1/logs/build-console-run1.log",
+      "bytes": 5051,
+      "sha256": "3f3721d64e1e2ff5b63bf7e5bb7a6a40a5ae8e0933e4c8084f813c1a9b20c0d8"
+    }
+  ],
+  "interpretation": "Diagnostic macro/link setup failures and unchanged-runtime controls are retained. Standalone libstdc++ is not the released bundle."
+}

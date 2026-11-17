@@ -1,0 +1,90 @@
+{
+  "runtimes": {
+    "libstdc++.so.6": {
+      "sha256": "6b1b5777db17c3008160e41376598fe9c43bb9df74e6471dab5f7146ce3ff69a",
+      "tested_path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/validation/probes/private/libstdc++.so.6",
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "ld-linux.so.3",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6"
+      ]
+    },
+    "libgcc_s.so.1": {
+      "sha256": "31c8996f3e299185aef06132ad56644157832455af0d64327407075bf73daf2b",
+      "tested_path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/validation/probes/private/libgcc_s.so.1",
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    "libatomic.so.1": {
+      "sha256": "8018eef03128b09b5395bf6767b3d45a66b425d9a5670dccb6ff34f3697f5e0b",
+      "tested_path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/validation/probes/private/libatomic.so.1",
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "libc.so.6",
+        "libpthread.so.0"
+      ]
+    }
+  },
+  "scope": "Byte-identical copies of the audited and executed private bundle. No loader/libc/libm/firmware library packaged.",
+  "licenses": {
+    "COPYING3": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "COPYING.RUNTIME": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+    "samsung-math.txt": "47124f2723148c8ee3bd54850a2104fee887a3903ff11fef349d3df52f22b4ce"
+  }
+}

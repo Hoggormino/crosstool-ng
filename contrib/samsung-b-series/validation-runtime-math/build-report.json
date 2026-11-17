@@ -1,0 +1,770 @@
+{
+  "framework_base": "a4895d7fc49d5b423abc5f166895c80175019570",
+  "framework_upstream_head": "a4895d7fc49d5b423abc5f166895c80175019570\tHEAD",
+  "implementation_commit": "2c09466026bcf3c256fd5fea62396ce35c66da75",
+  "source_manifest": "../gcc16-runtime-math-manifest.json",
+  "compiler": "GCC 16.2.0",
+  "binutils": "2.17.50 exact snapshot",
+  "libc": "glibc/ports 2.5.90-9.0.9 exact snapshots",
+  "kernel_headers": "2.6.18",
+  "libc_minimum_kernel": "2.6.16",
+  "actual_kernel": "2.6.18_SELP (not tested here)",
+  "target": {
+    "cpu": "ARM1136JF-S",
+    "arch": "ARMv6J",
+    "endian": "little",
+    "instruction_mode": "ARM",
+    "fpu": "VFPv2",
+    "calling_convention": "softfp/base PCS",
+    "compiler_emitted_eabi": 5,
+    "interpreter": "/lib/ld-linux.so.3",
+    "hash_style": "SysV",
+    "gnu_unique": false
+  },
+  "install_prefix": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install",
+  "private_bundle": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/tv-ui-private-runtime",
+  "image_id": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+  "build": {
+    "start_unix": 1794884199.6353397,
+    "elapsed_seconds": 1948.2312812805176,
+    "exit": 0
+  },
+  "api": {
+    "cases": 1267,
+    "linked": 1267,
+    "exact_c_symbols_linked_oe": 237
+  },
+  "numerics": {
+    "rebuilt": {
+      "focused": {
+        "case_count": 31140,
+        "failed_case_count": 0,
+        "within_comparison_policy": true
+      },
+      "fma_flags": {
+        "checked": 20268,
+        "tininess_boundary_exclusions": 45,
+        "failed": 0,
+        "failures": []
+      },
+      "ui": {
+        "case_count": 5184,
+        "failed_case_count": 0,
+        "within_comparison_policy": true
+      },
+      "edge": {
+        "case_count": 5670,
+        "failed_case_count": 48,
+        "failure_counts": {
+          "tgamma": 7,
+          "cacos": 6,
+          "casin": 9,
+          "catan": 9,
+          "casinh": 6,
+          "catanh": 3,
+          "ctan": 3,
+          "ctanh": 3,
+          "lgamma": 2
+        },
+        "fenv_findings": []
+      },
+      "entry_checks": [
+        {
+          "test": "runtime_math",
+          "sha256": "77016feb4ce519f8e5b1bc56fe88073e21a9d638cce974aa1bb0241307882407",
+          "command": [
+            "docker",
+            "run",
+            "--rm",
+            "--init",
+            "--name",
+            "samsung-ctng-471d394b4986",
+            "--network",
+            "none",
+            "--read-only",
+            "--cap-drop",
+            "ALL",
+            "--security-opt",
+            "no-new-privileges",
+            "--pids-limit",
+            "128",
+            "--memory",
+            "512m",
+            "--cpus",
+            "1",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=32m",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot,target=/target,readonly",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/numerics/probes,target=/probes,readonly",
+            "--workdir",
+            "/tmp",
+            "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+            "qemu-arm",
+            "-cpu",
+            "arm1136",
+            "-r",
+            "2.6.18",
+            "-L",
+            "/target",
+            "-E",
+            "LD_DEBUG=bindings:versions",
+            "-E",
+            "LD_LIBRARY_PATH=/probes/private:/target/lib:/target/usr/lib",
+            "/probes/runtime_math"
+          ],
+          "exit": 0,
+          "elapsed_seconds": 0.415,
+          "stdout": "runtime_math_checks=88 failures=0\n",
+          "binding_log": "runtime_math.qemu-rebuilt.bindings"
+        },
+        {
+          "test": "fenv",
+          "sha256": "8a8969b40e28a3948d8af74019b288a72f191109b1b145d0fd5e85cf29f7a1a2",
+          "command": [
+            "docker",
+            "run",
+            "--rm",
+            "--init",
+            "--name",
+            "samsung-ctng-223f0193ace6",
+            "--network",
+            "none",
+            "--read-only",
+            "--cap-drop",
+            "ALL",
+            "--security-opt",
+            "no-new-privileges",
+            "--pids-limit",
+            "128",
+            "--memory",
+            "512m",
+            "--cpus",
+            "1",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=32m",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot,target=/target,readonly",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/numerics/probes,target=/probes,readonly",
+            "--workdir",
+            "/tmp",
+            "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+            "qemu-arm",
+            "-cpu",
+            "arm1136",
+            "-r",
+            "2.6.18",
+            "-L",
+            "/target",
+            "-E",
+            "LD_DEBUG=bindings:versions",
+            "-E",
+            "LD_LIBRARY_PATH=/probes/private:/target/lib:/target/usr/lib",
+            "/probes/fenv"
+          ],
+          "exit": 0,
+          "elapsed_seconds": 0.439,
+          "stdout": "fegetenv PASS\nfesetenv PASS\nround_restore PASS\nflags_restore PASS\nfeholdexcept PASS\nhold_clears_flags PASS\nfeupdateenv PASS\nupdate_merges_flags PASS\nnearbyint_value PASS\nnearbyint_no_inexact PASS\nthread_downward PASS\nthread_upward PASS\nparent_round_unchanged PASS\nfenv_failures=0\n",
+          "binding_log": "fenv.qemu-rebuilt.bindings"
+        },
+        {
+          "test": "projection",
+          "sha256": "3c6fd8c3048b66dc4ccafbaf6000dd863fe08931d69f30b1c7a9931b229d23b6",
+          "command": [
+            "docker",
+            "run",
+            "--rm",
+            "--init",
+            "--name",
+            "samsung-ctng-9864f351e401",
+            "--network",
+            "none",
+            "--read-only",
+            "--cap-drop",
+            "ALL",
+            "--security-opt",
+            "no-new-privileges",
+            "--pids-limit",
+            "128",
+            "--memory",
+            "512m",
+            "--cpus",
+            "1",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=32m",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot,target=/target,readonly",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/numerics/probes,target=/probes,readonly",
+            "--workdir",
+            "/tmp",
+            "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+            "qemu-arm",
+            "-cpu",
+            "arm1136",
+            "-r",
+            "2.6.18",
+            "-L",
+            "/target",
+            "-E",
+            "LD_DEBUG=bindings:versions",
+            "-E",
+            "LD_LIBRARY_PATH=/probes/private:/target/lib:/target/usr/lib",
+            "/probes/projection"
+          ],
+          "exit": 0,
+          "elapsed_seconds": 0.4,
+          "stdout": "TV UI C++ projection finite/zero/infinity/NaN checks passed\n",
+          "binding_log": "projection.qemu-rebuilt.bindings"
+        }
+      ],
+      "private_providers": {
+        "binary": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/numerics/probes/runtime_math",
+        "private_version": "GLIBCXX_SAMSUNG_MATH_1.0",
+        "imports": [
+          "feupdateenv",
+          "fma",
+          "fmaf",
+          "fmal",
+          "logb",
+          "logbf",
+          "logbl",
+          "nearbyintf"
+        ],
+        "bindings": [
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "fma",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "fmaf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "fmal",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/private/libstdc++.so.6",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "fma",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "logb",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "logbf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "logbl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/private/libstdc++.so.6",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "logb",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "nearbyintf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "feupdateenv",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          }
+        ],
+        "passed": true
+      }
+    },
+    "reference": {
+      "focused": {
+        "case_count": 31140,
+        "failed_case_count": 0,
+        "within_comparison_policy": true
+      },
+      "fma_flags": {
+        "checked": 20268,
+        "tininess_boundary_exclusions": 45,
+        "failed": 0,
+        "failures": []
+      },
+      "ui": {
+        "case_count": 5184,
+        "failed_case_count": 0,
+        "within_comparison_policy": true
+      },
+      "edge": {
+        "case_count": 5670,
+        "failed_case_count": 48,
+        "failure_counts": {
+          "tgamma": 7,
+          "cacos": 6,
+          "casin": 9,
+          "catan": 9,
+          "casinh": 6,
+          "catanh": 3,
+          "ctan": 3,
+          "ctanh": 3,
+          "lgamma": 2
+        },
+        "fenv_findings": []
+      },
+      "entry_checks": [
+        {
+          "test": "runtime_math",
+          "sha256": "77016feb4ce519f8e5b1bc56fe88073e21a9d638cce974aa1bb0241307882407",
+          "command": [
+            "docker",
+            "run",
+            "--rm",
+            "--init",
+            "--name",
+            "samsung-ctng-85afc2d1b74b",
+            "--network",
+            "none",
+            "--read-only",
+            "--cap-drop",
+            "ALL",
+            "--security-opt",
+            "no-new-privileges",
+            "--pids-limit",
+            "128",
+            "--memory",
+            "512m",
+            "--cpus",
+            "1",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=32m",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung/oe-b-series/build-samygo-cl/tmp/sysroots/armv6-linux-gnueabi,target=/target,readonly",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/numerics/probes,target=/probes,readonly",
+            "--workdir",
+            "/tmp",
+            "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+            "qemu-arm",
+            "-cpu",
+            "arm1136",
+            "-r",
+            "2.6.18",
+            "-L",
+            "/target",
+            "-E",
+            "LD_DEBUG=bindings:versions",
+            "-E",
+            "LD_LIBRARY_PATH=/probes/private:/target/lib:/target/usr/lib",
+            "/probes/runtime_math"
+          ],
+          "exit": 0,
+          "elapsed_seconds": 0.424,
+          "stdout": "runtime_math_checks=88 failures=0\n",
+          "binding_log": "runtime_math.qemu-reference.bindings"
+        },
+        {
+          "test": "fenv",
+          "sha256": "8a8969b40e28a3948d8af74019b288a72f191109b1b145d0fd5e85cf29f7a1a2",
+          "command": [
+            "docker",
+            "run",
+            "--rm",
+            "--init",
+            "--name",
+            "samsung-ctng-d5fb5aab6489",
+            "--network",
+            "none",
+            "--read-only",
+            "--cap-drop",
+            "ALL",
+            "--security-opt",
+            "no-new-privileges",
+            "--pids-limit",
+            "128",
+            "--memory",
+            "512m",
+            "--cpus",
+            "1",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=32m",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung/oe-b-series/build-samygo-cl/tmp/sysroots/armv6-linux-gnueabi,target=/target,readonly",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/numerics/probes,target=/probes,readonly",
+            "--workdir",
+            "/tmp",
+            "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+            "qemu-arm",
+            "-cpu",
+            "arm1136",
+            "-r",
+            "2.6.18",
+            "-L",
+            "/target",
+            "-E",
+            "LD_DEBUG=bindings:versions",
+            "-E",
+            "LD_LIBRARY_PATH=/probes/private:/target/lib:/target/usr/lib",
+            "/probes/fenv"
+          ],
+          "exit": 0,
+          "elapsed_seconds": 0.457,
+          "stdout": "fegetenv PASS\nfesetenv PASS\nround_restore PASS\nflags_restore PASS\nfeholdexcept PASS\nhold_clears_flags PASS\nfeupdateenv PASS\nupdate_merges_flags PASS\nnearbyint_value PASS\nnearbyint_no_inexact PASS\nthread_downward PASS\nthread_upward PASS\nparent_round_unchanged PASS\nfenv_failures=0\n",
+          "binding_log": "fenv.qemu-reference.bindings"
+        },
+        {
+          "test": "projection",
+          "sha256": "3c6fd8c3048b66dc4ccafbaf6000dd863fe08931d69f30b1c7a9931b229d23b6",
+          "command": [
+            "docker",
+            "run",
+            "--rm",
+            "--init",
+            "--name",
+            "samsung-ctng-33a9b7f2ee0e",
+            "--network",
+            "none",
+            "--read-only",
+            "--cap-drop",
+            "ALL",
+            "--security-opt",
+            "no-new-privileges",
+            "--pids-limit",
+            "128",
+            "--memory",
+            "512m",
+            "--cpus",
+            "1",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=32m",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung/oe-b-series/build-samygo-cl/tmp/sysroots/armv6-linux-gnueabi,target=/target,readonly",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/numerics/probes,target=/probes,readonly",
+            "--workdir",
+            "/tmp",
+            "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+            "qemu-arm",
+            "-cpu",
+            "arm1136",
+            "-r",
+            "2.6.18",
+            "-L",
+            "/target",
+            "-E",
+            "LD_DEBUG=bindings:versions",
+            "-E",
+            "LD_LIBRARY_PATH=/probes/private:/target/lib:/target/usr/lib",
+            "/probes/projection"
+          ],
+          "exit": 0,
+          "elapsed_seconds": 0.423,
+          "stdout": "TV UI C++ projection finite/zero/infinity/NaN checks passed\n",
+          "binding_log": "projection.qemu-reference.bindings"
+        }
+      ],
+      "private_providers": {
+        "binary": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/numerics/probes/runtime_math",
+        "private_version": "GLIBCXX_SAMSUNG_MATH_1.0",
+        "imports": [
+          "feupdateenv",
+          "fma",
+          "fmaf",
+          "fmal",
+          "logb",
+          "logbf",
+          "logbl",
+          "nearbyintf"
+        ],
+        "bindings": [
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "fma",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "fmaf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "fmal",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/private/libstdc++.so.6",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "fma",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "logb",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "logbf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "logbl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/private/libstdc++.so.6",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "logb",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "nearbyintf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          },
+          {
+            "consumer": "/probes/runtime_math",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "feupdateenv",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.0"
+          }
+        ],
+        "passed": true
+      }
+    }
+  },
+  "runtimes": {
+    "libstdc++.so.6": {
+      "sha256": "6b1b5777db17c3008160e41376598fe9c43bb9df74e6471dab5f7146ce3ff69a",
+      "tested_path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/validation/probes/private/libstdc++.so.6",
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "ld-linux.so.3",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6"
+      ]
+    },
+    "libgcc_s.so.1": {
+      "sha256": "31c8996f3e299185aef06132ad56644157832455af0d64327407075bf73daf2b",
+      "tested_path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/validation/probes/private/libgcc_s.so.1",
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    "libatomic.so.1": {
+      "sha256": "8018eef03128b09b5395bf6767b3d45a66b425d9a5670dccb6ff34f3697f5e0b",
+      "tested_path": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/validation/probes/private/libatomic.so.1",
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "libc.so.6",
+        "libpthread.so.0"
+      ]
+    }
+  },
+  "abi": {
+    "errors": [],
+    "files": {
+      "libc.so.6": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+          "sha256": "eb339c20888f53555c2a5f5e5757e66c4d97c287cff049298d3c061e3350c59a"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+          "sha256": "7e1c1c36197a41ba31f2e0ce044a70cdd4b3635722580cf46a379a388fa547f6"
+        },
+        "baseline_count": 2041,
+        "updated_count": 2041,
+        "added": [],
+        "removed": []
+      },
+      "libm.so.6": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+          "sha256": "8bdf6ac832c8c0a10da2fce54c494de24ceeee3f7ba5eee5edef0bd59990b75a"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+          "sha256": "594a23b3c64e0f300b5ecd27873161559e4467407c20de39e37439900634b080"
+        },
+        "baseline_count": 313,
+        "updated_count": 313,
+        "added": [],
+        "removed": []
+      },
+      "libpthread.so.0": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libpthread.so.0",
+          "sha256": "c0cf8221823446916e45009a622d3e0ac43c322c71d031d2641baec881e2dbd3"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libpthread.so.0",
+          "sha256": "48605710becad156f93494e919063f8829cf90960d5221e008a5da050a612422"
+        },
+        "baseline_count": 221,
+        "updated_count": 221,
+        "added": [],
+        "removed": []
+      },
+      "ld-linux.so.3": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/ld-linux.so.3",
+          "sha256": "6bc9f6f0713a8302c4807d9ba323d1812630245449e076d70d8405c00c3bf924"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/ld-linux.so.3",
+          "sha256": "d8b6f43e7dbbe42aa5847b09ead76fb58ba0dcddb6867628f657f23f9dde1a0d"
+        },
+        "baseline_count": 27,
+        "updated_count": 27,
+        "added": [],
+        "removed": []
+      },
+      "libgcc_s.so.1": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/lib/libgcc_s.so.1",
+          "sha256": "01937303d196cf0f86ad32f7b7ef7647d8773778c1389bcea369929cbed5bec9"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libgcc_s.so.1",
+          "sha256": "31c8996f3e299185aef06132ad56644157832455af0d64327407075bf73daf2b"
+        },
+        "baseline_count": 1185,
+        "updated_count": 1185,
+        "added": [],
+        "removed": []
+      },
+      "libatomic.so.1": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/lib/libatomic.so.1",
+          "sha256": "5a3f5e149d621686c190a1cda491256dcaf8a3b0bde8c98e166c2132f94dc8e2"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libatomic.so.1",
+          "sha256": "8018eef03128b09b5395bf6767b3d45a66b425d9a5670dccb6ff34f3697f5e0b"
+        },
+        "baseline_count": 83,
+        "updated_count": 83,
+        "added": [],
+        "removed": []
+      },
+      "libstdc++.so.6": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+          "sha256": "dc2cf726938fcabcf3c0437a16912b0de6e8167831488e476cc62d8fd23babc2"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+          "sha256": "6b1b5777db17c3008160e41376598fe9c43bb9df74e6471dab5f7146ce3ff69a"
+        },
+        "baseline_count": 6147,
+        "updated_count": 6156,
+        "added": [
+          "GLIBCXX_SAMSUNG_MATH_1.0",
+          "feupdateenv@GLIBCXX_SAMSUNG_MATH_1.0",
+          "fma@GLIBCXX_SAMSUNG_MATH_1.0",
+          "fmaf@GLIBCXX_SAMSUNG_MATH_1.0",
+          "fmal@GLIBCXX_SAMSUNG_MATH_1.0",
+          "logb@GLIBCXX_SAMSUNG_MATH_1.0",
+          "logbf@GLIBCXX_SAMSUNG_MATH_1.0",
+          "logbl@GLIBCXX_SAMSUNG_MATH_1.0",
+          "nearbyintf@GLIBCXX_SAMSUNG_MATH_1.0"
+        ],
+        "removed": []
+      }
+    },
+    "interpretation": "Export identities compared; build-path-dependent binary hashes may differ. This is not a C++ object layout compatibility claim."
+  },
+  "core_summary": "validation-summary.json",
+  "limits": [
+    "Measured numerical subsets, not exhaustive mathematical/library conformance.",
+    "48 retained C++ broad gamma/complex edge deviations. Raw C runtime retains 102 broad value deviations and 32 nearbyintf flag findings.",
+    "45 finite FMA tininess-boundary cases exclude only FE_UNDERFLOW; values and other flags checked.",
+    "Trapping environments, exhaustive signaling-NaN payload/errno behavior and altered flush-to-zero modes not admitted by these tests.",
+    "Generic libgcc retains dormant VFPv3/iWMMX unwinder support. Legacy __sync64 requires kuser5; standard atomic64 uses private mutex fallback.",
+    "QEMU userspace and uname override do not emulate Linux 2.6.18_SELP. No TV operation performed."
+  ]
+}

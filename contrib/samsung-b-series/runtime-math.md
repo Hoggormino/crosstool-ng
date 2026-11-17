@@ -102,11 +102,78 @@ A separately built target libstdc++ passes all 31,140 focused value cases and
 both rebuilt and OE reference libc. The 88 normal-entry checks and all 13
 floating-environment/thread checks also pass with both. ELF imports and loader
 bindings require the private version, and the target closure/provider audit
-passes. These are integration diagnostics; the full source toolchain build and
-release validation are recorded separately below when complete.
+passes. These are integration diagnostics. Release admission below uses the full GCC
+target build with its normal thread/module configuration.
 
 The unchanged-runtime control has 10,804 value failures (4,132 FMA; 6,672 logb),
 2,977 finite FMA flag failures and eight nearbyint exception findings in this
 expanded dataset. Initial diagnostic failures are retained: a macro-prefix
 mismatch produced an empty source file, and a missing link-time .so symlink
 selected the baseline library. Neither failure was accepted as a passing result.
+
+The base [GCC 16 profile](gcc16.md) and [math-header report](gcc16-math.md)
+remain applicable. In particular, legacy __sync64 helpers require kuser version
+5, while the tested std::atomic64 path uses private-libatomic mutexes. Generic
+libgcc retains dormant VFPv3/iWMMX unwind support; those frame classes are outside
+the ARM1136/VFPv2 process contract. No existing vendor-module ABI gate is relaxed.
+
+## Verified release
+
+The complete source-based build finished in 32 minutes 28 seconds (wall time),
+using functional implementation commit
+`2c09466026bcf3c256fd5fea62396ce35c66da75`. The fresh upstream HEAD check still
+returns framework base a4895d7fc49d5b423abc5f166895c80175019570.
+The old-component prepared trees match the preserved math-header baseline.
+Target libc is built from source; no external OE sysroot is a build input.
+
+Both rebuilt and preserved OE runtime executions pass:
+
+* 31,140 focused value cases and 20,268 finite FMA flag comparisons, with the
+  stated 45 underflow-tininess bit exclusions;
+* 88 std/global/builtin/pointer entry checks, all 13 environment/thread checks
+  and 39 existing projection assertions;
+* all 5,184 ordinary UI-range numerical cases;
+* core C/C++17, exceptions/RTTI, pthread/static/TLS destruction, atomic32 and
+  mutex-backed atomic64, plus the C++20/23 wait/semaphore subset;
+* the pinned RmlUi Core initialization/Variant/shutdown consumer, built through
+  all 187 steps with the optional new CMake profile.
+
+All 1,267 API compile/link cases pass; all 237 forced C ABI symbols also link
+against the OE reference. The final broad C++ suite has **48 retained deviations**
+(9 gamma accuracy-budget outliers and 39 complex edge cases), down from 81.
+There are no nearbyint inexact findings in the corrected C++ suite. The C-only
+control retains 102 value deviations and 32 nearbyintf flag findings.
+
+The 13-artifact core closure and 10-artifact numerical closure pass static ABI,
+ISA-attribute, interpreter, hash, relocation, symbol/version provider and
+GNU-unique checks with both runtimes. Actual binding checks select all eight
+private corrected symbols. All three packaged private runtimes require only
+GLIBC_2.4 from target C libraries; private libstdc++ also requires GCC_3.0,
+GCC_3.3, GCC_3.4 and GCC_3.5 from matching private libgcc_s.
+The libc/libm/libpthread/loader and libgcc/libatomic export sets are unchanged.
+Private libstdc++ adds only eight functions and their version node, with no
+removed exports relative to the math-header profile.
+
+[Build/ABI report](validation-runtime-math/build-report.json),
+[source/patch manifest](gcc16-runtime-math-manifest.json),
+[API matrix](validation-runtime-math/api-matrix.csv),
+[focused results](validation-runtime-math/focused-analysis.json),
+[FMA flags](validation-runtime-math/fma-flags.json),
+[retained broad findings](validation-runtime-math/edge-analysis.json),
+[core receipts](validation-runtime-math/validation-summary.json) and
+[private bundle hashes](validation-runtime-math/private-runtime-manifest.json)
+record the tested artifacts. The published bundle manifest identifies exact
+byte-for-byte copies of the tested libraries; binaries stay in the isolated
+Samsung build directory, not this source repository.
+
+The final FPU guard was tightened before target libstdc++ configuration;
+[the source update receipt](validation-runtime-math/vfp-guard-source-update.json)
+and zero-fuzz reverse-patch check preserve that provenance. The source matches
+the committed patch. [Failure evidence](validation-runtime-math/failure-index.json)
+indexes the aborted macro-prefix attempt, link-setup failure and unchanged-
+runtime controls without treating any as a successful release build.
+
+No TV or actual SELP-kernel validation occurred. Trapping environments, exhaustive
+signaling-NaN/errno behavior and altered FPU flush modes remain outside the
+measured admission. This release fixes the selected operations; gamma and
+complex edge work remains separately scoped.

@@ -1,0 +1,114 @@
+{
+  "errors": [],
+  "files": {
+    "libc.so.6": {
+      "baseline": {
+        "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "sha256": "eb339c20888f53555c2a5f5e5757e66c4d97c287cff049298d3c061e3350c59a"
+      },
+      "updated": {
+        "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+        "sha256": "7e1c1c36197a41ba31f2e0ce044a70cdd4b3635722580cf46a379a388fa547f6"
+      },
+      "baseline_count": 2041,
+      "updated_count": 2041,
+      "added": [],
+      "removed": []
+    },
+    "libm.so.6": {
+      "baseline": {
+        "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "sha256": "8bdf6ac832c8c0a10da2fce54c494de24ceeee3f7ba5eee5edef0bd59990b75a"
+      },
+      "updated": {
+        "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+        "sha256": "594a23b3c64e0f300b5ecd27873161559e4467407c20de39e37439900634b080"
+      },
+      "baseline_count": 313,
+      "updated_count": 313,
+      "added": [],
+      "removed": []
+    },
+    "libpthread.so.0": {
+      "baseline": {
+        "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libpthread.so.0",
+        "sha256": "c0cf8221823446916e45009a622d3e0ac43c322c71d031d2641baec881e2dbd3"
+      },
+      "updated": {
+        "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libpthread.so.0",
+        "sha256": "48605710becad156f93494e919063f8829cf90960d5221e008a5da050a612422"
+      },
+      "baseline_count": 221,
+      "updated_count": 221,
+      "added": [],
+      "removed": []
+    },
+    "ld-linux.so.3": {
+      "baseline": {
+        "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/ld-linux.so.3",
+        "sha256": "6bc9f6f0713a8302c4807d9ba323d1812630245449e076d70d8405c00c3bf924"
+      },
+      "updated": {
+        "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/ld-linux.so.3",
+        "sha256": "d8b6f43e7dbbe42aa5847b09ead76fb58ba0dcddb6867628f657f23f9dde1a0d"
+      },
+      "baseline_count": 27,
+      "updated_count": 27,
+      "added": [],
+      "removed": []
+    },
+    "libgcc_s.so.1": {
+      "baseline": {
+        "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/lib/libgcc_s.so.1",
+        "sha256": "01937303d196cf0f86ad32f7b7ef7647d8773778c1389bcea369929cbed5bec9"
+      },
+      "updated": {
+        "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libgcc_s.so.1",
+        "sha256": "31c8996f3e299185aef06132ad56644157832455af0d64327407075bf73daf2b"
+      },
+      "baseline_count": 1185,
+      "updated_count": 1185,
+      "added": [],
+      "removed": []
+    },
+    "libatomic.so.1": {
+      "baseline": {
+        "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/lib/libatomic.so.1",
+        "sha256": "5a3f5e149d621686c190a1cda491256dcaf8a3b0bde8c98e166c2132f94dc8e2"
+      },
+      "updated": {
+        "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libatomic.so.1",
+        "sha256": "8018eef03128b09b5395bf6767b3d45a66b425d9a5670dccb6ff34f3697f5e0b"
+      },
+      "baseline_count": 83,
+      "updated_count": 83,
+      "added": [],
+      "removed": []
+    },
+    "libstdc++.so.6": {
+      "baseline": {
+        "file": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install/arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "sha256": "dc2cf726938fcabcf3c0437a16912b0de6e8167831488e476cc62d8fd23babc2"
+      },
+      "updated": {
+        "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+        "sha256": "6b1b5777db17c3008160e41376598fe9c43bb9df74e6471dab5f7146ce3ff69a"
+      },
+      "baseline_count": 6147,
+      "updated_count": 6156,
+      "added": [
+        "GLIBCXX_SAMSUNG_MATH_1.0",
+        "feupdateenv@GLIBCXX_SAMSUNG_MATH_1.0",
+        "fma@GLIBCXX_SAMSUNG_MATH_1.0",
+        "fmaf@GLIBCXX_SAMSUNG_MATH_1.0",
+        "fmal@GLIBCXX_SAMSUNG_MATH_1.0",
+        "logb@GLIBCXX_SAMSUNG_MATH_1.0",
+        "logbf@GLIBCXX_SAMSUNG_MATH_1.0",
+        "logbl@GLIBCXX_SAMSUNG_MATH_1.0",
+        "nearbyintf@GLIBCXX_SAMSUNG_MATH_1.0"
+      ],
+      "removed": []
+    }
+  },
+  "interpretation": "Export identities compared; build-path-dependent binary hashes may differ. This is not a C++ object layout compatibility claim."
+}

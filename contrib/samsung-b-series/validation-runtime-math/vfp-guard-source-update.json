@@ -1,0 +1,15 @@
+{
+  "reason": "Require hardware VFP arithmetic as well as base PCS; software __aeabi arithmetic ignores active rounding. Updated before target libstdc++ configuration.",
+  "files": [
+    {
+      "path": "libstdc++-v3/configure.ac",
+      "before": "074d92f10634dabeddc98e81ed7da9e22f8fc837ab620fb5ea4b4e074b1344a8",
+      "after": "0b151f5a0e6acf3ef682c005a877a48e47e87a1f5f070dd1adf2d681d3e4ff05"
+    },
+    {
+      "path": "libstdc++-v3/configure",
+      "before": "827d72bbe2a737ac614db3789a9d45239835271380dcd7826cf83750e6b7fe27",
+      "after": "1f2d9dec1b645ea9f2908fc38e322672ec7a9c3f72953578008e9dfb0faf6a57"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+checking file libstdc++-v3/config.h.in
+checking file libstdc++-v3/config/abi/pre/gnu.ver
+checking file libstdc++-v3/configure
+checking file libstdc++-v3/configure.ac
+checking file libstdc++-v3/src/c++11/Makefile.am
+checking file libstdc++-v3/src/c++11/Makefile.in
+checking file libstdc++-v3/src/c++11/samsung_math.cc
