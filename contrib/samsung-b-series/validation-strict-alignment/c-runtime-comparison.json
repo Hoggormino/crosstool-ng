@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "libraries": [
+    "libc.so.6",
+    "libm.so.6",
+    "libpthread.so.0",
+    "ld-linux.so.3"
+  ],
+  "note": "C runtime retains SysV hash compatibility; its pre-existing additional GNU hash is not a new private-runtime requirement."
+}

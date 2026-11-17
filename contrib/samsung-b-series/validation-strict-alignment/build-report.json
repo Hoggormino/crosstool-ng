@@ -1,0 +1,206 @@
+{
+  "framework_base": "a4895d7fc49d5b423abc5f166895c80175019570",
+  "compiler": "GCC 16.2.0",
+  "alignment_functional_commit": "e12b2778b2d5522492fbe68766e9653d9f38e5d1",
+  "build": {
+    "start_unix": 1794951663.5744512,
+    "elapsed_seconds": 1991.4298167228699,
+    "exit": 0
+  },
+  "prefix": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/install",
+  "private_bundle": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/tv-ui-private-runtime",
+  "alignment_audit": {
+    "passed": true,
+    "build": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final",
+    "baseline": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final",
+    "default_strict": true,
+    "object_counts": {
+      "libgcc": 3563,
+      "libstdc++-v3": 245,
+      "libatomic": 108
+    },
+    "object_tree_hashes": {
+      "libgcc": "4b210ac4cf8c110b16f9655811dc054f665b870cbfbb444e523b95d73daa2121",
+      "libstdc++-v3": "934a8cd4db6a14b24a4ab6f93bb59aa661eea26d6735e0af475de8a2d75c00e0",
+      "libatomic": "54452d34536d2c3cb96412dbb51e05cc5c1ea29ef92e3b10318ea0bf11898123"
+    },
+    "runtimes": {
+      "libgcc_s.so.1": {
+        "sha256": "4a0924a5143109c2e08ad213375a1bdc4a7b87d932ed44292f8f46d9350adb85",
+        "baseline_sha256": "222c3df63b6eed4c151a418fb92db3685e13f43079277229476f2d1218ae4efc",
+        "public_symbols": 1186,
+        "needed": [
+          [
+            "NEEDED",
+            "libc.so.6"
+          ],
+          [
+            "SONAME",
+            "libgcc_s.so.1"
+          ]
+        ]
+      },
+      "libstdc++.so.6": {
+        "sha256": "bb9088a26b4da9137c87b7e20188c6beaa60bfeec6637498d25f3b779e5008da",
+        "baseline_sha256": "7a4b6b8bbf51e400584d6524440bcfad12532ae616b5ec2efb33c400e765a256",
+        "public_symbols": 6183,
+        "needed": [
+          [
+            "NEEDED",
+            "ld-linux.so.3"
+          ],
+          [
+            "NEEDED",
+            "libc.so.6"
+          ],
+          [
+            "NEEDED",
+            "libgcc_s.so.1"
+          ],
+          [
+            "NEEDED",
+            "libm.so.6"
+          ],
+          [
+            "SONAME",
+            "libstdc++.so.6"
+          ]
+        ]
+      },
+      "libatomic.so.1": {
+        "sha256": "c09aa7bd17c5b82d3a7dd0acd8d5ed803182eca630f4f809084788222a2f0bde",
+        "baseline_sha256": "ecdd95f7190805e3fcce0cfbcde198a9f6d598b1bfb5c940d5dc2f14a8b8fc7d",
+        "public_symbols": 84,
+        "needed": [
+          [
+            "NEEDED",
+            "libc.so.6"
+          ],
+          [
+            "NEEDED",
+            "libpthread.so.0"
+          ],
+          [
+            "SONAME",
+            "libatomic.so.1"
+          ]
+        ]
+      }
+    },
+    "static_and_startup": {
+      "libgcc.a": "789a978eee7d3e93f811420722610e7cc133bfcfc2083e60d29c7611493a8ea8",
+      "libgcc_eh.a": "74024add164cc51a11df397f42980c575e1568460fd6d454fb44750ebb27c1d0",
+      "crtbegin.o": "e81a7d605a8bc27aa17fb2f8355095e6872198c46be9dddaccc39933dd4a0c15",
+      "crtbeginS.o": "0a00ac817d7603540c6b495ff610a6730b637bca4dfcce8eb87e020faa708c22",
+      "crtbeginT.o": "8a4b49fa6ca79f0ee1b9fd05032bf006a195fc7b276c1325929cfce1a515f886",
+      "crtend.o": "80ed6f1f7d19a772da5ddc3b2a0c163c6d1d8bf83fc0612b3b212e087fce00a4",
+      "crtendS.o": "80ed6f1f7d19a772da5ddc3b2a0c163c6d1d8bf83fc0612b3b212e087fce00a4"
+    },
+    "controls": {
+      "default": {
+        "sha256": "9339a2fe9245b03d95089ff2bc8268192c7a7bfa054270fdf04cfd3c4b8da347",
+        "unaligned": false,
+        "assembly": "\t.arch armv6j\n\t.fpu vfp\n\t.eabi_attribute 20, 1\n\t.eabi_attribute 21, 1\n\t.eabi_attribute 23, 3\n\t.eabi_attribute 24, 1\n\t.eabi_attribute 25, 1\n\t.eabi_attribute 26, 2\n\t.eabi_attribute 30, 2\n\t.eabi_attribute 34, 0\n\t.eabi_attribute 18, 4\n\t.file\t\"alignment-copy.c\"\n\t.text\n\t.align\t2\n\t.global\tcopy_pattern\n\t.syntax unified\n\t.arm\n\t.type\tcopy_pattern, %function\ncopy_pattern:\n\t@ args = 0, pretend = 0, frame = 0\n\t@ frame_needed = 0, uses_anonymous_args = 0\n\tmov\tr2, #4\n\tpush\t{r4, lr}\n\tbl\tmemcpy\n\tpop\t{r4, pc}\n\t.size\tcopy_pattern, .-copy_pattern\n\t.ident\t\"GCC: (Samsung-B-series-HEAD-a4895d7f-GCC-16.2.0-strict-alignment) 16.2.0\"\n\t.section\t.note.GNU-stack,\"\",%progbits\n"
+      },
+      "explicit-unsafe": {
+        "sha256": "af6bebf5bf0a0836c7fd30c0f1f9d379f33dee911031d96e0aa8619a7c580696",
+        "unaligned": true,
+        "assembly": "\t.arch armv6j\n\t.fpu vfp\n\t.eabi_attribute 20, 1\n\t.eabi_attribute 21, 1\n\t.eabi_attribute 23, 3\n\t.eabi_attribute 24, 1\n\t.eabi_attribute 25, 1\n\t.eabi_attribute 26, 2\n\t.eabi_attribute 30, 2\n\t.eabi_attribute 34, 1\n\t.eabi_attribute 18, 4\n\t.file\t\"alignment-copy.c\"\n\t.text\n\t.align\t2\n\t.global\tcopy_pattern\n\t.syntax unified\n\t.arm\n\t.type\tcopy_pattern, %function\ncopy_pattern:\n\t@ args = 0, pretend = 0, frame = 0\n\t@ frame_needed = 0, uses_anonymous_args = 0\n\t@ link register save eliminated.\n\tldr\tr3, [r1]\t@ unaligned\n\tstr\tr3, [r0]\t@ unaligned\n\tbx\tlr\n\t.size\tcopy_pattern, .-copy_pattern\n\t.ident\t\"GCC: (Samsung-B-series-HEAD-a4895d7f-GCC-16.2.0-strict-alignment) 16.2.0\"\n\t.section\t.note.GNU-stack,\"\",%progbits\n"
+      }
+    },
+    "limitation": "Static attributes/codegen plus QEMU do not prove SELP policy-5 behavior. Record native counters and UI result separately."
+  },
+  "matching_config_headers": {
+    "passed": true,
+    "headers": [
+      {
+        "path": "libgcc/auto-target.h",
+        "sha256": "7925b3147d3eb47a542e71543a833270d51914b27bf641d14e9e4652a4c786df"
+      },
+      {
+        "path": "libstdc++-v3/config.h",
+        "sha256": "d12185cbba22067950b4d7eea133e7367d5882baa77f5a7e54f6d1e79fb832f4"
+      },
+      {
+        "path": "libstdc++-v3/include/arm-samsung-linux-gnueabi/bits/c++config.h",
+        "sha256": "5d497af4b3307d74d4a4c76cc984dca7b400ed01e8d93f6e2f1e0a510de97b5a"
+      },
+      {
+        "path": "libatomic/auto-config.h",
+        "sha256": "c9d904afdc35791a97661c442e63fcfefbd465056e33e70f9b19b136a803307b"
+      }
+    ]
+  },
+  "c_runtime_contracts": {
+    "passed": true,
+    "libraries": [
+      "libc.so.6",
+      "libm.so.6",
+      "libpthread.so.0",
+      "ld-linux.so.3"
+    ],
+    "note": "C runtime retains SysV hash compatibility; its pre-existing additional GNU hash is not a new private-runtime requirement."
+  },
+  "native_summary": "native-summary.json",
+  "native_policy": 5,
+  "native_alignment_counter_delta": 0,
+  "native_exeDSP_pid": "47",
+  "native_modes": [
+    "native",
+    "js"
+  ],
+  "pilot_objects": {
+    "objects": 244,
+    "compile_commands": 253,
+    "all_strict": true
+  },
+  "runtime_bundle": {
+    "alignment_audit": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/alignment-audit.json",
+    "default_strict": true,
+    "native_validation": {
+      "result": "Passed",
+      "report": "/mnt/data/Projects/samsung-strict-alignment/analysis/evidence/gcc16-strict-alignment-20261117/native-summary.json",
+      "policy": 5,
+      "alignment_counter_delta": 0,
+      "modes": [
+        "native",
+        "js"
+      ],
+      "exeDSP_pid": "47",
+      "scope": "Native startup/OSD/navigation/Exit; no physical-panel viewing/GUI fluidity claim."
+    },
+    "runtimes": {
+      "libstdc++.so.6": {
+        "sha256": "bf66b9431b62c6489f384e2d54516caaf1b3d88df0383b9d20201ff18959132b",
+        "unstripped_sha256": "bb9088a26b4da9137c87b7e20188c6beaa60bfeec6637498d25f3b779e5008da",
+        "bytes": 1779408,
+        "allocated_sections_identical": true
+      },
+      "libgcc_s.so.1": {
+        "sha256": "efaa1533492bcf8ffdbdc1547cb59f08c5fe6e54d8d379a042821643b1a44470",
+        "unstripped_sha256": "4a0924a5143109c2e08ad213375a1bdc4a7b87d932ed44292f8f46d9350adb85",
+        "bytes": 251884,
+        "allocated_sections_identical": true
+      },
+      "libatomic.so.1": {
+        "sha256": "8369f887ae044905eeec64dfe86276bd898b959a9860f6e856796fd6c74726ff",
+        "unstripped_sha256": "c09aa7bd17c5b82d3a7dd0acd8d5ed803182eca630f4f809084788222a2f0bde",
+        "bytes": 22392,
+        "allocated_sections_identical": true
+      }
+    },
+    "licenses": {
+      "COPYING3": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "COPYING.RUNTIME": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+      "samsung-math.txt": "47124f2723148c8ee3bd54850a2104fee887a3903ff11fef349d3df52f22b4ce",
+      "samsung-complex.txt": "4a7f9dfd866cb398a120a937bd7b943a3a199db936a7ebc4510c05886392e670"
+    }
+  },
+  "evidence_commit": "87cd9c84d38194f940e619c34c7a4f9b9292af1d",
+  "limits": [
+    "OSD readback is not a physical seated-panel or GUI-fluidity judgment.",
+    "Nine gamma outliers and original scalar hypotf/non-nearest-tan limitations remain.",
+    "Dormant unwinder frame classes and legacy __sync64 kuser restrictions remain.",
+    "No system loader/libc/libm/firmware library or kernel alignment policy replaced."
+  ]
+}

@@ -14,3 +14,11 @@ timeout 45s qemu-arm -cpu arm1136 -r 2.6.18 -strace -L "$samsung_sysroot" \
     -E "LD_LIBRARY_PATH=$samsung_prefix/$samsung_triplet/lib:$samsung_sysroot/lib:$samsung_sysroot/usr/lib" \
     "$samsung_result/cxx23-probe" >"$samsung_result/cxx23-probe.stdout" 2>"$samsung_result/cxx23-probe.stderr"
 cat "$samsung_result/cxx23-probe.stdout"
+
+# Byte-aligned copies and locale initialization must also work with the strict SDK.
+"$samsung_prefix/bin/$samsung_triplet-g++" -O2 -std=c++17 -fno-gnu-unique \
+    "$samsung_support/probes/alignment-probe.cpp" -Wl,--hash-style=sysv -o "$samsung_result/alignment-probe"
+timeout 45s qemu-arm -cpu arm1136 -r 2.6.18 -L "$samsung_sysroot" \
+    -E "LD_LIBRARY_PATH=$samsung_prefix/$samsung_triplet/lib:$samsung_sysroot/lib:$samsung_sysroot/usr/lib" \
+    "$samsung_result/alignment-probe" >"$samsung_result/alignment-probe.stdout" 2>"$samsung_result/alignment-probe.stderr"
+cat "$samsung_result/alignment-probe.stdout"

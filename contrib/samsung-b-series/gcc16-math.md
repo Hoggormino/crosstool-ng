@@ -1,5 +1,10 @@
 # GCC 16 math-header compatibility for the TV UI process
 
+> Native-use correction: the historical build below is preserved QEMU/math
+> evidence. Its private runtimes are not safe under SELP policy 5. Use a fresh
+> [canonical strict-alignment build](strict-alignment.md) for native GCC 16 work;
+> application flags alone do not repair the old shared libraries.
+
 This pass repairs C/C++ math declarations, classification return types and the
 C++ complex-projection implementation selection. **It does not upgrade the
 TV's math library or establish complete numerical conformance.** The final isolated source build completed in 35 minutes 50 seconds and

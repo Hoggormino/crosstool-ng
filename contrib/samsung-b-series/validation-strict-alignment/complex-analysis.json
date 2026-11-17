@@ -1,0 +1,1449 @@
+{
+  "receipt": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/reference.json",
+  "case_count": 30936,
+  "within_comparison_policy": true,
+  "failed_case_count": 0,
+  "failure_counts": {},
+  "fenv_findings": [],
+  "functions": {
+    "cacos:0:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "16": 680,
+        "24": 25,
+        "0": 17
+      }
+    },
+    "cacos:0:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 177,
+        "24": 10,
+        "0": 2
+      }
+    },
+    "cacos:0:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 177,
+        "24": 10,
+        "0": 2
+      }
+    },
+    "cacos:0:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 177,
+        "24": 10,
+        "0": 2
+      }
+    },
+    "cacos:1:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "16": 672,
+        "0": 27,
+        "24": 23
+      }
+    },
+    "cacos:1:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacos:1:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacos:1:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacos:2:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "16": 665,
+        "0": 27,
+        "24": 30
+      }
+    },
+    "cacos:2:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacos:2:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacos:2:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacosh:0:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "16": 675,
+        "24": 30,
+        "0": 17
+      }
+    },
+    "cacosh:0:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 177,
+        "24": 10,
+        "0": 2
+      }
+    },
+    "cacosh:0:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 177,
+        "24": 10,
+        "0": 2
+      }
+    },
+    "cacosh:0:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 177,
+        "24": 10,
+        "0": 2
+      }
+    },
+    "cacosh:1:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "16": 673,
+        "0": 27,
+        "24": 22
+      }
+    },
+    "cacosh:1:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacosh:1:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacosh:1:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacosh:2:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "16": 677,
+        "0": 27,
+        "24": 18
+      }
+    },
+    "cacosh:2:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacosh:2:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "cacosh:2:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 185,
+        "0": 2,
+        "24": 2
+      }
+    },
+    "casin:0:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "0": 25,
+        "16": 612,
+        "24": 85
+      }
+    },
+    "casin:0:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 135,
+        "24": 50
+      }
+    },
+    "casin:0:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 135,
+        "24": 50
+      }
+    },
+    "casin:0:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 135,
+        "24": 50
+      }
+    },
+    "casin:1:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "0": 33,
+        "16": 620,
+        "24": 68,
+        "21": 1
+      }
+    },
+    "casin:1:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casin:1:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casin:1:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casin:2:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "0": 33,
+        "16": 622,
+        "24": 67
+      }
+    },
+    "casin:2:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casin:2:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casin:2:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casinh:0:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "0": 25,
+        "16": 615,
+        "24": 82
+      }
+    },
+    "casinh:0:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 135,
+        "24": 50
+      }
+    },
+    "casinh:0:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 135,
+        "24": 50
+      }
+    },
+    "casinh:0:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 135,
+        "24": 50
+      }
+    },
+    "casinh:1:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "0": 33,
+        "16": 617,
+        "24": 72
+      }
+    },
+    "casinh:1:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casinh:1:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casinh:1:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casinh:2:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 722
+      },
+      "flag_counts": {
+        "0": 33,
+        "16": 621,
+        "24": 68
+      }
+    },
+    "casinh:2:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casinh:2:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "casinh:2:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 149,
+        "24": 36
+      }
+    },
+    "catan:0:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 714,
+        "33": 8
+      },
+      "flag_counts": {
+        "0": 29,
+        "16": 584,
+        "24": 99,
+        "2": 8,
+        "1": 2
+      }
+    },
+    "catan:0:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 16,
+        "16": 127,
+        "24": 42,
+        "2": 4
+      }
+    },
+    "catan:0:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 16,
+        "16": 127,
+        "24": 42,
+        "2": 4
+      }
+    },
+    "catan:0:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 16,
+        "16": 127,
+        "24": 42,
+        "2": 4
+      }
+    },
+    "catan:1:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 714,
+        "33": 8
+      },
+      "flag_counts": {
+        "0": 39,
+        "16": 596,
+        "24": 77,
+        "2": 8,
+        "1": 2
+      }
+    },
+    "catan:1:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "24": 28,
+        "2": 4
+      }
+    },
+    "catan:1:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "24": 28,
+        "2": 4
+      }
+    },
+    "catan:1:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "24": 28,
+        "2": 4
+      }
+    },
+    "catan:2:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 714,
+        "33": 8
+      },
+      "flag_counts": {
+        "0": 39,
+        "16": 587,
+        "24": 86,
+        "2": 8,
+        "1": 2
+      }
+    },
+    "catan:2:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "24": 28,
+        "2": 4
+      }
+    },
+    "catan:2:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "24": 28,
+        "2": 4
+      }
+    },
+    "catan:2:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "24": 28,
+        "2": 4
+      }
+    },
+    "catanh:0:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 714,
+        "33": 8
+      },
+      "flag_counts": {
+        "0": 29,
+        "16": 575,
+        "24": 108,
+        "2": 8,
+        "1": 2
+      }
+    },
+    "catanh:0:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 16,
+        "16": 127,
+        "24": 42,
+        "2": 4
+      }
+    },
+    "catanh:0:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 16,
+        "16": 127,
+        "24": 42,
+        "2": 4
+      }
+    },
+    "catanh:0:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 16,
+        "16": 127,
+        "24": 42,
+        "2": 4
+      }
+    },
+    "catanh:1:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 714,
+        "33": 8
+      },
+      "flag_counts": {
+        "0": 39,
+        "16": 595,
+        "2": 8,
+        "24": 78,
+        "1": 2
+      }
+    },
+    "catanh:1:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "2": 4,
+        "24": 28
+      }
+    },
+    "catanh:1:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "2": 4,
+        "24": 28
+      }
+    },
+    "catanh:1:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "2": 4,
+        "24": 28
+      }
+    },
+    "catanh:2:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 714,
+        "33": 8
+      },
+      "flag_counts": {
+        "0": 39,
+        "16": 599,
+        "2": 8,
+        "24": 74,
+        "1": 2
+      }
+    },
+    "catanh:2:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "2": 4,
+        "24": 28
+      }
+    },
+    "catanh:2:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "2": 4,
+        "24": 28
+      }
+    },
+    "catanh:2:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 185,
+        "33": 4
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 139,
+        "2": 4,
+        "24": 28
+      }
+    },
+    "ctan:0:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 592,
+        "34": 130
+      },
+      "flag_counts": {
+        "16": 559,
+        "24": 94,
+        "0": 61,
+        "1": 8
+      }
+    },
+    "ctan:0:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 131,
+        "24": 58
+      }
+    },
+    "ctan:0:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 131,
+        "24": 58
+      }
+    },
+    "ctan:0:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 131,
+        "24": 58
+      }
+    },
+    "ctan:1:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 3,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 592,
+        "34": 130
+      },
+      "flag_counts": {
+        "16": 418,
+        "24": 236,
+        "0": 60,
+        "1": 8
+      }
+    },
+    "ctan:1:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctan:1:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctan:1:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctan:2:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 4,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 572,
+        "34": 150
+      },
+      "flag_counts": {
+        "16": 406,
+        "24": 224,
+        "0": 84,
+        "1": 8
+      }
+    },
+    "ctan:2:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctan:2:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctan:2:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctanh:0:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 597,
+        "34": 125
+      },
+      "flag_counts": {
+        "16": 564,
+        "24": 92,
+        "1": 8,
+        "0": 58
+      }
+    },
+    "ctanh:0:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 131,
+        "24": 58
+      }
+    },
+    "ctanh:0:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 131,
+        "24": 58
+      }
+    },
+    "ctanh:0:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 131,
+        "24": 58
+      }
+    },
+    "ctanh:1:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 3,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 585,
+        "34": 137
+      },
+      "flag_counts": {
+        "16": 406,
+        "24": 233,
+        "1": 8,
+        "0": 75
+      }
+    },
+    "ctanh:1:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctanh:1:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctanh:1:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctanh:2:mode0": {
+      "cases": 722,
+      "failed": 0,
+      "max_ulp": 4,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 592,
+        "34": 130
+      },
+      "flag_counts": {
+        "16": 401,
+        "24": 246,
+        "1": 8,
+        "0": 67
+      }
+    },
+    "ctanh:2:mode1": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctanh:2:mode2": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 2,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    },
+    "ctanh:2:mode3": {
+      "cases": 189,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 189
+      },
+      "flag_counts": {
+        "16": 45,
+        "24": 144
+      }
+    }
+  },
+  "failures": [],
+  "advisories": [
+    {
+      "id": 3375,
+      "advisories": [
+        "annex_g_unspecified_infinity_sign"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 4670,
+      "advisories": [
+        "annex_g_unspecified_infinity_sign"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 13687,
+      "advisories": [
+        "annex_g_unspecified_infinity_sign"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 14982,
+      "advisories": [
+        "annex_g_unspecified_infinity_sign"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 23999,
+      "advisories": [
+        "annex_g_unspecified_infinity_sign"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 25294,
+      "advisories": [
+        "annex_g_unspecified_infinity_sign"
+      ],
+      "max_ulp": 0
+    }
+  ],
+  "policy": "Engineering comparison: exact basic operations; 4 ULP real transcendental, 8 ULP gamma, 16 ULP or 16*epsilon*complex-magnitude complex components. These budgets are not a claim of standard-mandated accuracy. NaN payloads/sign ignored; fmin/fmax zero-sign choices advisory. No TV kernel/hardware validation."
+}

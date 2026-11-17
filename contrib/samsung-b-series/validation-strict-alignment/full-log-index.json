@@ -1,0 +1,949 @@
+{
+  "entries": [
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/alignment-audit.log",
+      "bytes": 91,
+      "sha256": "b688d4796f7ca1ef45d8ed6237daac4d25534d13d977faf4f148961f637a9efc"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/build-console.log",
+      "bytes": 7879,
+      "sha256": "fc17e463a79127d72a6349ed81f894547336d341231a2b1a1f952f4ca940bf90"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/build-timing.json",
+      "bytes": 93,
+      "sha256": "a8713b5017f7f320a69b2e6f4bf2ef7056d7593758f92f32f602281d04c36d94"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/core-validation.log",
+      "bytes": 2357,
+      "sha256": "a80cfe99b44fdc55cdd7745764981837c4b4360cca12248565909c2e870a0a35"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/numerical-validation.log",
+      "bytes": 2904,
+      "sha256": "a32ef4cf7d0e0c745dbd49c4306adb0d03f716270cab4ba137a1b502b08a002d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/olddefconfig.log",
+      "bytes": 60,
+      "sha256": "3571033e614092c92fc4f52bab1fb15a0988d7ea4bc36b2b9dc6061453cc6c58"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/preparation.log",
+      "bytes": 4385,
+      "sha256": "efd2fdc485ddae91c06606c83af2d5b2237662e18efbb6511df29066f5169d82"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/stage-runtime.log",
+      "bytes": 140,
+      "sha256": "09581a93ad652e15afb12b49e60038a2d4778e0db0f3444a87d725b333833dca"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/logs/validation-pipeline.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/alignment-audit.json",
+      "bytes": 4657,
+      "sha256": "05762598dba3169e36b61d8a4436ea9d251e5f85f1fea11cd2161c012c02004e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/c-runtime-comparison.json",
+      "bytes": 255,
+      "sha256": "05d393d817dbd76095d59060522bb75141336587c171249b4ac7c4d294d046a4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/config-header-comparison.json",
+      "bytes": 623,
+      "sha256": "b25647ee916d3c7978e4b5f8e62643883fe523a12b35967737221bcc389be0db"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/default-cxx-predefines.txt",
+      "bytes": 16840,
+      "sha256": "a85f1bbaa2f5d0b69b43824d14de53e6164da603e0cbb124547522f58635636a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/default-cxx-target-options.txt",
+      "bytes": 3457,
+      "sha256": "9deac52d2c5d22adb4662f6b844df4dd057265953d310e62ea4324db10acc637"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/default-predefines.txt",
+      "bytes": 14033,
+      "sha256": "7bddd858a15c61b9e656430eb0f125dfac520145f3736cf2d8d611f8a014c848"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/default-target-options.txt",
+      "bytes": 3457,
+      "sha256": "9deac52d2c5d22adb4662f6b844df4dd057265953d310e62ea4324db10acc637"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/default.txt",
+      "bytes": 726,
+      "sha256": "d0980649bda60f6ce227bb740534c26322c84ba37dd12f3f57805076dcd78598"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/explicit-unsafe.txt",
+      "bytes": 686,
+      "sha256": "ade485a3fc83ce61c82d3a2165735308ed0187160c2e987a0e58bb58ab5bd546"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/monetary-original.txt",
+      "bytes": 64051,
+      "sha256": "e0acb0c868270170ee059f2e90e0cfcfa9eec88d2f6bf332de64a68295ed5b93"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/monetary-strict.txt",
+      "bytes": 64989,
+      "sha256": "974df42e99e6031a21442eba75f262d766f8eea86385e96eddec7111b4be04f4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/audit-rebuilt.log",
+      "bytes": 38,
+      "sha256": "bbac70d867ae97c9e7f17fc95ddfda5f3a185e9ff8b72f515f5aca8962ceca83"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/audit-reference.log",
+      "bytes": 38,
+      "sha256": "bbac70d867ae97c9e7f17fc95ddfda5f3a185e9ff8b72f515f5aca8962ceca83"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/elf-rebuilt.json",
+      "bytes": 1284169,
+      "sha256": "4b18d6b5eb8a0690a0773af4da5860ea33f4836e0387f9589940c0d5217b6464"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/elf-reference.json",
+      "bytes": 1272016,
+      "sha256": "aff92109a84722bbb5b1304a2bf3540d19eb8f2ff891792d70c076ac906f4e31"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/alignment-probe.qemu-rebuilt.bindings",
+      "bytes": 321842,
+      "sha256": "36c5eb49cb28b26aea5a895bbc063b2f539c604305b03f321512b6f3512cb42c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/alignment-probe.qemu-rebuilt.stdout",
+      "bytes": 87,
+      "sha256": "f6c4d6c58ab226cbe8b7f9a03d2793f1575e563b1f0de103808701e8cfe6a37c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/alignment-probe.qemu-reference.bindings",
+      "bytes": 321959,
+      "sha256": "9ef939177c07b31a2a34384f536c08274bbd2400fdd1fcc8cf841f96e1a0bd04"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/alignment-probe.qemu-reference.stdout",
+      "bytes": 87,
+      "sha256": "f6c4d6c58ab226cbe8b7f9a03d2793f1575e563b1f0de103808701e8cfe6a37c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/atomic64-probe.qemu-rebuilt.bindings",
+      "bytes": 325267,
+      "sha256": "ef89ec291a2a4a00abf28281b71b03b96efcc4c0f371cf9f1ad596294050bdfd"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/atomic64-probe.qemu-rebuilt.stdout",
+      "bytes": 51,
+      "sha256": "c3e1c619a7ebb32bf501102f810725f75bb3af6ee9e6662b23078ae1fee7fee4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/atomic64-probe.qemu-reference.bindings",
+      "bytes": 325254,
+      "sha256": "f85a8a9d887fda7bb0d0e241b9027a4d660f9bc0e11fe9427312441d2119182b"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/atomic64-probe.qemu-reference.stdout",
+      "bytes": 51,
+      "sha256": "c3e1c619a7ebb32bf501102f810725f75bb3af6ee9e6662b23078ae1fee7fee4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/c-probe.qemu-rebuilt.bindings",
+      "bytes": 13414,
+      "sha256": "69fd4acb63745b4caeca0d1bf5735afc662a4f5da5daafdc891cefd271c196fa"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/c-probe.qemu-rebuilt.stdout",
+      "bytes": 73,
+      "sha256": "2baa457389c3394aa72d6b226c35ace739c269ca3bbef4b77979eb5d3d24773c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/c-probe.qemu-reference.bindings",
+      "bytes": 13531,
+      "sha256": "33cb7667ce31c7ea9ecf788286fe655df11b7bfef165ee124fd740bf664bcbc3"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/c-probe.qemu-reference.stdout",
+      "bytes": 73,
+      "sha256": "2baa457389c3394aa72d6b226c35ace739c269ca3bbef4b77979eb5d3d24773c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/compiler-version.txt",
+      "bytes": 2556,
+      "sha256": "8abc80b016f43b8669f4897441769c5dc3fe127e981053d79497704976b14854"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx-predefines.txt",
+      "bytes": 35334,
+      "sha256": "4f4ecf32512bb73a3c97e34fb1a90f814e4f32fe6196f625b4343c6a18871e2a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx17-probe.qemu-rebuilt.bindings",
+      "bytes": 338007,
+      "sha256": "11669a95367c197ca2555c38e11a9753ab6acf7e4a8b4edf4fffe57d475cb8dd"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx17-probe.qemu-rebuilt.stdout",
+      "bytes": 102,
+      "sha256": "bf8faedb2c753ae16a2b80bc1251ae0229e87b838a127987d26cc9ed21e93918"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx17-probe.qemu-reference.bindings",
+      "bytes": 337967,
+      "sha256": "5364ecab13c5fa146ea3b303267b23cbf42c9a63343936344cf711e7fd1f4fb8"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx17-probe.qemu-reference.stdout",
+      "bytes": 102,
+      "sha256": "bf8faedb2c753ae16a2b80bc1251ae0229e87b838a127987d26cc9ed21e93918"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx23-probe.recent-rebuilt.bindings",
+      "bytes": 495172,
+      "sha256": "2fba4a12b5d6ca784f83efd439e926cc2e4d71a390b42a4ec4da0936b0599642"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx23-probe.recent-rebuilt.stdout",
+      "bytes": 74,
+      "sha256": "0ab00cc783407533c2f0e803695ec6b624a9e1165f1e1385960e579817a0fc2d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx23-probe.recent-reference.bindings",
+      "bytes": 495298,
+      "sha256": "09b6188320e8a3c6c5596194901d3b0cf4d1aa6a87192f3dccec1727a92898b5"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx23-probe.recent-reference.stdout",
+      "bytes": 74,
+      "sha256": "0ab00cc783407533c2f0e803695ec6b624a9e1165f1e1385960e579817a0fc2d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/header-search.txt",
+      "bytes": 5937,
+      "sha256": "fee112b114ce911a6e5566800a0517f849c7f87406610ea0829f273241c16a79"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/kernel-helper-observation.qemu-rebuilt.bindings",
+      "bytes": 11052,
+      "sha256": "7a83bcd6be7476347aade41163e5df4431d79965a6904b27fc7ce03d097266b6"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/kernel-helper-observation.qemu-rebuilt.stdout",
+      "bytes": 28,
+      "sha256": "0110b34700a3cc0d8ee02b94cafb6d061bcdbe1b5342f6980a7d259692259bcf"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/kernel-helper-observation.qemu-reference.bindings",
+      "bytes": 11293,
+      "sha256": "faf75f94b3ac2407581fee58e95ce1a4b674cd2caf9284667aa59f5dd3cacd0b"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/kernel-helper-observation.qemu-reference.stdout",
+      "bytes": 28,
+      "sha256": "0110b34700a3cc0d8ee02b94cafb6d061bcdbe1b5342f6980a7d259692259bcf"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/predefines.txt",
+      "bytes": 14033,
+      "sha256": "7bddd858a15c61b9e656430eb0f125dfac520145f3736cf2d8d611f8a014c848"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/qemu-rebuilt.json",
+      "bytes": 11439,
+      "sha256": "02090f5f2fb3f92bcb7f449cc7d312a2cf1192133bb1b0023713c83132a9468d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/qemu-reference.json",
+      "bytes": 11175,
+      "sha256": "95a190647338825d690ba75c34d98b122da257a73b33e2f5a05eda7b051e37c6"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/recent-rebuilt.json",
+      "bytes": 3755,
+      "sha256": "bded7e64551fd41d7962fafe64d6d1fec4899c6699441fd2c0736649cce86845"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/recent-reference.json",
+      "bytes": 3596,
+      "sha256": "a10f3c801a9dc1f65b8fc6da1cc941964af3b0f233bc690c1b391fc4f108f97c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/rmlui-probe.qemu-rebuilt.bindings",
+      "bytes": 328702,
+      "sha256": "2e240ad017b29bae7f0e81b48ea1d24000ff1c08ef0d085b49f190b4c6ced99d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/rmlui-probe.qemu-rebuilt.stdout",
+      "bytes": 46,
+      "sha256": "a5cf1c179ac0ef04e6a9e0791868d0be937ba586546fb75ec206661c7432172f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/rmlui-probe.qemu-reference.bindings",
+      "bytes": 328817,
+      "sha256": "005e7f5685f67a36f708a5e49227addeda911e056a94ecab219778829e267491"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/rmlui-probe.qemu-reference.stdout",
+      "bytes": 46,
+      "sha256": "a5cf1c179ac0ef04e6a9e0791868d0be937ba586546fb75ec206661c7432172f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/target-options.txt",
+      "bytes": 3457,
+      "sha256": "9deac52d2c5d22adb4662f6b844df4dd057265953d310e62ea4324db10acc637"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/qemu-rebuilt.log",
+      "bytes": 488,
+      "sha256": "9ceea07e5a007260b15b0f2e84c6236ad685e0054c1cd003d3152f49f400f03e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/qemu-reference.log",
+      "bytes": 488,
+      "sha256": "9ceea07e5a007260b15b0f2e84c6236ad685e0054c1cd003d3152f49f400f03e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/recent-rebuilt.log",
+      "bytes": 88,
+      "sha256": "c793e5d5a55486457ce22d7c55bccf8d74c3b31f102cc16c26fa16a3008ad68f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/recent-reference.log",
+      "bytes": 88,
+      "sha256": "c793e5d5a55486457ce22d7c55bccf8d74c3b31f102cc16c26fa16a3008ad68f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/rmlui/CMakeCache.txt",
+      "bytes": 22205,
+      "sha256": "edf8c1e43eee257d896cb6072687c1b03173bd76640dee51d26f985874b81aa1"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/rmlui/CMakeFiles/CMakeOutput.log",
+      "bytes": 77273,
+      "sha256": "cea78a07c55e65671441d9c21f2b0eb466db2cc85e0a31045b383ad236788208"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/rmlui/CMakeFiles/TargetDirectories.txt",
+      "bytes": 6659,
+      "sha256": "ed8b50b8d3c13957a633f94b9ba67266d2a3c47c7f75f2193967b74f9983d240"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/rmlui-build.log",
+      "bytes": 30692,
+      "sha256": "1b40335f0fe5dadb25be1c6b9ccffa2420cd95d61c32a0bf8be4576fd66468d7"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/validation-summary.json",
+      "bytes": 22966,
+      "sha256": "9f9134e579807f29de1adb8f495c52b95a914962e074604cffae334cd5352dbb"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/wait-operations.json",
+      "bytes": 1146,
+      "sha256": "e66a65be65b67e416f8decea2730eaae6b7520c72c2e55a61d849b41e707639e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/rebuilt-analysis.json",
+      "bytes": 91123,
+      "sha256": "4bad007add778dbfb0a100dca7d81bf944c89f8beb5f71bce3e51c4f9892efba"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/rebuilt.bindings",
+      "bytes": 351497,
+      "sha256": "9361c78cc5af78fe8df823b7bc64403affbbdb029ca28e77896d54c2a7532117"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/rebuilt.json",
+      "bytes": 3186,
+      "sha256": "7c48498ae8fca044bc4312beb939ef438036a3a9d5cd8737271cbee705123955"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/rebuilt.stdout",
+      "bytes": 290300,
+      "sha256": "167c8ae640e833de8143f48ec0cf830123474ee5c1ab7fdbe73576765d50a42a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/reference-analysis.json",
+      "bytes": 91125,
+      "sha256": "4f0f0f455408383bf26c983c3ba0b9cc7ea37bacbacfb9147dd94c3024a3ad3c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/reference.bindings",
+      "bytes": 351381,
+      "sha256": "1f735c8359032a8a2602deab1cd0f75218885cde1d77cf3cae2fb06928ae3916"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/reference.json",
+      "bytes": 3075,
+      "sha256": "50c07a4aed724fee39df008aa99170f1346156c78304d57dc7bf55a71188988c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/reference.stdout",
+      "bytes": 290308,
+      "sha256": "7cf8834d933e671fff55ba39cf51f380b3b174444323f2359f62436313598c6d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge/vectors.tsv",
+      "bytes": 483432,
+      "sha256": "5c466df18a85a706f74ccdfe69e72eb7251e74e0ff8de8ba91a4803e54a9e5c1"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge-vectors/cases.json",
+      "bytes": 1524809,
+      "sha256": "8d1b97337e427c7dd06839e14c8ae96d141b6492caa655cd893d0ce5711d9d0a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge-vectors/inputs.tsv",
+      "bytes": 483432,
+      "sha256": "5c466df18a85a706f74ccdfe69e72eb7251e74e0ff8de8ba91a4803e54a9e5c1"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge-vectors/reference-inputs.tsv",
+      "bytes": 451422,
+      "sha256": "dbbfbb04c411de0c46b3f1a53756ca620ad00198b075f472d95c827b6c547ac6"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge-vectors/reference.log",
+      "bytes": 140,
+      "sha256": "4a56e845ae074877332d3aee1f7a37417bce08073991fe601141c922681f8557"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/edge-vectors/reference.tsv",
+      "bytes": 238174,
+      "sha256": "ca10963c4a8ec62a8b9b2b60d9bfa869be5dd0db5254717338d2ca4e415ba43c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/elf-rebuilt.json",
+      "bytes": 1280124,
+      "sha256": "99a14b10f31939d660fc582aa9e444cf96a55c9e6c0c6c0aec653e451d33e32b"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/elf-reference.json",
+      "bytes": 1264958,
+      "sha256": "e8a2b1b6c2e14a92ef36eea16d09bd72c9a3d5887c6d8ad97366c55cfd18597a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/fenv-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/flags-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/rebuilt-analysis.json",
+      "bytes": 9300,
+      "sha256": "c97b5100f53c3b692ba1a62976f4c67fd4ef45d736c0c09dee48ff01b7e33c2e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/rebuilt-flags.json",
+      "bytes": 94,
+      "sha256": "de67b595b419ba817ee5032299d82596aba38c686dddb3099ab3cd7e60c28b60"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/rebuilt.bindings",
+      "bytes": 323602,
+      "sha256": "9d5b9e30c0aae15375195015a8451c183f97d832f1bfce5df6a8a3ea7c4c4668"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/rebuilt.json",
+      "bytes": 3204,
+      "sha256": "c3c4c5c4d193799832581228ce14d7e34cb471656d9d535950103c433a4b8000"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/rebuilt.stdout",
+      "bytes": 1711565,
+      "sha256": "0cb88186acc1c503d26d8832174e717c2c3223e57ba26246abaf603a09cf45ab"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/reference-analysis.json",
+      "bytes": 9302,
+      "sha256": "4bf5264023b13adb5b176ba2adeae38b77357068e72dd5f2e5f03cdedc61f44f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/reference-flags.json",
+      "bytes": 94,
+      "sha256": "de67b595b419ba817ee5032299d82596aba38c686dddb3099ab3cd7e60c28b60"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/reference.bindings",
+      "bytes": 323719,
+      "sha256": "c07fd7714529223f17d5e07c10bb7ded0ccb26e80cf6f7ed858fd2787426e695"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/reference.json",
+      "bytes": 3092,
+      "sha256": "a54f3272fae8a95acec42977643dfdecb84ba8671fe0c04a1f1e0459406bf305"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/reference.stdout",
+      "bytes": 1711565,
+      "sha256": "0cb88186acc1c503d26d8832174e717c2c3223e57ba26246abaf603a09cf45ab"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused/vectors.tsv",
+      "bytes": 2633030,
+      "sha256": "c5788a2fd4d07196e0dd6a03fb3320ec16607b737571561775afb0ecd687c07f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused-vectors/cases.json",
+      "bytes": 8097357,
+      "sha256": "619727327a9b60d40f6de85a60b41774dcfb24e5e80b06866cb422e8b518627d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused-vectors/flags.tsv",
+      "bytes": 233658,
+      "sha256": "b40454f0733bbfeb3a21428f7ec668b15588e217aea18c65929711150e498e59"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused-vectors/inputs.tsv",
+      "bytes": 2633030,
+      "sha256": "c5788a2fd4d07196e0dd6a03fb3320ec16607b737571561775afb0ecd687c07f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused-vectors/reference-inputs.tsv",
+      "bytes": 2633030,
+      "sha256": "c5788a2fd4d07196e0dd6a03fb3320ec16607b737571561775afb0ecd687c07f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused-vectors/reference.log",
+      "bytes": 140,
+      "sha256": "4a56e845ae074877332d3aee1f7a37417bce08073991fe601141c922681f8557"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/focused-vectors/reference.tsv",
+      "bytes": 1423121,
+      "sha256": "68fc8cb67306def7f35a48ffce2ed713ee0ccb8f6100371b3baad278658903f2"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/fenv.qemu-rebuilt.bindings",
+      "bytes": 327504,
+      "sha256": "39512d701db6f7d0c086117910d18faece6eefe503fecf3d809d84dd8c21cef7"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/fenv.qemu-rebuilt.stdout",
+      "bytes": 280,
+      "sha256": "f9102574858a9afa0930925e38617ab77f15214fabb52f099e01bb8794d81671"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/fenv.qemu-reference.bindings",
+      "bytes": 327370,
+      "sha256": "8de02a4eb0e12236309617d48f2797ac7f846a070a2424c5739ae05abb661d59"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/fenv.qemu-reference.stdout",
+      "bytes": 280,
+      "sha256": "f9102574858a9afa0930925e38617ab77f15214fabb52f099e01bb8794d81671"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/projection.qemu-rebuilt.bindings",
+      "bytes": 323673,
+      "sha256": "40423521dce476c6c90aed0722cb59b07c1a6bc11be328cd1f90b9155cd54ce0"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/projection.qemu-rebuilt.stdout",
+      "bytes": 60,
+      "sha256": "47ec9694aa71399af028311dd3511fd17d62055a50e1b1d2ac733535a18e3641"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/projection.qemu-reference.bindings",
+      "bytes": 323660,
+      "sha256": "e0c1da8a66352878e72fa96957d4e84c68c9553cd0a260b65529d0a1518f1ba8"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/projection.qemu-reference.stdout",
+      "bytes": 60,
+      "sha256": "47ec9694aa71399af028311dd3511fd17d62055a50e1b1d2ac733535a18e3641"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/providers-rebuilt.json",
+      "bytes": 2120,
+      "sha256": "7f84d942dca96d985e2b7d8824d4f1129eb0dd1e57439180716d818e0f1a60a9"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/providers-reference.json",
+      "bytes": 2120,
+      "sha256": "7f84d942dca96d985e2b7d8824d4f1129eb0dd1e57439180716d818e0f1a60a9"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/qemu-rebuilt.json",
+      "bytes": 6979,
+      "sha256": "7c5890d91f986d0aa034a222190d1d6545053a76bf2413808d50d8a59a19c133"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/qemu-reference.json",
+      "bytes": 6780,
+      "sha256": "4564f33652ca3d597fc229be572ed5c5320e2aafc0d0488261deb559b2b7673a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/runtime_math.qemu-rebuilt.bindings",
+      "bytes": 326597,
+      "sha256": "8d332b68ca2d29edeb440657ff7cc55ade1f3b74b3a533e73d5e2fbaac4af43f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/runtime_math.qemu-rebuilt.stdout",
+      "bytes": 34,
+      "sha256": "0305805cdeb6413fcb5f3013e11a247ad9c12e0c39a456e62d865780d58d20ff"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/runtime_math.qemu-reference.bindings",
+      "bytes": 326584,
+      "sha256": "469bbb08ef775ddc27a1ddeb146e6ae802771a9e584bf6e92103a3617afd2fe4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/probes/runtime_math.qemu-reference.stdout",
+      "bytes": 34,
+      "sha256": "0305805cdeb6413fcb5f3013e11a247ad9c12e0c39a456e62d865780d58d20ff"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/projection-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/rebuilt-analysis.json",
+      "bytes": 168501,
+      "sha256": "ebcc93746f578f45ffd2229bd2477e4b90211aaf3cfb2ea39087cb3e53c0e6c4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/rebuilt.bindings",
+      "bytes": 42924,
+      "sha256": "ebfd3e0ff4d595d9c02d10c5a39150403db4967f3cfb96750d24ab7a2f3978bc"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/rebuilt.json",
+      "bytes": 3192,
+      "sha256": "d1d94096e134c9047a8cdc527e0c7045468658f3dc27630f2f8be574a259d9de"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/rebuilt.stdout",
+      "bytes": 290336,
+      "sha256": "4e5edb97095b52b14c21fead1d9d8af891cc93e5d52440df0a35be4b6b88c63f"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/reference-analysis.json",
+      "bytes": 168503,
+      "sha256": "fd425e7d3b1e247939635e2fda230d2106d10cbd6bddbb031b01b6850660fe4d"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/reference.bindings",
+      "bytes": 42808,
+      "sha256": "2601e845f98691649c621e7654a134969eeadd0410ad96ecd1bb73a9079a46d6"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/reference.json",
+      "bytes": 3081,
+      "sha256": "48a8c2ddcf415db357d121f8496a839846b535677bf45fabe356c3774975439a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/reference.stdout",
+      "bytes": 290344,
+      "sha256": "9cdb616738e91bb979bf3c858367c8ade3c233300b39938674f1b6885581634c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c/vectors.tsv",
+      "bytes": 483432,
+      "sha256": "5c466df18a85a706f74ccdfe69e72eb7251e74e0ff8de8ba91a4803e54a9e5c1"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/raw-c-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/reference-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/reference-sanity.json",
+      "bytes": 3781,
+      "sha256": "23684e551609526150daa3ad57bd1d0d11f8dc8b50c033efa046c44e2961eab6"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/runner-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/runtime_math-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/rebuilt-analysis.json",
+      "bytes": 17454,
+      "sha256": "38d5131f5c2649833becede28db99040acdf15b86a0326243a78bf259bbefd0a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/rebuilt.bindings",
+      "bytes": 330607,
+      "sha256": "042241aa97d5fde41d1b1e4cfe9bfe35ebb3dd5c46a93464af88d0f199723bfe"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/rebuilt.json",
+      "bytes": 3174,
+      "sha256": "cd45c6b96a69cc5945ee7625586f262baac4554f572d975b2c8ceb8f7af0949e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/rebuilt.stdout",
+      "bytes": 256654,
+      "sha256": "6e66eb8bc04a7915d222177a64adf5edf0de54e37e5ae2c0d4f8034b25c39e93"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/reference-analysis.json",
+      "bytes": 17456,
+      "sha256": "cb6506806b6273539b88506dbe7cc1165b5c9dbb754639120aeca21f09fd440b"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/reference.bindings",
+      "bytes": 330724,
+      "sha256": "c7c9a8ef60b0643ff436ec1cd8a2d292e2faf32d28a452dade0be5b9a3019a63"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/reference.json",
+      "bytes": 3063,
+      "sha256": "c0baefce3d3b11282da55c45f164e03145dfe54deca28f1843bead253a70cbf0"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/reference.stdout",
+      "bytes": 256654,
+      "sha256": "6e66eb8bc04a7915d222177a64adf5edf0de54e37e5ae2c0d4f8034b25c39e93"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui/vectors.tsv",
+      "bytes": 437226,
+      "sha256": "91d3e9548e00ae4d54f9c7a8aae8564a54c9d94c16965b048e3c8079879ab7b8"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui-vectors/cases.json",
+      "bytes": 1451407,
+      "sha256": "10cbdfe00e452ca50bae2bed838889f50d98b5f6d2a4f9754fa98e5c63dbee08"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui-vectors/inputs.tsv",
+      "bytes": 437226,
+      "sha256": "91d3e9548e00ae4d54f9c7a8aae8564a54c9d94c16965b048e3c8079879ab7b8"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui-vectors/reference.log",
+      "bytes": 140,
+      "sha256": "4a56e845ae074877332d3aee1f7a37417bce08073991fe601141c922681f8557"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/base/ui-vectors/reference.tsv",
+      "bytes": 231786,
+      "sha256": "7ec6250658afee52642f3b4ff289ad19edd9263c1adb7e9ef26a9963f110fd7c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/contracts-build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/elf-rebuilt.json",
+      "bytes": 1263800,
+      "sha256": "db62ca5bd6d3d74d914d3611ae007b343ce6610d06a78fb6e7348c18ed21c488"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/elf-reference.json",
+      "bytes": 1249163,
+      "sha256": "f6a8119ee6328abc25441fcbfd94f9958d36946a158a5cca1987f3dd5a19f5e0"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/complex-contract.contracts-rebuilt.bindings",
+      "bytes": 332597,
+      "sha256": "2b08c797213dcf0d2ae76252e5fa3aa9b902f9e61eb95dbab28819ea8342924e"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/complex-contract.contracts-rebuilt.stdout",
+      "bytes": 39,
+      "sha256": "583b06e8973b24c7e3c8bda1c6b66b549d54e1608839a3bfa44b4d2637d3bd21"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/complex-contract.contracts-reference.bindings",
+      "bytes": 332470,
+      "sha256": "93eff4a6c80ac3a5e31fe8dcda2e514c62623999b88d2253ef3c569049e0c0a9"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/complex-contract.contracts-reference.stdout",
+      "bytes": 39,
+      "sha256": "583b06e8973b24c7e3c8bda1c6b66b549d54e1608839a3bfa44b4d2637d3bd21"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/contracts-rebuilt.json",
+      "bytes": 3712,
+      "sha256": "16aaff7bf215c1bbba09534af224d0065b609aa8670d0238a32d581bd82c0ffb"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/contracts-reference.json",
+      "bytes": 3553,
+      "sha256": "37eee1721e95aa2b0ae69f59dee08dfc31fbdd12dc0beef0318f9f746fc4eece"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/providers-rebuilt.json",
+      "bytes": 4777,
+      "sha256": "d72e473c14d0e4a59b5a57743c6765e25f435abd6e838eb8c4727d084ba97e27"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/providers-reference.json",
+      "bytes": 4777,
+      "sha256": "d72e473c14d0e4a59b5a57743c6765e25f435abd6e838eb8c4727d084ba97e27"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/rebuilt-analysis.json",
+      "bytes": 25792,
+      "sha256": "17bd15e5909446085bfae2651e2cb24b446e7c10112eed9f3a56e31414e0414a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/rebuilt.bindings",
+      "bytes": 328525,
+      "sha256": "046412f54d86bdb512b1e4c804e296b74676a5283fccf53e95a4137256054f0b"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/rebuilt.json",
+      "bytes": 3167,
+      "sha256": "427ee23632971cd5cc972e74ca42597fc92097557862e3e8877060ebc23c4a35"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/rebuilt.stdout",
+      "bytes": 1652189,
+      "sha256": "8109b727dbcc824a2bf97473fd41601ec7830ed99ffd8804c6d00445975622c3"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/reference-analysis.json",
+      "bytes": 25794,
+      "sha256": "8d31598f38fb0826ef92c86688e9dd3406f8454b50e86d8a679e9adc33c6aceb"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/reference.bindings",
+      "bytes": 328293,
+      "sha256": "0683fb0d0cbedf5bddc8405b7c61c5dc49194bfaefb1d3eca3e6cb37dd911ab2"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/reference.json",
+      "bytes": 3057,
+      "sha256": "76a5a3ddc3ae843655e948289e298ae4efa9b6c26c24179ea80ea4b8721c66c5"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/reference.stdout",
+      "bytes": 1652189,
+      "sha256": "8109b727dbcc824a2bf97473fd41601ec7830ed99ffd8804c6d00445975622c3"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/probes/vectors.tsv",
+      "bytes": 2657120,
+      "sha256": "cce4aff2191e397fd12344b4ca6dd8ccb5d4e8349c9f79ae9041865b450bf4e0"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/vectors/cases.json",
+      "bytes": 8060774,
+      "sha256": "73517e8fff6709942125064bd63abcc55b19cdabd9fd5d93aebe061858d35dc4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/vectors/inputs.tsv",
+      "bytes": 2657120,
+      "sha256": "cce4aff2191e397fd12344b4ca6dd8ccb5d4e8349c9f79ae9041865b450bf4e0"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/vectors/reference-inputs.tsv",
+      "bytes": 2657120,
+      "sha256": "cce4aff2191e397fd12344b4ca6dd8ccb5d4e8349c9f79ae9041865b450bf4e0"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/vectors/reference.log",
+      "bytes": 140,
+      "sha256": "4a56e845ae074877332d3aee1f7a37417bce08073991fe601141c922681f8557"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/numerics/vectors/reference.tsv",
+      "bytes": 1413854,
+      "sha256": "f7943792cdcc02524b23952337b64d79063e20791b53d14d28ecc8c7c131fe4c"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/audit-preflight.json",
+      "bytes": 122,
+      "sha256": "674807435947b8702a86e1b4048061da4e8ad27631ded9c6bd72e3ee89ab87b9"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/beads-progress.json",
+      "bytes": 2394,
+      "sha256": "ed7e18f08ba2100e51fbee30122c68eb508bbd84ac1895dd34c7b859421794ae"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/core-default-options.txt",
+      "bytes": 3457,
+      "sha256": "9deac52d2c5d22adb4662f6b844df4dd057265953d310e62ea4324db10acc637"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/ctng-bootstrap.log",
+      "bytes": 14537,
+      "sha256": "49749f712769839f6b85954695d5699ccad62484ff21213a818cc6930b1227bc"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/harness-followup-bead.json",
+      "bytes": 1551,
+      "sha256": "827399c0952208b2c0acaa95a6f669b9fe5387f60f7629b77c8b2ad4c18c8ac6"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/host-staged-check.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/native-evidence-staged-check.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/pilot-build.log",
+      "bytes": 54716,
+      "sha256": "62480ce04791cd4cc3203a327aae5380057f2cd2ed75fb2db3db98968d6c7f35"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/pilot-inputs.json",
+      "bytes": 1101,
+      "sha256": "08098821489afbd143f7ffcf1373574d5b0d4910da14f0b92558feaa4f24ec3a"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/pilot-qemu-js.log",
+      "bytes": 1194,
+      "sha256": "f9532721e01b7b6461a3b34747fe37abc5ccfc641376cb2fbb246765699e54f1"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/pilot-qemu-native.log",
+      "bytes": 1200,
+      "sha256": "68fee60153aab72d4e68b207e182e721c95839436372f583f0f460f4a1483804"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/portable-validation.log",
+      "bytes": 387,
+      "sha256": "2c3be52f03a7ef03b5cf5db4c194b18d0a4ab5e91b9e1d6239600aaa735fd643"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-strict-alignment/logs/specs-preflight.log",
+      "bytes": 43,
+      "sha256": "7599bad02ba60530e751c8fa8bb99d40902887052bfe6fc8cab93ad2c85e1de3"
+    }
+  ]
+}

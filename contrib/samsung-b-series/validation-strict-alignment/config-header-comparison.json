@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "headers": [
+    {
+      "path": "libgcc/auto-target.h",
+      "sha256": "7925b3147d3eb47a542e71543a833270d51914b27bf641d14e9e4652a4c786df"
+    },
+    {
+      "path": "libstdc++-v3/config.h",
+      "sha256": "d12185cbba22067950b4d7eea133e7367d5882baa77f5a7e54f6d1e79fb832f4"
+    },
+    {
+      "path": "libstdc++-v3/include/arm-samsung-linux-gnueabi/bits/c++config.h",
+      "sha256": "5d497af4b3307d74d4a4c76cc984dca7b400ed01e8d93f6e2f1e0a510de97b5a"
+    },
+    {
+      "path": "libatomic/auto-config.h",
+      "sha256": "c9d904afdc35791a97661c442e63fcfefbd465056e33e70f9b19b136a803307b"
+    }
+  ]
+}

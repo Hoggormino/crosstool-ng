@@ -1,0 +1,74 @@
+{
+  "nav": "native",
+  "clock": "host CLOCK_MONOTONIC; no native TV timing",
+  "command": [
+    "qemu-arm",
+    "-cpu",
+    "arm1136",
+    "-r",
+    "2.6.18",
+    "-L",
+    "/target",
+    "-E",
+    "LD_LIBRARY_PATH=/pilot:/target/lib:/target/usr/lib",
+    "/pilot/rmlui-live-worker",
+    "--assets",
+    "/pilot",
+    "--socket",
+    "/tmp/pilot-fixture-1oekt3o5/ui.sock",
+    "--nav",
+    "native"
+  ],
+  "elapsed_ms": 4961.765927,
+  "single_key_ordinal": 2,
+  "single_key_first_frame_ms": 32.09851,
+  "single_key_frame_count": 6,
+  "single_key_intervals_ms": [
+    32.990733,
+    33.671493,
+    34.689004,
+    33.11105,
+    34.220608
+  ],
+  "states": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "frames": 18,
+  "captures_sha256": {
+    "home": "56a22487c7ceaeebc541aaeb09dc59c4b264a1b95c86140aa42e3c4b852d301b",
+    "library": "2427765b1cd554f03c6076b1de4bb07806f0d8a74b9ea052bf537305c67e4068",
+    "detail": "ab169e92dbc6bf56bd2937dca0037aa3ffe961846f304c99daf0e41e6bcc8aa8"
+  },
+  "bye": 0
+}

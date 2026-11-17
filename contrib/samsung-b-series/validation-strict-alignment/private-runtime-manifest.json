@@ -1,0 +1,42 @@
+{
+  "alignment_audit": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/alignment-audit/alignment-audit.json",
+  "default_strict": true,
+  "native_validation": {
+    "result": "Passed",
+    "report": "/mnt/data/Projects/samsung-strict-alignment/analysis/evidence/gcc16-strict-alignment-20261117/native-summary.json",
+    "policy": 5,
+    "alignment_counter_delta": 0,
+    "modes": [
+      "native",
+      "js"
+    ],
+    "exeDSP_pid": "47",
+    "scope": "Native startup/OSD/navigation/Exit; no physical-panel viewing/GUI fluidity claim."
+  },
+  "runtimes": {
+    "libstdc++.so.6": {
+      "sha256": "bf66b9431b62c6489f384e2d54516caaf1b3d88df0383b9d20201ff18959132b",
+      "unstripped_sha256": "bb9088a26b4da9137c87b7e20188c6beaa60bfeec6637498d25f3b779e5008da",
+      "bytes": 1779408,
+      "allocated_sections_identical": true
+    },
+    "libgcc_s.so.1": {
+      "sha256": "efaa1533492bcf8ffdbdc1547cb59f08c5fe6e54d8d379a042821643b1a44470",
+      "unstripped_sha256": "4a0924a5143109c2e08ad213375a1bdc4a7b87d932ed44292f8f46d9350adb85",
+      "bytes": 251884,
+      "allocated_sections_identical": true
+    },
+    "libatomic.so.1": {
+      "sha256": "8369f887ae044905eeec64dfe86276bd898b959a9860f6e856796fd6c74726ff",
+      "unstripped_sha256": "c09aa7bd17c5b82d3a7dd0acd8d5ed803182eca630f4f809084788222a2f0bde",
+      "bytes": 22392,
+      "allocated_sections_identical": true
+    }
+  },
+  "licenses": {
+    "COPYING3": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "COPYING.RUNTIME": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+    "samsung-math.txt": "47124f2723148c8ee3bd54850a2104fee887a3903ff11fef349d3df52f22b4ce",
+    "samsung-complex.txt": "4a7f9dfd866cb398a120a937bd7b943a3a199db936a7ebc4510c05886392e670"
+  }
+}

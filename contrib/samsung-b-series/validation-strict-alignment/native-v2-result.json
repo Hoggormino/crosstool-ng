@@ -1,0 +1,171 @@
+{
+  "request_id": "0d00519ad0424989a14346d5cf2f0c2c",
+  "remote_dir": "/mtd_wiselink/TVUIGuiPilot16Strict-20261117",
+  "before": {
+    "state": {
+      "pid": "47",
+      "loaded": false,
+      "log": ""
+    },
+    "alignment_text": "User:           0\nSystem:         0\nSkipped:        0\nHalf:           0\nWord:           0\nDWord:          0\nMulti:          0\nUser faults:    5 (signal+warn)\n\r",
+    "counters": {
+      "User": 0,
+      "System": 0,
+      "Skipped": 0,
+      "Half": 0,
+      "Word": 0,
+      "DWord": 0,
+      "Multi": 0,
+      "User faults": 5
+    },
+    "start_ticks": "129",
+    "host_unix": 1794954406.9807644
+  },
+  "operations": [
+    "Home presented",
+    "Library navigation",
+    "Right key accepted"
+  ],
+  "target_hashes": {
+    "rmlui-live-worker": {
+      "sha256": "49d3a4f07b822f55a2fc6aec489628472af592e71ee7e405fa26c248fcdc1580",
+      "bytes": 3378624
+    },
+    "libstdc++.so.6": {
+      "sha256": "bf66b9431b62c6489f384e2d54516caaf1b3d88df0383b9d20201ff18959132b",
+      "bytes": 1779408
+    },
+    "libgcc_s.so.1": {
+      "sha256": "efaa1533492bcf8ffdbdc1547cb59f08c5fe6e54d8d379a042821643b1a44470",
+      "bytes": 251884
+    },
+    "libatomic.so.1": {
+      "sha256": "8369f887ae044905eeec64dfe86276bd898b959a9860f6e856796fd6c74726ff",
+      "bytes": 22392
+    }
+  },
+  "worker_pid": "6652",
+  "mapped_presenter_hash": {
+    "sha256": "2a4f46f0bd15fdb96ee56676c0c0f22077edda92ca4d287365c26f5798c9b241",
+    "bytes": 31776
+  },
+  "trace": {
+    "clock": "CLOCK_MONOTONIC milliseconds",
+    "meaning": "Ordinal identifies the latest accepted KEY that changed the visual target; ignored keys do not advance it. Presentation return is not scanout.",
+    "startup_ms": 1161,
+    "keys_accepted": 4,
+    "ordinals_without_frame": [
+      4
+    ],
+    "excluded_key_ordinals": [
+      4
+    ],
+    "first_visual_response": {
+      "count": 3,
+      "median_ms": 324,
+      "p95_ms": 405,
+      "worst_ms": 405,
+      "over_100ms_count": 3,
+      "target_ms": 100,
+      "target_misses": 3
+    },
+    "same_target_warm_frame_intervals": {
+      "count": 1,
+      "median_ms": 289,
+      "p95_ms": 289,
+      "worst_ms": 289,
+      "over_100ms_count": 1,
+      "target_ms": 33.333333333333336,
+      "target_misses": 1
+    },
+    "paint_work": {
+      "count": 5,
+      "median_ms": 7,
+      "p95_ms": 7,
+      "worst_ms": 7,
+      "over_100ms_count": 0,
+      "target_ms": 33.333333333333336,
+      "target_misses": 0
+    },
+    "vendor_present_call": {
+      "count": 5,
+      "median_ms": 21,
+      "p95_ms": 82,
+      "worst_ms": 82,
+      "over_100ms_count": 0,
+      "target_ms": 33.333333333333336,
+      "target_misses": 1
+    },
+    "metric_notes": "First response targets 100 ms; warm interval targets 30 Hz. Nearest-rank p95; observed intervals include any gaps between frames. Excluded keys include ignored or superseded inputs.",
+    "frames": [
+      {
+        "sequence": 1,
+        "ordinal": 0,
+        "present_ms": 1016307,
+        "since_start_ms": 1161,
+        "since_previous_frame_ms": null,
+        "same_ordinal_frame_interval_ms": null,
+        "since_visual_key_ms": null,
+        "since_latest_key_ms": null
+      },
+      {
+        "sequence": 2,
+        "ordinal": 1,
+        "present_ms": 1029619,
+        "since_start_ms": 14473,
+        "since_previous_frame_ms": 13312,
+        "same_ordinal_frame_interval_ms": null,
+        "since_visual_key_ms": 405,
+        "since_latest_key_ms": 405
+      },
+      {
+        "sequence": 3,
+        "ordinal": 2,
+        "present_ms": 1035798,
+        "since_start_ms": 20652,
+        "since_previous_frame_ms": 6179,
+        "same_ordinal_frame_interval_ms": null,
+        "since_visual_key_ms": 324,
+        "since_latest_key_ms": 324
+      },
+      {
+        "sequence": 4,
+        "ordinal": 2,
+        "present_ms": 1036087,
+        "since_start_ms": 20941,
+        "since_previous_frame_ms": 289,
+        "same_ordinal_frame_interval_ms": 289,
+        "since_visual_key_ms": null,
+        "since_latest_key_ms": null
+      },
+      {
+        "sequence": 5,
+        "ordinal": 3,
+        "present_ms": 1038158,
+        "since_start_ms": 23012,
+        "since_previous_frame_ms": 2071,
+        "same_ordinal_frame_interval_ms": null,
+        "since_visual_key_ms": 284,
+        "since_latest_key_ms": 284
+      }
+    ]
+  },
+  "after_alignment_text": "User:           0\nSystem:         0\nSkipped:        0\nHalf:           0\nWord:           0\nDWord:          0\nMulti:          0\nUser faults:    5 (signal+warn)\n\r",
+  "after_counters": {
+    "User": 0,
+    "System": 0,
+    "Skipped": 0,
+    "Half": 0,
+    "Word": 0,
+    "DWord": 0,
+    "Multi": 0,
+    "User faults": 5
+  },
+  "state_after": {
+    "pid": "47",
+    "loaded": false,
+    "log": ""
+  },
+  "matching_module_unloaded": true,
+  "result": "Passed"
+}

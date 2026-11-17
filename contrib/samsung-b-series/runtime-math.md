@@ -1,5 +1,10 @@
 # Private numerical corrections for the TV UI process
 
+> Native-use correction: the historical build below is preserved QEMU/math
+> evidence. Its private runtimes are not safe under SELP policy 5. Use a fresh
+> [canonical strict-alignment build](strict-alignment.md) for native GCC 16 work;
+> application flags alone do not repair the old shared libraries.
+
 This optional profile keeps GCC 16.2.0, the framework base
 `a4895d7fc49d5b423abc5f166895c80175019570`, and the exact source-built
 binutils 2.17.50 / glibc+ports 2.5.90 snapshots from the math-header profile.

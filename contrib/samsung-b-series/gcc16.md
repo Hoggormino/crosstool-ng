@@ -1,5 +1,10 @@
 # GCC 16 worker variant
 
+> Native-use correction: the historical build below is preserved QEMU/math
+> evidence. Its private runtimes are not safe under SELP policy 5. Use a fresh
+> [canonical strict-alignment build](strict-alignment.md) for native GCC 16 work;
+> application flags alone do not repair the old shared libraries.
+
 The newest GCC package at framework commit
 `a4895d7fc49d5b423abc5f166895c80175019570` is GCC 16.2.0. This separate variant
 uses HEAD's normal package integration; GCC 8.3 and its sample are preserved.

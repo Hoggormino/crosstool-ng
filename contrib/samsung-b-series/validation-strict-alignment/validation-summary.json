@@ -1,0 +1,823 @@
+{
+  "artifacts": [
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/c-probe",
+      "sha256": "fd01208bf9764b6432d39ad5c8696e2af6d47e0b28bb0b5257948b67b500d375",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx17-probe",
+      "sha256": "f22b1a32f54d555687c2af1b53b369a2a8719597bd2a235a7b49ac46dfaad6fd",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.7",
+        "CXXABI_1.3.9",
+        "GCC_3.5",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.11",
+        "GLIBCXX_3.4.21",
+        "GLIBCXX_3.4.22",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/atomic64-probe",
+      "sha256": "a4d8df59d075cdbd5129bf6117684086697bad1524933b6173fe0f6845f12f75",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libatomic.so.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GCC_3.5",
+        "GLIBC_2.4",
+        "LIBATOMIC_1.0"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/cxx23-probe",
+      "sha256": "5117e6d89dfe15223434527588d1564af6450ee61fab2349cf567c451ee25d55",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.9",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.11",
+        "GLIBCXX_3.4.19",
+        "GLIBCXX_3.4.22",
+        "GLIBCXX_3.4.35",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/kernel-helper-observation",
+      "sha256": "b1b63a649199f6d848f48d2263140f3401460ba4fe2f7ddf764c2b8f923f324d",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/rmlui-probe",
+      "sha256": "af76f162ba8bfbcd77e2f14159c242195aae6a45b91768023a191fb833454bbe",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.15",
+        "CXXABI_1.3.5",
+        "CXXABI_1.3.8",
+        "CXXABI_1.3.9",
+        "CXXABI_ARM_1.3.3",
+        "GCC_3.5",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.14",
+        "GLIBCXX_3.4.18",
+        "GLIBCXX_3.4.19",
+        "GLIBCXX_3.4.20",
+        "GLIBCXX_3.4.21",
+        "GLIBCXX_3.4.29",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/alignment-probe",
+      "sha256": "91fd68dfa503c78fc54aa6d7b3e3eb719be05ad73293ed6bc459bd3be5a9bb07",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GCC_3.5",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.21",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libm-2.5.90.so",
+      "sha256": "a38ae20373b59b72cf2b77ab2a4d24fe3132990b8d84756eae8943a25655dcb7",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "ld-linux.so.3",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4",
+        "GLIBC_PRIVATE"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libc-2.5.90.so",
+      "sha256": "9f10cc16015bf03d8ce9add667b21486b1ef0b1876e631e3a59067738f978521",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "ld-linux.so.3"
+      ],
+      "required_versions": [
+        "GLIBC_2.4",
+        "GLIBC_PRIVATE"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_dl_starting_up",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/ld-2.5.90.so",
+      "sha256": "a2ba037435a9d39478d51e52ef3af2a89cf7763e2cd42518a21c5e153201d1ff",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [],
+      "required_versions": [],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": []
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/private/libstdc++.so.6",
+      "sha256": "bb9088a26b4da9137c87b7e20188c6beaa60bfeec6637498d25f3b779e5008da",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux.so.3",
+        "libgcc_s.so.1"
+      ],
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_addUserCommitAction",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_memcpyRtWn",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ZGTtnaj",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ZN9__gnu_cxx21zoneinfo_dir_overrideEv",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_RU1",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "__cxa_thread_atexit_impl",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ZGTtdlPv",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_RU4",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_memcpyRnWt",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/private/libgcc_s.so.1",
+      "sha256": "4a0924a5143109c2e08ad213375a1bdc4a7b87d932ed44292f8f46d9350adb85",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libpthread-2.5.90.so",
+      "sha256": "8e9a08676256474e316bdb5475d89ce3ea2a4463683f324a1ebbf6dbe6b17c68",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libc.so.6",
+        "ld-linux.so.3"
+      ],
+      "required_versions": [
+        "GLIBC_2.4",
+        "GLIBC_PRIVATE"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/private/libatomic.so.1",
+      "sha256": "c09aa7bd17c5b82d3a7dd0acd8d5ed803182eca630f4f809084788222a2f0bde",
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "needed": [
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "arm_attributes": [
+        {
+          "file": {},
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "gnu_unique_count": 0,
+      "has_sysv_hash": true,
+      "has_rpath": false,
+      "weak_unresolved": [
+        {
+          "name": "__gmon_start__",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_deregisterTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        },
+        {
+          "name": "_ITM_registerTMCloneTable",
+          "version": null,
+          "binding": "WEAK",
+          "undefined": true
+        }
+      ]
+    }
+  ],
+  "static_audit_errors": [],
+  "execution": [
+    {
+      "receipt": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/qemu-rebuilt.json",
+      "sha256": "02090f5f2fb3f92bcb7f449cc7d312a2cf1192133bb1b0023713c83132a9468d",
+      "image": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+      "startup": "ELF interpreter",
+      "tests": [
+        {
+          "name": "c-probe",
+          "exit": 0,
+          "stdout": "C allocation/files/softfp/libm passed; pointer=4 long=4 time_t=4 off_t=4\n"
+        },
+        {
+          "name": "cxx17-probe",
+          "exit": 0,
+          "stdout": "C++17/STL/EH/RTTI/pthread/static/TLS-dtor/atomic32 passed; lock_free32=1 string_size=24 mutex_size=24\n"
+        },
+        {
+          "name": "atomic64-probe",
+          "exit": 0,
+          "stdout": "atomic64 operations passed in QEMU; is_lock_free=0\n"
+        },
+        {
+          "name": "kernel-helper-observation",
+          "exit": 0,
+          "stdout": "QEMU kuser_helper_version=5\n"
+        },
+        {
+          "name": "rmlui-probe",
+          "exit": 0,
+          "stdout": "RmlUi Core initialize/Variant/shutdown passed\n"
+        },
+        {
+          "name": "alignment-probe",
+          "exit": 0,
+          "stdout": "PASS unaligned EABI helpers offsets 0..7; 2624 memcpy cases; classic monetary patterns\n"
+        }
+      ],
+      "runtime_bytes_unchanged": true,
+      "binding_provider_counts": {
+        "/target/lib/libc.so.6": 118,
+        "/lib/ld-linux.so.3": 13,
+        "/target/lib/libm.so.6": 6,
+        "/target/lib/libpthread.so.0": 12,
+        "/probes/private/libgcc_s.so.1": 18,
+        "/probes/private/libstdc++.so.6": 1779,
+        "/probes/cxx17-probe": 7,
+        "/probes/private/libatomic.so.1": 4,
+        "/probes/rmlui-probe": 9
+      }
+    },
+    {
+      "receipt": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/qemu-reference.json",
+      "sha256": "95a190647338825d690ba75c34d98b122da257a73b33e2f5a05eda7b051e37c6",
+      "image": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+      "startup": "ELF interpreter",
+      "tests": [
+        {
+          "name": "c-probe",
+          "exit": 0,
+          "stdout": "C allocation/files/softfp/libm passed; pointer=4 long=4 time_t=4 off_t=4\n"
+        },
+        {
+          "name": "cxx17-probe",
+          "exit": 0,
+          "stdout": "C++17/STL/EH/RTTI/pthread/static/TLS-dtor/atomic32 passed; lock_free32=1 string_size=24 mutex_size=24\n"
+        },
+        {
+          "name": "atomic64-probe",
+          "exit": 0,
+          "stdout": "atomic64 operations passed in QEMU; is_lock_free=0\n"
+        },
+        {
+          "name": "kernel-helper-observation",
+          "exit": 0,
+          "stdout": "QEMU kuser_helper_version=5\n"
+        },
+        {
+          "name": "rmlui-probe",
+          "exit": 0,
+          "stdout": "RmlUi Core initialize/Variant/shutdown passed\n"
+        },
+        {
+          "name": "alignment-probe",
+          "exit": 0,
+          "stdout": "PASS unaligned EABI helpers offsets 0..7; 2624 memcpy cases; classic monetary patterns\n"
+        }
+      ],
+      "runtime_bytes_unchanged": true,
+      "binding_provider_counts": {
+        "/target/lib/libc.so.6": 119,
+        "/lib/ld-linux.so.3": 13,
+        "/target/lib/libm.so.6": 6,
+        "/target/lib/libpthread.so.0": 12,
+        "/probes/private/libgcc_s.so.1": 18,
+        "/probes/private/libstdc++.so.6": 1779,
+        "/probes/cxx17-probe": 7,
+        "/probes/private/libatomic.so.1": 4,
+        "/probes/rmlui-probe": 9
+      }
+    },
+    {
+      "receipt": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/recent-rebuilt.json",
+      "sha256": "bded7e64551fd41d7962fafe64d6d1fec4899c6699441fd2c0736649cce86845",
+      "image": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+      "startup": "ELF interpreter",
+      "tests": [
+        {
+          "name": "cxx23-probe",
+          "exit": 0,
+          "stdout": "C++20/23 concepts/span/ranges/expected/atomic-wait/timed-semaphore passed\n"
+        }
+      ],
+      "runtime_bytes_unchanged": true,
+      "binding_provider_counts": {
+        "/target/lib/libc.so.6": 98,
+        "/target/lib/libpthread.so.0": 8,
+        "/lib/ld-linux.so.3": 12,
+        "/probes/private/libgcc_s.so.1": 5,
+        "/probes/private/libstdc++.so.6": 1733,
+        "/target/lib/libm.so.6": 3,
+        "/probes/cxx23-probe": 4
+      }
+    },
+    {
+      "receipt": "/mnt/data/Projects/samsung-strict-alignment/build-complex-math-final/validation/probes/recent-reference.json",
+      "sha256": "a10f3c801a9dc1f65b8fc6da1cc941964af3b0f233bc690c1b391fc4f108f97c",
+      "image": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+      "startup": "ELF interpreter",
+      "tests": [
+        {
+          "name": "cxx23-probe",
+          "exit": 0,
+          "stdout": "C++20/23 concepts/span/ranges/expected/atomic-wait/timed-semaphore passed\n"
+        }
+      ],
+      "runtime_bytes_unchanged": true,
+      "binding_provider_counts": {
+        "/target/lib/libc.so.6": 99,
+        "/target/lib/libpthread.so.0": 8,
+        "/lib/ld-linux.so.3": 12,
+        "/probes/private/libgcc_s.so.1": 5,
+        "/probes/private/libstdc++.so.6": 1733,
+        "/target/lib/libm.so.6": 3,
+        "/probes/cxx23-probe": 4
+      }
+    }
+  ],
+  "kernel_limitation": "ARM1136 userspace emulation and uname override do not emulate Linux 2.6.18_SELP. Native admission remains separate."
+}
