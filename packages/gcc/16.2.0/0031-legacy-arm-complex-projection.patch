@@ -1,0 +1,18 @@
+# Use the existing C++ projection fallback for the verified legacy runtime.
+# This is implementation selection, not an override of capability probes.
+--- a/libstdc++-v3/include/std/complex
++++ b/libstdc++-v3/include/std/complex
+@@ -2594,7 +2594,12 @@
+     __complex_proj(const std::complex<_Tp>& __z)
+     { return __z; }
+ 
+-#if _GLIBCXX_USE_C99_COMPLEX
++// glibc 2.5 ARM cproj uses stereographic coordinates for finite values.
++// Keep configured C99 availability, but use the existing C++ implementation
++// here: finite values are unchanged and infinities retain the imaginary sign.
++#if _GLIBCXX_USE_C99_COMPLEX \
++  && !(defined(__arm__) && defined(__GLIBC__) \
++       && __GLIBC__ == 2 && __GLIBC_MINOR__ == 5)
+   inline complex<float>
+   __complex_proj(const complex<float>& __z)
+   { return __builtin_cprojf(__z.__rep()); }
