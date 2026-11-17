@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/reference-fixed/comparison.json",
+      "bytes": 59,
+      "sha256": "7c27aede7888e942d79aa0a1f19f2fa61a4db3890e4b5e88e0fe32b95e8da5ec"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/reference-regression/sanity.json",
+      "bytes": 3781,
+      "sha256": "23684e551609526150daa3ad57bd1d0d11f8dc8b50c033efa046c44e2961eab6"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/logs/source-restore.json",
+      "bytes": 809,
+      "sha256": "4be04eb42fefcfb56f07dcd22dd4976c7d8de7704f96350ede2bd4e1a3e43fe0"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/logs/scalar-dependencies.log",
+      "bytes": 2770,
+      "sha256": "40b86d4d291f0f2c4f051e8fba6bfef9b2dc97714f99e66c4a9859717bdbd7a4"
+    }
+  ],
+  "expanded_cases": 30936,
+  "contract_checks": 244,
+  "policy_fixtures": 15
+}

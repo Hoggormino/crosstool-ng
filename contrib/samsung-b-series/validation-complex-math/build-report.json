@@ -1,0 +1,878 @@
+{
+  "framework_base": "a4895d7fc49d5b423abc5f166895c80175019570",
+  "framework_upstream_head": "a4895d7fc49d5b423abc5f166895c80175019570\tHEAD",
+  "implementation_commit": "22dc1c4b7d25fecff4f1446462c3f7a7462aafdd",
+  "compiler": "GCC 16.2.0",
+  "binutils": "2.17.50 exact snapshot",
+  "libc": "glibc/ports 2.5.90-9.0.9 exact snapshots",
+  "kernel_headers": "2.6.18",
+  "libc_minimum_kernel": "2.6.16",
+  "actual_kernel": "2.6.18_SELP; not tested here",
+  "install_prefix": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install",
+  "private_bundle": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/tv-ui-private-runtime",
+  "source_manifest": "source-manifest.json",
+  "target": {
+    "cpu": "ARM1136JF-S",
+    "arch": "ARMv6J",
+    "endian": "little",
+    "instruction_mode": "ARM",
+    "fpu": "VFPv2",
+    "calling_convention": "softfp/base PCS",
+    "compiler_emitted_eabi": 5,
+    "interpreter": "/lib/ld-linux.so.3",
+    "hash_style": "SysV",
+    "gnu_unique": false
+  },
+  "image_id": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+  "build": {
+    "start_unix": 1794909522.8416305,
+    "elapsed_seconds": 1993.0759496688843,
+    "exit": 0
+  },
+  "api": {
+    "cases": 1267,
+    "linked": 1267,
+    "exact_c_symbols_linked_oe": 237
+  },
+  "numerics": {
+    "rebuilt": {
+      "complex": {
+        "case_count": 30936,
+        "failed_case_count": 0,
+        "within_comparison_policy": true,
+        "advisories": [
+          {
+            "id": 3375,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 4670,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 13687,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 14982,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 23999,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 25294,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          }
+        ]
+      },
+      "contracts": [
+        {
+          "test": "complex-contract",
+          "sha256": "d5768528241465c75f31cbe070c0ab7284f0f67424eef4b4ac5dffab611fd777",
+          "command": [
+            "docker",
+            "run",
+            "--rm",
+            "--init",
+            "--name",
+            "samsung-ctng-771d06462643",
+            "--network",
+            "none",
+            "--read-only",
+            "--cap-drop",
+            "ALL",
+            "--security-opt",
+            "no-new-privileges",
+            "--pids-limit",
+            "128",
+            "--memory",
+            "512m",
+            "--cpus",
+            "1",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=32m",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot,target=/target,readonly",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-complex-math/build-complex-math-final/numerics/probes,target=/probes,readonly",
+            "--workdir",
+            "/tmp",
+            "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+            "qemu-arm",
+            "-cpu",
+            "arm1136",
+            "-r",
+            "2.6.18",
+            "-L",
+            "/target",
+            "-E",
+            "LD_DEBUG=bindings:versions",
+            "-E",
+            "LD_LIBRARY_PATH=/probes/private:/target/lib:/target/usr/lib",
+            "/probes/complex-contract"
+          ],
+          "exit": 0,
+          "elapsed_seconds": 0.453,
+          "stdout": "complex_contract_checks=244 failures=0\n",
+          "binding_log": "complex-contract.contracts-rebuilt.bindings"
+        }
+      ],
+      "providers": {
+        "passed": true,
+        "version": "GLIBCXX_SAMSUNG_MATH_1.1",
+        "symbols": [
+          "cacos",
+          "cacosf",
+          "cacosh",
+          "cacoshf",
+          "cacoshl",
+          "cacosl",
+          "casin",
+          "casinf",
+          "casinh",
+          "casinhf",
+          "casinhl",
+          "casinl",
+          "catan",
+          "catanf",
+          "catanh",
+          "catanhf",
+          "catanhl",
+          "catanl",
+          "ctan",
+          "ctanf",
+          "ctanh",
+          "ctanhf",
+          "ctanhl",
+          "ctanl"
+        ],
+        "bindings": [
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacosf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacoshf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanhf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinhf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanhf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacos",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacosh",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casin",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanh",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinh",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catan",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctan",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanh",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacosl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacoshl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanhl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinhl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanhl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          }
+        ]
+      },
+      "focused": {
+        "case_count": 31140,
+        "failed_case_count": 0,
+        "within_comparison_policy": true
+      },
+      "fma_flags": {
+        "checked": 20268,
+        "tininess_boundary_exclusions": 45,
+        "failed": 0,
+        "failures": []
+      },
+      "ui": {
+        "case_count": 5184,
+        "failed_case_count": 0,
+        "within_comparison_policy": true
+      },
+      "edge": {
+        "case_count": 5670,
+        "failed_case_count": 9,
+        "failure_counts": {
+          "tgamma": 7,
+          "lgamma": 2
+        },
+        "fenv_findings": []
+      }
+    },
+    "reference": {
+      "complex": {
+        "case_count": 30936,
+        "failed_case_count": 0,
+        "within_comparison_policy": true,
+        "advisories": [
+          {
+            "id": 3375,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 4670,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 13687,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 14982,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 23999,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          },
+          {
+            "id": 25294,
+            "advisories": [
+              "annex_g_unspecified_infinity_sign"
+            ],
+            "max_ulp": 0
+          }
+        ]
+      },
+      "contracts": [
+        {
+          "test": "complex-contract",
+          "sha256": "d5768528241465c75f31cbe070c0ab7284f0f67424eef4b4ac5dffab611fd777",
+          "command": [
+            "docker",
+            "run",
+            "--rm",
+            "--init",
+            "--name",
+            "samsung-ctng-9b59192b15bb",
+            "--network",
+            "none",
+            "--read-only",
+            "--cap-drop",
+            "ALL",
+            "--security-opt",
+            "no-new-privileges",
+            "--pids-limit",
+            "128",
+            "--memory",
+            "512m",
+            "--cpus",
+            "1",
+            "--tmpfs",
+            "/tmp:rw,nosuid,nodev,size=32m",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung/oe-b-series/build-samygo-cl/tmp/sysroots/armv6-linux-gnueabi,target=/target,readonly",
+            "--mount",
+            "type=bind,source=/mnt/data/Projects/samsung-complex-math/build-complex-math-final/numerics/probes,target=/probes,readonly",
+            "--workdir",
+            "/tmp",
+            "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e",
+            "qemu-arm",
+            "-cpu",
+            "arm1136",
+            "-r",
+            "2.6.18",
+            "-L",
+            "/target",
+            "-E",
+            "LD_DEBUG=bindings:versions",
+            "-E",
+            "LD_LIBRARY_PATH=/probes/private:/target/lib:/target/usr/lib",
+            "/probes/complex-contract"
+          ],
+          "exit": 0,
+          "elapsed_seconds": 0.483,
+          "stdout": "complex_contract_checks=244 failures=0\n",
+          "binding_log": "complex-contract.contracts-reference.bindings"
+        }
+      ],
+      "providers": {
+        "passed": true,
+        "version": "GLIBCXX_SAMSUNG_MATH_1.1",
+        "symbols": [
+          "cacos",
+          "cacosf",
+          "cacosh",
+          "cacoshf",
+          "cacoshl",
+          "cacosl",
+          "casin",
+          "casinf",
+          "casinh",
+          "casinhf",
+          "casinhl",
+          "casinl",
+          "catan",
+          "catanf",
+          "catanh",
+          "catanhf",
+          "catanhl",
+          "catanl",
+          "ctan",
+          "ctanf",
+          "ctanh",
+          "ctanhf",
+          "ctanhl",
+          "ctanl"
+        ],
+        "bindings": [
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacosf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacoshf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanhf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinhf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanhf",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacos",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacosh",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casin",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanh",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinh",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catan",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctan",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanh",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacosl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "cacoshl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanhl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "casinhl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "catanl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          },
+          {
+            "consumer": "/probes/complex-contract",
+            "provider": "/probes/private/libstdc++.so.6",
+            "symbol": "ctanhl",
+            "version": "GLIBCXX_SAMSUNG_MATH_1.1"
+          }
+        ]
+      },
+      "focused": {
+        "case_count": 31140,
+        "failed_case_count": 0,
+        "within_comparison_policy": true
+      },
+      "fma_flags": {
+        "checked": 20268,
+        "tininess_boundary_exclusions": 45,
+        "failed": 0,
+        "failures": []
+      },
+      "ui": {
+        "case_count": 5184,
+        "failed_case_count": 0,
+        "within_comparison_policy": true
+      },
+      "edge": {
+        "case_count": 5670,
+        "failed_case_count": 9,
+        "failure_counts": {
+          "tgamma": 7,
+          "lgamma": 2
+        },
+        "fenv_findings": []
+      }
+    }
+  },
+  "runtimes": {
+    "libstdc++.so.6": {
+      "sha256": "7a4b6b8bbf51e400584d6524440bcfad12532ae616b5ec2efb33c400e765a256",
+      "tested_path": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/validation/probes/private/libstdc++.so.6",
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "ld-linux.so.3",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6"
+      ]
+    },
+    "libgcc_s.so.1": {
+      "sha256": "222c3df63b6eed4c151a418fb92db3685e13f43079277229476f2d1218ae4efc",
+      "tested_path": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/validation/probes/private/libgcc_s.so.1",
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    "libatomic.so.1": {
+      "sha256": "ecdd95f7190805e3fcce0cfbcde198a9f6d598b1bfb5c940d5dc2f14a8b8fc7d",
+      "tested_path": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/validation/probes/private/libatomic.so.1",
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "libc.so.6",
+        "libpthread.so.0"
+      ]
+    }
+  },
+  "abi": {
+    "errors": [],
+    "files": {
+      "libc.so.6": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+          "sha256": "7e1c1c36197a41ba31f2e0ce044a70cdd4b3635722580cf46a379a388fa547f6"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libc.so.6",
+          "sha256": "fa34aa430d107b6665d99142dcbf7c7b1203618b706015944d98860060c8405b"
+        },
+        "baseline_count": 2041,
+        "updated_count": 2041,
+        "added": [],
+        "removed": []
+      },
+      "libm.so.6": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+          "sha256": "594a23b3c64e0f300b5ecd27873161559e4467407c20de39e37439900634b080"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libm.so.6",
+          "sha256": "b1eb83cc4b5cbc4b11488ef924425e6b06f1be915501533929d2e8dfd392cad9"
+        },
+        "baseline_count": 313,
+        "updated_count": 313,
+        "added": [],
+        "removed": []
+      },
+      "libpthread.so.0": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libpthread.so.0",
+          "sha256": "48605710becad156f93494e919063f8829cf90960d5221e008a5da050a612422"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/libpthread.so.0",
+          "sha256": "6a9ca7003230f1a9ff02ddadd9af46d78d90782ef271189bf9ee851cdd967f73"
+        },
+        "baseline_count": 221,
+        "updated_count": 221,
+        "added": [],
+        "removed": []
+      },
+      "ld-linux.so.3": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/ld-linux.so.3",
+          "sha256": "d8b6f43e7dbbe42aa5847b09ead76fb58ba0dcddb6867628f657f23f9dde1a0d"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install/arm-samsung-linux-gnueabi/sysroot/lib/ld-linux.so.3",
+          "sha256": "d259ead41186ac61b4185a6643d23ac3bb439bd8df6b5718f5676ab4a8290076"
+        },
+        "baseline_count": 27,
+        "updated_count": 27,
+        "added": [],
+        "removed": []
+      },
+      "libgcc_s.so.1": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libgcc_s.so.1",
+          "sha256": "31c8996f3e299185aef06132ad56644157832455af0d64327407075bf73daf2b"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install/arm-samsung-linux-gnueabi/lib/libgcc_s.so.1",
+          "sha256": "222c3df63b6eed4c151a418fb92db3685e13f43079277229476f2d1218ae4efc"
+        },
+        "baseline_count": 1185,
+        "updated_count": 1185,
+        "added": [],
+        "removed": []
+      },
+      "libatomic.so.1": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libatomic.so.1",
+          "sha256": "8018eef03128b09b5395bf6767b3d45a66b425d9a5670dccb6ff34f3697f5e0b"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install/arm-samsung-linux-gnueabi/lib/libatomic.so.1",
+          "sha256": "ecdd95f7190805e3fcce0cfbcde198a9f6d598b1bfb5c940d5dc2f14a8b8fc7d"
+        },
+        "baseline_count": 83,
+        "updated_count": 83,
+        "added": [],
+        "removed": []
+      },
+      "libstdc++.so.6": {
+        "baseline": {
+          "file": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/install/arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+          "sha256": "6b1b5777db17c3008160e41376598fe9c43bb9df74e6471dab5f7146ce3ff69a"
+        },
+        "updated": {
+          "file": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/install/arm-samsung-linux-gnueabi/lib/libstdc++.so.6",
+          "sha256": "7a4b6b8bbf51e400584d6524440bcfad12532ae616b5ec2efb33c400e765a256"
+        },
+        "baseline_count": 6156,
+        "updated_count": 6181,
+        "added": [
+          "GLIBCXX_SAMSUNG_MATH_1.1",
+          "cacos@GLIBCXX_SAMSUNG_MATH_1.1",
+          "cacosf@GLIBCXX_SAMSUNG_MATH_1.1",
+          "cacosh@GLIBCXX_SAMSUNG_MATH_1.1",
+          "cacoshf@GLIBCXX_SAMSUNG_MATH_1.1",
+          "cacoshl@GLIBCXX_SAMSUNG_MATH_1.1",
+          "cacosl@GLIBCXX_SAMSUNG_MATH_1.1",
+          "casin@GLIBCXX_SAMSUNG_MATH_1.1",
+          "casinf@GLIBCXX_SAMSUNG_MATH_1.1",
+          "casinh@GLIBCXX_SAMSUNG_MATH_1.1",
+          "casinhf@GLIBCXX_SAMSUNG_MATH_1.1",
+          "casinhl@GLIBCXX_SAMSUNG_MATH_1.1",
+          "casinl@GLIBCXX_SAMSUNG_MATH_1.1",
+          "catan@GLIBCXX_SAMSUNG_MATH_1.1",
+          "catanf@GLIBCXX_SAMSUNG_MATH_1.1",
+          "catanh@GLIBCXX_SAMSUNG_MATH_1.1",
+          "catanhf@GLIBCXX_SAMSUNG_MATH_1.1",
+          "catanhl@GLIBCXX_SAMSUNG_MATH_1.1",
+          "catanl@GLIBCXX_SAMSUNG_MATH_1.1",
+          "ctan@GLIBCXX_SAMSUNG_MATH_1.1",
+          "ctanf@GLIBCXX_SAMSUNG_MATH_1.1",
+          "ctanh@GLIBCXX_SAMSUNG_MATH_1.1",
+          "ctanhf@GLIBCXX_SAMSUNG_MATH_1.1",
+          "ctanhl@GLIBCXX_SAMSUNG_MATH_1.1",
+          "ctanl@GLIBCXX_SAMSUNG_MATH_1.1"
+        ],
+        "removed": []
+      }
+    },
+    "interpretation": "Export identities compared; build-path-dependent binary hashes may differ. This is not a C++ object layout compatibility claim."
+  },
+  "reference_checks": {
+    "saturation_fixed_mpc": {
+      "cases": 336,
+      "mpc_precision": 4096,
+      "failed": 0
+    },
+    "existing_broad_reference_byte_identical": true,
+    "comparison_policy_fixtures": 15,
+    "annex_g": "https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3096.pdf"
+  },
+  "limits": [
+    "Measured numerical subsets, not correctly rounded complex transcendentals or exhaustive conformance.",
+    "Nine gamma accuracy-budget outliers remain in the broad C++ suite.",
+    "Original scalar hypotf premature overflow and tan directed-rounding defects remain outside the repaired complex operations.",
+    "45 scalar FMA boundary cases exclude only the architecture-dependent underflow flag, as in the previous variant.",
+    "Trapping environments, exhaustive signaling-NaN/errno behavior and changed FPU flush modes remain unadmitted.",
+    "Generic libgcc retains dormant VFPv3/iWMMX unwinder helpers. Legacy __sync64 needs kuser5; std::atomic64 uses private mutex fallback.",
+    "QEMU and uname overrides do not emulate Linux 2.6.18_SELP. No TV operation performed."
+  ]
+}

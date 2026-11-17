@@ -100,3 +100,69 @@ EABI4 gates; this TV UI process profile remains EABI5, ARM mode, VFPv2 and softf
 base PCS with SysV hashes. The base [GCC 16](gcc16.md) and [private scalar math](runtime-math.md)
 limits still apply, including dormant unwinder frame classes and kuser-helper
 restrictions. Later native admission belongs to the TV agent.
+
+## Verified source build and release
+
+The full source-based toolchain build completed in 33 minutes 13 seconds wall
+time with functional implementation commit
+`22dc1c4b7d25fecff4f1446462c3f7a7462aafdd`. The fresh upstream HEAD check still
+matches the pinned framework base. Preparation reproduces the same old-component
+source trees as the preserved private-scalar profile. No external OE target
+sysroot is used during the build; OE libc is mounted read-only for separate tests.
+
+Both rebuilt and OE runtime sets pass:
+
+* all 30,936 expanded complex cases and all 244 branch/ABI/environment/thread
+  contract checks, including 2,000 concurrent complex calls;
+* all 31,140 earlier focused scalar cases and 20,268 finite FMA flag checks,
+  retaining the documented 45 underflow-tininess bit exclusions;
+* all 5,184 ordinary UI-range cases, the earlier 88 entry-point checks, all 13
+  floating-environment checks and 39 projection assertions;
+* core C/C++17, exceptions/RTTI, pthread/static/TLS destruction, 32-bit atomics,
+  mutex-backed 64-bit atomics, and the admitted C++20/23 wait/semaphore subset;
+* the pinned RmlUi Core initialization/Variant/shutdown consumer after all 187
+  build steps using the optional complex-math CMake profile.
+
+All 1,267 API compile/link probes pass. All 237 forced C ABI symbols also link
+against preserved OE libc/libm. The broad 5,670-case C++ suite now has **nine
+gamma accuracy-budget deviations**, down from 48. All 39 prior complex deviations
+are resolved without new broad-suite failures. The unchanged C-only control
+retains 102 broad deviations and 32 nearbyintf flag findings.
+
+The 13-artifact core closure, 10-artifact base numerical closure and 8-artifact
+complex closure pass static ABI/ISA-attribute, interpreter, hash, relocation,
+provider/version and GNU-unique checks with both runtime sets. Actual bindings
+select all 24 new private symbols and all eight earlier scalar corrections.
+There are no text relocations. Relative to the verified private-scalar profile,
+libstdc++ adds precisely 24 functions plus their version node and removes
+nothing. libc/libm/libpthread/loader and libgcc/libatomic export sets are unchanged.
+All three packaged private libraries require only GLIBC_2.4 from target C
+libraries; libstdc++ also uses GCC_3.0/3.3/3.4/3.5 from matching private libgcc_s.
+
+The matching bundle is
+`/mnt/data/Projects/samsung-complex-math/build-complex-math-final/tv-ui-private-runtime`.
+It contains only the three private runtimes and their licenses/manifest. It is
+byte-identical to the tested libraries. Rebuild consumers against the new prefix;
+changing the runtime alone does not redirect old GLIBC-versioned math imports.
+
+[Build/ABI report](validation-complex-math/build-report.json),
+[source and patch manifest](gcc16-complex-math-manifest.json),
+[API matrix](validation-complex-math/api-matrix.csv),
+[complex numerical results](validation-complex-math/complex-analysis.json),
+[remaining broad findings](validation-complex-math/edge-analysis.json),
+[core receipts](validation-complex-math/validation-summary.json),
+[fixed-precision reference comparison](validation-complex-math/saturation-reference-check.json)
+and [private bundle hashes](validation-complex-math/private-runtime-manifest.json)
+record the result. [Failure evidence](validation-complex-math/failure-index.json)
+retains the initial expanded failures, scalar dependency diagnostics and source-
+copy setup problem. The accidental generated-source symlink was restored
+byte-for-byte with original mtimes before any diagnostic compilation; the
+[restoration receipt](validation-complex-math/source-restore.json) records it.
+The [outer-session observation](validation-complex-math/outer-session-observation.json)
+retains a parent-tool status discrepancy; the separately recorded ct-ng
+subprocess exited zero and the installed compiler passed the checks above.
+
+Gamma accuracy and the original scalar hypotf/non-nearest-tan defects remain
+recorded separately. This result is not blanket complex-function conformance,
+correct rounding in every mode, or native TV/kernel admission. No TV operation
+was performed; the other agent's interface sources/builds were not changed.

@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/freebsd/freebsd-src.git",
+  "commit": "1ddd5b301d273b62b2c0fa3c60c8cae8c9072dc3",
+  "files": [
+    {
+      "path": "lib/msun/src/catrig.c",
+      "sha256": "402a0e25dc2894215cbf13c5336216b7c05b52405e1581fe26f70b8a40d86835",
+      "git_blob": "2ae0bb5e052246fdadb62b644f1131a879d15106"
+    },
+    {
+      "path": "lib/msun/src/s_ctanh.c",
+      "sha256": "045677e656bcb88c9e6d35de30e4d5fbbe374e7ca3afe5980d5f8f036b4c5361",
+      "git_blob": "690436343437cfd060dee9ce231fc39fb974cf88"
+    },
+    {
+      "path": "lib/msun/src/math_private.h",
+      "sha256": "6a90b768df36af4f83f4b51e9a94d8d289f1560365371d3a5c7282ef4dd57cad",
+      "git_blob": "0134a044dae47004a1b1f969a24541d358b8066a",
+      "usage": "NaN-mixing macro only; IEEE access helpers are independent memcpy-based shims."
+    }
+  ],
+  "license": "BSD-2-Clause plus permissive Sun fdlibm header notice",
+  "adaptations": [
+    "Private static helper names; minimal IEEE word-access and NaN-mixing shims",
+    "Preserve GNU C complex ABI; explicit binary64 long-double wrappers",
+    "Use the binary64 core for float to avoid legacy hypotf premature overflow",
+    "Run internal scalar calculations in FE_TONEAREST, restore the caller mode before component conversion",
+    "No firmware libc/libm replacement; 24 private symbols at GLIBCXX_SAMSUNG_MATH_1.1"
+  ],
+  "tree": "1ddd5b301d273b62b2c0fa3c60c8cae8c9072dc3",
+  "file_git_blob_ids_verified": true
+}

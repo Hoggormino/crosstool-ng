@@ -1,0 +1,91 @@
+{
+  "runtimes": {
+    "libstdc++.so.6": {
+      "sha256": "7a4b6b8bbf51e400584d6524440bcfad12532ae616b5ec2efb33c400e765a256",
+      "tested_path": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/validation/probes/private/libstdc++.so.6",
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "ld-linux.so.3",
+        "libc.so.6",
+        "libgcc_s.so.1",
+        "libm.so.6"
+      ]
+    },
+    "libgcc_s.so.1": {
+      "sha256": "222c3df63b6eed4c151a418fb92db3685e13f43079277229476f2d1218ae4efc",
+      "tested_path": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/validation/probes/private/libgcc_s.so.1",
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "libc.so.6"
+      ]
+    },
+    "libatomic.so.1": {
+      "sha256": "ecdd95f7190805e3fcce0cfbcde198a9f6d598b1bfb5c940d5dc2f14a8b8fc7d",
+      "tested_path": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/validation/probes/private/libatomic.so.1",
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "header_flags": [
+        "Flags:                             0x5000002, Version5 EABI, <unknown>"
+      ],
+      "arm_attributes": [
+        {
+          "file": {
+            "34": 1
+          },
+          "vendors": [
+            "aeabi"
+          ],
+          "unsupported_scopes": []
+        }
+      ],
+      "needed": [
+        "libc.so.6",
+        "libpthread.so.0"
+      ]
+    }
+  },
+  "licenses": {
+    "COPYING3": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "COPYING.RUNTIME": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+    "samsung-math.txt": "47124f2723148c8ee3bd54850a2104fee887a3903ff11fef349d3df52f22b4ce",
+    "samsung-complex.txt": "4a7f9dfd866cb398a120a937bd7b943a3a199db936a7ebc4510c05886392e670"
+  },
+  "scope": "Byte-identical copies of tested private libstdc++/libgcc/libatomic. No system loader/libc/libm packaged."
+}

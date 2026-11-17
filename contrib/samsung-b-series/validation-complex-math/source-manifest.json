@@ -1,0 +1,294 @@
+{
+  "framework_base": "a4895d7fc49d5b423abc5f166895c80175019570",
+  "functional_commit": "22dc1c4b7d25fecff4f1446462c3f7a7462aafdd",
+  "compiler": {
+    "version": "16.2.0",
+    "archive_url": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz",
+    "archive_sha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+    "patches": [
+      {
+        "path": "packages/gcc/16.2.0/0000-libtool-leave-framework-alone.patch",
+        "sha256": "fb9e03429ad0070dff4048c96b4718f69944695ae13e9b1fd57c7852d4628361"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0001-gcc-plugin-POSIX-include-sys-select-h.patch",
+        "sha256": "5cdb599a69bbc2dba5c90bdd83efa2391fc67f0274be749691a665aefddd613f"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0002-arm-softfloat-libgcc.patch",
+        "sha256": "e5f5e25aa41d807edc54b52fa712e5d1bf842d9c1048c91cb1d76ee313aa02f7"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0003-libgcc-disable-split-stack-nothreads.patch",
+        "sha256": "bdf04fdaeed235fa18dd90a43fccaaf2d6dd5f9a952f31b4455e002d207a7ad9"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0004-Remove-use-of-include_next-from-c-headers.patch",
+        "sha256": "bbe298ee90449e89b4c9d149d76084abc0eaf76073bc23bf6ddfd3cd2cc3bb24"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0005-Allow-default-libc-to-be-specified-to-configure.patch",
+        "sha256": "3f280619ff4ba26552f964603fdd07aef439b4d3229e48af721da39f7e8a5a10"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0006-driver-Extend-getenv-function-to-allow-default-value.patch",
+        "sha256": "d3d7416e8c0e11ec863be30163163ff24e5c814dcd4290089ee78834ee49c270"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0007-Add-newlib-and-picolibc-as-default-C-library-choices.patch",
+        "sha256": "214132c7c6567e9653e20d5558981ff43400eabb8c52ebc487fb379654ec2054"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0008-Support-picolibc-targets.patch",
+        "sha256": "1442113744c4de38253a32024eae7e1e0fc730487ba9e7c9f8935a2e045183ae"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0009-gcc-Allow-g-to-work-differently-from-gcc.patch",
+        "sha256": "235361995cf9e5c5d4d811dda38733dcac18acc27c94383ee0a8f839201375e0"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0010-libgcc-Exclude-UCLIBC-from-GLIBC-thread-check.patch",
+        "sha256": "36074e02850416c7f82349e23d951c132ce672f63692b33bbeef0e9b690e8ead"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0020-aarch64-mingw-disable-libbid-binary80.patch",
+        "sha256": "79642bf0205c42070efefc4ae367112c8fc0f358a86f33081b0b589f4cbeabfb"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0021-libstdc++-guard-cstdlib-module-exports.patch",
+        "sha256": "42a7518a7378ff4cfd59099dbf0557b782aa94e5d12cda9846520d755c6a806b"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0022-libstdc++-mingw-disable-cdtor-decloning.patch",
+        "sha256": "fb5d0795a0f77fc4affd1cea44f12362bed56c700d8fa1bd1e63c89e125f8b79"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0023-aarch64-mingw-fix-support-for-posix-threading.patch",
+        "sha256": "677680d2306ba32c197effa38ddfc2650221fa7425f629683b25a606c915ad2a"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0026-fix-clang-print-multi-os-directory.patch",
+        "sha256": "fef631b87430994ec22aee3941e2847b42a653b4fc1619b9ec86214ad1b4b308"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0027-LoongArch-fix-miscompile-of-both_non_zero-subreg-when-operands-0-operands-2.patch",
+        "sha256": "bc60f76b506b540e5aca9952bc1658d6fb9f16e495584057cd4cb5d37a31d28d"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0028-mips-Disallow-eliminable-registers.patch",
+        "sha256": "7667b383f234591b48157dbcf6723d36949bdd65b41ed9ac08a7bb5dd3d83f36"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0029-arm-respect-cfi-sections-capability.patch",
+        "sha256": "a594c9914559bb54d40e9ca49e0f86a797d63723d59e0990277a2788247238b0"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0030-libstdcxx-legacy-linux-atomic-wait.patch",
+        "sha256": "080802dcfeb3cfe039ef134f300f033d1e20ea4cffe49539bf850115d1a24c53"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0031-legacy-arm-complex-projection.patch",
+        "sha256": "a9036b403028c5577707f41aeb436c0b0a43c7f32d1a6c7af092428a219b92f1"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0032-opt-in-samsung-private-math.patch",
+        "sha256": "90d2c89edb4a2e5bc4e1e63f5f6158f76dc398aefad574e3503f3a1b322347d5"
+      },
+      {
+        "path": "packages/gcc/16.2.0/0033-private-samsung-complex-math.patch",
+        "sha256": "6b5995a725cac0544d9334be4dfdb7e2a0848204a6a8e97736de322f448d4e19"
+      }
+    ]
+  },
+  "snapshots": [
+    {
+      "name": "binutils",
+      "url": "https://sourceware.org/git/binutils.git",
+      "commit": "138bc74f170158c175024317a9ccee37aa7cf617",
+      "tree": "5a90a09425544931548cc8de6b0d2391badb67bb",
+      "archive": "binutils-138bc74f170158c175024317a9ccee37aa7cf617.tar",
+      "sha256": "5ff133dd78f4dbce84dec370bacd86802b1631f2d9a2c10583301c5076fd84e4"
+    },
+    {
+      "name": "glibc",
+      "url": "https://sourceware.org/git/glibc.git",
+      "commit": "371f84a4dca19f1416c3f28db9980539d2f62905",
+      "tree": "54dbb78b9b99c131340f95eab844f4f83fb5d3aa",
+      "archive": "glibc-371f84a4dca19f1416c3f28db9980539d2f62905.tar",
+      "sha256": "ec513e3ce3d028bb4c23e2f1e96de55e579939c5d07ddced268a0c4f56079d45"
+    },
+    {
+      "name": "glibc-ports",
+      "url": "https://sourceware.org/git/glibc-ports.git",
+      "commit": "908afa831ca4403a689304a86e2014b4baa66366",
+      "tree": "b4820db599b0f60aea688472de218ab5454d5e07",
+      "archive": "glibc-ports-908afa831ca4403a689304a86e2014b4baa66366.tar",
+      "sha256": "4fba23cccc498ad4de9c047b96a24cba012415cf9e733500d557dd2766afc8a4"
+    }
+  ],
+  "linux": {
+    "version": "2.6.18",
+    "url": "https://cdn.kernel.org/pub/linux/kernel/v2.6/linux-2.6.18.tar.bz2",
+    "archive": "linux-2.6.18.tar.bz2",
+    "sha256": "c95280ff6c5d2a17788f7cc582d23ae8a9a7ba3f202ec6e4238eaadfce7c163d",
+    "glibc_minimum_kernel": "2.6.16"
+  },
+  "oe_commit": "e9fcef71f94fb4e76c6e8d992b7936f8d5fa8632",
+  "prepared_trees": {
+    "binutils": "d5cda37656c4cc16c7292fd1d04d8d20981fe3febaae1289b60a5dfb13b75e17",
+    "glibc": "abbf1efcf9cd000e94ae708644614086daa224d4e923cc6d2d821fd82ebf8b05",
+    "linux": "67c741af5615c2e9f8e201976cb4dbe29d70baf69a36cf3b0b62fe2b988f5f2d"
+  },
+  "compatibility_patches": [
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0001-arm-vfpv2-spelling.patch",
+      "sha256": "55b92603790373dfa32a8deeb44ca70160f59449b71fb6017f34232a1f8c6bc8"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0002-arm-vmrs-vmsr-spellings.patch",
+      "sha256": "f9e5e10c3232e6c090e99b67b2b8d9274ebebb3ea4bd13785a9a27c4f23aebdb"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0003-arm-inst-directive.patch",
+      "sha256": "203b48df56f9cd9b01b4b8a8591147522cc0f31a22a150162fbc9876eee2d482"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0004-arm-vmov-parse-registers-first.patch",
+      "sha256": "92e04f302cc7b494e8879ca3f1cd55d1bb0e59a39c2c6ccccdad85fd15adbafa"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0005-standard-vfp-ual-semantics.patch",
+      "sha256": "4ac1e781ed1965c92e4fe36af105fae9771b0ede4fd5f6d0f45019724e23d015"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0006-retain-arm-exidx-during-section-gc.patch",
+      "sha256": "58f87fd3980540253a192b177b3d9aa1640e8f7db2428e481cb4a5aa49070eb3"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0007-demangler-member-null-check.patch",
+      "sha256": "b52338791796f8f1577db5839e88609acaa2d2507b3c6cd568dee4ddba986a32"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0001-accept-modern-gcc-version.patch",
+      "sha256": "3faa2390eea6a877a4855529df180ed7f5b7e2a4fd6b700b16aa6530fa882649"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0002-keep-asm-unwind-resume-pointer.patch",
+      "sha256": "d8a5e61674938dd06a59c0ec7881a7763f06c538476b5022198b7f78fe4ad6ac"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0003-selp-c-declarations.patch",
+      "sha256": "859c552da83b7eec1d337799740962cd13a45ac577c889f51ea7756daf030fa1"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0004-valid-c-feature-probes.patch",
+      "sha256": "c3ee10aa2a2aa12362ba0e61cd317d5a0b708be95f6abd93d39d57119e22f970"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0005-public-long-double-declarations.patch",
+      "sha256": "a27c6ddb6c8e871acc818d18dbaa53b8f0f6aa4d2681808e6207789c0a281c35"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0006-cxx11-classification-declarations.patch",
+      "sha256": "1c9c6dcf55afc4cc6d520d8bbaa4a7399c55438fce16b7c9b4a2656f8d675639"
+    },
+    {
+      "package": "linux",
+      "path": "patches/linux/0001-export-arm-procinfo.patch",
+      "sha256": "3d9ba07d15727b72afee09e3e792982ead45c8d41d806ba2cf960b319a054403"
+    },
+    {
+      "package": "linux",
+      "path": "patches/linux/0002-check-userspace-includes.patch",
+      "sha256": "237ff2153736f507b0b08deb1d9e9a9e13cac9d454c46382d221112542099599"
+    },
+    {
+      "package": "linux",
+      "path": "patches/linux/0003-futex-kernel-declarations.patch",
+      "sha256": "ab45ad961aa65d3dd442d14cc65d1fe7f1a7531b5f9d8adebc57e4fa8d8dca92"
+    }
+  ],
+  "sample": {
+    "path": "contrib/samsung-b-series/crosstool-gcc16-complex-math.config",
+    "sha256": "72dab1ffd74a4e95cb445f39209c545f131b8cd9aa83b5a955696c7b9efb98f7"
+  },
+  "notes": [
+    "Private libstdc++ complex correction; target C runtime and previous private scalar fixes remain unchanged.",
+    "24 new C symbols use GLIBCXX_SAMSUNG_MATH_1.1; rebuild consumers with matching private runtimes.",
+    "Full source-based build uses no OE target sysroot input.",
+    "Gamma and original scalar dependency limitations remain documented separately."
+  ],
+  "math_implementation": {
+    "url": "https://git.musl-libc.org/git/musl",
+    "commit": "7813e9119eb5fe681b6750b8a033a0490bca0941",
+    "tree": "dc8444f8e5dfcc3a592dd62653d17a61f8d773a1",
+    "files": [
+      {
+        "path": "src/math/fma.c",
+        "sha256": "f3e328da492e4818f83737bab2b8b7d8cf281c4ce3730773c99ab8c7efc41dc7"
+      },
+      {
+        "path": "src/math/fmaf.c",
+        "sha256": "ce23bcb19c8bfef09cc11d909224be843be2c0512cc22ad2f111852c6a12aae1"
+      },
+      {
+        "path": "COPYRIGHT",
+        "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b"
+      }
+    ],
+    "license": "MIT (musl project license; retain notice)",
+    "adaptations": [
+      "C++ wrappers with the existing C ABI and noexcept declarations",
+      "memcpy bit extraction and GCC clz builtins in place of musl internal helpers",
+      "VFP rounding-sensitive double conversion of a signed 64-bit accumulator via two exact 32-bit conversions, avoiding fixed-rounding __aeabi_l2d",
+      "z+z for a nonfinite addend to quiet signaling NaNs",
+      "binary64 long-double forwarding",
+      "private opt-in libstdc++ integration and symbol version"
+    ]
+  },
+  "complex_implementation": {
+    "repository": "https://github.com/freebsd/freebsd-src.git",
+    "commit": "1ddd5b301d273b62b2c0fa3c60c8cae8c9072dc3",
+    "files": [
+      {
+        "path": "lib/msun/src/catrig.c",
+        "sha256": "402a0e25dc2894215cbf13c5336216b7c05b52405e1581fe26f70b8a40d86835",
+        "git_blob": "2ae0bb5e052246fdadb62b644f1131a879d15106"
+      },
+      {
+        "path": "lib/msun/src/s_ctanh.c",
+        "sha256": "045677e656bcb88c9e6d35de30e4d5fbbe374e7ca3afe5980d5f8f036b4c5361",
+        "git_blob": "690436343437cfd060dee9ce231fc39fb974cf88"
+      },
+      {
+        "path": "lib/msun/src/math_private.h",
+        "sha256": "6a90b768df36af4f83f4b51e9a94d8d289f1560365371d3a5c7282ef4dd57cad",
+        "git_blob": "0134a044dae47004a1b1f969a24541d358b8066a",
+        "usage": "NaN-mixing macro only; IEEE access helpers are independent memcpy-based shims."
+      }
+    ],
+    "license": "BSD-2-Clause plus permissive Sun fdlibm header notice",
+    "adaptations": [
+      "Private static helper names; minimal IEEE word-access and NaN-mixing shims",
+      "Preserve GNU C complex ABI; explicit binary64 long-double wrappers",
+      "Use the binary64 core for float to avoid legacy hypotf premature overflow",
+      "Run internal scalar calculations in FE_TONEAREST, restore the caller mode before component conversion",
+      "No firmware libc/libm replacement; 24 private symbols at GLIBCXX_SAMSUNG_MATH_1.1"
+    ],
+    "tree": "1ddd5b301d273b62b2c0fa3c60c8cae8c9072dc3",
+    "file_git_blob_ids_verified": true
+  }
+}

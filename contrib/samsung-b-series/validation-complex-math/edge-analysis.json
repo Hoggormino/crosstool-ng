@@ -1,0 +1,5225 @@
+{
+  "receipt": "/mnt/data/Projects/samsung-complex-math/build-complex-math-final/numerics/base/edge/reference.json",
+  "case_count": 5670,
+  "within_comparison_policy": false,
+  "failed_case_count": 9,
+  "failure_counts": {
+    "tgamma": 7,
+    "lgamma": 2
+  },
+  "fenv_findings": [],
+  "functions": {
+    "acos:0:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 8,
+        "16": 5
+      }
+    },
+    "acos:1:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 8,
+        "16": 5
+      }
+    },
+    "acos:2:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 8,
+        "16": 5
+      }
+    },
+    "acosh:0:mode0": {
+      "cases": 6,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 6
+      },
+      "flag_counts": {
+        "0": 1,
+        "16": 5
+      }
+    },
+    "acosh:1:mode0": {
+      "cases": 6,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 6
+      },
+      "flag_counts": {
+        "0": 1,
+        "16": 5
+      }
+    },
+    "acosh:2:mode0": {
+      "cases": 6,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 6
+      },
+      "flag_counts": {
+        "0": 1,
+        "16": 5
+      }
+    },
+    "asin:0:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 11
+      }
+    },
+    "asin:1:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 8,
+        "16": 5
+      }
+    },
+    "asin:2:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 8,
+        "16": 5
+      }
+    },
+    "asinh:0:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "asinh:1:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "asinh:2:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "atan:0:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 3,
+        "16": 19,
+        "24": 2
+      }
+    },
+    "atan:1:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 7,
+        "16": 17
+      }
+    },
+    "atan:2:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 7,
+        "16": 17
+      }
+    },
+    "atan2:0:mode0": {
+      "cases": 14,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14
+      },
+      "flag_counts": {
+        "16": 7,
+        "0": 7
+      }
+    },
+    "atan2:1:mode0": {
+      "cases": 14,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14
+      },
+      "flag_counts": {
+        "16": 6,
+        "0": 7,
+        "21": 1
+      }
+    },
+    "atan2:2:mode0": {
+      "cases": 14,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14
+      },
+      "flag_counts": {
+        "16": 6,
+        "0": 7,
+        "21": 1
+      }
+    },
+    "atanh:0:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11,
+        "33": 2
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 9,
+        "2": 2
+      }
+    },
+    "atanh:1:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11,
+        "33": 2
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 9,
+        "2": 2
+      }
+    },
+    "atanh:2:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11,
+        "33": 2
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 9,
+        "2": 2
+      }
+    },
+    "cabs:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 10,
+        "16": 1
+      }
+    },
+    "cabs:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 6,
+        "0": 5
+      }
+    },
+    "cabs:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 6,
+        "0": 5
+      }
+    },
+    "cacos:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 2
+      }
+    },
+    "cacos:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 2
+      }
+    },
+    "cacos:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 2
+      }
+    },
+    "cacosh:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 2
+      }
+    },
+    "cacosh:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 2
+      }
+    },
+    "cacosh:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 2
+      }
+    },
+    "carg:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 6,
+        "0": 5
+      }
+    },
+    "carg:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 6,
+        "0": 5
+      }
+    },
+    "carg:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 6,
+        "0": 5
+      }
+    },
+    "casin:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "casin:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "casin:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "casinh:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "casinh:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "casinh:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "catan:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "catan:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "catan:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "catanh:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 4
+      },
+      "flag_counts": {
+        "16": 7,
+        "2": 4
+      }
+    },
+    "catanh:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 4
+      },
+      "flag_counts": {
+        "16": 7,
+        "2": 4
+      }
+    },
+    "catanh:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 4
+      },
+      "flag_counts": {
+        "16": 7,
+        "2": 4
+      }
+    },
+    "cbrt:0:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "cbrt:1:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "cbrt:2:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "ccos:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "ccos:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "ccos:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "ccosh:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "ccosh:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "ccosh:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "ceil:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "ceil:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "cexp:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "20": 1
+      }
+    },
+    "cexp:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 1,
+        "20": 1
+      }
+    },
+    "cexp:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 1,
+        "20": 1
+      }
+    },
+    "cimag:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "cimag:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "cimag:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "clog:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 7,
+        "0": 4
+      }
+    },
+    "clog:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 7,
+        "0": 4
+      }
+    },
+    "clog:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 7,
+        "0": 4
+      }
+    },
+    "conj:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "conj:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "conj:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "copysign:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "copysign:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "copysign:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "cos:0:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "cos:1:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 6,
+        "16": 18
+      }
+    },
+    "cos:2:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 6,
+        "16": 18
+      }
+    },
+    "cosh:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14,
+        "34": 6
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 12,
+        "20": 6
+      }
+    },
+    "cosh:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 18,
+        "34": 2
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 16,
+        "20": 2
+      }
+    },
+    "cosh:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 18,
+        "34": 2
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 16,
+        "20": 2
+      }
+    },
+    "cpow:0:mode0": {
+      "cases": 5,
+      "failed": 0,
+      "max_ulp": 3,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 5
+      },
+      "flag_counts": {
+        "16": 4,
+        "0": 1
+      }
+    },
+    "cpow:1:mode0": {
+      "cases": 5,
+      "failed": 0,
+      "max_ulp": 5,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 5
+      },
+      "flag_counts": {
+        "16": 4,
+        "0": 1
+      }
+    },
+    "cpow:2:mode0": {
+      "cases": 5,
+      "failed": 0,
+      "max_ulp": 5,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 5
+      },
+      "flag_counts": {
+        "16": 4,
+        "0": 1
+      }
+    },
+    "cproj:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "cproj:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "cproj:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "creal:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "creal:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "creal:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "0": 11
+      }
+    },
+    "csin:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "20": 1
+      }
+    },
+    "csin:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "20": 1
+      }
+    },
+    "csin:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "20": 1
+      }
+    },
+    "csinh:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "20": 1
+      }
+    },
+    "csinh:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "20": 1
+      }
+    },
+    "csinh:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "20": 1
+      }
+    },
+    "csqrt:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 5,
+        "0": 5,
+        "24": 1
+      }
+    },
+    "csqrt:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "24": 1
+      }
+    },
+    "csqrt:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 11
+      },
+      "flag_counts": {
+        "16": 10,
+        "24": 1
+      }
+    },
+    "ctan:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "ctan:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1
+      },
+      "flag_counts": {
+        "16": 10,
+        "24": 1
+      }
+    },
+    "ctan:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1
+      },
+      "flag_counts": {
+        "16": 10,
+        "24": 1
+      }
+    },
+    "ctanh:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1
+      },
+      "flag_counts": {
+        "16": 11
+      }
+    },
+    "ctanh:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1
+      },
+      "flag_counts": {
+        "16": 10,
+        "24": 1
+      }
+    },
+    "ctanh:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1
+      },
+      "flag_counts": {
+        "16": 10,
+        "24": 1
+      }
+    },
+    "erf:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 4,
+        "24": 2,
+        "16": 14
+      }
+    },
+    "erf:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 4,
+        "24": 2,
+        "16": 14
+      }
+    },
+    "erf:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 4,
+        "24": 2,
+        "16": 14
+      }
+    },
+    "erfc:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 3,
+        "16": 16,
+        "24": 1
+      }
+    },
+    "erfc:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 3,
+        "16": 17
+      }
+    },
+    "erfc:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 3,
+        "16": 17
+      }
+    },
+    "exp:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 15,
+        "34": 5
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 12,
+        "24": 2,
+        "20": 4
+      }
+    },
+    "exp:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17,
+        "34": 3
+      },
+      "flag_counts": {
+        "0": 7,
+        "16": 11,
+        "20": 2
+      }
+    },
+    "exp:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17,
+        "34": 3
+      },
+      "flag_counts": {
+        "0": 7,
+        "16": 11,
+        "20": 2
+      }
+    },
+    "exp2:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 16,
+        "34": 4
+      },
+      "flag_counts": {
+        "0": 9,
+        "24": 5,
+        "16": 3,
+        "20": 3
+      }
+    },
+    "exp2:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 13,
+        "24": 4,
+        "16": 3
+      }
+    },
+    "exp2:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 13,
+        "24": 4,
+        "16": 3
+      }
+    },
+    "expm1:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 14,
+        "20": 4
+      }
+    },
+    "expm1:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 16,
+        "20": 2
+      }
+    },
+    "expm1:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 16,
+        "20": 2
+      }
+    },
+    "fabs:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "fabs:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "fabs:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "fdim:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "fdim:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "fdim:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "floor:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "floor:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "fma:0:mode0": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:0:mode1": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:0:mode2": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:0:mode3": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:1:mode0": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:1:mode1": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:1:mode2": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:1:mode3": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:2:mode0": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:2:mode1": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:2:mode2": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fma:2:mode3": {
+      "cases": 8,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 8
+      },
+      "flag_counts": {
+        "0": 7,
+        "24": 1
+      }
+    },
+    "fmax:0:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 13
+      }
+    },
+    "fmax:1:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 13
+      }
+    },
+    "fmax:2:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 13
+      }
+    },
+    "fmin:0:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 13
+      }
+    },
+    "fmin:1:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 13
+      }
+    },
+    "fmin:2:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 1,
+      "errno_counts": {
+        "0": 13
+      },
+      "flag_counts": {
+        "0": 13
+      }
+    },
+    "fmod:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 3
+      },
+      "flag_counts": {
+        "0": 7,
+        "1": 3
+      }
+    },
+    "fmod:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 3
+      },
+      "flag_counts": {
+        "0": 7,
+        "1": 3
+      }
+    },
+    "fmod:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 3
+      },
+      "flag_counts": {
+        "0": 7,
+        "1": 3
+      }
+    },
+    "fpclassify:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "fpclassify:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "fpclassify:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "frexp:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "frexp:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "frexp:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "hypot:0:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 12,
+        "34": 1
+      },
+      "flag_counts": {
+        "0": 11,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "hypot:1:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 12,
+        "34": 1
+      },
+      "flag_counts": {
+        "16": 5,
+        "0": 6,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "hypot:2:mode0": {
+      "cases": 13,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 12,
+        "34": 1
+      },
+      "flag_counts": {
+        "16": 5,
+        "0": 6,
+        "24": 1,
+        "20": 1
+      }
+    },
+    "ilogb:0:mode0": {
+      "cases": 9,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 9
+      },
+      "flag_counts": {
+        "0": 9
+      }
+    },
+    "ilogb:1:mode0": {
+      "cases": 9,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 9
+      },
+      "flag_counts": {
+        "0": 9
+      }
+    },
+    "ilogb:2:mode0": {
+      "cases": 9,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 9
+      },
+      "flag_counts": {
+        "0": 9
+      }
+    },
+    "isfinite:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isfinite:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isfinite:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isgreater:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isgreater:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isgreater:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isgreaterequal:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isgreaterequal:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isgreaterequal:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isinf:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isinf:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isinf:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isless:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isless:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isless:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "islessequal:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "islessequal:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "islessequal:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "islessgreater:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "islessgreater:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "islessgreater:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isnan:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isnan:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isnan:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isnormal:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isnormal:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isnormal:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isunordered:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isunordered:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "isunordered:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "ldexp:0:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 30,
+        "34": 19
+      },
+      "flag_counts": {
+        "0": 30,
+        "24": 10,
+        "20": 9
+      }
+    },
+    "ldexp:1:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 37,
+        "34": 12
+      },
+      "flag_counts": {
+        "0": 37,
+        "24": 7,
+        "20": 5
+      }
+    },
+    "ldexp:2:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 37,
+        "34": 12
+      },
+      "flag_counts": {
+        "0": 37,
+        "24": 7,
+        "20": 5
+      }
+    },
+    "lgamma:0:mode0": {
+      "cases": 14,
+      "failed": 0,
+      "max_ulp": 8,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14
+      },
+      "flag_counts": {
+        "16": 12,
+        "0": 2
+      }
+    },
+    "lgamma:1:mode0": {
+      "cases": 14,
+      "failed": 1,
+      "max_ulp": 10,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14
+      },
+      "flag_counts": {
+        "16": 12,
+        "0": 2
+      }
+    },
+    "lgamma:2:mode0": {
+      "cases": 14,
+      "failed": 1,
+      "max_ulp": 10,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14
+      },
+      "flag_counts": {
+        "16": 12,
+        "0": 2
+      }
+    },
+    "llrint:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llrint:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "llround:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "llround:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "log:0:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 1,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "log:1:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 1,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "log:2:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 1,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "log10:0:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 1,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "log10:1:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 1,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "log10:2:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "16": 9,
+        "0": 1,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "log1p:0:mode0": {
+      "cases": 15,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 15
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 12,
+        "2": 1
+      }
+    },
+    "log1p:1:mode0": {
+      "cases": 15,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 15
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 12,
+        "2": 1
+      }
+    },
+    "log1p:2:mode0": {
+      "cases": 15,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 15
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 12,
+        "2": 1
+      }
+    },
+    "log2:0:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "0": 7,
+        "16": 3,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "log2:1:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "0": 7,
+        "16": 3,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "log2:2:mode0": {
+      "cases": 12,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "34": 1,
+        "33": 1
+      },
+      "flag_counts": {
+        "0": 7,
+        "16": 3,
+        "2": 1,
+        "1": 1
+      }
+    },
+    "logb:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "2": 2,
+        "0": 18
+      }
+    },
+    "logb:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "2": 2,
+        "0": 18
+      }
+    },
+    "logb:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "2": 2,
+        "0": 18
+      }
+    },
+    "lrint:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lrint:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "lround:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "lround:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "modf:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "modf:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "modf:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 20
+      }
+    },
+    "nan:0:mode0": {
+      "cases": 1,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 1
+      },
+      "flag_counts": {
+        "0": 1
+      }
+    },
+    "nan:1:mode0": {
+      "cases": 1,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 1
+      },
+      "flag_counts": {
+        "0": 1
+      }
+    },
+    "nan:2:mode0": {
+      "cases": 1,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 1
+      },
+      "flag_counts": {
+        "0": 1
+      }
+    },
+    "nearbyint:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nearbyint:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "nextafter:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 13,
+        "20": 2,
+        "24": 2
+      }
+    },
+    "nextafter:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 11,
+        "24": 4,
+        "20": 2
+      }
+    },
+    "nextafter:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 11,
+        "24": 4,
+        "20": 2
+      }
+    },
+    "nexttoward:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 13,
+        "20": 2,
+        "24": 2
+      }
+    },
+    "nexttoward:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 11,
+        "24": 4,
+        "20": 2
+      }
+    },
+    "nexttoward:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 11,
+        "24": 4,
+        "20": 2
+      }
+    },
+    "pow:0:mode0": {
+      "cases": 9,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 9
+      },
+      "flag_counts": {
+        "0": 8,
+        "16": 1
+      }
+    },
+    "pow:1:mode0": {
+      "cases": 9,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 9
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 5
+      }
+    },
+    "pow:2:mode0": {
+      "cases": 9,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 9
+      },
+      "flag_counts": {
+        "0": 4,
+        "16": 5
+      }
+    },
+    "remainder:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 3
+      },
+      "flag_counts": {
+        "0": 7,
+        "1": 3
+      }
+    },
+    "remainder:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 3
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 5,
+        "1": 3
+      }
+    },
+    "remainder:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 7,
+        "33": 3
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 5,
+        "1": 3
+      }
+    },
+    "remquo:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 7,
+        "1": 3
+      }
+    },
+    "remquo:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 7,
+        "1": 3
+      }
+    },
+    "remquo:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 7,
+        "1": 3
+      }
+    },
+    "rint:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "rint:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "round:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 15
+      }
+    },
+    "scalbln:0:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 49
+      },
+      "flag_counts": {
+        "0": 30,
+        "24": 10,
+        "20": 9
+      }
+    },
+    "scalbln:1:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 49
+      },
+      "flag_counts": {
+        "0": 37,
+        "24": 7,
+        "20": 5
+      }
+    },
+    "scalbln:2:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 49
+      },
+      "flag_counts": {
+        "0": 37,
+        "24": 7,
+        "20": 5
+      }
+    },
+    "scalbn:0:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 49
+      },
+      "flag_counts": {
+        "0": 30,
+        "24": 10,
+        "20": 9
+      }
+    },
+    "scalbn:1:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 49
+      },
+      "flag_counts": {
+        "0": 37,
+        "24": 7,
+        "20": 5
+      }
+    },
+    "scalbn:2:mode0": {
+      "cases": 49,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 49
+      },
+      "flag_counts": {
+        "0": 37,
+        "24": 7,
+        "20": 5
+      }
+    },
+    "signbit:0:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "signbit:1:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "signbit:2:mode0": {
+      "cases": 10,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10
+      },
+      "flag_counts": {
+        "0": 10
+      }
+    },
+    "sin:0:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "sin:1:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 6,
+        "16": 18
+      }
+    },
+    "sin:2:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 6,
+        "16": 18
+      }
+    },
+    "sinh:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14,
+        "34": 6
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 12,
+        "20": 6
+      }
+    },
+    "sinh:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 18,
+        "34": 2
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 16,
+        "20": 2
+      }
+    },
+    "sinh:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 18,
+        "34": 2
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 16,
+        "20": 2
+      }
+    },
+    "sqrt:0:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "33": 1
+      },
+      "flag_counts": {
+        "0": 6,
+        "16": 4,
+        "1": 1
+      }
+    },
+    "sqrt:1:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "33": 1
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 8,
+        "1": 1
+      }
+    },
+    "sqrt:2:mode0": {
+      "cases": 11,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 10,
+        "33": 1
+      },
+      "flag_counts": {
+        "0": 7,
+        "16": 3,
+        "1": 1
+      }
+    },
+    "tan:0:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 2,
+        "16": 22
+      }
+    },
+    "tan:1:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 6,
+        "16": 18
+      }
+    },
+    "tan:2:mode0": {
+      "cases": 24,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 24
+      },
+      "flag_counts": {
+        "0": 6,
+        "16": 18
+      }
+    },
+    "tanh:0:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 9,
+        "16": 11
+      }
+    },
+    "tanh:1:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 9,
+        "16": 11
+      }
+    },
+    "tanh:2:mode0": {
+      "cases": 20,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 20
+      },
+      "flag_counts": {
+        "0": 9,
+        "16": 11
+      }
+    },
+    "tgamma:0:mode0": {
+      "cases": 14,
+      "failed": 1,
+      "max_ulp": 44,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 12,
+        "34": 2
+      },
+      "flag_counts": {
+        "16": 10,
+        "0": 2,
+        "20": 2
+      }
+    },
+    "tgamma:1:mode0": {
+      "cases": 14,
+      "failed": 3,
+      "max_ulp": 368,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14
+      },
+      "flag_counts": {
+        "16": 12,
+        "0": 2
+      }
+    },
+    "tgamma:2:mode0": {
+      "cases": 14,
+      "failed": 3,
+      "max_ulp": 368,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 14
+      },
+      "flag_counts": {
+        "16": 12,
+        "0": 2
+      }
+    },
+    "trunc:0:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:0:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:0:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:0:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:1:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:1:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:1:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:1:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:2:mode0": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:2:mode1": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:2:mode2": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    },
+    "trunc:2:mode3": {
+      "cases": 17,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 17
+      },
+      "flag_counts": {
+        "0": 17
+      }
+    }
+  },
+  "failures": [
+    {
+      "case": {
+        "id": 720,
+        "function": "tgamma",
+        "precision": 0,
+        "mode": 0,
+        "bits": [
+          1106247680,
+          1048576000,
+          1061158912,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 1927230136,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        1927230092,
+        4290772992,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 44
+    },
+    {
+      "case": {
+        "id": 2610,
+        "function": "tgamma",
+        "precision": 1,
+        "mode": 0,
+        "bits": [
+          4629137466983448576,
+          4598175219545276416,
+          4604930618986332160,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 5069899043359401905,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        5069899043359401861,
+        18444492273895866368,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 44
+    },
+    {
+      "case": {
+        "id": 2611,
+        "function": "tgamma",
+        "precision": 1,
+        "mode": 0,
+        "bits": [
+          4636737291354636288,
+          4598175219545276416,
+          4604930618986332160,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 6940441503907912011,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        6940441503907911739,
+        18444492273895866368,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 272
+    },
+    {
+      "case": {
+        "id": 2612,
+        "function": "tgamma",
+        "precision": 1,
+        "mode": 0,
+        "bits": [
+          4640185359819341824,
+          4598175219545276416,
+          4604930618986332160,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 9164579315819320700,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        9164579315819321068,
+        18444492273895866368,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 368
+    },
+    {
+      "case": {
+        "id": 2615,
+        "function": "lgamma",
+        "precision": 1,
+        "mode": 0,
+        "bits": [
+          13836183955189006336,
+          4598175219545276416,
+          4604930618986332160,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 13811638431671717664,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        13811638431671717654,
+        18444492273895866368,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 10
+    },
+    {
+      "case": {
+        "id": 4500,
+        "function": "tgamma",
+        "precision": 2,
+        "mode": 0,
+        "bits": [
+          4629137466983448576,
+          4598175219545276416,
+          4604930618986332160,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 5069899043359401905,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        5069899043359401861,
+        18444492273895866368,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 44
+    },
+    {
+      "case": {
+        "id": 4501,
+        "function": "tgamma",
+        "precision": 2,
+        "mode": 0,
+        "bits": [
+          4636737291354636288,
+          4598175219545276416,
+          4604930618986332160,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 6940441503907912011,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        6940441503907911739,
+        18444492273895866368,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 272
+    },
+    {
+      "case": {
+        "id": 4502,
+        "function": "tgamma",
+        "precision": 2,
+        "mode": 0,
+        "bits": [
+          4640185359819341824,
+          4598175219545276416,
+          4604930618986332160,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 9164579315819320700,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        9164579315819321068,
+        18444492273895866368,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 368
+    },
+    {
+      "case": {
+        "id": 4505,
+        "function": "lgamma",
+        "precision": 2,
+        "mode": 0,
+        "bits": [
+          13836183955189006336,
+          4598175219545276416,
+          4604930618986332160,
+          0
+        ],
+        "n": 2,
+        "kind": "real",
+        "tag": "ordinary"
+      },
+      "observed": {
+        "status": 0,
+        "bits": 13811638431671717664,
+        "extra": 0,
+        "integer": 0,
+        "errno": 0,
+        "flags": 16,
+        "rounding": 0
+      },
+      "reference": [
+        13811638431671717654,
+        18444492273895866368,
+        0,
+        256
+      ],
+      "issues": [
+        "reference_error_budget"
+      ],
+      "max_ulp": 10
+    }
+  ],
+  "advisories": [
+    {
+      "id": 1074,
+      "advisories": [
+        "signed_zero_choice"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 1088,
+      "advisories": [
+        "signed_zero_choice"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 2965,
+      "advisories": [
+        "signed_zero_choice"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 2977,
+      "advisories": [
+        "signed_zero_choice"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 4854,
+      "advisories": [
+        "signed_zero_choice"
+      ],
+      "max_ulp": 0
+    },
+    {
+      "id": 4868,
+      "advisories": [
+        "signed_zero_choice"
+      ],
+      "max_ulp": 0
+    }
+  ],
+  "policy": "Engineering comparison: exact basic operations; 4 ULP real transcendental, 8 ULP gamma, 16 ULP or 16*epsilon*complex-magnitude complex components. These budgets are not a claim of standard-mandated accuracy. NaN payloads/sign ignored; fmin/fmax zero-sign choices advisory. No TV kernel/hardware validation."
+}

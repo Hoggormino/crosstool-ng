@@ -1,0 +1,35 @@
+{
+  "entries": [
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/prototype-expanded/analysis.json",
+      "bytes": 314046,
+      "sha256": "a76b6d04ff1cfc26076409f006440181a74434cc1dcdcdfe72fea4eab26ec531"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/prototype2/analysis.json",
+      "bytes": 54787,
+      "sha256": "a20df1942367b2674d07827e3842be3da1452734e98c8863205f4b260074fe51"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/logs/scalar-dependencies.log",
+      "bytes": 2770,
+      "sha256": "40b86d4d291f0f2c4f051e8fba6bfef9b2dc97714f99e66c4a9859717bdbd7a4"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/logs/libstd-diagnostic.log",
+      "bytes": 88,
+      "sha256": "becb9052f7cd1337ee51fba3b37f92a682f70fce4b28498c2f184c3c928a93c8"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/logs/source-restore.log",
+      "bytes": 395,
+      "sha256": "4a62605c130cdf3c83df57374c87dd56d459f5726ad8e1f35cc51697e3e8e983"
+    },
+    {
+      "path": "/mnt/data/Projects/samsung-complex-math/build-complex-math/logs/source-restore.json",
+      "bytes": 809,
+      "sha256": "4be04eb42fefcfb56f07dcd22dd4976c7d8de7704f96350ede2bd4e1a3e43fe0"
+    }
+  ],
+  "interpretation": "Retained preflight/reference mismatches, scalar dependency defects and the restored source-symlink diagnostic. No failing artifact is the released runtime."
+}

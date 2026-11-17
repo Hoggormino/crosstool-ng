@@ -1,0 +1,260 @@
+{
+  "checks": [
+    [
+      627,
+      "smallest subnormal exponent",
+      true
+    ],
+    [
+      720,
+      "Gamma(30)=29!",
+      true
+    ],
+    [
+      1501,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      1509,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      1517,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      1525,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      1737,
+      "finite projection identity",
+      true
+    ],
+    [
+      1738,
+      "finite projection identity",
+      true
+    ],
+    [
+      1739,
+      "finite projection identity",
+      true
+    ],
+    [
+      1740,
+      "finite projection identity",
+      true
+    ],
+    [
+      1741,
+      "finite projection identity",
+      true
+    ],
+    [
+      1742,
+      "finite projection identity",
+      true
+    ],
+    [
+      1743,
+      "finite projection identity",
+      true
+    ],
+    [
+      1744,
+      "finite projection identity",
+      true
+    ],
+    [
+      1745,
+      "finite projection identity",
+      true
+    ],
+    [
+      1746,
+      "finite projection identity",
+      true
+    ],
+    [
+      1747,
+      "finite projection identity",
+      true
+    ],
+    [
+      2517,
+      "smallest subnormal exponent",
+      true
+    ],
+    [
+      2610,
+      "Gamma(30)=29!",
+      true
+    ],
+    [
+      3391,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      3399,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      3407,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      3415,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      3627,
+      "finite projection identity",
+      true
+    ],
+    [
+      3628,
+      "finite projection identity",
+      true
+    ],
+    [
+      3629,
+      "finite projection identity",
+      true
+    ],
+    [
+      3630,
+      "finite projection identity",
+      true
+    ],
+    [
+      3631,
+      "finite projection identity",
+      true
+    ],
+    [
+      3632,
+      "finite projection identity",
+      true
+    ],
+    [
+      3633,
+      "finite projection identity",
+      true
+    ],
+    [
+      3634,
+      "finite projection identity",
+      true
+    ],
+    [
+      3635,
+      "finite projection identity",
+      true
+    ],
+    [
+      3636,
+      "finite projection identity",
+      true
+    ],
+    [
+      3637,
+      "finite projection identity",
+      true
+    ],
+    [
+      4407,
+      "smallest subnormal exponent",
+      true
+    ],
+    [
+      4500,
+      "Gamma(30)=29!",
+      true
+    ],
+    [
+      5281,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      5289,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      5297,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      5305,
+      "FMA cancellation exact power of two",
+      true
+    ],
+    [
+      5517,
+      "finite projection identity",
+      true
+    ],
+    [
+      5518,
+      "finite projection identity",
+      true
+    ],
+    [
+      5519,
+      "finite projection identity",
+      true
+    ],
+    [
+      5520,
+      "finite projection identity",
+      true
+    ],
+    [
+      5521,
+      "finite projection identity",
+      true
+    ],
+    [
+      5522,
+      "finite projection identity",
+      true
+    ],
+    [
+      5523,
+      "finite projection identity",
+      true
+    ],
+    [
+      5524,
+      "finite projection identity",
+      true
+    ],
+    [
+      5525,
+      "finite projection identity",
+      true
+    ],
+    [
+      5526,
+      "finite projection identity",
+      true
+    ],
+    [
+      5527,
+      "finite projection identity",
+      true
+    ]
+  ],
+  "passed": true
+}

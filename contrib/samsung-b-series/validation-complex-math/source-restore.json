@@ -1,0 +1,23 @@
+{
+  "restored_source": "/mnt/data/Projects/samsung-runtime-math/build-runtime-math-final/.build/src/gcc-16.2.0",
+  "verified_files": [
+    {
+      "path": "src/c++11/Makefile.am",
+      "sha256": "84360cafe2cb4d2be31a0226d09e3f338136f70b547dc6170baca5710ad0c672",
+      "restored_mtime_ns": 1794884225850600877
+    },
+    {
+      "path": "src/c++11/Makefile.in",
+      "sha256": "86142aa08f025f2b08a06dbd92091caa920358983024b72b39ec268c20a06603",
+      "restored_mtime_ns": 1794884226821890468
+    },
+    {
+      "path": "config/abi/pre/gnu.ver",
+      "sha256": "83c38b70058a4f682c90b019b18a43158cf831513813509e415f0e7240482367",
+      "restored_mtime_ns": 1794884225843384749
+    }
+  ],
+  "all_added_files_removed": true,
+  "installed_prefix_untouched": true,
+  "mtime_restored_from_baseline_index": true
+}
