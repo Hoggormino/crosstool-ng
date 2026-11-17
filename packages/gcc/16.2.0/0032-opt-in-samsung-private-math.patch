@@ -1,0 +1,624 @@
+diff --git a/libstdc++-v3/config.h.in b/libstdc++-v3/config.h.in
+index 4cfb9ba..8810da9 100644
+--- a/libstdc++-v3/config.h.in
++++ b/libstdc++-v3/config.h.in
+@@ -690,6 +690,9 @@
+ /* Define if using setrlimit to set resource limits during "make check" */
+ #undef _GLIBCXX_RES_LIMITS
+ 
++/* Define for opt-in private Samsung ARMv6 glibc 2.5 math corrections. */
++#undef _GLIBCXX_SAMSUNG_TV_MATH
++
+ /* Define if size_t is unsigned int. */
+ #undef _GLIBCXX_SIZE_T_IS_UINT
+ 
+diff --git a/libstdc++-v3/config/abi/pre/gnu.ver b/libstdc++-v3/config/abi/pre/gnu.ver
+index 029f871..ea118d6 100644
+--- a/libstdc++-v3/config/abi/pre/gnu.ver
++++ b/libstdc++-v3/config/abi/pre/gnu.ver
+@@ -3006,3 +3006,18 @@ CXXABI_TM_1 {
+     __cxa_tm_cleanup;
+ 
+ };
++
++#ifdef _GLIBCXX_SAMSUNG_TV_MATH
++# Private opt-in ABI. Rebuild consumers with the matching runtime bundle.
++GLIBCXX_SAMSUNG_MATH_1.0 {
++  global:
++    fma;
++    fmaf;
++    fmal;
++    logb;
++    logbf;
++    logbl;
++    nearbyintf;
++    feupdateenv;
++} GLIBCXX_3.4.36;
++#endif
+diff --git a/libstdc++-v3/configure b/libstdc++-v3/configure
+index 760140b..0dd3098 100755
+--- a/libstdc++-v3/configure
++++ b/libstdc++-v3/configure
+@@ -949,6 +949,7 @@ enable_concept_checks
+ enable_libstdcxx_debug_flags
+ enable_libstdcxx_debug
+ enable_cxx_flags
++enable_libstdcxx_samsung_math
+ enable_fully_dynamic_string
+ enable_extern_template
+ with_python_dir
+@@ -1659,6 +1660,9 @@ Optional Features:
+                           build extra debug library [default=no]
+   --enable-cxx-flags=FLAGS
+                           pass compiler FLAGS when building library [default=]
++  --enable-libstdcxx-samsung-math
++                          enable private Samsung ARMv6/glibc 2.5 math
++                          corrections [default=no]
+   --enable-fully-dynamic-string
+                           do not put empty strings in per-process static
+                           memory [default=no]
+@@ -12682,7 +12686,7 @@ else
+   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
+   lt_status=$lt_dlunknown
+   cat > conftest.$ac_ext <<_LT_EOF
+-#line 12682 "configure"
++#line 12686 "configure"
+ #include "confdefs.h"
+ 
+ #if HAVE_DLFCN_H
+@@ -12788,7 +12792,7 @@ else
+   lt_dlunknown=0; lt_dlno_uscore=1; lt_dlneed_uscore=2
+   lt_status=$lt_dlunknown
+   cat > conftest.$ac_ext <<_LT_EOF
+-#line 12788 "configure"
++#line 12792 "configure"
+ #include "confdefs.h"
+ 
+ #if HAVE_DLFCN_H
+@@ -16480,7 +16484,7 @@ $as_echo "$glibcxx_cv_atomic_word" >&6; }
+     # Fake what AC_TRY_COMPILE does.
+ 
+     cat > conftest.$ac_ext << EOF
+-#line 16480 "configure"
++#line 16484 "configure"
+ #include "atomic_word.h"
+ int main()
+ {
+@@ -16628,7 +16632,7 @@ $as_echo "mutex" >&6; }
+   # unnecessary for this test.
+ 
+     cat > conftest.$ac_ext << EOF
+-#line 16628 "configure"
++#line 16632 "configure"
+ int main()
+ {
+   _Decimal32 d1;
+@@ -16670,7 +16674,7 @@ ac_compiler_gnu=$ac_cv_cxx_compiler_gnu
+   # unnecessary for this test.
+ 
+   cat > conftest.$ac_ext << EOF
+-#line 16670 "configure"
++#line 16674 "configure"
+ template<typename T1, typename T2>
+   struct same
+   { typedef T2 type; };
+@@ -19644,6 +19648,88 @@ $as_echo "$EXTRA_CXX_FLAGS" >&6; }
+ 
+ 
+ 
++# This private runtime is for the Samsung ARMv6 glibc 2.5 TV UI process.
++# Keep it opt-in, and reject configurations with an unverified ABI.
++# Check whether --enable-libstdcxx-samsung-math was given.
++if test "${enable_libstdcxx_samsung_math+set}" = set; then :
++  enableval=$enable_libstdcxx_samsung_math;
++else
++  enable_libstdcxx_samsung_math=no
++fi
++
++case $enable_libstdcxx_samsung_math in #(
++  yes|no) :
++     ;; #(
++  *) :
++    as_fn_error $? "--enable-libstdcxx-samsung-math accepts only yes or no" "$LINENO" 5 ;;
++esac
++if test x"$enable_libstdcxx_samsung_math" = xyes; then :
++
++  ac_ext=cpp
++ac_cpp='$CXXCPP $CPPFLAGS'
++ac_compile='$CXX -c $CXXFLAGS $CPPFLAGS conftest.$ac_ext >&5'
++ac_link='$CXX -o conftest$ac_exeext $CXXFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
++ac_compiler_gnu=$ac_cv_cxx_compiler_gnu
++
++  { $as_echo "$as_me:${as_lineno-$LINENO}: checking for the Samsung binary32/binary64 base PCS ABI" >&5
++$as_echo_n "checking for the Samsung binary32/binary64 base PCS ABI... " >&6; }
++  cat confdefs.h - <<_ACEOF >conftest.$ac_ext
++/* end confdefs.h.  */
++
++#include <features.h>
++#include <float.h>
++#if !defined(__arm__) || !defined(__ARM_EABI__) || !defined(__ARM_ARCH_6J__)
++#error Samsung math requires ARMv6J EABI
++#endif
++#if defined(__SOFTFP__) || !defined(__ARM_FP) || (__ARM_FP & 12) != 12
++#error Samsung math requires VFP single/double arithmetic with softfp calling convention
++#endif
++#if defined(__ARM_PCS_VFP) || defined(__thumb__) || defined(__ARMEB__)
++#error Samsung math requires little-endian ARM mode and base PCS
++#endif
++#if __GLIBC__ != 2 || __GLIBC_MINOR__ != 5
++#error Samsung math requires the verified glibc 2.5 headers
++#endif
++#if FLT_RADIX != 2 || FLT_MANT_DIG != 24 || FLT_MIN_EXP != -125 || FLT_MAX_EXP != 128
++#error Samsung math requires IEEE binary32 float
++#endif
++#if DBL_MANT_DIG != 53 || DBL_MIN_EXP != -1021 || DBL_MAX_EXP != 1024
++#error Samsung math requires IEEE binary64 double
++#endif
++#if LDBL_MANT_DIG != 53 || LDBL_MIN_EXP != -1021 || LDBL_MAX_EXP != 1024
++#error Samsung math requires binary64 long double
++#endif
++typedef char samsung_math_sizes[(sizeof(float) == 4 && sizeof(double) == 8
++                                && sizeof(long double) == 8) ? 1 : -1];
++
++int
++main ()
++{
++
++  ;
++  return 0;
++}
++_ACEOF
++if ac_fn_cxx_try_compile "$LINENO"; then :
++  { $as_echo "$as_me:${as_lineno-$LINENO}: result: yes" >&5
++$as_echo "yes" >&6; }
++else
++  { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
++$as_echo "no" >&6; }; as_fn_error $? "unsupported Samsung math target ABI" "$LINENO" 5
++fi
++rm -f core conftest.err conftest.$ac_objext conftest.$ac_ext
++  ac_ext=c
++ac_cpp='$CPP $CPPFLAGS'
++ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
++ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
++ac_compiler_gnu=$ac_cv_c_compiler_gnu
++
++
++$as_echo "#define _GLIBCXX_SAMSUNG_TV_MATH 1" >>confdefs.h
++
++
++fi
++
+    # Check whether --enable-fully-dynamic-string was given.
+ if test "${enable_fully_dynamic_string+set}" = set; then :
+   enableval=$enable_fully_dynamic_string;
+@@ -54159,7 +54245,7 @@ $as_echo "$glibcxx_cv_libbacktrace_atomics" >&6; }
+     CXXFLAGS='-O0 -S'
+ 
+     cat > conftest.$ac_ext << EOF
+-#line 54159 "configure"
++#line 54245 "configure"
+ #include <stddef.h>
+ int main()
+ {
+@@ -56377,10 +56463,7 @@ fi
+       glibcxx_toolexecdir='${libdir}/gcc/${host_alias}'
+       glibcxx_toolexeclibdir='${libdir}'
+     fi
+-    multi_os_directory=`$CXX -print-multi-os-directory 2>/dev/null`
+-    if test $? -ne 0 || test -z "$multi_os_directory"; then
+-      multi_os_directory="."
+-    fi
++    multi_os_directory=`$CXX -print-multi-os-directory`
+     case $multi_os_directory in
+       .) ;; # Avoid trailing /.
+       *) glibcxx_toolexeclibdir=$glibcxx_toolexeclibdir/$multi_os_directory ;;
+diff --git a/libstdc++-v3/configure.ac b/libstdc++-v3/configure.ac
+index f81dccd..382e83e 100644
+--- a/libstdc++-v3/configure.ac
++++ b/libstdc++-v3/configure.ac
+@@ -193,6 +193,50 @@ GLIBCXX_ENABLE_DEBUG_FLAGS(["-g3 -O0 -D_GLIBCXX_ASSERTIONS"])
+ GLIBCXX_ENABLE_DEBUG([no])
+ GLIBCXX_ENABLE_PARALLEL([yes])
+ GLIBCXX_ENABLE_CXX_FLAGS
++
++# This private runtime is for the Samsung ARMv6 glibc 2.5 TV UI process.
++# Keep it opt-in, and reject configurations with an unverified ABI.
++AC_ARG_ENABLE([libstdcxx-samsung-math],
++  AS_HELP_STRING([--enable-libstdcxx-samsung-math],
++    [enable private Samsung ARMv6/glibc 2.5 math corrections @<:@default=no@:>@]),
++  [], [enable_libstdcxx_samsung_math=no])
++AS_CASE([$enable_libstdcxx_samsung_math], [yes|no], [],
++  [AC_MSG_ERROR([--enable-libstdcxx-samsung-math accepts only yes or no])])
++AS_IF([test x"$enable_libstdcxx_samsung_math" = xyes], [
++  AC_LANG_PUSH([C++])
++  AC_MSG_CHECKING([for the Samsung binary32/binary64 base PCS ABI])
++  AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
++#include <features.h>
++#include <float.h>
++#if !defined(__arm__) || !defined(__ARM_EABI__) || !defined(__ARM_ARCH_6J__)
++#error Samsung math requires ARMv6J EABI
++#endif
++#if defined(__SOFTFP__) || !defined(__ARM_FP) || (__ARM_FP & 12) != 12
++#error Samsung math requires VFP single/double arithmetic with softfp calling convention
++#endif
++#if defined(__ARM_PCS_VFP) || defined(__thumb__) || defined(__ARMEB__)
++#error Samsung math requires little-endian ARM mode and base PCS
++#endif
++#if __GLIBC__ != 2 || __GLIBC_MINOR__ != 5
++#error Samsung math requires the verified glibc 2.5 headers
++#endif
++#if FLT_RADIX != 2 || FLT_MANT_DIG != 24 || FLT_MIN_EXP != -125 || FLT_MAX_EXP != 128
++#error Samsung math requires IEEE binary32 float
++#endif
++#if DBL_MANT_DIG != 53 || DBL_MIN_EXP != -1021 || DBL_MAX_EXP != 1024
++#error Samsung math requires IEEE binary64 double
++#endif
++#if LDBL_MANT_DIG != 53 || LDBL_MIN_EXP != -1021 || LDBL_MAX_EXP != 1024
++#error Samsung math requires binary64 long double
++#endif
++typedef char samsung_math_sizes[(sizeof(float) == 4 && sizeof(double) == 8
++                                && sizeof(long double) == 8) ? 1 : -1];
++  ]], [[]])], [AC_MSG_RESULT([yes])],
++    [AC_MSG_RESULT([no]); AC_MSG_ERROR([unsupported Samsung math target ABI])])
++  AC_LANG_POP([C++])
++  AC_DEFINE([_GLIBCXX_SAMSUNG_TV_MATH], [1],
++    [Define for opt-in private Samsung ARMv6 glibc 2.5 math corrections.])
++])
+ GLIBCXX_ENABLE_FULLY_DYNAMIC_STRING([no])
+ GLIBCXX_ENABLE_EXTERN_TEMPLATE([yes])
+ GLIBCXX_ENABLE_PYTHON
+diff --git a/libstdc++-v3/src/c++11/Makefile.am b/libstdc++-v3/src/c++11/Makefile.am
+index d29efac..4eeb49c 100644
+--- a/libstdc++-v3/src/c++11/Makefile.am
++++ b/libstdc++-v3/src/c++11/Makefile.am
+@@ -65,6 +65,7 @@ sources_freestanding = \
+ 
+ sources = \
+ 	assert_fail.cc \
++	samsung_math.cc \
+ 	chrono.cc \
+ 	codecvt.cc \
+ 	condition_variable.cc \
+@@ -143,6 +144,13 @@ libc__11convenience_la_SOURCES = \
+ endif
+ 
+ 
++# The software fused operation must preserve rounding and exception behavior.
++# Do not permit contraction, builtin recursion or fast-math reassociation.
++samsung_math.lo: samsung_math.cc
++	$(LTCXXCOMPILE) -frounding-math -ffp-contract=off -fno-fast-math -fno-builtin -c $<
++samsung_math.o: samsung_math.cc
++	$(CXXCOMPILE) -frounding-math -ffp-contract=off -fno-fast-math -fno-builtin -c $<
++
+ # Use special rules for the hashtable.cc file so that all
+ # the generated template functions are also instantiated.
+ hashtable_c++0x.lo: hashtable_c++0x.cc
+diff --git a/libstdc++-v3/src/c++11/Makefile.in b/libstdc++-v3/src/c++11/Makefile.in
+index bd684bb..122a54c 100644
+--- a/libstdc++-v3/src/c++11/Makefile.in
++++ b/libstdc++-v3/src/c++11/Makefile.in
+@@ -130,7 +130,7 @@ am__objects_1 = limits.lo placeholders.lo
+ @ENABLE_DUAL_ABI_TRUE@	cxx11-shim_facets.lo cxx11-stdexcept.lo
+ am__objects_3 = ctype_configure_char.lo ctype_members.lo
+ am__objects_4 = basic_file.lo
+-am__objects_5 = assert_fail.lo chrono.lo codecvt.lo \
++am__objects_5 = assert_fail.lo samsung_math.lo chrono.lo codecvt.lo \
+ 	condition_variable.lo cow-stdexcept.lo cow-system_error.lo \
+ 	ctype.lo debug.lo functexcept.lo functional.lo futex.lo \
+ 	future.lo hash_c++0x.lo hashtable_c++0x.lo ios.lo \
+@@ -487,6 +487,7 @@ sources_freestanding = \
+ 
+ sources = \
+ 	assert_fail.cc \
++	samsung_math.cc \
+ 	chrono.cc \
+ 	codecvt.cc \
+ 	condition_variable.cc \
+@@ -874,6 +875,13 @@ basic_file.cc: ${glibcxx_srcdir}/$(BASIC_FILE_CC)
+ 
+ vpath % $(top_srcdir)/src/c++11
+ 
++# The software fused operation must preserve rounding and exception behavior.
++# Do not permit contraction, builtin recursion or fast-math reassociation.
++samsung_math.lo: samsung_math.cc
++	$(LTCXXCOMPILE) -frounding-math -ffp-contract=off -fno-fast-math -fno-builtin -c $<
++samsung_math.o: samsung_math.cc
++	$(CXXCOMPILE) -frounding-math -ffp-contract=off -fno-fast-math -fno-builtin -c $<
++
+ # Use special rules for the hashtable.cc file so that all
+ # the generated template functions are also instantiated.
+ hashtable_c++0x.lo: hashtable_c++0x.cc
+diff --git a/libstdc++-v3/src/c++11/samsung_math.cc b/libstdc++-v3/src/c++11/samsung_math.cc
+new file mode 100644
+index 0000000..188c477
+--- /dev/null
++++ b/libstdc++-v3/src/c++11/samsung_math.cc
+@@ -0,0 +1,288 @@
++// Private runtime corrections for the Samsung ARMv6/glibc 2.5 TV UI process.
++// FMA algorithms adapted from musl src/math/fma.c and fmaf.c at
++// 7813e9119eb5fe681b6750b8a033a0490bca0941 (official musl Git).
++// The 64-bit conversion is adapted for ARM's fixed-rounding __aeabi_l2d.
++// Other functions are small target-specific compositions / bit operations.
++/*
++Copyright © 2005-2020 Rich Felker, et al.
++
++Permission is hereby granted, free of charge, to any person obtaining
++a copy of this software and associated documentation files (the
++"Software"), to deal in the Software without restriction, including
++without limitation the rights to use, copy, modify, merge, publish,
++distribute, sublicense, and/or sell copies of the Software, and to
++permit persons to whom the Software is furnished to do so, subject to
++the following conditions:
++
++The above copyright notice and this permission notice shall be
++included in all copies or substantial portions of the Software.
++
++THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
++EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
++MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
++IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
++CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
++TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
++SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
++*/
++#include <bits/c++config.h>
++#ifdef _GLIBCXX_SAMSUNG_TV_MATH
++#include <stdint.h>
++#include <float.h>
++#include <math.h>
++#include <string.h>
++#include <fenv.h>
++#include <stdint.h>
++
++static uint64_t bits64(double x) { uint64_t u; memcpy(&u,&x,8); return u; }
++#define ASUINT64(x) bits64(x)
++static double rounded_integer(int64_t i)
++{
++  // ARM __aeabi_l2d always rounds to nearest.  These exact 32-bit
++  // conversions and one VFP addition instead honor the active mode.
++  return (double)(int32_t)(i >> 32) * 0x1p32 + (double)(uint32_t)i;
++}
++#define ZEROINFNAN (0x7ff-0x3ff-52-1)
++
++struct num { uint64_t m; int e; int sign; };
++
++static struct num normalize(double x)
++{
++	uint64_t ix = ASUINT64(x);
++	int e = ix>>52;
++	int sign = e & 0x800;
++	e &= 0x7ff;
++	if (!e) {
++		ix = ASUINT64(x*0x1p63);
++		e = ix>>52 & 0x7ff;
++		e = e ? e-63 : 0x800;
++	}
++	ix &= (1ull<<52)-1;
++	ix |= 1ull<<52;
++	ix <<= 1;
++	e -= 0x3ff + 52 + 1;
++	return (struct num){ix,e,sign};
++}
++
++static void mul(uint64_t *hi, uint64_t *lo, uint64_t x, uint64_t y)
++{
++	uint64_t t1,t2,t3;
++	uint64_t xlo = (uint32_t)x, xhi = x>>32;
++	uint64_t ylo = (uint32_t)y, yhi = y>>32;
++
++	t1 = xlo*ylo;
++	t2 = xlo*yhi + xhi*ylo;
++	t3 = xhi*yhi;
++	*lo = t1 + (t2<<32);
++	*hi = t3 + (t2>>32) + (t1 > *lo);
++}
++
++extern "C" double fma(double x, double y, double z) throw()
++{
++	#pragma STDC FENV_ACCESS ON
++
++	/* normalize so top 10bits and last bit are 0 */
++	struct num nx, ny, nz;
++	nx = normalize(x);
++	ny = normalize(y);
++	nz = normalize(z);
++
++	if (nx.e >= ZEROINFNAN || ny.e >= ZEROINFNAN)
++		return x*y + z;
++	if (nz.e >= ZEROINFNAN) {
++		if (nz.e > ZEROINFNAN) /* z==0 */
++			return x*y;
++		return z + z; // Quiet a signaling NaN and raise FE_INVALID.
++	}
++
++	/* mul: r = x*y */
++	uint64_t rhi, rlo, zhi, zlo;
++	mul(&rhi, &rlo, nx.m, ny.m);
++	/* either top 20 or 21 bits of rhi and last 2 bits of rlo are 0 */
++
++	/* align exponents */
++	int e = nx.e + ny.e;
++	int d = nz.e - e;
++	/* shift bits z<<=kz, r>>=kr, so kz+kr == d, set e = e+kr (== ez-kz) */
++	if (d > 0) {
++		if (d < 64) {
++			zlo = nz.m<<d;
++			zhi = nz.m>>64-d;
++		} else {
++			zlo = 0;
++			zhi = nz.m;
++			e = nz.e - 64;
++			d -= 64;
++			if (d == 0) {
++			} else if (d < 64) {
++				rlo = rhi<<64-d | rlo>>d | !!(rlo<<64-d);
++				rhi = rhi>>d;
++			} else {
++				rlo = 1;
++				rhi = 0;
++			}
++		}
++	} else {
++		zhi = 0;
++		d = -d;
++		if (d == 0) {
++			zlo = nz.m;
++		} else if (d < 64) {
++			zlo = nz.m>>d | !!(nz.m<<64-d);
++		} else {
++			zlo = 1;
++		}
++	}
++
++	/* add */
++	int sign = nx.sign^ny.sign;
++	int samesign = !(sign^nz.sign);
++	int nonzero = 1;
++	if (samesign) {
++		/* r += z */
++		rlo += zlo;
++		rhi += zhi + (rlo < zlo);
++	} else {
++		/* r -= z */
++		uint64_t t = rlo;
++		rlo -= zlo;
++		rhi = rhi - zhi - (t < rlo);
++		if (rhi>>63) {
++			rlo = -rlo;
++			rhi = -rhi-!!rlo;
++			sign = !sign;
++		}
++		nonzero = !!rhi;
++	}
++
++	/* set rhi to top 63bit of the result (last bit is sticky) */
++	if (nonzero) {
++		e += 64;
++		d = __builtin_clzll(rhi)-1;
++		/* note: d > 0 */
++		rhi = rhi<<d | rlo>>64-d | !!(rlo<<d);
++	} else if (rlo) {
++		d = __builtin_clzll(rlo)-1;
++		if (d < 0)
++			rhi = rlo>>1 | (rlo&1);
++		else
++			rhi = rlo<<d;
++	} else {
++		/* exact +-0 */
++		return x*y + z;
++	}
++	e -= d;
++
++	/* convert to double */
++	int64_t i = rhi; /* i is in [1<<62,(1<<63)-1] */
++	if (sign)
++		i = -i;
++	double r = rounded_integer(i); /* |r| is in [0x1p62,0x1p63] */
++
++	if (e < -1022-62) {
++		/* result is subnormal before rounding */
++		if (e == -1022-63) {
++			double c = 0x1p63;
++			if (sign)
++				c = -c;
++			if (r == c) {
++				/* min normal after rounding, underflow depends
++				   on arch behaviour which can be imitated by
++				   a double to float conversion */
++				float fltmin = 0x0.ffffff8p-63*FLT_MIN * r;
++				return DBL_MIN/FLT_MIN * fltmin;
++			}
++			/* one bit is lost when scaled, add another top bit to
++			   only round once at conversion if it is inexact */
++			if (rhi << 53) {
++				i = rhi>>1 | (rhi&1) | 1ull<<62;
++				if (sign)
++					i = -i;
++				r = rounded_integer(i);
++				r = 2*r - c; /* remove top bit */
++
++				/* raise underflow portably, such that it
++				   cannot be optimized away */
++				{
++					double_t tiny = DBL_MIN/FLT_MIN * r;
++					r += (double)(tiny*tiny) * (r-r);
++				}
++			}
++		} else {
++			/* only round once when scaled */
++			d = 10;
++			i = ( rhi>>d | !!(rhi<<64-d) ) << d;
++			if (sign)
++				i = -i;
++			r = rounded_integer(i);
++		}
++	}
++	return scalbn(r, e);
++}
++
++#include <math.h>
++#include <stdint.h>
++
++extern "C" float fmaf(float x, float y, float z) throw()
++{
++	double xy = (double)x * y;
++	union {double r; uint64_t i;} u = {xy + z};
++	int e = u.i>>52 & 0x7ff;
++	/* covers |r| > 0x1p-126 halfway cases (may round incorrectly) */
++	int halfway = (u.i & 0x1fffffff) == 0x10000000;
++	/* covers tiny inexact (may miss uflow) and tiny halfway cases */
++	int tiny = e <= 0x3ff-126 && e >= 0x3ff-149;
++	if (!halfway && !tiny)
++		/* common case, optimization only */
++		return (float)u.r;
++	if (e != 0x7ff) {
++		/* r+t == x*y+z exactly in nearest rounding, otherwise
++		 * rounding does not affect t!=0, t<0 and inexact flag. */
++		int s = u.i >> 63;
++		double t = s == (xy < z) ? xy - u.r + z : z - u.r + xy;
++		if (t) {
++			/* adjust r toward r+t if r%2==0 (round to odd).
++			 * may be needed if r is halfway or exact float,
++			 * wrong if r becomes halfway or exact float. */
++			u.i -= s ^ (t<0);
++			u.i |= 1;
++		}
++	}
++	return (float)u.r;
++}
++
++
++extern "C" long double fmal(long double x, long double y, long double z) throw()
++{ return fma((double)x,(double)y,(double)z); }
++extern "C" double logb(double x) throw()
++{
++  uint64_t u = bits64(x) & UINT64_C(0x7fffffffffffffff);
++  unsigned e = u >> 52;
++  if (e == 0x7ff) return x*x;
++  if (!u) return -1.0 / __builtin_fabs(x);
++  if (e) return (int)e - 1023;
++  return 63 - __builtin_clzll(u) - 1074;
++}
++extern "C" float logbf(float x) throw()
++{
++  uint32_t u; memcpy(&u,&x,4); u &= UINT32_C(0x7fffffff);
++  unsigned e = u >> 23;
++  if (e == 0xff) return x*x;
++  if (!u) return -1.0f / __builtin_fabsf(x);
++  if (e) return (int)e - 127;
++  return 31 - __builtin_clz(u) - 149;
++}
++extern "C" long double logbl(long double x) throw() { return logb((double)x); }
++extern "C" int feupdateenv(const fenv_t* env) throw()
++{
++  const int flags = fetestexcept(FE_ALL_EXCEPT);
++  int r = fesetenv(env);
++  return r ? r : feraiseexcept(flags);
++}
++extern "C" float nearbyintf(float x) throw()
++{
++  double (*volatile fn)(double) = nearbyint;
++  return (float)fn((double)x);
++}
++
++#endif // _GLIBCXX_SAMSUNG_TV_MATH

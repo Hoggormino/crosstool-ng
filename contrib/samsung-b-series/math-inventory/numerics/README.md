@@ -72,3 +72,36 @@ library as numerically conforming.
 
 The report docs/sdk-gcc16-math.md defines comparison budgets, scope and retained
 limitations. QEMU execution is not native Linux 2.6.18_SELP admission.
+
+## Private-runtime regression pass
+
+`make_runtime_cases.py --output NEW_DIRECTORY` emits 31,140 deterministic cases
+(seed 0x1136f5a). Its FMA operands span the binary32/binary64 exponent range and
+include cancellation, overflow, signed zero and underflow-rounding boundaries.
+`logb` covers each subnormal exponent and seeded random subnormals. All four
+rounding modes and binary64 long double are tested. `reference.cpp`, the existing
+runner and `analyze.py --strict` use these vectors without special acceptance
+budgets: all three functions require exact rounded results.
+
+Compile `fma_flags_reference.cpp` against the same host-only MPFR library. Feed
+it inputs.tsv and save flags.tsv. It computes finite fused results exactly at
+4096-bit precision, then independently obtains inexact, overflow and unambiguous
+underflow expectations. `check_fma_flags.py --reference FLAGS --receipt RECEIPT
+--output NEW_JSON` compares those with target flags. The 45 cases that round a
+tiny exact result to the smallest normal value exclude **only FE_UNDERFLOW**
+from comparison: before/after-rounding tininess policies differ by architecture.
+Their values and remaining flags are still checked. Signaling NaNs and invalid
+infinity operations are checked separately by `runtime_math.cpp`.
+
+Compile runtime_math.cpp normally as C++17 with -O2 -frounding-math
+-ffp-contract=off (without -fno-builtin). It checks std/global/builtin/function-
+pointer entry points, fused cancellation and exact-overflow avoidance, subnormal
+exponents, signaling NaNs, flags and environment restoration. fenv.cpp adds the
+existing pthread rounding-isolation checks. Link with g++'s default library
+order; verify GLIBCXX_SAMSUNG_MATH_1.0 imports and actual LD_DEBUG providers.
+Plain C/gcc consumers continue using the unchanged firmware-compatible libm.
+
+The legacy control is intentionally expected to fail the expanded comparison.
+Preserve that receipt; a nonzero flag-check status is evidence rather than an
+instruction to loosen the criteria. Prototype results are diagnostics; release
+results must use the final source-built compiler and matching private runtime.

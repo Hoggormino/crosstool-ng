@@ -1,0 +1,28 @@
+{
+  "url": "https://git.musl-libc.org/git/musl",
+  "commit": "7813e9119eb5fe681b6750b8a033a0490bca0941",
+  "tree": "dc8444f8e5dfcc3a592dd62653d17a61f8d773a1",
+  "files": [
+    {
+      "path": "src/math/fma.c",
+      "sha256": "f3e328da492e4818f83737bab2b8b7d8cf281c4ce3730773c99ab8c7efc41dc7"
+    },
+    {
+      "path": "src/math/fmaf.c",
+      "sha256": "ce23bcb19c8bfef09cc11d909224be843be2c0512cc22ad2f111852c6a12aae1"
+    },
+    {
+      "path": "COPYRIGHT",
+      "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b"
+    }
+  ],
+  "license": "MIT (musl project license; retain notice)",
+  "adaptations": [
+    "C++ wrappers with the existing C ABI and noexcept declarations",
+    "memcpy bit extraction and GCC clz builtins in place of musl internal helpers",
+    "VFP rounding-sensitive double conversion of a signed 64-bit accumulator via two exact 32-bit conversions, avoiding fixed-rounding __aeabi_l2d",
+    "z+z for a nonfinite addend to quiet signaling NaNs",
+    "binary64 long-double forwarding",
+    "private opt-in libstdc++ integration and symbol version"
+  ]
+}
