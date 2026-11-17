@@ -132,7 +132,7 @@ into a target zero. The reference uses an exponential magnitude bound and
 independent directed MPFR phase signs instead. Side-of-one decisions also
 check that cosine is bounded away from the exponentially smaller correction.
 336 cases at saturation thresholds are cross-checked against full 4096-bit
-MPC evaluation, where its exponent range suffices. Existing 5,670-case broad
+MPC evaluation (`reference --mpc-only-4096`), where its exponent range suffices. Existing 5,670-case broad
 reference output remains byte-for-byte identical.
 
 For zero/nonfinite tangent cases, N3096 Annex G.6.2.6 preserves the zero

@@ -72,8 +72,10 @@ static int eval(const std::string& name,mpfr_ptr r,mpfr_ptr aux,mpfr_srcptr x,mp
 }
 using CUnary=int(*)(mpc_ptr,mpc_srcptr,mpc_rnd_t);
 static std::map<std::string,CUnary> cu={{"cacos",mpc_acos},{"casin",mpc_asin},{"catan",mpc_atan},{"cacosh",mpc_acosh},{"casinh",mpc_asinh},{"catanh",mpc_atanh},{"ccos",mpc_cos},{"csin",mpc_sin},{"ctan",mpc_tan},{"ccosh",mpc_cosh},{"csinh",mpc_sinh},{"ctanh",mpc_tanh},{"cexp",mpc_exp},{"clog",mpc_log},{"csqrt",mpc_sqrt},{"conj",mpc_conj},{"cproj",mpc_proj}};
-int main(){
- fprintf(stderr,"MPFR=%s MPC=%s; reference precision 256 bits, directed bounds checked after target conversion\n",mpfr_get_version(),mpc_get_version());
+int main(int argc,char**argv){
+ bool mpc_only=argc==2&&std::string(argv[1])=="--mpc-only-4096";
+ if(argc>1&&!mpc_only)return 2;
+ fprintf(stderr,"MPFR=%s MPC=%s; %s; directed bounds checked after target conversion\n",mpfr_get_version(),mpc_get_version(),mpc_only?"MPC-only fixed precision 4096 bits":"reference precision 256/1024/4096 bits with target saturation bounds");
  unsigned id,p,m;char fn[32];unsigned long long ux,uy,uz,uw;long n;
  while(scanf("%u %31s %u %u %llx %llx %llx %llx %ld",&id,fn,&p,&m,&ux,&uy,&uz,&uw,&n)==9){
   std::string name(fn);mpfr_rnd_t rm=mode(m);bool ok=false;uint64_t expected=0,extra=0;long long integer=0;int precision_used=0;
@@ -84,15 +86,16 @@ int main(){
    else if(x==0)expected=(std::signbit(y)?sign:0)|1;
    else expected=(y>x)==(x>0)?ux+1:ux-1;
    ok=true;
-  }else if((name=="ctanh"&&value(ux,p)==0&&!std::isfinite(value(uy,p)))
-          ||(name=="ctan"&&value(uy,p)==0&&!std::isfinite(value(ux,p)))){
+  }else if(!mpc_only&&((name=="ctanh"&&value(ux,p)==0&&!std::isfinite(value(uy,p)))
+          ||(name=="ctan"&&value(uy,p)==0&&!std::isfinite(value(ux,p))))){
    // N3096 G.6.2.6 and ctan(z)=-i*ctanh(i*z) preserve the zero
    // component here; MPC 1.4.1 instead returns two NaNs.
    uint64_t qnan=p==0?0x7fc00000:0x7ff8000000000000ull;
    expected=name=="ctanh"?ux:qnan;extra=name=="ctanh"?qnan:uy;ok=true;
-  }else if(saturated_complex(name,p,m,ux,uy,expected,extra)){
+  }else if(!mpc_only&&saturated_complex(name,p,m,ux,uy,expected,extra)){
    ok=true;precision_used=256;
   }else for(int prec: {256,1024,4096}){
+   if(mpc_only&&prec!=4096)continue;
    mpfr_t x,y,z,w,lo,hi,alo,ahi;mpfr_inits2(prec,x,y,z,w,lo,hi,alo,ahi,(mpfr_ptr)0);
    mpfr_set_d(x,value(ux,p),MPFR_RNDN);mpfr_set_d(y,value(uy,p),MPFR_RNDN);mpfr_set_d(z,value(uz,p),MPFR_RNDN);mpfr_set_d(w,value(uw,p),MPFR_RNDN);
    if(name[0]=='c'&&name!="cos"&&name!="cosh"&&name!="ceil"&&name!="cbrt"&&name!="copysign"||name=="conj"){
