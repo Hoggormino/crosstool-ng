@@ -114,3 +114,39 @@ linker silently finding an older library even when the process later loads a
 new private runtime. The versioned symlink (.so.6) alone is insufficient for
 an explicit -L diagnostic directory; link-time -lstdc++ needs libstdc++.so too.
 The normal toolchain install creates both.
+
+## Private complex correction
+
+`make_complex_cases.py` produces 30,936 deterministic cases (seed 0x1136c017)
+for cacos/cacosh/casin/casinh/catan/catanh/ctan/ctanh, at all three precisions.
+Cases cover signed branch approaches, minimum normal/subnormal components,
+ordinary and wide-exponent seeded inputs, poles, scaling crossovers and
+nonfinite values. Branch tests include all four rounding modes. The comparison
+budget remains 16 ULP per component or 16 epsilon times complex magnitude;
+finite zero signs remain strict. This is an engineering policy, not a claim
+of correctly rounded complex transcendentals or exhaustive conformance.
+
+MPC 1.4.1 is supplemented in two documented cases. For finite saturated tan/
+tanh, the small component can exceed MPC's exponent range before conversion
+into a target zero. The reference uses an exponential magnitude bound and
+independent directed MPFR phase signs instead. Side-of-one decisions also
+check that cosine is bounded away from the exponentially smaller correction.
+336 cases at saturation thresholds are cross-checked against full 4096-bit
+MPC evaluation, where its exponent range suffices. Existing 5,670-case broad
+reference output remains byte-for-byte identical.
+
+For zero/nonfinite tangent cases, N3096 Annex G.6.2.6 preserves the zero
+component; MPC instead gives two NaNs. The ctan counterpart follows its
+rotation identity. Annex G also explicitly leaves selected infinity signs
+unspecified when another input component is NaN. analyze.py accepts only those
+sign alternatives, retaining infinity categories and every finite-input,
+signed-zero and accuracy check. Sources: https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3096.pdf
+(G.6.2.2/G.6.2.6), plus the inverse rotation identities in the pinned FreeBSD
+sources. No ABI gate is altered.
+
+complex_contract.cpp independently checks 240 branch, tiny-component, rounding-
+restoration, incoming-flag, nonfinite and GNU C ABI properties. Compile normally
+as C++17 with -O2 -frounding-math -ffp-contract=off. It forces all 24 complex
+imports, which check_complex_providers.py requires to bind at
+GLIBCXX_SAMSUNG_MATH_1.1 to matching private libstdc++.so.6. The existing eight
+scalar corrections retain their GLIBCXX_SAMSUNG_MATH_1.0 version.

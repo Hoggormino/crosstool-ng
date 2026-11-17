@@ -20,6 +20,38 @@ static std::map<std::string,Binary> binary={{"atan2",mpfr_atan2},{"pow",mpfr_pow
 static double value(uint64_t u,int p){if(p==0){uint32_t v=u;float x;memcpy(&x,&v,4);return x;}double x;memcpy(&x,&u,8);return x;}
 static uint64_t bits(mpfr_srcptr x,int p,mpfr_rnd_t rm){if(p==0){float v=mpfr_get_flt(x,rm);uint32_t u;memcpy(&u,&v,4);return u;}double v=mpfr_get_d(x,rm);uint64_t u;memcpy(&u,&v,8);return u;}
 static mpfr_rnd_t mode(int m){return m==1?MPFR_RNDD:m==2?MPFR_RNDU:m==3?MPFR_RNDZ:MPFR_RNDN;}
+// MPC has a finite exponent range even when its significand precision grows.
+// For very large finite tan/tanh arguments, use a target saturation bound and
+// independent MPFR phase signs instead of accepting a lost signed component.
+static bool saturated_complex(const std::string& name,unsigned p,unsigned m,
+                              uint64_t ux,uint64_t uy,uint64_t& real,uint64_t& imag){
+ if(name!="ctanh"&&name!="ctan")return false;
+ double x=value(ux,p),y=value(uy,p);if(!std::isfinite(x)||!std::isfinite(y))return false;
+ double dom=name=="ctanh"?x:y,phase=name=="ctanh"?y:x;
+ if(std::fabs(dom)<=(p==0?100.:800.))return false;
+ mpfr_t t,sl,sh,cl,ch,bound;mpfr_inits2(256,t,sl,sh,cl,ch,bound,(mpfr_ptr)0);
+ mpfr_set_d(t,phase,MPFR_RNDN);mpfr_mul_2ui(t,t,1,MPFR_RNDN);
+ mpfr_sin(sl,t,MPFR_RNDD);mpfr_sin(sh,t,MPFR_RNDU);
+ mpfr_cos(cl,t,MPFR_RNDD);mpfr_cos(ch,t,MPFR_RNDU);
+ // The small component is bounded by 4*exp(-2*abs(dom)), below half
+ // the target's least subnormal. Bound the cosine away from the exponentially
+ // smaller correction too, so its sign determines the side of +/-1.
+ mpfr_set_ui_2exp(bound,1,p==0?-200:-2000,MPFR_RNDU);
+ if(mpfr_signbit(sl)!=mpfr_signbit(sh)||mpfr_signbit(cl)!=mpfr_signbit(ch)
+    ||mpfr_cmpabs(cl,bound)<=0||mpfr_cmpabs(ch,bound)<=0){
+  fprintf(stderr,"ambiguous saturation phase\n");exit(4);
+ }
+ uint64_t sign=p==0?0x80000000ull:0x8000000000000000ull;
+ bool neg=mpfr_signbit(sl);uint64_t small=neg?sign:0;
+ if(phase!=0&&((m==1&&neg)||(m==2&&!neg)))small|=1;
+ uint64_t big=p==0?0x3f800000ull:0x3ff0000000000000ull;
+ bool nd=std::signbit(dom);if(nd)big|=sign;
+ bool delta_negative=(mpfr_signbit(cl)==0)^nd;
+ if((m==1&&delta_negative)||(m==2&&!delta_negative)||(m==3&&delta_negative!=nd))
+  big+=(!delta_negative)!=nd?1:-1;
+ real=name=="ctanh"?big:small;imag=name=="ctanh"?small:big;
+ mpfr_clears(t,sl,sh,cl,ch,bound,(mpfr_ptr)0);return true;
+}
 static int eval(const std::string& name,mpfr_ptr r,mpfr_ptr aux,mpfr_srcptr x,mpfr_srcptr y,mpfr_srcptr z,long n,mpfr_rnd_t rm){
  if(unary.count(name))return unary[name](r,x,rm);
  if(binary.count(name))return binary[name](r,x,y,rm);
@@ -52,6 +84,14 @@ int main(){
    else if(x==0)expected=(std::signbit(y)?sign:0)|1;
    else expected=(y>x)==(x>0)?ux+1:ux-1;
    ok=true;
+  }else if((name=="ctanh"&&value(ux,p)==0&&!std::isfinite(value(uy,p)))
+          ||(name=="ctan"&&value(uy,p)==0&&!std::isfinite(value(ux,p)))){
+   // N3096 G.6.2.6 and ctan(z)=-i*ctanh(i*z) preserve the zero
+   // component here; MPC 1.4.1 instead returns two NaNs.
+   uint64_t qnan=p==0?0x7fc00000:0x7ff8000000000000ull;
+   expected=name=="ctanh"?ux:qnan;extra=name=="ctanh"?qnan:uy;ok=true;
+  }else if(saturated_complex(name,p,m,ux,uy,expected,extra)){
+   ok=true;precision_used=256;
   }else for(int prec: {256,1024,4096}){
    mpfr_t x,y,z,w,lo,hi,alo,ahi;mpfr_inits2(prec,x,y,z,w,lo,hi,alo,ahi,(mpfr_ptr)0);
    mpfr_set_d(x,value(ux,p),MPFR_RNDN);mpfr_set_d(y,value(uy,p),MPFR_RNDN);mpfr_set_d(z,value(uz,p),MPFR_RNDN);mpfr_set_d(w,value(uw,p),MPFR_RNDN);

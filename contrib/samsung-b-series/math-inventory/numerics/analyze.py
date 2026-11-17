@@ -55,7 +55,16 @@ for c in cases:
                     if gc!=0:problems.append('expected_nan')
                     continue
                 if wc==1 or gc==1:
-                    if got!=want:problems.append('infinity_or_overflow_value')
+                    if got!=want:
+                        # Annex G leaves only these infinity signs unspecified.
+                        # Still reject infinity from finite inputs and retain
+                        # every signed-zero and finite accuracy check.
+                        x,y=[value(u,p) for u in c['bits'][:2]]
+                        optional=(fn=='casinh' and component==0 and math.isnan(x) and math.isinf(y)
+                                  or fn=='casin' and component==1 and math.isinf(x) and math.isnan(y)
+                                  or fn=='cacos' and component==1 and math.isinf(x) and math.isnan(y))
+                        if optional and gc==wc==1:advisories.append('annex_g_unspecified_infinity_sign')
+                        else:problems.append('infinity_or_overflow_value')
                     continue
                 if gc==0:problems.append('unexpected_nan');continue
                 if got==want:continue
