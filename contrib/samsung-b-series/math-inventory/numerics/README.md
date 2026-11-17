@@ -105,3 +105,12 @@ The legacy control is intentionally expected to fail the expanded comparison.
 Preserve that receipt; a nonzero flag-check status is evidence rather than an
 instruction to loosen the criteria. Prototype results are diagnostics; release
 results must use the final source-built compiler and matching private runtime.
+
+`check_runtime_providers.py --binary RUNTIME_MATH --bindings ENTRY_BINDINGS
+--output NEW_JSON` requires all eight corrected imports to use the private
+symbol version and their observed providers to be private libstdc++.so.6.
+Run it on the entry-point probe, which includes feupdateenv. This catches a
+linker silently finding an older library even when the process later loads a
+new private runtime. The versioned symlink (.so.6) alone is insufficient for
+an explicit -L diagnostic directory; link-time -lstdc++ needs libstdc++.so too.
+The normal toolchain install creates both.
