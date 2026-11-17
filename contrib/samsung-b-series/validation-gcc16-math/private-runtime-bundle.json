@@ -1,0 +1,11 @@
+{
+  "profile": "GCC 16.2 TV UI math-header compatibility",
+  "files": {
+    "libatomic.so.1": "5a3f5e149d621686c190a1cda491256dcaf8a3b0bde8c98e166c2132f94dc8e2",
+    "libgcc_s.so.1": "01937303d196cf0f86ad32f7b7ef7647d8773778c1389bcea369929cbed5bec9",
+    "libstdc++.so.6": "dc2cf726938fcabcf3c0437a16912b0de6e8167831488e476cc62d8fd23babc2"
+  },
+  "limitations": "Not full numerical conformance. See docs/sdk-gcc16-math.md. Rebuild consumers; do not mix prior modern runtimes.",
+  "system_libraries_replaced": false,
+  "tv_deployed": false
+}

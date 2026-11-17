@@ -1,0 +1,28 @@
+{
+  "scope": "Observed C++20/23 atomic/semaphore tests only; not whole-kernel emulation.",
+  "runs": [
+    {
+      "receipt": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/validation-complete/probes/recent-rebuilt.json",
+      "trace": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/validation-complete/probes/cxx23-probe.recent-rebuilt.bindings",
+      "trace_sha256": "e7faeb7bccc8c705c4eec98e6056db5fb1cf918bd387a4382fc64297882a6971",
+      "futex_operations": {
+        "FUTEX_WAKE": 4,
+        "FUTEX_WAIT": 4
+      },
+      "relative_timed_waits": 2,
+      "errors": []
+    },
+    {
+      "receipt": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/validation-complete/probes/recent-reference.json",
+      "trace": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/validation-complete/probes/cxx23-probe.recent-reference.bindings",
+      "trace_sha256": "f393c31ef243e412898840972e75f87b70b41da208829ae9c22b7b26debf285b",
+      "futex_operations": {
+        "FUTEX_WAKE": 4,
+        "FUTEX_WAIT": 5
+      },
+      "relative_timed_waits": 2,
+      "errors": []
+    }
+  ],
+  "errors": []
+}

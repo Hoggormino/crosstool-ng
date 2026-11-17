@@ -1,0 +1,98 @@
+[
+  {
+    "name": "c99-public",
+    "command": [
+      "/old/bin/arm-samsung-linux-gnueabi-gcc",
+      "-std=c99",
+      "-D_GNU_SOURCE",
+      "-D_GLIBCXX_INCLUDE_NEXT_C_HEADERS",
+      "-isystem",
+      "/results/header-check-v2/include",
+      "-fsyntax-only",
+      "/results/header-check-v2/c99-public.c"
+    ],
+    "exit": 0,
+    "expected_success": true,
+    "passed": true
+  },
+  {
+    "name": "cxx98-legacy",
+    "command": [
+      "/old/bin/arm-samsung-linux-gnueabi-g++",
+      "-std=c++98",
+      "-D_GNU_SOURCE",
+      "-D_GLIBCXX_INCLUDE_NEXT_C_HEADERS",
+      "-isystem",
+      "/results/header-check-v2/include",
+      "-fsyntax-only",
+      "/results/header-check-v2/cxx98-legacy.cpp"
+    ],
+    "exit": 0,
+    "expected_success": true,
+    "passed": true
+  },
+  {
+    "name": "cxx17-public",
+    "command": [
+      "/old/bin/arm-samsung-linux-gnueabi-g++",
+      "-std=c++17",
+      "-D_GNU_SOURCE",
+      "-D_GLIBCXX_INCLUDE_NEXT_C_HEADERS",
+      "-isystem",
+      "/results/header-check-v2/include",
+      "-fsyntax-only",
+      "/results/header-check-v2/cxx17-public.cpp"
+    ],
+    "exit": 0,
+    "expected_success": true,
+    "passed": true
+  },
+  {
+    "name": "cxx17-no-obsolete-isinf",
+    "command": [
+      "/old/bin/arm-samsung-linux-gnueabi-g++",
+      "-std=c++17",
+      "-D_GNU_SOURCE",
+      "-D_GLIBCXX_INCLUDE_NEXT_C_HEADERS",
+      "-isystem",
+      "/results/header-check-v2/include",
+      "-fsyntax-only",
+      "/results/header-check-v2/cxx17-no-obsolete-isinf.cpp"
+    ],
+    "exit": 1,
+    "expected_success": false,
+    "passed": true
+  },
+  {
+    "name": "cxx17-no-obsolete-isnan",
+    "command": [
+      "/old/bin/arm-samsung-linux-gnueabi-g++",
+      "-std=c++17",
+      "-D_GNU_SOURCE",
+      "-D_GLIBCXX_INCLUDE_NEXT_C_HEADERS",
+      "-isystem",
+      "/results/header-check-v2/include",
+      "-fsyntax-only",
+      "/results/header-check-v2/cxx17-no-obsolete-isnan.cpp"
+    ],
+    "exit": 1,
+    "expected_success": false,
+    "passed": true
+  },
+  {
+    "name": "internal-libc-long-double-suppressed",
+    "command": [
+      "/old/bin/arm-samsung-linux-gnueabi-gcc",
+      "-std=c99",
+      "-D_GNU_SOURCE",
+      "-isystem",
+      "/results/header-check-v2/include",
+      "-E",
+      "-P",
+      "-x",
+      "c",
+      "-"
+    ],
+    "passed": true
+  }
+]

@@ -1,0 +1,987 @@
+{
+  "receipt": "build-gcc16-math-final/numerics-ui/reference.json",
+  "case_count": 5184,
+  "within_comparison_policy": true,
+  "failed_case_count": 0,
+  "failure_counts": {},
+  "fenv_findings": [],
+  "functions": {
+    "acos:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "acos:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "acos:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "asin:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "asin:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "asin:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "atan:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "atan:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "atan:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "atan2:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "atan2:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "atan2:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "ceil:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "ceil:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "ceil:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "copysign:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "copysign:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "copysign:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "cos:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "cos:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "cos:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "exp:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "exp:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "exp:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "exp2:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "exp2:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "exp2:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "expm1:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "expm1:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "expm1:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "fabs:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fabs:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fabs:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "floor:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "floor:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "floor:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "fmax:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fmax:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fmax:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fmin:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fmin:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fmin:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fmod:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fmod:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "fmod:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "hypot:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "hypot:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "hypot:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log1p:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log1p:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log1p:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log2:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log2:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "log2:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "nextafter:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "nextafter:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "nextafter:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "pow:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "pow:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "pow:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "remainder:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "remainder:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 18,
+        "16": 46
+      }
+    },
+    "remainder:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 54,
+        "0": 10
+      }
+    },
+    "round:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "round:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "round:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "sin:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "sin:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "sin:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "sqrt:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "sqrt:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "sqrt:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "tan:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 1,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "tan:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "tan:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "16": 64
+      }
+    },
+    "trunc:0:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "trunc:1:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    },
+    "trunc:2:mode0": {
+      "cases": 64,
+      "failed": 0,
+      "max_ulp": 0,
+      "advisories": 0,
+      "errno_counts": {
+        "0": 64
+      },
+      "flag_counts": {
+        "0": 64
+      }
+    }
+  },
+  "failures": [],
+  "advisories": [],
+  "policy": "Engineering comparison: exact basic operations; 4 ULP real transcendental, 8 ULP gamma, 16 ULP or 16*epsilon*complex-magnitude complex components. These budgets are not a claim of standard-mandated accuracy. NaN payloads/sign ignored; fmin/fmax zero-sign choices advisory. No TV kernel/hardware validation."
+}

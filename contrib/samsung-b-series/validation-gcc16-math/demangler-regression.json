@@ -1,0 +1,7 @@
+{
+  "unknown_type_rejected_safely": true,
+  "known_cpp_version_export": true,
+  "unknown_type_remains_local": true,
+  "unknown_symbol": "_Z1fM1CKDoFivE",
+  "limitation": "This safety fix does not add demangling of new C++ type encodings."
+}

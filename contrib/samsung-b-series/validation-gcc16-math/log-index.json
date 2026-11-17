@@ -1,0 +1,11 @@
+{
+  "full_index": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/full-log-index.json",
+  "sha256": "34921ada3b4093db3a26ec8d35787144f78e1f80f6eda6571fc0706d1b2796bd",
+  "files": 2581,
+  "source_build": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/logs/build-v1.log",
+  "complete_core_validation": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/logs/validation-complete.log",
+  "earlier_wrapper_failure": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/validation/rmlui-build.log",
+  "raw_api_inventory": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/math-inventory/inventory.json",
+  "numerical_sources": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/numerical-vectors",
+  "ui_sources": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/ui-vectors"
+}

@@ -1,0 +1,584 @@
+{
+  "sources": [
+    {
+      "name": "binutils",
+      "url": "https://sourceware.org/git/binutils.git",
+      "commit": "138bc74f170158c175024317a9ccee37aa7cf617",
+      "tree": "5a90a09425544931548cc8de6b0d2391badb67bb",
+      "archive": "binutils-138bc74f170158c175024317a9ccee37aa7cf617.tar",
+      "sha256": "5ff133dd78f4dbce84dec370bacd86802b1631f2d9a2c10583301c5076fd84e4"
+    },
+    {
+      "name": "glibc",
+      "url": "https://sourceware.org/git/glibc.git",
+      "commit": "371f84a4dca19f1416c3f28db9980539d2f62905",
+      "tree": "54dbb78b9b99c131340f95eab844f4f83fb5d3aa",
+      "archive": "glibc-371f84a4dca19f1416c3f28db9980539d2f62905.tar",
+      "sha256": "ec513e3ce3d028bb4c23e2f1e96de55e579939c5d07ddced268a0c4f56079d45"
+    },
+    {
+      "name": "glibc-ports",
+      "url": "https://sourceware.org/git/glibc-ports.git",
+      "commit": "908afa831ca4403a689304a86e2014b4baa66366",
+      "tree": "b4820db599b0f60aea688472de218ab5454d5e07",
+      "archive": "glibc-ports-908afa831ca4403a689304a86e2014b4baa66366.tar",
+      "sha256": "4fba23cccc498ad4de9c047b96a24cba012415cf9e733500d557dd2766afc8a4"
+    }
+  ],
+  "oe": {
+    "oe_commit": "e9fcef71f94fb4e76c6e8d992b7936f8d5fa8632",
+    "inputs": [
+      {
+        "package": "binutils",
+        "order": 0,
+        "path": "oe/oe/recipes/binutils/binutils-2.17.50/better_file_error.patch",
+        "sha256": "56fdf50e5f6031b35c0cadbad21d015f581f66899667c32a1b58d444acd69f80",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "binutils",
+        "order": 1,
+        "path": "oe/oe/recipes/binutils/binutils-2.17.50/ld_makefile.patch",
+        "sha256": "0ff17bc8b37b36dc1fc23057ac6d53a84ca615ca5797c03eb135bd3c7a571f6d",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "binutils",
+        "order": 2,
+        "path": "oe/oe/recipes/binutils/binutils-2.17.50/detect-makeinfo.patch",
+        "sha256": "6bfa16754e74ceb39061a2786bfb02a592d49486ee68b6c7a2783a21d8e940c4",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "binutils",
+        "order": 3,
+        "path": "oe/oe/recipes/binutils/binutils-2.17.50/texi_fixes.patch",
+        "sha256": "0f455fda0f21d518f8c8a7526dd69a01bfa25e2d9c724b810ef5e8851e61429e",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "binutils",
+        "order": 4,
+        "path": "oe/oe/recipes/binutils/binutils-2.17.50/fix-undef-behavior.patch",
+        "sha256": "8c32089bd010ddcf3f4cc1a472f2f932f77f1a723fafb04f96dbf362e9957c4f",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "binutils",
+        "order": 5,
+        "path": "oe/oe/recipes/binutils/binutils-2.17.50/m4.patch",
+        "sha256": "bcbd76a7b449f008cb6bb2f6e285c2fc6e3034a88dea95d972aff6ab0645a606",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 0,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/arm-memcpy.patch",
+        "sha256": "0a9b7c0cfbe313a444a375fbf0b3f84155edd79b6ae028589139843c8ce916b0",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 1,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/arm-longlong.patch",
+        "sha256": "3a2e117ea0e2b80805c25c239de9b8c16dd5bb2c2e0f62a0cdce993abb3ccaa9",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 2,
+        "path": "oe/oe/recipes/glibc/files/fhs-linux-paths.patch",
+        "sha256": "93022d9f8794c56567318affbda9b5b62365bcb9637c104b2b5f3b7774b1b75f",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 3,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/dl-cache-libcmp.patch",
+        "sha256": "87dcf07a1d533ac61de1388e464761baa3cf845200347cc278a8d551cb4db660",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 4,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/nptl-crosscompile.patch",
+        "sha256": "43ec2fe77345b54da3b38b7bd5ddbe9754de76f91c9bbc82687d907529511d44",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 5,
+        "path": "oe/oe/recipes/glibc/files/glibc-2.5-local-dynamic-resolvconf.patch",
+        "sha256": "2b027cfc68e991216594f81fa5fe1661b13e9bd891f8901d616bd54dc0758941",
+        "strip": 0,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 6,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/glibc-check_pf.patch",
+        "sha256": "e7190d8d08ca7a486644490805413bac2237b8f738db4d14ee0c0df5fa167b9a",
+        "strip": 0,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 7,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/zecke-sane-readelf.patch",
+        "sha256": "771dd71550081a15a7d6b40aa4f385a81aa13fe782e0bc94956b43522f771495",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 8,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/ldd-unbash.patch",
+        "sha256": "9e9f6de925cd9c4fb20d7e38c445b381930ac9b3e581266a2ffa6e9c579a8f1b",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 9,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/generic-bits_select.h",
+        "sha256": "5fcb5a1dd05a5bf54f60ee33663a6bc8f61176c88496f0c65b1f376d70d3c9b8",
+        "strip": 1,
+        "patch": false
+      },
+      {
+        "package": "glibc",
+        "order": 10,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/generic-bits_types.h",
+        "sha256": "ff129f881c57d23424eb145b30b4ef8f800a47fe8903e3c5134412fc32c05cb1",
+        "strip": 1,
+        "patch": false
+      },
+      {
+        "package": "glibc",
+        "order": 11,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/generic-bits_typesizes.h",
+        "sha256": "5e4ca47ca068a358b476280fdb23e28ad9c65503b2efdb340bffff423f6dbff0",
+        "strip": 1,
+        "patch": false
+      },
+      {
+        "package": "glibc",
+        "order": 12,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/generic-bits_time.h",
+        "sha256": "6c20d95c6d075e0f4b43b877d8d4fd5ecbf9d7f51817f9c8d4010e280302c663",
+        "strip": 1,
+        "patch": false
+      },
+      {
+        "package": "glibc",
+        "order": 13,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/etc/ld.so.conf",
+        "sha256": "7577e8182e7c0aebc57ac9f5675ea57491a7c97bb0132fdf8f66c8addd7e877c",
+        "strip": 1,
+        "patch": false
+      },
+      {
+        "package": "glibc",
+        "order": 14,
+        "path": "oe/oe/recipes/glibc/files/generate-supported.mk",
+        "sha256": "1c701b6ca01f71301fa30550a4bc2d89471cc9f966d996af4d1dab5ce4089489",
+        "strip": 1,
+        "patch": false
+      },
+      {
+        "package": "glibc",
+        "order": 15,
+        "path": "oe/oe/recipes/glibc/files/glibc-2.6.1-RTLD_SINGLE_THREAD_P-1.patch",
+        "sha256": "af94b925dfe5ff3e2af43380e75fe8ecfe6221ba02f9fe64c6720b1aa0d9dd1d",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 16,
+        "path": "oe/oe/recipes/glibc/files/glibc-2.6.1-use-short-for-fnstsw.patch",
+        "sha256": "c143cbdba480ab20130bb55b22ed118c228ed276ec39d0bf896252071dd81f49",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 17,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/glibc-use-isystem-include-fixed.patch",
+        "sha256": "99d21025c22a9c329824bea42fec9102de8777c21507a6fb31b558da1f1574cf",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 18,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/glibc-arm-no-asm-page.patch",
+        "sha256": "5161ed3f95f513dc6d8c36837906ce4846aa564cf08271a68034a33fcb778823",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 19,
+        "path": "oe/oe/recipes/glibc/files/march-i686.patch",
+        "sha256": "505d3ed345c946e38542a87d42b9ef759c4ae0f0642229d2892e65d39aafef0f",
+        "strip": 0,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 20,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/fix-compile-fs-noncase.patch",
+        "sha256": "35eae04f83fa76088501fea7d49c5b74bfba7e9be2b1644170f5f877b275d47e",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 21,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/fixed-detection.patch",
+        "sha256": "21d2c75ad0104eba40d3b229a284877a7d43c18a6ded16799930a35f0680ce18",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 22,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/fixed-manual.patch",
+        "sha256": "c9975a7e3ba8d5e2cb21c88c0f1766449b2518053faa1f01daada7956342d317",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 23,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/stack_size.patch",
+        "sha256": "0b9d004f67350433849b8ecda04480eeeb3a88a64d0c4836afec2ec93990552c",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "glibc",
+        "order": 24,
+        "path": "oe/oe/recipes/glibc/glibc-2.5.90-9.0.9/selp-priority.patch",
+        "sha256": "b2761776bc149196a901c3bf2828dec7d52bba08d89b99b93d36058de8e0fa86",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "linux",
+        "order": 0,
+        "path": "oe/oe/recipes/linux-libc-headers/files/arm-syscall-define.patch",
+        "sha256": "91e10c4a27c76883eda6ec72ec7e617632d7c5f3ba316cd74cafd5b00d80cfb3",
+        "strip": 1,
+        "patch": true
+      },
+      {
+        "package": "linux",
+        "order": 1,
+        "path": "oe/oe/recipes/linux-libc-headers/files/fixed_makefile.patch",
+        "sha256": "7908c438eb70a22ab83ab2c0762252d10e4418bddf7677945b8754a034ac4a2c",
+        "strip": 1,
+        "patch": true
+      }
+    ],
+    "reference_inputs": [
+      {
+        "path": "reference/oe/conf/bitbake.conf",
+        "sha256": "97e6b1c52e297c5fcc294fe8a19028000514dd3a0bdc38737dcced476cbe6ee6"
+      },
+      {
+        "path": "reference/oe/conf/distro/include/glibc.inc",
+        "sha256": "b598adad98082963263c765d4bebb59bd621d5fa5e0407dd1b74427f310fa807"
+      },
+      {
+        "path": "reference/oe/conf/distro/include/sane-toolchain-glibc.inc",
+        "sha256": "9044ada47240694e039d258ffce92205df5c41e2be6837553985a301c6619042"
+      },
+      {
+        "path": "reference/oe/conf/distro/include/toolchain-samsung.inc",
+        "sha256": "cc877bebc2edc5f541b69f62b14eac0c0193052055832ccaf33dabf95b7bffbb"
+      },
+      {
+        "path": "reference/oe/conf/machine/include/tune-arm1136jf-s.inc",
+        "sha256": "23ba64b951c20ca8fdf8d6dc671e59562f4b4a24fe85d21d5e818e324c570cca"
+      },
+      {
+        "path": "reference/oe/conf/machine/ssdtv.conf",
+        "sha256": "2f48b1615ba8f34e4c1a1f6a7c0f8db9aaeb294a2aacfd48cc8a948e6e2e1042"
+      },
+      {
+        "path": "reference/oe/recipes/binutils/binutils-cross.inc",
+        "sha256": "20661922ef059fb9107a2662cd22974f7da945e9fb9bf13d4b4c0d58106f8732"
+      },
+      {
+        "path": "reference/oe/recipes/binutils/binutils-cross_2.17.50.bb",
+        "sha256": "152c0124f5596d8900244acb9a3aa1b458d84e1a3ff1ce09e65e8be20410995f"
+      },
+      {
+        "path": "reference/oe/recipes/binutils/binutils.inc",
+        "sha256": "7a5acd337e2e416a8894aa8f3f1a5bd21d5490c10435d375359de93324ba3660"
+      },
+      {
+        "path": "reference/oe/recipes/binutils/binutils_2.17.50.bb",
+        "sha256": "90f1046b0808e0c8eccae88147899a8847bcded9fad426a95b4db9dc80e51283"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-4.2.0-4.0.9.inc",
+        "sha256": "bac87280ad67d84ea5a5de9bd1b62f03f648ed877152a6a46f1e099065679fea"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-common.inc",
+        "sha256": "a1dc1e9ac92b7f3fae2ff323575a3252f983d0de391ddf537445b11971bba8a9"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-configure-common.inc",
+        "sha256": "f277bb20929195f22ced2712f504c9b50504003a8adf45080861aa24e5041cce"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-configure-cross.inc",
+        "sha256": "5b47586118c4cd83855abfeceae44756d2f69bd67ecaa7c681ab3187c9411fa8"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-configure-target.inc",
+        "sha256": "2812938bdaad82cec466870e93e0f9bbe9f652eea0b7bbf248819a90085940f7"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-cross-initial.inc",
+        "sha256": "09644993de1ce7d2b9e4a2d8bda749c1b186060cbdc91c190588607f7f9eba92"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-cross-initial_4.2.0-4.0.9.bb",
+        "sha256": "7b4fd2da3cfe746408a3804e6dd589ed3f8db311851e19186a20bc712853ed7f"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-cross-intermediate.inc",
+        "sha256": "9c85ba43be5520a1a043fa81e9ae966d494a7b9a73678f9e0b3617395d867edf"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-cross-intermediate_4.2.0-4.0.9.bb",
+        "sha256": "0d39c4621e5e4487ddad8c53f9f12aa0f49105897ee8fb53c34b8b5e8fc33366"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-cross.inc",
+        "sha256": "fe9a38b74c24fd74e35bebeb76d75d7781999ad5c30c6025219605b87c51a345"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-cross4.inc",
+        "sha256": "18eb2b8fcf1d897e1618aa49cffdf3233d71408032ba737576ab446f66131bda"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-cross_4.2.0-4.0.9.bb",
+        "sha256": "b7ecd029544171dd7301cbf8b72c3941c69876fe6bb68fea32f1e884b1e2ebec"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-package-cross.inc",
+        "sha256": "f0badb7eae6f3d2cac3c542444ff7a95c2a611dce90360aa350c9930370ccc65"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc-package-target.inc",
+        "sha256": "590f07c727346137f0cfaead81cea731af91be026054e0cefa7f71ec97343340"
+      },
+      {
+        "path": "reference/oe/recipes/gcc/gcc_4.2.0-4.0.9.bb",
+        "sha256": "54ab279e38636196093319b653d94ae952496197c747d0ee65dd39b8fee944ba"
+      },
+      {
+        "path": "reference/oe/recipes/glibc/glibc-initial.inc",
+        "sha256": "9eaea43b806efafa5b69ce3f61090b54e5337f8127b0ab04680cee030cc6af23"
+      },
+      {
+        "path": "reference/oe/recipes/glibc/glibc-initial_2.5.90-9.0.9.bb",
+        "sha256": "1652ba91ec4dba343a3a5db2116aa9a10f84aacb3efcebd29d2636b828379178"
+      },
+      {
+        "path": "reference/oe/recipes/glibc/glibc-options.inc",
+        "sha256": "457f6a569d7c2ea48affccb2e3e3acbf5bfc3ec3dc513d54dedf688af33892eb"
+      },
+      {
+        "path": "reference/oe/recipes/glibc/glibc-package.inc",
+        "sha256": "35d8c10c55e5996e183b34c7ecacc56525a2f85bff89a3befc96de247f3f4688"
+      },
+      {
+        "path": "reference/oe/recipes/glibc/glibc.inc",
+        "sha256": "1d491076579d131591bd1f3854762255999cb360fd880843ce78ac66c6c1493e"
+      },
+      {
+        "path": "reference/oe/recipes/glibc/glibc_2.5.90-9.0.9.bb",
+        "sha256": "fd395bac285497d95c17f5b079dafcbd0abfd4fecd8807e5d9cf2feb917099f2"
+      },
+      {
+        "path": "reference/oe/recipes/linux-libc-headers/linux-libc-headers.inc",
+        "sha256": "0d1049d1f74cc1847063eb6fb8941430778d51b009917b673a142fccf02a064b"
+      },
+      {
+        "path": "reference/oe/recipes/linux-libc-headers/linux-libc-headers_2.6.18.bb",
+        "sha256": "959a5b4078eea3fd05a6dbbf7aa9241e1a55ad38fc12182b5e76668f188d38a1"
+      },
+      {
+        "path": "reference/oe/recipes/gnu-config/gnu-config_git.bb",
+        "sha256": "d6b39e62212ea9ce0b0125897319c222f58cf7e33ade200851071accbb72767a"
+      },
+      {
+        "path": "reference/oe/recipes/gnu-config/files/gnu-configize.in",
+        "sha256": "b48543f72d717a8c07cf3b995175b3293c24dac9c9efad01b312321c0c809f07"
+      },
+      {
+        "path": "reference/oe/classes/libc-package.bbclass",
+        "sha256": "dc8d90fb4ef7d238cb1ef2a2a96cbe0655188c511aa11d11c8746b341399fb70"
+      }
+    ],
+    "gnu_config": {
+      "commit": "b576fa87c140b824466ef1638e945e87dc5c0343",
+      "origin": "OE gnu-config_git.bb, copied source bytes from the verified reference native helper package",
+      "files": [
+        {
+          "path": "reference/gnu-config-b576fa87/config.guess",
+          "sha256": "4bdec63f60b9ad86ac82c24df9b9b0537ac5c056a0effeed33923c807ea2983e",
+          "destinations": [
+            "binutils/config.guess",
+            "glibc/scripts/config.guess"
+          ]
+        },
+        {
+          "path": "reference/gnu-config-b576fa87/config.sub",
+          "sha256": "271f04d8318c0b96295862d04a1be40d4def13b2509608a80ce29c0ad852abb1",
+          "destinations": [
+            "binutils/config.sub",
+            "glibc/scripts/config.sub"
+          ]
+        }
+      ]
+    },
+    "post_build": {
+      "reference": "reference/oe/classes/libc-package.bbclass",
+      "rpc_headers": [
+        "bootparam_prot",
+        "nlm_prot",
+        "rstat",
+        "yppasswd",
+        "klm_prot",
+        "rex",
+        "sm_inter",
+        "mount",
+        "rusers",
+        "spray",
+        "nfs_prot",
+        "rquota",
+        "key_prot"
+      ],
+      "installed_configuration": "etc/ld.so.conf",
+      "locale_metadata": "generate-supported.mk plus original broken-locale exclusions",
+      "cleanup": [
+        "etc/rpc",
+        "usr/share/zoneinfo",
+        "usr/libexec/getconf"
+      ]
+    }
+  },
+  "linux": {
+    "version": "2.6.18",
+    "url": "https://cdn.kernel.org/pub/linux/kernel/v2.6/linux-2.6.18.tar.bz2",
+    "archive": "linux-2.6.18.tar.bz2",
+    "sha256": "c95280ff6c5d2a17788f7cc582d23ae8a9a7ba3f202ec6e4238eaadfce7c163d",
+    "glibc_minimum_kernel": "2.6.16"
+  },
+  "compatibility_patches": [
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0001-arm-vfpv2-spelling.patch",
+      "sha256": "55b92603790373dfa32a8deeb44ca70160f59449b71fb6017f34232a1f8c6bc8"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0002-arm-vmrs-vmsr-spellings.patch",
+      "sha256": "f9e5e10c3232e6c090e99b67b2b8d9274ebebb3ea4bd13785a9a27c4f23aebdb"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0003-arm-inst-directive.patch",
+      "sha256": "203b48df56f9cd9b01b4b8a8591147522cc0f31a22a150162fbc9876eee2d482"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0004-arm-vmov-parse-registers-first.patch",
+      "sha256": "92e04f302cc7b494e8879ca3f1cd55d1bb0e59a39c2c6ccccdad85fd15adbafa"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0005-standard-vfp-ual-semantics.patch",
+      "sha256": "4ac1e781ed1965c92e4fe36af105fae9771b0ede4fd5f6d0f45019724e23d015"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0006-retain-arm-exidx-during-section-gc.patch",
+      "sha256": "58f87fd3980540253a192b177b3d9aa1640e8f7db2428e481cb4a5aa49070eb3"
+    },
+    {
+      "package": "binutils",
+      "path": "patches/binutils/0007-demangler-member-null-check.patch",
+      "sha256": "b52338791796f8f1577db5839e88609acaa2d2507b3c6cd568dee4ddba986a32"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0001-accept-modern-gcc-version.patch",
+      "sha256": "3faa2390eea6a877a4855529df180ed7f5b7e2a4fd6b700b16aa6530fa882649"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0002-keep-asm-unwind-resume-pointer.patch",
+      "sha256": "d8a5e61674938dd06a59c0ec7881a7763f06c538476b5022198b7f78fe4ad6ac"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0003-selp-c-declarations.patch",
+      "sha256": "859c552da83b7eec1d337799740962cd13a45ac577c889f51ea7756daf030fa1"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0004-valid-c-feature-probes.patch",
+      "sha256": "c3ee10aa2a2aa12362ba0e61cd317d5a0b708be95f6abd93d39d57119e22f970"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0005-public-long-double-declarations.patch",
+      "sha256": "a27c6ddb6c8e871acc818d18dbaa53b8f0f6aa4d2681808e6207789c0a281c35"
+    },
+    {
+      "package": "glibc",
+      "path": "patches/glibc/0006-cxx11-classification-declarations.patch",
+      "sha256": "1c9c6dcf55afc4cc6d520d8bbaa4a7399c55438fce16b7c9b4a2656f8d675639"
+    },
+    {
+      "package": "linux",
+      "path": "patches/linux/0001-export-arm-procinfo.patch",
+      "sha256": "3d9ba07d15727b72afee09e3e792982ead45c8d41d806ba2cf960b319a054403"
+    },
+    {
+      "package": "linux",
+      "path": "patches/linux/0002-check-userspace-includes.patch",
+      "sha256": "237ff2153736f507b0b08deb1d9e9a9e13cac9d454c46382d221112542099599"
+    },
+    {
+      "package": "linux",
+      "path": "patches/linux/0003-futex-kernel-declarations.patch",
+      "sha256": "ab45ad961aa65d3dd442d14cc65d1fe7f1a7531b5f9d8adebc57e4fa8d8dca92"
+    }
+  ],
+  "prepared_trees": {
+    "binutils": "d5cda37656c4cc16c7292fd1d04d8d20981fe3febaae1289b60a5dfb13b75e17",
+    "glibc": "abbf1efcf9cd000e94ae708644614086daa224d4e923cc6d2d821fd82ebf8b05",
+    "linux": "67c741af5615c2e9f8e201976cb4dbe29d70baf69a36cf3b0b62fe2b988f5f2d"
+  }
+}

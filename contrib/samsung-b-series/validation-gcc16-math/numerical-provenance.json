@@ -1,0 +1,22 @@
+{
+  "reference_versions": "MPFR=4.2.2 MPC=1.4.1; reference precision 256 bits, directed bounds checked after target conversion",
+  "code_files": {
+    "README.md": "8ce86087a3c821f24bdd83e6c868abc04537734cb1aa1b2a527793d450419631",
+    "analyze.py": "56aa6f1be5511a882412c8fd5d6f12f2c28f89ae376d175b05d79eea9debff36",
+    "check_reference.py": "bc6a34185db17119417f2c8312ee826945894f639103b22208eb10b5fc45400b",
+    "fenv.cpp": "a085153e7980e91e4b35fec45f99592abb709f7772a6566ac6705ec2778fe0db",
+    "make_cases.py": "de4a93fee34292da73ba72add753e845146d6354b571e341d67bef7f50c82a6b",
+    "make_runner.py": "b6de80aac7170c18fea406bfbb9c4e35b94ff0ede41d043ae53c422e0dc4926b",
+    "make_ui_cases.py": "2cfbdd2ff4f67970046d18fa172c7f0452bdf1de3e3d5c9907e923e2f40dd411",
+    "projection.cpp": "7941bd7805f2e214b953ce72a7f928489b3953a73053a2eff878e82fe125af5e",
+    "reference.cpp": "bd2126a725e461072d9a9b8fb792c8849174479ef40028ddd40b48fe834b29f4",
+    "run_cases.py": "9f4585e928b0fd6abc4444ca8ca18f8ddad992e1cb4c473d98026dc7c453d08d"
+  },
+  "edge_inputs_sha256": "5c466df18a85a706f74ccdfe69e72eb7251e74e0ff8de8ba91a4803e54a9e5c1",
+  "edge_reference_sha256": "ca10963c4a8ec62a8b9b2b60d9bfa869be5dd0db5254717338d2ca4e415ba43c",
+  "ui_inputs_sha256": "91d3e9548e00ae4d54f9c7a8aae8564a54c9d94c16965b048e3c8079879ab7b8",
+  "ui_reference_sha256": "7ec6250658afee52642f3b4ff289ad19edd9263c1adb7e9ef26a9963f110fd7c",
+  "host_reference_binary_sha256": "207a06af4d1fd6615e301867db77b219509786c6632e8f85ac8ce58d5215b59d",
+  "reference_scope": "MPFR/MPC host-only directed bounds; no target reference-library dependency.",
+  "image_id": "sha256:00bfd6fdb967da28b6d19c6e0a128b90f7be6f24422b4b57879a46beab3b736e"
+}

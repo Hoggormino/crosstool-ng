@@ -1,0 +1,337 @@
+{
+  "target_c_abi": [
+    {
+      "file": "libc.so.6",
+      "export_sets_equal": true,
+      "added": [],
+      "removed": []
+    },
+    {
+      "file": "libm.so.6",
+      "export_sets_equal": true,
+      "added": [],
+      "removed": []
+    },
+    {
+      "file": "libpthread.so.0",
+      "export_sets_equal": true,
+      "added": [],
+      "removed": []
+    },
+    {
+      "file": "ld-linux.so.3",
+      "export_sets_equal": true,
+      "added": [],
+      "removed": []
+    }
+  ],
+  "private_cxx_abi": [
+    {
+      "file": "libstdc++.so.6",
+      "added": [
+        [
+          "_ZGIW3std@@GLIBCXX_3.4.35",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "_ZGIW3stdW6compat@@GLIBCXX_3.4.35",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "acosl@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "asinl@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "atan2l@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "atanl@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "ceill@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "coshl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "cosl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "expl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "floorl@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "fmodl@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "frexpl@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "hypotl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "ldexpl@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "log10l@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "logl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "modfl@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "powl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "sinhl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "sinl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "sqrtl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "tanhl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "tanl@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ]
+      ],
+      "removed": [
+        [
+          "acosl@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "asinl@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "atan2l@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "atanl@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "ceill@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "coshl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "cosl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "expl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "floorl@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "fmodl@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "frexpl@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "hypotl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "ldexpl@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "log10l@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "logl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "modfl@@GLIBCXX_3.4.3",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "powl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "sinhl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "sinl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "sqrtl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "tanhl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ],
+        [
+          "tanl@@GLIBCXX_3.4",
+          "FUNC",
+          "GLOBAL",
+          "DEFAULT"
+        ]
+      ],
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ]
+    },
+    {
+      "file": "libgcc_s.so.1",
+      "added": [],
+      "removed": [],
+      "required_versions": [
+        "GLIBC_2.4"
+      ]
+    },
+    {
+      "file": "libatomic.so.1",
+      "added": [],
+      "removed": [],
+      "required_versions": [
+        "GLIBC_2.4"
+      ]
+    }
+  ],
+  "integration_rule": "Rebuild the TV UI process and modern objects; use its matching private runtime bundle. Existing SDKs/runtimes are preserved."
+}

@@ -1,0 +1,161 @@
+{
+  "framework_base": {
+    "branch": "master",
+    "commit": "a4895d7fc49d5b423abc5f166895c80175019570"
+  },
+  "functional_commit": "e9e31644e3eb2a0d733d90311ea92eba4ea2bc34",
+  "gcc_version": "16.2.0",
+  "prefix": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/install",
+  "clean_source_build": true,
+  "clean_build_elapsed": "35:50.15",
+  "source_build_log": "/mnt/data/Projects/samsung-math-toolchain/build-gcc16-math-final/logs/build-v1.log",
+  "source_build_log_sha256": "447b0139ed285a032496a08b2434d29d0146555a9611839ca442ff0f613f8267",
+  "full_config_sha256": "374888ed4737d2b738589b5a839fc0e9348e873923279d3c2bd9a05306fbbf6b",
+  "sample_sha256": "240f3780b037312765de8ec5ec2a335240bda50b4e36fe8207d5056c879b88a3",
+  "api_probe_cases": 1267,
+  "api_probe_passed": 1267,
+  "core_artifacts": 13,
+  "core_static_errors": [],
+  "numerical_edge_cases_per_runtime": 5670,
+  "numerical_edge_deviations": 81,
+  "nearbyintf_flag_findings": 32,
+  "ui_range_cases_per_runtime": 5184,
+  "ui_range_deviations": 0,
+  "complete_numerical_conformance": false,
+  "numerical_status": "Known inherited legacy-runtime limitations remain; see numerical analyses and restrictions.",
+  "private_cxx_runtime_update_requires_consumer_rebuild": true,
+  "target_c_abi_exports_unchanged": true,
+  "target_build_used_external_oe_sysroot": false,
+  "tv_operations": false,
+  "native_admission": "Not performed by this work; separate TV agent owns later admission.",
+  "runtime_scope": "Separate TV UI process with private modern C++ runtimes. System loader/libc/libm/firmware libraries are preserved.",
+  "private_runtimes": [
+    {
+      "name": "libatomic.so.1",
+      "sha256": "5a3f5e149d621686c190a1cda491256dcaf8a3b0bde8c98e166c2132f94dc8e2",
+      "provided_versions": [
+        "LIBATOMIC_1.0",
+        "LIBATOMIC_1.1",
+        "LIBATOMIC_1.2",
+        "libatomic.so.1"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "needed": [
+        "libpthread.so.0",
+        "libc.so.6"
+      ],
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "ifunc_symbols": 0
+    },
+    {
+      "name": "libgcc_s.so.1",
+      "sha256": "01937303d196cf0f86ad32f7b7ef7647d8773778c1389bcea369929cbed5bec9",
+      "provided_versions": [
+        "GCC_14.0.0",
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.3.1",
+        "GCC_3.3.4",
+        "GCC_3.4",
+        "GCC_3.4.2",
+        "GCC_3.5",
+        "GCC_4.0.0",
+        "GCC_4.2.0",
+        "GCC_4.3.0",
+        "GCC_4.7.0",
+        "GCC_7.0.0",
+        "GGC_14.0.0",
+        "GLIBC_2.0",
+        "libgcc_s.so.1"
+      ],
+      "required_versions": [
+        "GLIBC_2.4"
+      ],
+      "needed": [
+        "libc.so.6"
+      ],
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "ifunc_symbols": 0
+    },
+    {
+      "name": "libstdc++.so.6",
+      "sha256": "dc2cf726938fcabcf3c0437a16912b0de6e8167831488e476cc62d8fd23babc2",
+      "provided_versions": [
+        "CXXABI_1.3",
+        "CXXABI_1.3.1",
+        "CXXABI_1.3.10",
+        "CXXABI_1.3.11",
+        "CXXABI_1.3.12",
+        "CXXABI_1.3.13",
+        "CXXABI_1.3.14",
+        "CXXABI_1.3.15",
+        "CXXABI_1.3.17",
+        "CXXABI_1.3.2",
+        "CXXABI_1.3.3",
+        "CXXABI_1.3.4",
+        "CXXABI_1.3.5",
+        "CXXABI_1.3.6",
+        "CXXABI_1.3.7",
+        "CXXABI_1.3.8",
+        "CXXABI_1.3.9",
+        "CXXABI_ARM_1.3.3",
+        "CXXABI_TM_1",
+        "GLIBCXX_3.4",
+        "GLIBCXX_3.4.1",
+        "GLIBCXX_3.4.10",
+        "GLIBCXX_3.4.11",
+        "GLIBCXX_3.4.12",
+        "GLIBCXX_3.4.13",
+        "GLIBCXX_3.4.14",
+        "GLIBCXX_3.4.15",
+        "GLIBCXX_3.4.16",
+        "GLIBCXX_3.4.17",
+        "GLIBCXX_3.4.18",
+        "GLIBCXX_3.4.19",
+        "GLIBCXX_3.4.2",
+        "GLIBCXX_3.4.20",
+        "GLIBCXX_3.4.21",
+        "GLIBCXX_3.4.22",
+        "GLIBCXX_3.4.23",
+        "GLIBCXX_3.4.24",
+        "GLIBCXX_3.4.25",
+        "GLIBCXX_3.4.26",
+        "GLIBCXX_3.4.27",
+        "GLIBCXX_3.4.28",
+        "GLIBCXX_3.4.29",
+        "GLIBCXX_3.4.3",
+        "GLIBCXX_3.4.30",
+        "GLIBCXX_3.4.31",
+        "GLIBCXX_3.4.32",
+        "GLIBCXX_3.4.33",
+        "GLIBCXX_3.4.34",
+        "GLIBCXX_3.4.35",
+        "GLIBCXX_3.4.36",
+        "GLIBCXX_3.4.4",
+        "GLIBCXX_3.4.5",
+        "GLIBCXX_3.4.6",
+        "GLIBCXX_3.4.7",
+        "GLIBCXX_3.4.8",
+        "GLIBCXX_3.4.9",
+        "libstdc++.so.6"
+      ],
+      "required_versions": [
+        "GCC_3.0",
+        "GCC_3.3",
+        "GCC_3.4",
+        "GCC_3.5",
+        "GLIBC_2.4"
+      ],
+      "needed": [
+        "libm.so.6",
+        "libc.so.6",
+        "ld-linux.so.3",
+        "libgcc_s.so.1"
+      ],
+      "elf_flags": "0x5000002, Version5 EABI, <unknown>",
+      "ifunc_symbols": 0
+    }
+  ]
+}
