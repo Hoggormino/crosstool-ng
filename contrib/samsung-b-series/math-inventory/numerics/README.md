@@ -144,8 +144,8 @@ signed-zero and accuracy check. Sources: https://www.open-std.org/jtc1/sc22/wg14
 (G.6.2.2/G.6.2.6), plus the inverse rotation identities in the pinned FreeBSD
 sources. No ABI gate is altered.
 
-complex_contract.cpp independently checks 240 branch, tiny-component, rounding-
-restoration, incoming-flag, nonfinite and GNU C ABI properties. Compile normally
+complex_contract.cpp independently checks 244 branch, tiny-component, rounding-
+restoration, incoming-flag, nonfinite, concurrent thread-state and GNU C ABI properties. Compile normally
 as C++17 with -O2 -frounding-math -ffp-contract=off. It forces all 24 complex
 imports, which check_complex_providers.py requires to bind at
 GLIBCXX_SAMSUNG_MATH_1.1 to matching private libstdc++.so.6. The existing eight

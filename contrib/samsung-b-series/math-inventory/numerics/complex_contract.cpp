@@ -8,10 +8,34 @@
 #include <limits>
 #include <initializer_list>
 #include <type_traits>
+#include <pthread.h>
 static int checks,failures;
 static void check(const char* name,bool ok){++checks;if(!ok){++failures;std::printf("FAIL %s\n",name);}}
 template<class T> bool signed_equal(T x,T y){return x==y&&(x!=0||std::signbit(x)==std::signbit(y));}
 template<class T> bool close(T x,T y){return std::fabs(x-y)<=4*std::numeric_limits<T>::epsilon()*std::max(T(1),std::fabs(y));}
+struct ThreadState { int mode; bool passed; };
+static pthread_barrier_t barrier;
+static void* thread_calls(void* arg){
+ auto* s=static_cast<ThreadState*>(arg);s->passed=std::fesetround(s->mode)==0;
+ std::feclearexcept(FE_ALL_EXCEPT);std::feraiseexcept(FE_DIVBYZERO);
+ pthread_barrier_wait(&barrier);
+ volatile double x=.5,y=.25;
+ for(int i=0;i<1000;++i){
+  volatile auto r=std::asin(std::complex<double>(x,y));(void)r;
+  s->passed=s->passed&&std::fegetround()==s->mode&&std::fetestexcept(FE_DIVBYZERO)!=0;
+ }
+ return nullptr;
+}
+static void thread_contract(){
+ std::fesetenv(FE_DFL_ENV);pthread_barrier_init(&barrier,nullptr,3);
+ ThreadState a{FE_DOWNWARD,false},b{FE_UPWARD,false};pthread_t ta,tb;
+ int ca=pthread_create(&ta,nullptr,thread_calls,&a),cb=pthread_create(&tb,nullptr,thread_calls,&b);
+ check("complex thread creation",ca==0&&cb==0);
+ if(ca==0&&cb==0){pthread_barrier_wait(&barrier);pthread_join(ta,nullptr);pthread_join(tb,nullptr);
+  check("complex downward thread mode/flags",a.passed);check("complex upward thread mode/flags",b.passed);
+  check("complex parent rounding unchanged",std::fegetround()==FE_TONEAREST);}
+ pthread_barrier_destroy(&barrier);std::fesetenv(FE_DFL_ENV);
+}
 template<class T> void contracts(){
  using C=std::complex<T>;volatile T vz=0,vo=1,vt=std::numeric_limits<T>::min();T z=vz,o=vo,t=vt;
  const T pi2=T(1.57079632679489661923132169163975144L);
@@ -258,4 +282,4 @@ call_catanl();
 call_catanhl();
 call_ctanl();
 call_ctanhl();
-std::printf("complex_contract_checks=%d failures=%d\n",checks,failures);return failures?1:0;}
+thread_contract();std::printf("complex_contract_checks=%d failures=%d\n",checks,failures);return failures?1:0;}
